@@ -230,8 +230,10 @@
       <div class="row" style="margin-top:14px;">
         <button id="toggleModeBtn" class="hidden">Apri configurazione</button>
         <button id="exportCsvBtn" class="success hidden">Esporta risposte CSV</button>
+        <button id="submitAnswersBtn" class="primary" disabled>Invia le risposte</button>
       </div>
       <div id="saveStatus" class="status"></div>
+      <div id="submitStatus" class="status" role="status" aria-live="polite"></div>
     </section>
 
     <section id="fillCard" class="card">
@@ -397,7 +399,15 @@
 
     const CONFIG_KEY = "video_form_config_v4";
     const USERS_KEY = "video_form_users_v3";
-    const RESPONSES_PREFIX = "video_form_responses_v3_";
+    const RESPONSES_PREFIX = "video_form_responses_v5_";
+    const SUBMISSION_PREFIX = "video_form_submission_v5_";
+
+    /*
+      Dopo aver pubblicato Code.gs come applicazione web, sostituisci
+      il valore sottostante con l'URL che termina in /exec.
+    */
+    const GOOGLE_APPS_SCRIPT_URL =
+      "https://script.google.com/macros/s/AKfycbwmGIqFHBINzlErHWN8VRpEfuWI7f5xA2QmBdz0ZiAU9O_uqjazg_9rgYEfYrJ17_PR/exec";
 
     let currentUser = "";
     let isAdmin = false;
@@ -421,6 +431,8 @@
       progressText: document.getElementById("progressText"),
       toggleModeBtn: document.getElementById("toggleModeBtn"),
       exportCsvBtn: document.getElementById("exportCsvBtn"),
+      submitAnswersBtn: document.getElementById("submitAnswersBtn"),
+      submitStatus: document.getElementById("submitStatus"),
       fillCard: document.getElementById("fillCard"),
       configCard: document.getElementById("configCard"),
       videoTitle: document.getElementById("videoTitle"),
@@ -462,6 +474,55 @@
 
     function responseKey(userCode) {
       return RESPONSES_PREFIX + encodeURIComponent(userCode);
+    }
+
+    function submissionKey(userCode) {
+      return SUBMISSION_PREFIX + encodeURIComponent(userCode);
+    }
+
+    function getCurrentSubmissionSignature() {
+      const normalized = config.map((item, videoIndex) => {
+        const current = getResponse(videoIndex);
+        return {
+          title: item.title,
+          answers: current.answers.map(answer => String(answer || "").trim())
+        };
+      });
+      return JSON.stringify(normalized);
+    }
+
+    function getSavedSubmissionSignature() {
+      return localStorage.getItem(submissionKey(currentUser)) || "";
+    }
+
+    function isSubmissionEndpointConfigured() {
+      return GOOGLE_APPS_SCRIPT_URL.startsWith("https://script.google.com/macros/s/") &&
+        GOOGLE_APPS_SCRIPT_URL.endsWith("/exec");
+    }
+
+    function buildSubmissionPayload() {
+      const macroareas = ["spaziale", "temporale", "causale"];
+      const rows = [];
+
+      config.forEach((item, videoIndex) => {
+        const response = getResponse(videoIndex);
+        item.questions.forEach((_, questionIndex) => {
+          rows.push({
+            titolo_video: item.title,
+            macroarea: macroareas[questionIndex],
+            risposta: String(response.answers[questionIndex] || "").trim()
+          });
+        });
+      });
+
+      return {
+        userCode: currentUser,
+        submittedAt: new Date().toISOString(),
+        submissionId: (
+          window.crypto && typeof window.crypto.randomUUID === "function"
+        ) ? window.crypto.randomUUID() : `${Date.now()}-${Math.random().toString(16).slice(2)}`,
+        rows
+      };
     }
 
     function loadResponses(userCode) {
@@ -631,6 +692,7 @@
           response.answers[questionIndex] = textarea.value;
           response.updatedAt = new Date().toISOString();
           saveResponses();
+          updateSubmitButton();
         });
 
         wrapper.appendChild(label);
@@ -646,11 +708,159 @@
       }, 0);
     }
 
+    function allAnswersCompleted() {
+      return completedVideos() === TOTAL_VIDEOS;
+    }
+
+    function updateSubmitButton() {
+      if (!currentUser || isAdmin) {
+        els.submitAnswersBtn.classList.add("hidden");
+        return;
+      }
+
+      els.submitAnswersBtn.classList.remove("hidden");
+
+      if (!isSubmissionEndpointConfigured()) {
+        els.submitAnswersBtn.disabled = true;
+        els.submitAnswersBtn.textContent = "Invio non configurato";
+        els.submitStatus.textContent =
+          "L’amministratore deve inserire nel file HTML l’URL della web app Google Apps Script.";
+        return;
+      }
+
+      if (!allAnswersCompleted()) {
+        els.submitAnswersBtn.disabled = true;
+        els.submitAnswersBtn.textContent = "Completa tutte le risposte";
+        els.submitStatus.textContent =
+          "Il pulsante si attiverà dopo aver risposto alle tre domande di tutti i 100 video.";
+        return;
+      }
+
+      const alreadySubmitted =
+        getSavedSubmissionSignature() === getCurrentSubmissionSignature();
+
+      if (alreadySubmitted) {
+        els.submitAnswersBtn.disabled = true;
+        els.submitAnswersBtn.textContent = "Risposte già inviate";
+        els.submitStatus.textContent =
+          "Questa versione delle risposte è già stata inviata. Modificando una risposta potrai inviarne una versione aggiornata.";
+        return;
+      }
+
+      els.submitAnswersBtn.disabled = false;
+      els.submitAnswersBtn.textContent = "Invia le risposte";
+      els.submitStatus.textContent =
+        "Tutte le risposte sono complete. Premi il pulsante per inviarle definitivamente.";
+    }
+
+    let pendingSubmission = null;
+
+    function clearPendingSubmission() {
+      if (!pendingSubmission) return;
+
+      clearTimeout(pendingSubmission.timeoutId);
+      pendingSubmission.form?.remove();
+      pendingSubmission.iframe?.remove();
+      pendingSubmission = null;
+    }
+
+    function handleSubmissionResponse(event) {
+      const data = event.data;
+
+      if (
+        !pendingSubmission ||
+        !data ||
+        data.source !== "maia2-apps-script" ||
+        data.submissionId !== pendingSubmission.submissionId
+      ) {
+        return;
+      }
+
+      const signature = pendingSubmission.signature;
+      clearPendingSubmission();
+
+      if (data.ok) {
+        localStorage.setItem(submissionKey(currentUser), signature);
+        els.submitAnswersBtn.disabled = true;
+        els.submitAnswersBtn.textContent = "Risposte inviate";
+        els.submitStatus.textContent =
+          "Invio completato: lo script ha confermato la spedizione dell’email.";
+      } else {
+        els.submitAnswersBtn.disabled = false;
+        els.submitAnswersBtn.textContent = "Riprova l’invio";
+        els.submitStatus.textContent =
+          `Invio non riuscito: ${data.message || "errore non specificato."}`;
+      }
+    }
+
+    function submitAnswers() {
+      if (isAdmin || !allAnswersCompleted() || els.submitAnswersBtn.disabled) return;
+
+      if (!isSubmissionEndpointConfigured()) {
+        alert("L’URL di Google Apps Script non è stato ancora configurato.");
+        return;
+      }
+
+      const confirmed = confirm(
+        "Vuoi inviare definitivamente tutte le risposte? Verrà spedito un file CSV all’indirizzo configurato."
+      );
+      if (!confirmed) return;
+
+      clearPendingSubmission();
+
+      const signature = getCurrentSubmissionSignature();
+      const payload = buildSubmissionPayload();
+      const iframeName = `maia2_submit_${Date.now()}`;
+
+      const iframe = document.createElement("iframe");
+      iframe.name = iframeName;
+      iframe.title = "Invio risposte MAIA 2.0";
+      iframe.className = "hidden";
+
+      const form = document.createElement("form");
+      form.method = "POST";
+      form.action = GOOGLE_APPS_SCRIPT_URL;
+      form.target = iframeName;
+      form.className = "hidden";
+
+      const payloadInput = document.createElement("input");
+      payloadInput.type = "hidden";
+      payloadInput.name = "payload";
+      payloadInput.value = JSON.stringify(payload);
+      form.appendChild(payloadInput);
+
+      document.body.appendChild(iframe);
+      document.body.appendChild(form);
+
+      els.submitAnswersBtn.disabled = true;
+      els.submitAnswersBtn.textContent = "Invio in corso…";
+      els.submitStatus.textContent = "Trasmissione e spedizione dell’email in corso.";
+
+      const timeoutId = setTimeout(() => {
+        clearPendingSubmission();
+        els.submitAnswersBtn.disabled = false;
+        els.submitAnswersBtn.textContent = "Verifica e riprova";
+        els.submitStatus.textContent =
+          "Non è arrivata una conferma dallo script. Verifica l’email prima di ripetere l’invio.";
+      }, 60000);
+
+      pendingSubmission = {
+        submissionId: payload.submissionId,
+        signature,
+        iframe,
+        form,
+        timeoutId
+      };
+
+      form.submit();
+    }
+
     function updateProgress() {
       const completed = completedVideos();
       const percentage = (completed / TOTAL_VIDEOS) * 100;
       els.progressBar.style.width = `${percentage}%`;
       els.progressText.textContent = `${completed} video completati su ${TOTAL_VIDEOS} · ${Math.round(percentage)}%`;
+      if (currentUser) updateSubmitButton();
     }
 
     function renderConfig() {
@@ -725,6 +935,8 @@
       els.toggleModeBtn.classList.toggle("hidden", !isAdmin);
       els.exportCsvBtn.classList.toggle("hidden", !isAdmin);
       els.adminUserPanel.classList.toggle("hidden", !isAdmin);
+      els.submitAnswersBtn.classList.toggle("hidden", isAdmin);
+      els.submitStatus.textContent = "";
 
       initVideoSelector();
       if (isAdmin) initExportUserSelector();
@@ -738,6 +950,7 @@
       currentIndex = 0;
       mode = "fill";
       els.loginCode.value = "";
+      els.submitStatus.textContent = "";
       els.app.classList.add("hidden");
       els.loginScreen.classList.remove("hidden");
       els.loginCode.focus();
@@ -833,7 +1046,9 @@
       });
     });
 
+    window.addEventListener("message", handleSubmissionResponse);
     els.exportCsvBtn.addEventListener("click", exportResponsesCsv);
+    els.submitAnswersBtn.addEventListener("click", submitAnswers);
     els.loginCode.focus();
   </script>
 </body>
