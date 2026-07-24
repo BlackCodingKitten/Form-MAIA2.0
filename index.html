@@ -255,7 +255,7 @@
       <h2>Configurazione del video</h2>
       <div class="notice">
         Questa sezione è disponibile soltanto all’utente amministratore.
-        Puoi modificare il titolo, l’indirizzo del video e le tre domande.
+        Puoi modificare il titolo, l’indirizzo del video e, per ciascuno dei 100 video, tutte e tre le domande.
       </div>
 
       <label for="configTitle">Titolo del video</label>
@@ -265,13 +265,13 @@
       <input id="configUrl" placeholder="YouTube, Vimeo oppure file .mp4/.webm" />
 
       <label for="configQ1">Domanda spaziale</label>
-      <input id="configQ1" />
+      <textarea id="configQ1" rows="3"></textarea>
 
       <label for="configQ2">Domanda temporale</label>
-      <input id="configQ2" />
+      <textarea id="configQ2" rows="3"></textarea>
 
       <label for="configQ3">Domanda causale</label>
-      <input id="configQ3" />
+      <textarea id="configQ3" rows="3"></textarea>
 
       <div class="nav">
         <button id="configPrevBtn">← Video precedente</button>
@@ -282,7 +282,10 @@
 
   <script>
     const TOTAL_VIDEOS = 100;
-    const ADMIN_CODE = "Michela";
+    const ADMIN_CODES = [
+      "Michela",
+      "Davide"
+    ];
 
     /*
       Inserisci gli URL dei video tra le virgolette, rispettando l'ordine.
@@ -397,7 +400,521 @@
       "", // Video 100
     ];
 
-    const CONFIG_KEY = "video_form_config_v4";
+    /*
+      PERSONALIZZAZIONE DELLE DOMANDE
+
+      Ogni elemento corrisponde a un video e contiene, nell'ordine:
+      1. domanda spaziale
+      2. domanda temporale
+      3. domanda causale
+
+      Puoi modificare liberamente il testo tra virgolette.
+      Non cambiare l'ordine delle tre domande.
+    */
+    const VIDEO_QUESTIONS = [
+      [
+        "Domanda spaziale del video 1",
+        "Domanda temporale del video 1",
+        "Domanda causale del video 1"
+      ], // Video 1
+      [
+        "Domanda spaziale del video 2",
+        "Domanda temporale del video 2",
+        "Domanda causale del video 2"
+      ], // Video 2
+      [
+        "Domanda spaziale del video 3",
+        "Domanda temporale del video 3",
+        "Domanda causale del video 3"
+      ], // Video 3
+      [
+        "Domanda spaziale del video 4",
+        "Domanda temporale del video 4",
+        "Domanda causale del video 4"
+      ], // Video 4
+      [
+        "Domanda spaziale del video 5",
+        "Domanda temporale del video 5",
+        "Domanda causale del video 5"
+      ], // Video 5
+      [
+        "Domanda spaziale del video 6",
+        "Domanda temporale del video 6",
+        "Domanda causale del video 6"
+      ], // Video 6
+      [
+        "Domanda spaziale del video 7",
+        "Domanda temporale del video 7",
+        "Domanda causale del video 7"
+      ], // Video 7
+      [
+        "Domanda spaziale del video 8",
+        "Domanda temporale del video 8",
+        "Domanda causale del video 8"
+      ], // Video 8
+      [
+        "Domanda spaziale del video 9",
+        "Domanda temporale del video 9",
+        "Domanda causale del video 9"
+      ], // Video 9
+      [
+        "Domanda spaziale del video 10",
+        "Domanda temporale del video 10",
+        "Domanda causale del video 10"
+      ], // Video 10
+      [
+        "Domanda spaziale del video 11",
+        "Domanda temporale del video 11",
+        "Domanda causale del video 11"
+      ], // Video 11
+      [
+        "Domanda spaziale del video 12",
+        "Domanda temporale del video 12",
+        "Domanda causale del video 12"
+      ], // Video 12
+      [
+        "Domanda spaziale del video 13",
+        "Domanda temporale del video 13",
+        "Domanda causale del video 13"
+      ], // Video 13
+      [
+        "Domanda spaziale del video 14",
+        "Domanda temporale del video 14",
+        "Domanda causale del video 14"
+      ], // Video 14
+      [
+        "Domanda spaziale del video 15",
+        "Domanda temporale del video 15",
+        "Domanda causale del video 15"
+      ], // Video 15
+      [
+        "Domanda spaziale del video 16",
+        "Domanda temporale del video 16",
+        "Domanda causale del video 16"
+      ], // Video 16
+      [
+        "Domanda spaziale del video 17",
+        "Domanda temporale del video 17",
+        "Domanda causale del video 17"
+      ], // Video 17
+      [
+        "Domanda spaziale del video 18",
+        "Domanda temporale del video 18",
+        "Domanda causale del video 18"
+      ], // Video 18
+      [
+        "Domanda spaziale del video 19",
+        "Domanda temporale del video 19",
+        "Domanda causale del video 19"
+      ], // Video 19
+      [
+        "Domanda spaziale del video 20",
+        "Domanda temporale del video 20",
+        "Domanda causale del video 20"
+      ], // Video 20
+      [
+        "Domanda spaziale del video 21",
+        "Domanda temporale del video 21",
+        "Domanda causale del video 21"
+      ], // Video 21
+      [
+        "Domanda spaziale del video 22",
+        "Domanda temporale del video 22",
+        "Domanda causale del video 22"
+      ], // Video 22
+      [
+        "Domanda spaziale del video 23",
+        "Domanda temporale del video 23",
+        "Domanda causale del video 23"
+      ], // Video 23
+      [
+        "Domanda spaziale del video 24",
+        "Domanda temporale del video 24",
+        "Domanda causale del video 24"
+      ], // Video 24
+      [
+        "Domanda spaziale del video 25",
+        "Domanda temporale del video 25",
+        "Domanda causale del video 25"
+      ], // Video 25
+      [
+        "Domanda spaziale del video 26",
+        "Domanda temporale del video 26",
+        "Domanda causale del video 26"
+      ], // Video 26
+      [
+        "Domanda spaziale del video 27",
+        "Domanda temporale del video 27",
+        "Domanda causale del video 27"
+      ], // Video 27
+      [
+        "Domanda spaziale del video 28",
+        "Domanda temporale del video 28",
+        "Domanda causale del video 28"
+      ], // Video 28
+      [
+        "Domanda spaziale del video 29",
+        "Domanda temporale del video 29",
+        "Domanda causale del video 29"
+      ], // Video 29
+      [
+        "Domanda spaziale del video 30",
+        "Domanda temporale del video 30",
+        "Domanda causale del video 30"
+      ], // Video 30
+      [
+        "Domanda spaziale del video 31",
+        "Domanda temporale del video 31",
+        "Domanda causale del video 31"
+      ], // Video 31
+      [
+        "Domanda spaziale del video 32",
+        "Domanda temporale del video 32",
+        "Domanda causale del video 32"
+      ], // Video 32
+      [
+        "Domanda spaziale del video 33",
+        "Domanda temporale del video 33",
+        "Domanda causale del video 33"
+      ], // Video 33
+      [
+        "Domanda spaziale del video 34",
+        "Domanda temporale del video 34",
+        "Domanda causale del video 34"
+      ], // Video 34
+      [
+        "Domanda spaziale del video 35",
+        "Domanda temporale del video 35",
+        "Domanda causale del video 35"
+      ], // Video 35
+      [
+        "Domanda spaziale del video 36",
+        "Domanda temporale del video 36",
+        "Domanda causale del video 36"
+      ], // Video 36
+      [
+        "Domanda spaziale del video 37",
+        "Domanda temporale del video 37",
+        "Domanda causale del video 37"
+      ], // Video 37
+      [
+        "Domanda spaziale del video 38",
+        "Domanda temporale del video 38",
+        "Domanda causale del video 38"
+      ], // Video 38
+      [
+        "Domanda spaziale del video 39",
+        "Domanda temporale del video 39",
+        "Domanda causale del video 39"
+      ], // Video 39
+      [
+        "Domanda spaziale del video 40",
+        "Domanda temporale del video 40",
+        "Domanda causale del video 40"
+      ], // Video 40
+      [
+        "Domanda spaziale del video 41",
+        "Domanda temporale del video 41",
+        "Domanda causale del video 41"
+      ], // Video 41
+      [
+        "Domanda spaziale del video 42",
+        "Domanda temporale del video 42",
+        "Domanda causale del video 42"
+      ], // Video 42
+      [
+        "Domanda spaziale del video 43",
+        "Domanda temporale del video 43",
+        "Domanda causale del video 43"
+      ], // Video 43
+      [
+        "Domanda spaziale del video 44",
+        "Domanda temporale del video 44",
+        "Domanda causale del video 44"
+      ], // Video 44
+      [
+        "Domanda spaziale del video 45",
+        "Domanda temporale del video 45",
+        "Domanda causale del video 45"
+      ], // Video 45
+      [
+        "Domanda spaziale del video 46",
+        "Domanda temporale del video 46",
+        "Domanda causale del video 46"
+      ], // Video 46
+      [
+        "Domanda spaziale del video 47",
+        "Domanda temporale del video 47",
+        "Domanda causale del video 47"
+      ], // Video 47
+      [
+        "Domanda spaziale del video 48",
+        "Domanda temporale del video 48",
+        "Domanda causale del video 48"
+      ], // Video 48
+      [
+        "Domanda spaziale del video 49",
+        "Domanda temporale del video 49",
+        "Domanda causale del video 49"
+      ], // Video 49
+      [
+        "Domanda spaziale del video 50",
+        "Domanda temporale del video 50",
+        "Domanda causale del video 50"
+      ], // Video 50
+      [
+        "Domanda spaziale del video 51",
+        "Domanda temporale del video 51",
+        "Domanda causale del video 51"
+      ], // Video 51
+      [
+        "Domanda spaziale del video 52",
+        "Domanda temporale del video 52",
+        "Domanda causale del video 52"
+      ], // Video 52
+      [
+        "Domanda spaziale del video 53",
+        "Domanda temporale del video 53",
+        "Domanda causale del video 53"
+      ], // Video 53
+      [
+        "Domanda spaziale del video 54",
+        "Domanda temporale del video 54",
+        "Domanda causale del video 54"
+      ], // Video 54
+      [
+        "Domanda spaziale del video 55",
+        "Domanda temporale del video 55",
+        "Domanda causale del video 55"
+      ], // Video 55
+      [
+        "Domanda spaziale del video 56",
+        "Domanda temporale del video 56",
+        "Domanda causale del video 56"
+      ], // Video 56
+      [
+        "Domanda spaziale del video 57",
+        "Domanda temporale del video 57",
+        "Domanda causale del video 57"
+      ], // Video 57
+      [
+        "Domanda spaziale del video 58",
+        "Domanda temporale del video 58",
+        "Domanda causale del video 58"
+      ], // Video 58
+      [
+        "Domanda spaziale del video 59",
+        "Domanda temporale del video 59",
+        "Domanda causale del video 59"
+      ], // Video 59
+      [
+        "Domanda spaziale del video 60",
+        "Domanda temporale del video 60",
+        "Domanda causale del video 60"
+      ], // Video 60
+      [
+        "Domanda spaziale del video 61",
+        "Domanda temporale del video 61",
+        "Domanda causale del video 61"
+      ], // Video 61
+      [
+        "Domanda spaziale del video 62",
+        "Domanda temporale del video 62",
+        "Domanda causale del video 62"
+      ], // Video 62
+      [
+        "Domanda spaziale del video 63",
+        "Domanda temporale del video 63",
+        "Domanda causale del video 63"
+      ], // Video 63
+      [
+        "Domanda spaziale del video 64",
+        "Domanda temporale del video 64",
+        "Domanda causale del video 64"
+      ], // Video 64
+      [
+        "Domanda spaziale del video 65",
+        "Domanda temporale del video 65",
+        "Domanda causale del video 65"
+      ], // Video 65
+      [
+        "Domanda spaziale del video 66",
+        "Domanda temporale del video 66",
+        "Domanda causale del video 66"
+      ], // Video 66
+      [
+        "Domanda spaziale del video 67",
+        "Domanda temporale del video 67",
+        "Domanda causale del video 67"
+      ], // Video 67
+      [
+        "Domanda spaziale del video 68",
+        "Domanda temporale del video 68",
+        "Domanda causale del video 68"
+      ], // Video 68
+      [
+        "Domanda spaziale del video 69",
+        "Domanda temporale del video 69",
+        "Domanda causale del video 69"
+      ], // Video 69
+      [
+        "Domanda spaziale del video 70",
+        "Domanda temporale del video 70",
+        "Domanda causale del video 70"
+      ], // Video 70
+      [
+        "Domanda spaziale del video 71",
+        "Domanda temporale del video 71",
+        "Domanda causale del video 71"
+      ], // Video 71
+      [
+        "Domanda spaziale del video 72",
+        "Domanda temporale del video 72",
+        "Domanda causale del video 72"
+      ], // Video 72
+      [
+        "Domanda spaziale del video 73",
+        "Domanda temporale del video 73",
+        "Domanda causale del video 73"
+      ], // Video 73
+      [
+        "Domanda spaziale del video 74",
+        "Domanda temporale del video 74",
+        "Domanda causale del video 74"
+      ], // Video 74
+      [
+        "Domanda spaziale del video 75",
+        "Domanda temporale del video 75",
+        "Domanda causale del video 75"
+      ], // Video 75
+      [
+        "Domanda spaziale del video 76",
+        "Domanda temporale del video 76",
+        "Domanda causale del video 76"
+      ], // Video 76
+      [
+        "Domanda spaziale del video 77",
+        "Domanda temporale del video 77",
+        "Domanda causale del video 77"
+      ], // Video 77
+      [
+        "Domanda spaziale del video 78",
+        "Domanda temporale del video 78",
+        "Domanda causale del video 78"
+      ], // Video 78
+      [
+        "Domanda spaziale del video 79",
+        "Domanda temporale del video 79",
+        "Domanda causale del video 79"
+      ], // Video 79
+      [
+        "Domanda spaziale del video 80",
+        "Domanda temporale del video 80",
+        "Domanda causale del video 80"
+      ], // Video 80
+      [
+        "Domanda spaziale del video 81",
+        "Domanda temporale del video 81",
+        "Domanda causale del video 81"
+      ], // Video 81
+      [
+        "Domanda spaziale del video 82",
+        "Domanda temporale del video 82",
+        "Domanda causale del video 82"
+      ], // Video 82
+      [
+        "Domanda spaziale del video 83",
+        "Domanda temporale del video 83",
+        "Domanda causale del video 83"
+      ], // Video 83
+      [
+        "Domanda spaziale del video 84",
+        "Domanda temporale del video 84",
+        "Domanda causale del video 84"
+      ], // Video 84
+      [
+        "Domanda spaziale del video 85",
+        "Domanda temporale del video 85",
+        "Domanda causale del video 85"
+      ], // Video 85
+      [
+        "Domanda spaziale del video 86",
+        "Domanda temporale del video 86",
+        "Domanda causale del video 86"
+      ], // Video 86
+      [
+        "Domanda spaziale del video 87",
+        "Domanda temporale del video 87",
+        "Domanda causale del video 87"
+      ], // Video 87
+      [
+        "Domanda spaziale del video 88",
+        "Domanda temporale del video 88",
+        "Domanda causale del video 88"
+      ], // Video 88
+      [
+        "Domanda spaziale del video 89",
+        "Domanda temporale del video 89",
+        "Domanda causale del video 89"
+      ], // Video 89
+      [
+        "Domanda spaziale del video 90",
+        "Domanda temporale del video 90",
+        "Domanda causale del video 90"
+      ], // Video 90
+      [
+        "Domanda spaziale del video 91",
+        "Domanda temporale del video 91",
+        "Domanda causale del video 91"
+      ], // Video 91
+      [
+        "Domanda spaziale del video 92",
+        "Domanda temporale del video 92",
+        "Domanda causale del video 92"
+      ], // Video 92
+      [
+        "Domanda spaziale del video 93",
+        "Domanda temporale del video 93",
+        "Domanda causale del video 93"
+      ], // Video 93
+      [
+        "Domanda spaziale del video 94",
+        "Domanda temporale del video 94",
+        "Domanda causale del video 94"
+      ], // Video 94
+      [
+        "Domanda spaziale del video 95",
+        "Domanda temporale del video 95",
+        "Domanda causale del video 95"
+      ], // Video 95
+      [
+        "Domanda spaziale del video 96",
+        "Domanda temporale del video 96",
+        "Domanda causale del video 96"
+      ], // Video 96
+      [
+        "Domanda spaziale del video 97",
+        "Domanda temporale del video 97",
+        "Domanda causale del video 97"
+      ], // Video 97
+      [
+        "Domanda spaziale del video 98",
+        "Domanda temporale del video 98",
+        "Domanda causale del video 98"
+      ], // Video 98
+      [
+        "Domanda spaziale del video 99",
+        "Domanda temporale del video 99",
+        "Domanda causale del video 99"
+      ], // Video 99
+      [
+        "Domanda spaziale del video 100",
+        "Domanda temporale del video 100",
+        "Domanda causale del video 100"
+      ] // Video 100
+    ];
+
+    const CONFIG_KEY = "video_form_config_v7";
     const USERS_KEY = "video_form_users_v3";
     const RESPONSES_PREFIX = "video_form_responses_v5_";
     const SUBMISSION_PREFIX = "video_form_submission_v5_";
@@ -456,11 +973,16 @@
         id: i + 1,
         title: `Video ${i + 1}`,
         url: VIDEO_URLS[i] || "",
-        questions: [
-          "Domanda spaziale",
-          "Domanda temporale",
-          "Domanda causale"
-        ]
+        questions: Array.from({ length: 3 }, (_, questionIndex) =>
+          String(
+            VIDEO_QUESTIONS[i]?.[questionIndex] ||
+            [
+              "Domanda spaziale",
+              "Domanda temporale",
+              "Domanda causale"
+            ][questionIndex]
+          )
+        )
       }));
     }
 
@@ -591,7 +1113,7 @@
 
     function initExportUserSelector() {
       els.exportUserSelector.innerHTML = "";
-      const users = loadUsers().filter(user => user !== ADMIN_CODE);
+      const users = loadUsers().filter(user => !ADMIN_CODES.includes(user));
 
       if (users.length === 0) {
         const option = document.createElement("option");
@@ -917,7 +1439,7 @@
       }
 
       currentUser = code;
-      isAdmin = currentUser === ADMIN_CODE;
+      isAdmin = ADMIN_CODES.includes(currentUser);
       registerUser(currentUser);
       responses = loadResponses(currentUser);
       currentIndex = 0;
