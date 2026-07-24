@@ -1395,6 +1395,62 @@
       return null;
     }
 
+    function googleDriveEmbed(input) {
+      if (input == null) return null;
+
+      let raw = String(input).trim();
+      if (!raw) return null;
+
+      // Consente di incollare anche un iframe Google Drive completo.
+      const iframeMatch = raw.match(/<iframe[\s\S]*?\bsrc\s*=\s*["']([^"']+)["']/i);
+      if (iframeMatch?.[1]) raw = iframeMatch[1];
+
+      raw = raw.replace(/&amp;/gi, "&");
+
+      if (raw.startsWith("//")) {
+        raw = `https:${raw}`;
+      } else if (!/^[a-z][a-z0-9+.-]*:\/\//i.test(raw)) {
+        raw = `https://${raw.replace(/^\/+/, "")}`;
+      }
+
+      try {
+        const u = new URL(raw);
+        const hostname = u.hostname.toLowerCase().replace(/^www\./, "");
+
+        const isDriveDomain =
+          hostname === "drive.google.com" ||
+          hostname.endsWith(".drive.google.com") ||
+          hostname === "docs.google.com";
+
+        if (!isDriveDomain) return null;
+
+        let fileId = null;
+
+        // Formati: /file/d/FILE_ID/view, /file/d/FILE_ID/preview.
+        const filePathMatch = u.pathname.match(/\/file\/d\/([^/]+)/i);
+        if (filePathMatch?.[1]) fileId = filePathMatch[1];
+
+        // Formati: /open?id=FILE_ID, /uc?id=FILE_ID, /preview?id=FILE_ID.
+        if (!fileId) fileId = u.searchParams.get("id");
+
+        // Alcuni collegamenti Docs/Drive usano /d/FILE_ID/...
+        if (!fileId) {
+          const genericPathMatch = u.pathname.match(/\/d\/([^/]+)/i);
+          if (genericPathMatch?.[1]) fileId = genericPathMatch[1];
+        }
+
+        // Evita cartelle e ID palesemente non validi.
+        if (!fileId || u.pathname.includes("/folders/")) return null;
+        if (!/^[a-zA-Z0-9_-]{10,}$/.test(fileId)) return null;
+
+        return `https://drive.google.com/file/d/${encodeURIComponent(fileId)}/preview`;
+      } catch (error) {
+        console.warn("Link Google Drive non valido:", input, error);
+      }
+
+      return null;
+    }
+
     function renderVideo(url) {
       els.videoBox.innerHTML = "";
 
@@ -1405,12 +1461,14 @@
 
       const yt = youtubeEmbed(url);
       const vm = vimeoEmbed(url);
+      const drive = googleDriveEmbed(url);
 
-      if (yt || vm) {
+      if (yt || vm || drive) {
         const iframe = document.createElement("iframe");
-        iframe.src = yt || vm;
+        iframe.src = yt || vm || drive;
         iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
         iframe.allowFullscreen = true;
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
         els.videoBox.appendChild(iframe);
         return;
       }
@@ -1420,7 +1478,7 @@
       video.controls = true;
       video.preload = "metadata";
       video.onerror = () => {
-        els.videoBox.innerHTML = '<div class="placeholder">Il video non può essere caricato.</div>';
+        els.videoBox.innerHTML = '<div class="placeholder">Il video non può essere caricato. Verifica che il link sia pubblico e punti a YouTube, Google Drive, Vimeo oppure a un file video diretto.</div>';
       };
       els.videoBox.appendChild(video);
     }
