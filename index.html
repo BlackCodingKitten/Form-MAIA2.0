@@ -201,8 +201,8 @@
     <section class="topbar">
       <div class="row space-between">
         <div>
-          <h1>Modulo di annotazione video</h1>
-          <div class="muted">100 video · tre domande aperte per ciascun video</div>
+          <h1>Rispondi alle domande concentrandoti sia sul contenuto visivo che sull'audio.</h1>
+          <div class="muted">Per rispondere alle domande sotto i video è necessario prestare molta attenzione a ciò che succede nel video</div>
         </div>
         <div class="row">
           <span id="roleBadge" class="badge"></span>
@@ -262,7 +262,7 @@
       <input id="configTitle" />
 
       <label for="configUrl">URL del video</label>
-      <input id="configUrl" placeholder="YouTube, Vimeo oppure file .mp4/.webm" />
+      <input id="configUrl" placeholder="Qualsiasi link YouTube (anche youtu.be), Vimeo oppure file .mp4/.webm" />
 
       <label for="configQ1">Domanda spaziale</label>
       <textarea id="configQ1" rows="3"></textarea>
@@ -413,19 +413,19 @@
     */
     const VIDEO_QUESTIONS = [
       [
-        "Domanda spaziale del video 1",
-        "Domanda temporale del video 1",
-        "Domanda causale del video 1"
+        "Dove cerca l'uomo con il camice il rimedio al singhiozzo?",
+        "L'uomo con gli occhiali urla prima o dopo che l'uomo mascherato appaia?",
+        "Perché il signore con gli occhiali balbetta?"
       ], // Video 1
       [
-        "Domanda spaziale del video 2",
-        "Domanda temporale del video 2",
-        "Domanda causale del video 2"
+        "Dove si trova la moglie dell'uomo con gli occhiali?",
+        "La donna bionda sbuffa prima o dopo che l'uomo con gli occhiali risponda al telefono?",
+        "Perché l'uomo con gli occhiali fa degli strani versi al telefono?"
       ], // Video 2
       [
-        "Domanda spaziale del video 3",
-        "Domanda temporale del video 3",
-        "Domanda causale del video 3"
+        "Da dove cade il televisore?",
+        "La finestra del balcone viene chiusa prima o dopo che torni l'uomo con la maglietta gialla",
+        "Perché l'uomo con la maglietta gialla si preoccupa del danno alla macchina?"
       ], // Video 3
       [
         "Domanda spaziale del video 4",
@@ -435,7 +435,7 @@
       [
         "Domanda spaziale del video 5",
         "Domanda temporale del video 5",
-        "Domanda causale del video 5"
+        "Perché viene messa la bottiglietta direttamente nell'orecchio dell'animale?"
       ], // Video 5
       [
         "Domanda spaziale del video 6",
@@ -1133,23 +1133,122 @@
       els.exportCsvBtn.disabled = false;
     }
 
-    function youtubeEmbed(url) {
-      try {
-        const u = new URL(url);
-        if (u.hostname.includes("youtu.be")) {
-          const id = u.pathname.replace("/", "");
-          return id ? `https://www.youtube.com/embed/${id}` : null;
+    function youtubeEmbed(input, recursionDepth = 0) {
+      if (input == null || recursionDepth > 2) return null;
+
+      let raw = String(input).trim();
+      if (!raw) return null;
+
+      // Consente di incollare anche il codice iframe completo copiato da YouTube.
+      const iframeMatch = raw.match(/<iframe[\s\S]*?\bsrc\s*=\s*["']([^"']+)["']/i);
+      if (iframeMatch?.[1]) raw = iframeMatch[1];
+
+      // Ripristina gli ampersand quando l'URL proviene da codice HTML.
+      raw = raw.replace(/&amp;/gi, "&");
+
+      const validVideoId = value => /^[a-zA-Z0-9_-]{11}$/.test(String(value || ""));
+      const validPlaylistId = value => /^[a-zA-Z0-9_-]{10,}$/.test(String(value || ""));
+
+      const parseTime = value => {
+        const time = String(value || "").trim().toLowerCase();
+        if (!time) return 0;
+        if (/^\d+$/.test(time)) return Number(time);
+
+        const match = time.match(/^(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?$/);
+        if (!match) return 0;
+        return Number(match[1] || 0) * 3600 +
+          Number(match[2] || 0) * 60 +
+          Number(match[3] || 0);
+      };
+
+      const makeEmbedUrl = (videoId, sourceUrl = null) => {
+        if (!validVideoId(videoId)) return null;
+
+        const embed = new URL(`https://www.youtube-nocookie.com/embed/${videoId}`);
+
+        if (sourceUrl) {
+          const timeValue =
+            sourceUrl.searchParams.get("start") ||
+            sourceUrl.searchParams.get("t") ||
+            new URLSearchParams(sourceUrl.hash.replace(/^#/, "")).get("t");
+          const start = parseTime(timeValue);
+          if (start > 0) embed.searchParams.set("start", String(start));
+
+          const list = sourceUrl.searchParams.get("list");
+          if (validPlaylistId(list)) embed.searchParams.set("list", list);
         }
-        if (u.hostname.includes("youtube.com")) {
-          const id = u.searchParams.get("v");
-          if (id) return `https://www.youtube.com/embed/${id}`;
-          const parts = u.pathname.split("/").filter(Boolean);
-          const embedIndex = parts.indexOf("embed");
-          if (embedIndex >= 0 && parts[embedIndex + 1]) {
-            return `https://www.youtube.com/embed/${parts[embedIndex + 1]}`;
+
+        return embed.toString();
+      };
+
+      // Permette di inserire direttamente il solo ID del video.
+      if (validVideoId(raw)) return makeEmbedUrl(raw);
+
+      // Gestisce URL senza protocollo: youtu.be/..., youtube.com/..., ecc.
+      if (raw.startsWith("//")) {
+        raw = `https:${raw}`;
+      } else if (!/^[a-z][a-z0-9+.-]*:\/\//i.test(raw)) {
+        raw = `https://${raw.replace(/^\/+/, "")}`;
+      }
+
+      try {
+        const u = new URL(raw);
+        const hostname = u.hostname.toLowerCase().replace(/^www\./, "");
+        const parts = u.pathname.split("/").filter(Boolean);
+
+        // Link brevi: https://youtu.be/VIDEO_ID
+        if (hostname === "youtu.be") {
+          return makeEmbedUrl(parts[0], u);
+        }
+
+        const isYouTubeDomain =
+          hostname === "youtube.com" ||
+          hostname.endsWith(".youtube.com") ||
+          hostname === "youtube-nocookie.com" ||
+          hostname.endsWith(".youtube-nocookie.com");
+
+        if (!isYouTubeDomain) return null;
+
+        // Link di reindirizzamento/attribuzione generati da YouTube.
+        if (["redirect", "attribution_link"].includes(parts[0])) {
+          const target =
+            u.searchParams.get("q") ||
+            u.searchParams.get("url") ||
+            u.searchParams.get("u");
+
+          if (target) {
+            const decodedTarget = decodeURIComponent(target);
+            const absoluteTarget = decodedTarget.startsWith("/")
+              ? `https://www.youtube.com${decodedTarget}`
+              : decodedTarget;
+            return youtubeEmbed(absoluteTarget, recursionDepth + 1);
           }
         }
-      } catch (_) {}
+
+        // Formato classico: /watch?v=VIDEO_ID (e vecchio parametro vi).
+        const queryVideoId = u.searchParams.get("v") || u.searchParams.get("vi");
+        if (validVideoId(queryVideoId)) return makeEmbedUrl(queryVideoId, u);
+
+        // Shorts, live, embed, vecchi URL /v/ e /e/.
+        const supportedPrefixes = new Set(["embed", "shorts", "live", "v", "e"]);
+        if (supportedPrefixes.has(parts[0]) && validVideoId(parts[1])) {
+          return makeEmbedUrl(parts[1], u);
+        }
+
+        // Supporto prudenziale per /watch/VIDEO_ID.
+        if (parts[0] === "watch" && validVideoId(parts[1])) {
+          return makeEmbedUrl(parts[1], u);
+        }
+
+        // Link a una playlist senza un video specifico.
+        const playlistId = u.searchParams.get("list");
+        if (validPlaylistId(playlistId)) {
+          return `https://www.youtube-nocookie.com/embed/videoseries?list=${encodeURIComponent(playlistId)}`;
+        }
+      } catch (error) {
+        console.warn("Link YouTube non valido:", input, error);
+      }
+
       return null;
     }
 
