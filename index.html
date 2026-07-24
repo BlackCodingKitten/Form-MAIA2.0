@@ -281,7 +281,121 @@
   <script>
     const TOTAL_VIDEOS = 100;
     const ADMIN_CODE = "Michela";
-    const CONFIG_KEY = "video_form_config_v3";
+
+    /*
+      Inserisci gli URL dei video tra le virgolette, rispettando l'ordine.
+
+      Esempi:
+      "https://www.youtube.com/watch?v=CODICE_VIDEO"
+      "https://youtu.be/CODICE_VIDEO"
+      "https://esempio.it/video/video01.mp4"
+
+      Lascia "" quando un video non è ancora disponibile.
+    */
+    const VIDEO_URLS = [
+      "", // Video 1,
+      "", // Video 2,
+      "", // Video 3,
+      "", // Video 4,
+      "", // Video 5,
+      "", // Video 6,
+      "", // Video 7,
+      "", // Video 8,
+      "", // Video 9,
+      "", // Video 10,
+      "", // Video 11,
+      "", // Video 12,
+      "", // Video 13,
+      "", // Video 14,
+      "", // Video 15,
+      "", // Video 16,
+      "", // Video 17,
+      "", // Video 18,
+      "", // Video 19,
+      "", // Video 20,
+      "", // Video 21,
+      "", // Video 22,
+      "", // Video 23,
+      "", // Video 24,
+      "", // Video 25,
+      "", // Video 26,
+      "", // Video 27,
+      "", // Video 28,
+      "", // Video 29,
+      "", // Video 30,
+      "", // Video 31,
+      "", // Video 32,
+      "", // Video 33,
+      "", // Video 34,
+      "", // Video 35,
+      "", // Video 36,
+      "", // Video 37,
+      "", // Video 38,
+      "", // Video 39,
+      "", // Video 40,
+      "", // Video 41,
+      "", // Video 42,
+      "", // Video 43,
+      "", // Video 44,
+      "", // Video 45,
+      "", // Video 46,
+      "", // Video 47,
+      "", // Video 48,
+      "", // Video 49,
+      "", // Video 50,
+      "", // Video 51,
+      "", // Video 52,
+      "", // Video 53,
+      "", // Video 54,
+      "", // Video 55,
+      "", // Video 56,
+      "", // Video 57,
+      "", // Video 58,
+      "", // Video 59,
+      "", // Video 60,
+      "", // Video 61,
+      "", // Video 62,
+      "", // Video 63,
+      "", // Video 64,
+      "", // Video 65,
+      "", // Video 66,
+      "", // Video 67,
+      "", // Video 68,
+      "", // Video 69,
+      "", // Video 70,
+      "", // Video 71,
+      "", // Video 72,
+      "", // Video 73,
+      "", // Video 74,
+      "", // Video 75,
+      "", // Video 76,
+      "", // Video 77,
+      "", // Video 78,
+      "", // Video 79,
+      "", // Video 80,
+      "", // Video 81,
+      "", // Video 82,
+      "", // Video 83,
+      "", // Video 84,
+      "", // Video 85,
+      "", // Video 86,
+      "", // Video 87,
+      "", // Video 88,
+      "", // Video 89,
+      "", // Video 90,
+      "", // Video 91,
+      "", // Video 92,
+      "", // Video 93,
+      "", // Video 94,
+      "", // Video 95,
+      "", // Video 96,
+      "", // Video 97,
+      "", // Video 98,
+      "", // Video 99,
+      "", // Video 100
+    ];
+
+    const CONFIG_KEY = "video_form_config_v4";
     const USERS_KEY = "video_form_users_v3";
     const RESPONSES_PREFIX = "video_form_responses_v3_";
 
@@ -329,7 +443,7 @@
       return Array.from({ length: TOTAL_VIDEOS }, (_, i) => ({
         id: i + 1,
         title: `Video ${i + 1}`,
-        url: "",
+        url: VIDEO_URLS[i] || "",
         questions: [
           "Domanda spaziale",
           "Domanda temporale",
