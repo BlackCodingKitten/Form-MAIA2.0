@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modulo 100 video con accesso</title>
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #667085;
+      --border: #d0d5dd;
+      --accent: #2563eb;
+      --danger: #b42318;
+      --ok: #027a48;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .hidden { display: none !important; }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .login-shell {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .login-card, .topbar, .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 2px 10px rgba(16, 24, 40, .07);
+    }
+    .login-card {
+      width: min(460px, 100%);
+      padding: 26px;
+    }
+    .topbar {
+      padding: 18px;
+      margin-bottom: 18px;
+    }
+    .card { padding: 20px; }
+    .row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .space-between { justify-content: space-between; }
+    h1 { margin: 0 0 6px; font-size: 26px; }
+    h2 { margin: 0; font-size: 22px; }
+    p { line-height: 1.5; }
+    .muted { color: var(--muted); }
+    label {
+      display: block;
+      font-weight: 700;
+      margin: 14px 0 6px;
+    }
+    input, textarea, select {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 11px 12px;
+      font: inherit;
+      background: white;
+    }
+    textarea {
+      min-height: 115px;
+      resize: vertical;
+    }
+    button {
+      border: 0;
+      border-radius: 9px;
+      padding: 10px 14px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      background: #e5e7eb;
+      color: var(--text);
+    }
+    button.primary { background: var(--accent); color: white; }
+    button.danger { background: #fee4e2; color: var(--danger); }
+    button.success { background: #d1fadf; color: var(--ok); }
+    button:disabled { opacity: .45; cursor: not-allowed; }
+    .login-error {
+      color: var(--danger);
+      min-height: 20px;
+      margin-top: 10px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 9px;
+      border-radius: 999px;
+      background: #eef4ff;
+      color: #3538cd;
+    }
+    .badge.admin {
+      background: #ecfdf3;
+      color: #027a48;
+    }
+    .progress-shell {
+      height: 10px;
+      background: #e4e7ec;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-top: 12px;
+    }
+    .progress-bar {
+      height: 100%;
+      background: var(--accent);
+      width: 0%;
+      transition: width .2s ease;
+    }
+    .video-box {
+      margin-top: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #111827;
+      aspect-ratio: 16 / 9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .video-box iframe, .video-box video {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .placeholder {
+      color: white;
+      text-align: center;
+      padding: 24px;
+    }
+    .question {
+      border-top: 1px solid #eaecf0;
+      margin-top: 18px;
+      padding-top: 4px;
+    }
+    .nav {
+      margin-top: 18px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .notice {
+      border-left: 4px solid var(--accent);
+      background: #eff6ff;
+      padding: 12px 14px;
+      border-radius: 8px;
+      margin: 14px 0;
+    }
+    .status {
+      font-size: 13px;
+      color: var(--ok);
+      min-height: 18px;
+      margin-top: 8px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    @media (max-width: 700px) {
+      .container { padding: 12px; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .nav { flex-direction: column; }
+      .nav button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <section id="loginScreen" class="login-shell">
+    <div class="login-card">
+      <h1>Accesso al modulo</h1>
+      <p class="muted">Inserisci il tuo codice utente per visualizzare i video e compilare le risposte.</p>
+
+      <label for="loginCode">Codice utente</label>
+      <input id="loginCode" type="text" autocomplete="off" placeholder="Inserisci il codice" />
+
+      <button id="loginBtn" class="primary" style="width:100%; margin-top:16px;">Accedi</button>
+      <div id="loginError" class="login-error"></div>
+    </div>
+  </section>
+
+  <main id="app" class="container hidden">
+    <section class="topbar">
+      <div class="row space-between">
+        <div>
+          <h1>Modulo di annotazione video</h1>
+          <div class="muted">100 video · tre domande aperte per ciascun video</div>
+        </div>
+        <div class="row">
+          <span id="roleBadge" class="badge"></span>
+          <button id="logoutBtn">Cambia utente</button>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div>
+          <label for="videoSelector">Vai al video</label>
+          <select id="videoSelector"></select>
+        </div>
+
+        <div id="adminUserPanel" class="hidden">
+          <label for="exportUserSelector">Risposte da esportare</label>
+          <select id="exportUserSelector"></select>
+        </div>
+      </div>
+
+      <div class="progress-shell">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+      <div id="progressText" class="muted" style="margin-top:8px;"></div>
+
+      <div class="row" style="margin-top:14px;">
+        <button id="toggleModeBtn" class="hidden">Apri configurazione</button>
+        <button id="exportCsvBtn" class="success hidden">Esporta risposte CSV</button>
+      </div>
+      <div id="saveStatus" class="status"></div>
+    </section>
+
+    <section id="fillCard" class="card">
+      <div class="row space-between">
+        <h2 id="videoTitle">Video 1</h2>
+        <span id="videoCount" class="muted"></span>
+      </div>
+
+      <div id="videoBox" class="video-box"></div>
+      <div id="questionsContainer"></div>
+
+      <div class="nav">
+        <button id="prevBtn">← Video precedente</button>
+        <button id="nextBtn" class="primary">Video successivo →</button>
+      </div>
+    </section>
+
+    <section id="configCard" class="card hidden">
+      <h2>Configurazione del video</h2>
+      <div class="notice">
+        Questa sezione è disponibile soltanto all’utente amministratore.
+        Puoi modificare il titolo, l’indirizzo del video e le tre domande.
+      </div>
+
+      <label for="configTitle">Titolo del video</label>
+      <input id="configTitle" />
+
+      <label for="configUrl">URL del video</label>
+      <input id="configUrl" placeholder="YouTube, Vimeo oppure file .mp4/.webm" />
+
+      <label for="configQ1">Domanda spaziale</label>
+      <input id="configQ1" />
+
+      <label for="configQ2">Domanda temporale</label>
+      <input id="configQ2" />
+
+      <label for="configQ3">Domanda causale</label>
+      <input id="configQ3" />
+
+      <div class="nav">
+        <button id="configPrevBtn">← Video precedente</button>
+        <button id="configNextBtn" class="primary">Video successivo →</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const TOTAL_VIDEOS = 100;
+    const ADMIN_CODE = "Michela";
+    const CONFIG_KEY = "video_form_config_v3";
+    const USERS_KEY = "video_form_users_v3";
+    const RESPONSES_PREFIX = "video_form_responses_v3_";
+
+    let currentUser = "";
+    let isAdmin = false;
+    let currentIndex = 0;
+    let mode = "fill";
+    let config = loadConfig();
+    let responses = {};
+
+    const els = {
+      loginScreen: document.getElementById("loginScreen"),
+      loginCode: document.getElementById("loginCode"),
+      loginBtn: document.getElementById("loginBtn"),
+      loginError: document.getElementById("loginError"),
+      app: document.getElementById("app"),
+      roleBadge: document.getElementById("roleBadge"),
+      logoutBtn: document.getElementById("logoutBtn"),
+      videoSelector: document.getElementById("videoSelector"),
+      adminUserPanel: document.getElementById("adminUserPanel"),
+      exportUserSelector: document.getElementById("exportUserSelector"),
+      progressBar: document.getElementById("progressBar"),
+      progressText: document.getElementById("progressText"),
+      toggleModeBtn: document.getElementById("toggleModeBtn"),
+      exportCsvBtn: document.getElementById("exportCsvBtn"),
+      fillCard: document.getElementById("fillCard"),
+      configCard: document.getElementById("configCard"),
+      videoTitle: document.getElementById("videoTitle"),
+      videoCount: document.getElementById("videoCount"),
+      videoBox: document.getElementById("videoBox"),
+      questionsContainer: document.getElementById("questionsContainer"),
+      prevBtn: document.getElementById("prevBtn"),
+      nextBtn: document.getElementById("nextBtn"),
+      saveStatus: document.getElementById("saveStatus"),
+      configTitle: document.getElementById("configTitle"),
+      configUrl: document.getElementById("configUrl"),
+      configQ1: document.getElementById("configQ1"),
+      configQ2: document.getElementById("configQ2"),
+      configQ3: document.getElementById("configQ3"),
+      configPrevBtn: document.getElementById("configPrevBtn"),
+      configNextBtn: document.getElementById("configNextBtn")
+    };
+
+    function defaultConfig() {
+      return Array.from({ length: TOTAL_VIDEOS }, (_, i) => ({
+        id: i + 1,
+        title: `Video ${i + 1}`,
+        url: "",
+        questions: [
+          "Domanda spaziale",
+          "Domanda temporale",
+          "Domanda causale"
+        ]
+      }));
+    }
+
+    function loadConfig() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(CONFIG_KEY));
+        if (Array.isArray(saved) && saved.length === TOTAL_VIDEOS) return saved;
+      } catch (_) {}
+      return defaultConfig();
+    }
+
+    function responseKey(userCode) {
+      return RESPONSES_PREFIX + encodeURIComponent(userCode);
+    }
+
+    function loadResponses(userCode) {
+      try {
+        const saved = JSON.parse(localStorage.getItem(responseKey(userCode)));
+        if (saved && typeof saved === "object") return saved;
+      } catch (_) {}
+      return {};
+    }
+
+    function loadUsers() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(USERS_KEY));
+        if (Array.isArray(saved)) return saved;
+      } catch (_) {}
+      return [];
+    }
+
+    function registerUser(userCode) {
+      const users = loadUsers();
+      if (!users.includes(userCode)) {
+        users.push(userCode);
+        localStorage.setItem(USERS_KEY, JSON.stringify(users));
+      }
+    }
+
+    function getResponse(index, source = responses) {
+      const key = String(index + 1);
+      if (!source[key]) {
+        source[key] = { answers: ["", "", ""], updatedAt: null };
+      }
+      return source[key];
+    }
+
+    function saveResponses() {
+      localStorage.setItem(responseKey(currentUser), JSON.stringify(responses));
+      els.saveStatus.textContent = "Risposte salvate automaticamente.";
+      clearTimeout(window.__saveTimer);
+      window.__saveTimer = setTimeout(() => {
+        els.saveStatus.textContent = "";
+      }, 1500);
+      updateProgress();
+    }
+
+    function saveConfig() {
+      if (!isAdmin) return;
+      localStorage.setItem(CONFIG_KEY, JSON.stringify(config));
+      initVideoSelector();
+      els.videoSelector.value = currentIndex;
+      els.saveStatus.textContent = "Configurazione salvata automaticamente.";
+      clearTimeout(window.__saveTimer);
+      window.__saveTimer = setTimeout(() => {
+        els.saveStatus.textContent = "";
+      }, 1500);
+    }
+
+    function initVideoSelector() {
+      els.videoSelector.innerHTML = "";
+      config.forEach((item, index) => {
+        const option = document.createElement("option");
+        option.value = index;
+        option.textContent = `${index + 1}. ${item.title}`;
+        els.videoSelector.appendChild(option);
+      });
+    }
+
+    function initExportUserSelector() {
+      els.exportUserSelector.innerHTML = "";
+      const users = loadUsers().filter(user => user !== ADMIN_CODE);
+
+      if (users.length === 0) {
+        const option = document.createElement("option");
+        option.value = currentUser;
+        option.textContent = "Nessun compilatore registrato";
+        els.exportUserSelector.appendChild(option);
+        els.exportCsvBtn.disabled = true;
+        return;
+      }
+
+      users.forEach(user => {
+        const option = document.createElement("option");
+        option.value = user;
+        option.textContent = user;
+        els.exportUserSelector.appendChild(option);
+      });
+      els.exportCsvBtn.disabled = false;
+    }
+
+    function youtubeEmbed(url) {
+      try {
+        const u = new URL(url);
+        if (u.hostname.includes("youtu.be")) {
+          const id = u.pathname.replace("/", "");
+          return id ? `https://www.youtube.com/embed/${id}` : null;
+        }
+        if (u.hostname.includes("youtube.com")) {
+          const id = u.searchParams.get("v");
+          if (id) return `https://www.youtube.com/embed/${id}`;
+          const parts = u.pathname.split("/").filter(Boolean);
+          const embedIndex = parts.indexOf("embed");
+          if (embedIndex >= 0 && parts[embedIndex + 1]) {
+            return `https://www.youtube.com/embed/${parts[embedIndex + 1]}`;
+          }
+        }
+      } catch (_) {}
+      return null;
+    }
+
+    function vimeoEmbed(url) {
+      try {
+        const u = new URL(url);
+        if (!u.hostname.includes("vimeo.com")) return null;
+        const id = u.pathname.split("/").filter(Boolean).find(x => /^\d+$/.test(x));
+        return id ? `https://player.vimeo.com/video/${id}` : null;
+      } catch (_) {}
+      return null;
+    }
+
+    function renderVideo(url) {
+      els.videoBox.innerHTML = "";
+
+      if (!url) {
+        els.videoBox.innerHTML = '<div class="placeholder">Il video non è disponibile.</div>';
+        return;
+      }
+
+      const yt = youtubeEmbed(url);
+      const vm = vimeoEmbed(url);
+
+      if (yt || vm) {
+        const iframe = document.createElement("iframe");
+        iframe.src = yt || vm;
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+        iframe.allowFullscreen = true;
+        els.videoBox.appendChild(iframe);
+        return;
+      }
+
+      const video = document.createElement("video");
+      video.src = url;
+      video.controls = true;
+      video.preload = "metadata";
+      video.onerror = () => {
+        els.videoBox.innerHTML = '<div class="placeholder">Il video non può essere caricato.</div>';
+      };
+      els.videoBox.appendChild(video);
+    }
+
+    function renderQuestions() {
+      const item = config[currentIndex];
+      const response = getResponse(currentIndex);
+      els.questionsContainer.innerHTML = "";
+
+      item.questions.forEach((question, questionIndex) => {
+        const wrapper = document.createElement("div");
+        wrapper.className = "question";
+
+        const label = document.createElement("label");
+        label.setAttribute("for", `answer_${questionIndex}`);
+        label.textContent = question;
+
+        const textarea = document.createElement("textarea");
+        textarea.id = `answer_${questionIndex}`;
+        textarea.placeholder = "Inserisci qui la risposta...";
+        textarea.value = response.answers[questionIndex] || "";
+        textarea.addEventListener("input", () => {
+          response.answers[questionIndex] = textarea.value;
+          response.updatedAt = new Date().toISOString();
+          saveResponses();
+        });
+
+        wrapper.appendChild(label);
+        wrapper.appendChild(textarea);
+        els.questionsContainer.appendChild(wrapper);
+      });
+    }
+
+    function completedVideos() {
+      return config.reduce((count, _, index) => {
+        const answerSet = getResponse(index).answers || [];
+        return count + (answerSet.every(answer => String(answer).trim().length > 0) ? 1 : 0);
+      }, 0);
+    }
+
+    function updateProgress() {
+      const completed = completedVideos();
+      const percentage = (completed / TOTAL_VIDEOS) * 100;
+      els.progressBar.style.width = `${percentage}%`;
+      els.progressText.textContent = `${completed} video completati su ${TOTAL_VIDEOS} · ${Math.round(percentage)}%`;
+    }
+
+    function renderConfig() {
+      const item = config[currentIndex];
+      els.configTitle.value = item.title;
+      els.configUrl.value = item.url;
+      els.configQ1.value = item.questions[0];
+      els.configQ2.value = item.questions[1];
+      els.configQ3.value = item.questions[2];
+      els.configPrevBtn.disabled = currentIndex === 0;
+      els.configNextBtn.disabled = currentIndex === TOTAL_VIDEOS - 1;
+    }
+
+    function render() {
+      const item = config[currentIndex];
+      els.videoSelector.value = currentIndex;
+
+      if (mode === "fill") {
+        els.videoTitle.textContent = item.title;
+        els.videoCount.textContent = `Video ${currentIndex + 1} di ${TOTAL_VIDEOS}`;
+        renderVideo(item.url);
+        renderQuestions();
+        els.prevBtn.disabled = currentIndex === 0;
+        els.nextBtn.disabled = currentIndex === TOTAL_VIDEOS - 1;
+      } else {
+        renderConfig();
+      }
+
+      updateProgress();
+    }
+
+    function goTo(index) {
+      currentIndex = Math.max(0, Math.min(TOTAL_VIDEOS - 1, index));
+      render();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function setMode(nextMode) {
+      if (!isAdmin && nextMode === "config") return;
+      mode = nextMode;
+      const isFill = mode === "fill";
+      els.fillCard.classList.toggle("hidden", !isFill);
+      els.configCard.classList.toggle("hidden", isFill);
+      els.toggleModeBtn.textContent = isFill ? "Apri configurazione" : "Torna alla compilazione";
+      render();
+    }
+
+    function login() {
+      const code = els.loginCode.value.trim();
+
+      if (!code) {
+        els.loginError.textContent = "Inserisci un codice utente.";
+        return;
+      }
+
+      currentUser = code;
+      isAdmin = currentUser === ADMIN_CODE;
+      registerUser(currentUser);
+      responses = loadResponses(currentUser);
+      currentIndex = 0;
+      mode = "fill";
+
+      els.loginError.textContent = "";
+      els.loginScreen.classList.add("hidden");
+      els.app.classList.remove("hidden");
+
+      els.roleBadge.textContent = isAdmin
+        ? `Amministratore: ${currentUser}`
+        : `Utente: ${currentUser}`;
+      els.roleBadge.classList.toggle("admin", isAdmin);
+
+      els.toggleModeBtn.classList.toggle("hidden", !isAdmin);
+      els.exportCsvBtn.classList.toggle("hidden", !isAdmin);
+      els.adminUserPanel.classList.toggle("hidden", !isAdmin);
+
+      initVideoSelector();
+      if (isAdmin) initExportUserSelector();
+      setMode("fill");
+    }
+
+    function logout() {
+      currentUser = "";
+      isAdmin = false;
+      responses = {};
+      currentIndex = 0;
+      mode = "fill";
+      els.loginCode.value = "";
+      els.app.classList.add("hidden");
+      els.loginScreen.classList.remove("hidden");
+      els.loginCode.focus();
+    }
+
+    function csvEscape(value) {
+      const text = String(value ?? "");
+      return `"${text.replaceAll('"', '""')}"`;
+    }
+
+    function download(filename, text, type) {
+      const blob = new Blob([text], { type });
+      const url = URL.createObjectURL(blob);
+      const anchor = document.createElement("a");
+      anchor.href = url;
+      anchor.download = filename;
+      document.body.appendChild(anchor);
+      anchor.click();
+      anchor.remove();
+      URL.revokeObjectURL(url);
+    }
+
+    function exportResponsesCsv() {
+      if (!isAdmin) return;
+
+      const selectedUser = els.exportUserSelector.value;
+      const selectedResponses = loadResponses(selectedUser);
+      const macroareas = ["spaziale", "temporale", "causale"];
+
+      const rows = [[
+        "titolo_video",
+        "macroarea",
+        "risposta"
+      ]];
+
+      config.forEach((item, videoIndex) => {
+        const response = getResponse(videoIndex, selectedResponses);
+
+        item.questions.forEach((_, questionIndex) => {
+          rows.push([
+            item.title,
+            macroareas[questionIndex],
+            response.answers[questionIndex] || ""
+          ]);
+        });
+      });
+
+      const csv = "\uFEFF" + rows
+        .map(row => row.map(csvEscape).join(";"))
+        .join("\n");
+
+      download(`risposte_${selectedUser}.csv`, csv, "text/csv;charset=utf-8");
+    }
+
+    els.loginBtn.addEventListener("click", login);
+    els.loginCode.addEventListener("keydown", event => {
+      if (event.key === "Enter") login();
+    });
+
+    els.logoutBtn.addEventListener("click", logout);
+    els.videoSelector.addEventListener("change", event => {
+      goTo(Number(event.target.value));
+    });
+
+    els.prevBtn.addEventListener("click", () => goTo(currentIndex - 1));
+    els.nextBtn.addEventListener("click", () => goTo(currentIndex + 1));
+    els.configPrevBtn.addEventListener("click", () => goTo(currentIndex - 1));
+    els.configNextBtn.addEventListener("click", () => goTo(currentIndex + 1));
+
+    els.toggleModeBtn.addEventListener("click", () => {
+      setMode(mode === "fill" ? "config" : "fill");
+    });
+
+    [
+      els.configTitle,
+      els.configUrl,
+      els.configQ1,
+      els.configQ2,
+      els.configQ3
+    ].forEach(input => {
+      input.addEventListener("input", () => {
+        if (!isAdmin) return;
+
+        const item = config[currentIndex];
+        item.title = els.configTitle.value;
+        item.url = els.configUrl.value;
+        item.questions = [
+          els.configQ1.value,
+          els.configQ2.value,
+          els.configQ3.value
+        ];
+        saveConfig();
+      });
+    });
+
+    els.exportCsvBtn.addEventListener("click", exportResponsesCsv);
+    els.loginCode.focus();
+  </script>
+</body>
+</html>
