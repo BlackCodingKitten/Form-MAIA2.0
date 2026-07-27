@@ -280,7 +280,8 @@
       <div id="configStatus" class="status" role="status" aria-live="polite"></div>
       <p class="muted" style="font-size:13px; margin-bottom:0;">
         Il salvataggio automatico conserva le modifiche in questo browser. Per renderle disponibili
-        a tutti, scarica l’HTML aggiornato e sostituisci il file pubblicato su GitHub.
+        a tutti, scarica l’HTML aggiornato e sostituisci il file pubblicato su GitHub. Quando pubblichi
+        una nuova configurazione, questa avrà priorità sulle vecchie modifiche locali.
       </p>
 
       <div class="nav">
@@ -925,7 +926,7 @@
       ] // Video 100
     ];
 
-    const CONFIG_KEY = "video_form_config_v8";
+    const CONFIG_KEY = "video_form_config_v9";
     const USERS_KEY = "video_form_users_v3";
     const RESPONSES_PREFIX = "video_form_responses_v5_";
     const SUBMISSION_PREFIX = "video_form_submission_v5_";
@@ -1027,15 +1028,50 @@
       }
     }
 
+    function configSignature(candidate) {
+      const normalized = normalizeConfig(candidate);
+      if (!normalized) return "";
+
+      const serialized = JSON.stringify(normalized);
+      let hash = 2166136261;
+
+      for (let index = 0; index < serialized.length; index++) {
+        hash ^= serialized.charCodeAt(index);
+        hash = Math.imul(hash, 16777619);
+      }
+
+      return `cfg-${(hash >>> 0).toString(16)}-${serialized.length}`;
+    }
+
+    function getPublishedConfig() {
+      return loadEmbeddedConfig() || defaultConfig();
+    }
+
     function loadConfig() {
+      const publishedConfig = getPublishedConfig();
+      const publishedSignature = configSignature(publishedConfig);
+
       try {
-        const saved = normalizeConfig(JSON.parse(localStorage.getItem(CONFIG_KEY)));
-        if (saved) return saved;
+        const storedValue = JSON.parse(localStorage.getItem(CONFIG_KEY));
+        const savedConfig = normalizeConfig(storedValue?.config);
+
+        /*
+          Le modifiche locali vengono riutilizzate soltanto se derivano
+          dalla stessa versione delle domande attualmente pubblicata.
+          Quando VIDEO_QUESTIONS o embeddedConfig cambiano su GitHub,
+          la firma cambia e la vecchia configurazione locale viene ignorata.
+        */
+        if (
+          savedConfig &&
+          storedValue?.baseSignature === publishedSignature
+        ) {
+          return savedConfig;
+        }
       } catch (error) {
         console.warn("Configurazione locale non valida:", error);
       }
 
-      return loadEmbeddedConfig() || defaultConfig();
+      return publishedConfig;
     }
 
     function responseKey(userCode) {
@@ -1146,7 +1182,14 @@
       if (!isAdmin) return false;
 
       try {
-        localStorage.setItem(CONFIG_KEY, JSON.stringify(config));
+        const publishedSignature = configSignature(getPublishedConfig());
+        const storedValue = {
+          baseSignature: publishedSignature,
+          savedAt: new Date().toISOString(),
+          config
+        };
+
+        localStorage.setItem(CONFIG_KEY, JSON.stringify(storedValue));
         initVideoSelector();
         els.videoSelector.value = currentIndex;
 
