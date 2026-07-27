@@ -274,14 +274,13 @@
       <textarea id="configQ3" rows="3"></textarea>
 
       <div class="row" style="margin-top:18px;">
-        <button id="saveConfigBtn" class="primary">Salva modifiche</button>
+        <button id="saveConfigBtn" class="primary">Applica modifiche</button>
         <button id="downloadConfiguredHtmlBtn" class="success">Scarica HTML aggiornato</button>
       </div>
       <div id="configStatus" class="status" role="status" aria-live="polite"></div>
       <p class="muted" style="font-size:13px; margin-bottom:0;">
-        Il salvataggio automatico conserva le modifiche in questo browser. Per renderle disponibili
-        a tutti, scarica l’HTML aggiornato e sostituisci il file pubblicato su GitHub. Quando pubblichi
-        una nuova configurazione, questa avrà priorità sulle vecchie modifiche locali.
+        Le modifiche a titoli, URL e domande non vengono salvate nel browser.
+        Per renderle definitive devi scaricare l’HTML aggiornato e sostituire il file pubblicato su GitHub.
       </p>
 
       <div class="nav">
@@ -926,10 +925,17 @@
       ] // Video 100
     ];
 
-    const CONFIG_KEY = "video_form_config_v9";
-    const USERS_KEY = "video_form_users_v3";
-    const RESPONSES_PREFIX = "video_form_responses_v5_";
-    const SUBMISSION_PREFIX = "video_form_submission_v5_";
+    /*
+      DATI TEMPORANEI DI SESSIONE
+
+      sessionStorage mantiene le risposte soltanto nella scheda corrente:
+      - restano disponibili dopo un aggiornamento della pagina;
+      - vengono eliminate quando la scheda viene chiusa;
+      - non modificano mai domande, titoli o URL pubblicati nell'HTML.
+    */
+    const USERS_KEY = "maia2_session_users_v1";
+    const RESPONSES_PREFIX = "maia2_session_responses_v1_";
+    const SUBMISSION_PREFIX = "maia2_session_submission_v1_";
 
     /*
       Dopo aver pubblicato Code.gs come applicazione web, sostituisci
@@ -1028,50 +1034,14 @@
       }
     }
 
-    function configSignature(candidate) {
-      const normalized = normalizeConfig(candidate);
-      if (!normalized) return "";
-
-      const serialized = JSON.stringify(normalized);
-      let hash = 2166136261;
-
-      for (let index = 0; index < serialized.length; index++) {
-        hash ^= serialized.charCodeAt(index);
-        hash = Math.imul(hash, 16777619);
-      }
-
-      return `cfg-${(hash >>> 0).toString(16)}-${serialized.length}`;
-    }
-
-    function getPublishedConfig() {
-      return loadEmbeddedConfig() || defaultConfig();
-    }
-
     function loadConfig() {
-      const publishedConfig = getPublishedConfig();
-      const publishedSignature = configSignature(publishedConfig);
-
-      try {
-        const storedValue = JSON.parse(localStorage.getItem(CONFIG_KEY));
-        const savedConfig = normalizeConfig(storedValue?.config);
-
-        /*
-          Le modifiche locali vengono riutilizzate soltanto se derivano
-          dalla stessa versione delle domande attualmente pubblicata.
-          Quando VIDEO_QUESTIONS o embeddedConfig cambiano su GitHub,
-          la firma cambia e la vecchia configurazione locale viene ignorata.
-        */
-        if (
-          savedConfig &&
-          storedValue?.baseSignature === publishedSignature
-        ) {
-          return savedConfig;
-        }
-      } catch (error) {
-        console.warn("Configurazione locale non valida:", error);
-      }
-
-      return publishedConfig;
+      /*
+        Nessuna configurazione viene letta dal browser.
+        Titoli, URL e domande provengono esclusivamente dall'HTML pubblicato
+        oppure dalla configurazione incorporata nell'HTML scaricato
+        dall'amministratore.
+      */
+      return loadEmbeddedConfig() || defaultConfig();
     }
 
     function responseKey(userCode) {
@@ -1094,7 +1064,7 @@
     }
 
     function getSavedSubmissionSignature() {
-      return localStorage.getItem(submissionKey(currentUser)) || "";
+      return sessionStorage.getItem(submissionKey(currentUser)) || "";
     }
 
     function isSubmissionEndpointConfigured() {
@@ -1129,7 +1099,7 @@
 
     function loadResponses(userCode) {
       try {
-        const saved = JSON.parse(localStorage.getItem(responseKey(userCode)));
+        const saved = JSON.parse(sessionStorage.getItem(responseKey(userCode)));
         if (saved && typeof saved === "object") return saved;
       } catch (_) {}
       return {};
@@ -1137,7 +1107,7 @@
 
     function loadUsers() {
       try {
-        const saved = JSON.parse(localStorage.getItem(USERS_KEY));
+        const saved = JSON.parse(sessionStorage.getItem(USERS_KEY));
         if (Array.isArray(saved)) return saved;
       } catch (_) {}
       return [];
@@ -1147,7 +1117,7 @@
       const users = loadUsers();
       if (!users.includes(userCode)) {
         users.push(userCode);
-        localStorage.setItem(USERS_KEY, JSON.stringify(users));
+        sessionStorage.setItem(USERS_KEY, JSON.stringify(users));
       }
     }
 
@@ -1160,8 +1130,9 @@
     }
 
     function saveResponses() {
-      localStorage.setItem(responseKey(currentUser), JSON.stringify(responses));
-      els.saveStatus.textContent = "Risposte salvate automaticamente.";
+      sessionStorage.setItem(responseKey(currentUser), JSON.stringify(responses));
+      els.saveStatus.textContent =
+        "Risposte salvate temporaneamente nella scheda corrente.";
       clearTimeout(window.__saveTimer);
       window.__saveTimer = setTimeout(() => {
         els.saveStatus.textContent = "";
@@ -1181,27 +1152,20 @@
     function saveConfig({ showMessage = true } = {}) {
       if (!isAdmin) return false;
 
-      try {
-        const publishedSignature = configSignature(getPublishedConfig());
-        const storedValue = {
-          baseSignature: publishedSignature,
-          savedAt: new Date().toISOString(),
-          config
-        };
+      /*
+        Le modifiche vengono applicate soltanto all'oggetto in memoria
+        della pagina corrente. Non vengono scritte in nessun archivio persistente del browser.
+      */
+      initVideoSelector();
+      els.videoSelector.value = currentIndex;
 
-        localStorage.setItem(CONFIG_KEY, JSON.stringify(storedValue));
-        initVideoSelector();
-        els.videoSelector.value = currentIndex;
-
-        if (showMessage) {
-          showConfigStatus("Titolo, URL e domande salvati in questo browser.");
-        }
-        return true;
-      } catch (error) {
-        console.error("Impossibile salvare la configurazione:", error);
-        showConfigStatus("Salvataggio non riuscito: il browser ha rifiutato i dati.", true);
-        return false;
+      if (showMessage) {
+        showConfigStatus(
+          "Modifiche applicate solo alla pagina corrente. Scarica l’HTML aggiornato per renderle permanenti."
+        );
       }
+
+      return true;
     }
 
     function commitCurrentConfig({ showMessage = true } = {}) {
@@ -1635,7 +1599,7 @@
       clearPendingSubmission();
 
       if (data.ok) {
-        localStorage.setItem(submissionKey(currentUser), signature);
+        sessionStorage.setItem(submissionKey(currentUser), signature);
         els.submitAnswersBtn.disabled = true;
         els.submitAnswersBtn.textContent = "Risposte inviate";
         els.submitStatus.textContent =
@@ -1896,16 +1860,16 @@
       els.configQ3
     ];
 
-    function scheduleConfigAutosave() {
+    function scheduleConfigApply() {
       if (!isAdmin || mode !== "config") return;
-      clearTimeout(window.__configAutosaveTimer);
-      window.__configAutosaveTimer = setTimeout(() => {
+      clearTimeout(window.__configApplyTimer);
+      window.__configApplyTimer = setTimeout(() => {
         commitCurrentConfig({ showMessage: true });
       }, 350);
     }
 
     configInputs.forEach(input => {
-      input.addEventListener("input", scheduleConfigAutosave);
+      input.addEventListener("input", scheduleConfigApply);
       input.addEventListener("change", () => commitCurrentConfig({ showMessage: true }));
       input.addEventListener("blur", () => commitCurrentConfig({ showMessage: false }));
     });
