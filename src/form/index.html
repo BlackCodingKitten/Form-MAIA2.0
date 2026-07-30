@@ -926,12 +926,16 @@
     ];
 
     /*
-      DATI TEMPORANEI DI SESSIONE
+      DATI PERSISTENTI NEL BROWSER
 
-      sessionStorage mantiene le risposte soltanto nella scheda corrente:
-      - restano disponibili dopo un aggiornamento della pagina;
-      - vengono eliminate quando la scheda viene chiusa;
-      - non modificano mai domande, titoli o URL pubblicati nell'HTML.
+      localStorage mantiene utenti, risposte e stato dell'ultimo invio:
+      - restano disponibili dopo aggiornamenti, chiusura della scheda e riavvio del browser;
+      - sono separati per codice utente;
+      - rimangono soltanto su questo browser, dispositivo e sito;
+      - possono essere rimossi cancellando i dati del sito o usando la navigazione privata.
+
+      Le funzioni di lettura sottostanti migrano automaticamente eventuali dati
+      già presenti nel precedente sessionStorage.
     */
     const USERS_KEY = "maia2_session_users_v1";
     const RESPONSES_PREFIX = "maia2_session_responses_v1_";
@@ -1052,6 +1056,50 @@
       return SUBMISSION_PREFIX + encodeURIComponent(userCode);
     }
 
+    function readBrowserStorage(key) {
+      try {
+        const persistentValue = localStorage.getItem(key);
+        if (persistentValue !== null) return persistentValue;
+      } catch (error) {
+        console.warn("localStorage non disponibile in lettura:", error);
+      }
+
+      // Migrazione trasparente dei dati creati dalla precedente versione.
+      try {
+        const sessionValue = sessionStorage.getItem(key);
+        if (sessionValue !== null) {
+          try {
+            localStorage.setItem(key, sessionValue);
+            sessionStorage.removeItem(key);
+          } catch (error) {
+            console.warn("Impossibile migrare il dato in localStorage:", error);
+          }
+          return sessionValue;
+        }
+      } catch (error) {
+        console.warn("sessionStorage non disponibile in lettura:", error);
+      }
+
+      return null;
+    }
+
+    function writeBrowserStorage(key, value) {
+      try {
+        localStorage.setItem(key, value);
+        return true;
+      } catch (error) {
+        console.warn("localStorage non disponibile in scrittura:", error);
+
+        // Ripiego temporaneo: evita di perdere subito il lavoro nella scheda corrente.
+        try {
+          sessionStorage.setItem(key, value);
+        } catch (sessionError) {
+          console.error("Impossibile salvare le risposte nel browser:", sessionError);
+        }
+        return false;
+      }
+    }
+
     function getCurrentSubmissionSignature() {
       const normalized = config.map((item, videoIndex) => {
         const current = getResponse(videoIndex);
@@ -1064,7 +1112,7 @@
     }
 
     function getSavedSubmissionSignature() {
-      return sessionStorage.getItem(submissionKey(currentUser)) || "";
+      return readBrowserStorage(submissionKey(currentUser)) || "";
     }
 
     function isSubmissionEndpointConfigured() {
@@ -1099,17 +1147,23 @@
 
     function loadResponses(userCode) {
       try {
-        const saved = JSON.parse(sessionStorage.getItem(responseKey(userCode)));
+        const raw = readBrowserStorage(responseKey(userCode));
+        const saved = raw ? JSON.parse(raw) : null;
         if (saved && typeof saved === "object") return saved;
-      } catch (_) {}
+      } catch (error) {
+        console.warn("Risposte salvate non valide:", error);
+      }
       return {};
     }
 
     function loadUsers() {
       try {
-        const saved = JSON.parse(sessionStorage.getItem(USERS_KEY));
+        const raw = readBrowserStorage(USERS_KEY);
+        const saved = raw ? JSON.parse(raw) : null;
         if (Array.isArray(saved)) return saved;
-      } catch (_) {}
+      } catch (error) {
+        console.warn("Elenco utenti salvato non valido:", error);
+      }
       return [];
     }
 
@@ -1117,7 +1171,7 @@
       const users = loadUsers();
       if (!users.includes(userCode)) {
         users.push(userCode);
-        sessionStorage.setItem(USERS_KEY, JSON.stringify(users));
+        writeBrowserStorage(USERS_KEY, JSON.stringify(users));
       }
     }
 
@@ -1130,13 +1184,21 @@
     }
 
     function saveResponses() {
-      sessionStorage.setItem(responseKey(currentUser), JSON.stringify(responses));
-      els.saveStatus.textContent =
-        "Risposte salvate temporaneamente nella scheda corrente.";
+      const savedPersistently = writeBrowserStorage(
+        responseKey(currentUser),
+        JSON.stringify(responses)
+      );
+
+      els.saveStatus.style.color = savedPersistently ? "var(--ok)" : "var(--danger)";
+      els.saveStatus.textContent = savedPersistently
+        ? "Risposte salvate automaticamente nel browser."
+        : "Salvataggio permanente non disponibile: dati conservati solo nella scheda corrente.";
+
       clearTimeout(window.__saveTimer);
       window.__saveTimer = setTimeout(() => {
         els.saveStatus.textContent = "";
-      }, 1500);
+        els.saveStatus.style.color = "";
+      }, savedPersistently ? 1800 : 5000);
       updateProgress();
     }
 
@@ -1531,8 +1593,15 @@
       return completedVideos() === TOTAL_VIDEOS;
     }
 
+    function hasAnyAnswer() {
+      return config.some((_, videoIndex) => {
+        const answerSet = getResponse(videoIndex).answers || [];
+        return answerSet.some(answer => String(answer || "").trim().length > 0);
+      });
+    }
+
     function updateSubmitButton() {
-      if (!currentUser || isAdmin) {
+      if (!currentUser) {
         els.submitAnswersBtn.classList.add("hidden");
         return;
       }
@@ -1547,7 +1616,17 @@
         return;
       }
 
-      if (!allAnswersCompleted()) {
+      // Gli utenti amministratori Michela e Davide possono inviare anche una
+      // compilazione parziale. Gli altri utenti devono completare tutti i video.
+      if (isAdmin && !hasAnyAnswer()) {
+        els.submitAnswersBtn.disabled = true;
+        els.submitAnswersBtn.textContent = "Inserisci almeno una risposta";
+        els.submitStatus.textContent =
+          "Come amministratore puoi inviare anche risposte parziali, dopo aver compilato almeno un campo.";
+        return;
+      }
+
+      if (!isAdmin && !allAnswersCompleted()) {
         els.submitAnswersBtn.disabled = true;
         els.submitAnswersBtn.textContent = "Completa tutte le risposte";
         els.submitStatus.textContent =
@@ -1567,9 +1646,12 @@
       }
 
       els.submitAnswersBtn.disabled = false;
-      els.submitAnswersBtn.textContent = "Invia le risposte";
-      els.submitStatus.textContent =
-        "Tutte le risposte sono complete. Premi il pulsante per inviarle definitivamente.";
+      els.submitAnswersBtn.textContent = isAdmin
+        ? "Invia le risposte (anche parziali)"
+        : "Invia le risposte";
+      els.submitStatus.textContent = isAdmin
+        ? "Puoi inviare le risposte già compilate anche senza completare tutti i 100 video."
+        : "Tutte le risposte sono complete. Premi il pulsante per inviarle definitivamente.";
     }
 
     let pendingSubmission = null;
@@ -1599,7 +1681,7 @@
       clearPendingSubmission();
 
       if (data.ok) {
-        sessionStorage.setItem(submissionKey(currentUser), signature);
+        writeBrowserStorage(submissionKey(currentUser), signature);
         els.submitAnswersBtn.disabled = true;
         els.submitAnswersBtn.textContent = "Risposte inviate";
         els.submitStatus.textContent =
@@ -1613,7 +1695,9 @@
     }
 
     function submitAnswers() {
-      if (isAdmin || !allAnswersCompleted() || els.submitAnswersBtn.disabled) return;
+      if (els.submitAnswersBtn.disabled) return;
+      if (isAdmin && !hasAnyAnswer()) return;
+      if (!isAdmin && !allAnswersCompleted()) return;
 
       if (!isSubmissionEndpointConfigured()) {
         alert("L’URL di Google Apps Script non è stato ancora configurato.");
@@ -1621,7 +1705,9 @@
       }
 
       const confirmed = confirm(
-        "Vuoi inviare definitivamente tutte le risposte? Verrà spedito un file CSV all’indirizzo configurato."
+        isAdmin
+          ? "Vuoi inviare le risposte attualmente compilate, anche se parziali? Verrà spedito un file CSV all’indirizzo configurato."
+          : "Vuoi inviare definitivamente tutte le risposte? Verrà spedito un file CSV all’indirizzo configurato."
       );
       if (!confirmed) return;
 
@@ -1763,7 +1849,7 @@
       els.toggleModeBtn.classList.toggle("hidden", !isAdmin);
       els.exportCsvBtn.classList.toggle("hidden", !isAdmin);
       els.adminUserPanel.classList.toggle("hidden", !isAdmin);
-      els.submitAnswersBtn.classList.toggle("hidden", isAdmin);
+      els.submitAnswersBtn.classList.remove("hidden");
       els.submitStatus.textContent = "";
 
       initVideoSelector();
