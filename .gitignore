@@ -1,0 +1,13 @@
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fls
+*.log 
+*.xml
+*.gz
+*.toc
+*.bcf-SAVE-ERROR
+*.fbd_latexmk
+.dist
+.venv

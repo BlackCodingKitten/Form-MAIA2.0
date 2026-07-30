@@ -1,0 +1,41 @@
+\chapter*{Introduction}
+\label{ch:intro}
+
+% Introduzione generale: Presenta il tema, il problema di ricerca e gli obiettivi del lavoro.
+The rapid evolution of Vision-Language Models raises the need to determine whether their strong performance reflects genuine multimodal understanding 
+or the exploitation of superficial correlations and linguistic biases. In this contex \textit{MAIA: Multimodal AI Assessment} by Testa et al.(2025)\cite{testa2025maia} was introduced as a native Italian 
+benchmark for evaluating video-based reasoning in Vision-Language Models.
+Testa et al. investigate the extent to which VLMs coherently integrate visual and linguistic information. More specifically, it assesses whether model predictions 
+are grounded in visual evidence rather than primarily driven by distributional regularities learned by the language component. This distinction is crucial because 
+a model may answer a question correctly while failing to recognise the same information consistently when it is presented in a discriminative format. In such cases,
+the prediction may result from \underline{linguistic plausibility} rather than genuine visual understanding.
+To address this issue, MAIA employs two aligned tasks: Visual Statement Verification and Open-Ended Visual Question Answering. 
+Through these tasks, Testa et al. evaluate not only models accuracy, but also the robustness and consistency of models behaviour across different evaluation formats.
+The benchmark further defines twelve fine-grained reasoning categories to identify which competencies are used by the models and in which areas linguistic shortcuts, 
+unimodal collapse, or hallucinations emerge.
+A limitation of the original framework is that the dataset was designed and evaluated primarily on the basis of visual information. 
+Real-world videos, however, are inherently audiovisual: relevant meaning may also be conveyed through dialogue, environmental sounds, 
+music, and other acoustic events. Recent multimodal and omnimodal architectures can process visual, auditory, and textual inputs, but the availability of 
+multiple modalities does not guarantee that they will be integrated effectively. Models may over-rely on a single channel or be negatively affected by redundant 
+or weakly relevant information.
+Starting from this problem, the study Deodati,Kaif et al.(2026): "\textit{Lost in Transcription: Investigating the Role of Audio Information for Video-based Visual
+Statement Verification}" extends the original MAIA research framework to a more complex analysis of the interaction between visual, linguistic, 
+and auditory information, while preserving its competence-oriented perspective.
+The study considers two complementary representations of audio: raw signal and automatic transcriptions provided as textual input. 
+By evaluating these representations both independently and in combination with video information, the analysis investigates whether audio contributes 
+meaningfully to task performance and whether one representation has a stronger influence on model predictions.
+This leads to two research questions:
+
+\textbf{RQ1}: \textit{To what extent does raw audio affect video-based Visual Statement Verification when it is jointly processed with visual and textual information?}
+
+\textbf{RQ2}: \textit{How effectively do multimodal models integrate visual, textual, and auditory information when performing video-based reasoning and understanding tasks?}
+
+The experiments show that raw audio has a limited and strongly context-dependent effect. It is most useful when visual information is unavailable, whereas, when added to an already
+informative visual input, it may provide little benefit or introduce noise. The results also show that transcriptions can produce greater interference than raw audio, suggesting 
+that multimodal architectures do not necessarily achieve more effective cross-modal understanding simply because additional modalities are available.
+These findings must nevertheless be interpreted in relation to the nature of the dataset. The one hundred original MAIA videos were selected and annotated according to their 
+visual content, and the questions were formulated without considering the audio track. Consequently, the benchmark does not systematically require auditory information to solve its items.
+My thesis project begins from this limitation. The following chapters investigate whether models can integrate multiple input modalities more coherently when the dataset 
+is specifically designed so that auditory information is at least partially relevant. The central hypothesis is that, under these conditions, models may use complementary 
+signals across modalities to reconstruct missing information and develop a more genuinely multimodal understanding of video content, producing answers grounded in the available 
+evidence rather than in linguistic plausibility or chance.
