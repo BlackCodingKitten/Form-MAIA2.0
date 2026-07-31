@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1785236898.14499 "main.bcf" "main.bbl" "main" 1785236907.85842 0
-  "bibliography.bib" 1785236770 473 672cb3b539858db88aa97873c0b27505 ""
-  "main.bcf" 1785236907 108621 e1af57ebbfc70e466962b9ca996a0447 "pdflatex"
+["biber main"] 1785501357.70845 "main.bcf" "main.bbl" "main" 1785502436.5122 0
+  "bibliography.bib" 1785484083 10894 007a5546bde187d5ed0bec62f57af022 ""
+  "main.bcf" 1785502436 109920 70e1ba1e242b75888c6a3f938296b9c1 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1785236904.50289 "c:/Users/USER/Desktop/Uni/Tirocinio/Tesi/latex/main.tex" "main.pdf" "main" 1785236907.86071 0
-  "c:/Users/USER/Desktop/Uni/Tirocinio/Tesi/latex/main.tex" 1785236683 7515 a6baa3643a956094607dee0fa53e14a4 ""
+["pdflatex"] 1785502433.28287 "c:/Users/USER/Desktop/Uni/Tesi/MAIA-AV/latex/main.tex" "main.pdf" "main" 1785502436.51377 0
+  "c:/Users/USER/Desktop/Uni/Tesi/MAIA-AV/latex/main.tex" 1785484246 7526 90554abce5691aa96609611f29644a6e ""
   "c:/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc" 1779190698 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1779191140 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1779195044 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -23,6 +23,8 @@
   "c:/texlive/2026/texmf-dist/fonts/tfm/adobe/times/zptmcm7v.tfm" 1779195044 1032 20febbd0f0c9a48eb78616f897008286 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/adobe/times/zptmcm7y.tfm" 1779195044 1520 ad7b3c1a480a03b3e41b5fbb13d938f2 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1779190084 1288 655e228510b4c2a1abe905c368440826 ""
+  "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm" 1779190084 772 9a936b7f5e2ff0557fce0f62822f0bbf ""
+  "c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb" 1779183994 24252 1e4e051947e12dfb50fee0b7f4e26e3a ""
   "c:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1779195044 44729 fea0975e20ec51c992338362f05f1146 ""
   "c:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmr8a.pfb" 1779195044 46026 687528a208fbfc1f00832bb96cccebbb ""
   "c:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmri8a.pfb" 1779195044 45458 504e2b06fa82109d168c7a0afb09e145 ""
@@ -102,19 +104,19 @@
   "c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1779195979 5619402 ad1310ccf7f36101ef3e8f014a173c46 ""
   "c:/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1779196292 3651065 04d97a6af36b4ade2f3eac635b71192c ""
   "c:/texlive/2026/texmf.cnf" 1779195939 713 e69b156964470283e0530f5060668171 ""
-  "chapter/Introduzione.tex" 1785236782 4910 31fd59b04d74ee79623da42ae0aa3866 ""
-  "chapter/Primo.tex" 1785172286 213 7d9560278698976e22c3f2a78852100e ""
+  "chapter/Introduzione.tex" 1785484064 4950 ef7b485148f034291aaa8af7c4a260f2 ""
+  "chapter/Primo.tex" 1785502423 9058 2ecb3e4538780e0aa58a45ba48a01414 ""
   "chapter/Quarto.tex" 1785172392 37 666040437a0a836b5a1505301a89e8d2 ""
   "chapter/Quinto.tex" 1785052820 61 d570db7e751cfa58ce9df26a510cad93 ""
   "chapter/Secondo.tex" 1785172309 144 79ee29e13a9b89f8c462763d27d4031d ""
   "chapter/SviluppiFuturi.tex" 1785172459 46 5371a2c2337e0c6b6b616ab94de5abdc ""
   "chapter/Terzo.tex" 1785172368 45 aa735981f3056adfe0901ba4959d6fe0 ""
   "immagini/logo_unipi.png" 1785166145 76338 08f04e8e0e3464405b5fd4cd7b0f5f9a ""
-  "main.aux" 1785236907 1841 f2608ac9f20b532dbe6fff5abb209eee "pdflatex"
-  "main.bbl" 1785236901 3208 7741de2cf8f278dd61c94cc9d1958f29 "biber main"
-  "main.run.xml" 1785236907 2307 fa280d158a7733084a6a66e2106e4193 "pdflatex"
-  "main.tex" 1785236683 7515 a6baa3643a956094607dee0fa53e14a4 ""
-  "main.toc" 1785236907 459 a2f383e5cb0d1aa5fd085744a333770d "pdflatex"
+  "main.aux" 1785502436 4511 aab256dfabb9e082a5488e9e2c8ebf62 "pdflatex"
+  "main.bbl" 1785501368 40957 5825b566fd79ea696f84ed15b3d8e28d "biber main"
+  "main.run.xml" 1785502436 2307 fa280d158a7733084a6a66e2106e4193 "pdflatex"
+  "main.tex" 1785484246 7526 90554abce5691aa96609611f29644a6e ""
+  "main.toc" 1785502436 461 1e662f6c4d1e264abfca8dd655ccbada "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

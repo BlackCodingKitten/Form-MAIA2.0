@@ -201,8 +201,11 @@
     <section class="topbar">
       <div class="row space-between">
         <div>
-          <h1>Rispondi alle domande concentrandoti sia su ciò che vedi che su ciò che senti. Cerca di essere il più preciso possibile e di non tralasciare i dettagli. Sii più specifico possibile nelle risposte, se un'informazione può essere più dettagliata rendila più dettagliata.</h1>
-          <div class="muted">Per rispondere alle domande sotto i video è necessario prestare molta attenzione a ciò che succede nel video</div>
+          <h1>Rispondi alle domande utilizzando tutte le informazioni disponibili nel video, considerando attentamente sia gli elementi visivi sia quelli audio.</h1>
+          <div class="muted">Fornisci risposte precise, complete e dettagliate. Evita formulazioni generiche e specifica, quando possibile, persone, oggetti, azioni, luoghi, tempi, posizioni, cause e conseguenze degli eventi osservati o ascoltati.
+
+Non tralasciare dettagli rilevanti. Se un’informazione può essere descritta in modo più specifico, includi tutti gli elementi necessari a renderla chiara e non ambigua.
+</div>
         </div>
         <div class="row">
           <span id="roleBadge" class="badge"></span>
@@ -210,16 +213,9 @@
         </div>
       </div>
 
-      <div class="grid-2">
-        <div>
-          <label for="videoSelector">Vai al video</label>
-          <select id="videoSelector"></select>
-        </div>
-
-        <div id="adminUserPanel" class="hidden">
-          <label for="exportUserSelector">Risposte da esportare</label>
-          <select id="exportUserSelector"></select>
-        </div>
+      <div>
+        <label for="videoSelector">Seleziona un video</label>
+        <select id="videoSelector"></select>
       </div>
 
       <div class="progress-shell">
@@ -229,11 +225,10 @@
 
       <div class="row" style="margin-top:14px;">
         <button id="toggleModeBtn" class="hidden">Apri configurazione</button>
-        <button id="exportCsvBtn" class="success hidden">Esporta risposte CSV</button>
-        <button id="submitAnswersBtn" class="primary" disabled>Invia le risposte</button>
+        <button id="downloadCsvBtn" class="success" disabled>Al termine della compilazione potra scaricare il CSV</button>
       </div>
       <div id="saveStatus" class="status"></div>
-      <div id="submitStatus" class="status" role="status" aria-live="polite"></div>
+      <div id="downloadStatus" class="status" role="status" aria-live="polite"></div>
     </section>
 
     <section id="fillCard" class="card">
@@ -279,7 +274,7 @@
       </div>
       <div id="configStatus" class="status" role="status" aria-live="polite"></div>
       <p class="muted" style="font-size:13px; margin-bottom:0;">
-        Le modifiche a titoli, URL e domande non vengono salvate nel browser.
+        Le modifiche a titoli, URL e domande non vengono salvate solo localmente.
         Per renderle definitive devi scaricare l’HTML aggiornato e sostituire il file pubblicato su GitHub.
       </p>
 
@@ -298,16 +293,7 @@
       "Davide"
     ];
 
-    /*
-      Inserisci gli URL dei video tra le virgolette, rispettando l'ordine.
 
-      Esempi:
-      "https://www.youtube.com/watch?v=CODICE_VIDEO"
-      "https://youtu.be/CODICE_VIDEO"
-      "https://esempio.it/video/video01.mp4"
-
-      Lascia "" quando un video non è ancora disponibile.
-    */
     const VIDEO_URLS = [
       "https://drive.google.com/file/d/1WhTGonVoIla51f2Riu0puuJeoa2aLl0v/view?usp=drive_link", // Video 1,
       "https://drive.google.com/file/d/1dsX433JCci07yEgS107jj4g9CTBdI8IQ/view?usp=drive_link", // Video 2,
@@ -316,9 +302,9 @@
       "https://drive.google.com/file/d/19oo319ydoOZIMXN8juzaLrNZZep2Lrps/view?usp=drive_link", // Video 5,
       "https://drive.google.com/file/d/1c3-THOcThlZ93-aMRQlChWRFP20FAbFS/view?usp=drive_link", // Video 6,
       "https://drive.google.com/file/d/1QBhTJmiHLF7j4_8J9e0M210lcyVWSQIa/view?usp=drive_link", // Video 7,
-      "https://youtu.be/PkCRBAFhigw", // Video 8,
-      "https://youtu.be/cT-gZy4ME9o", // Video 9,
-      "https://youtu.be/zsKYr6oXico", // Video 10,
+      "https://drive.google.com/file/d/1R4WdSQQdtROAmAqjf5q86kcOg92e5uof/view?usp=drive_link", // Video 8,
+      "https://drive.google.com/file/d/1hGqqMOubrbidAX_JgGsQ883obQjt93OX/view?usp=drive_link", // Video 9,
+      "https://drive.google.com/file/d/1QFcvCU5nvIit5kti4rOkOGxDDPj-PL2G/view?usp=drive_link", // Video 10,
       "https://drive.google.com/file/d/1etCKQfrriWIRtstukTVjUPHjMdthwovu/view?usp=drive_link", // Video 11,
       "https://drive.google.com/file/d/1UorrSOpf4W-yOxPbwXEbtUlvwUOvDVuG/view?usp=drive_link", // Video 12,
       "https://drive.google.com/file/d/171yRjOzBE8CZLqDwdHs6eDV4fkqLq_t5/view?usp=drive_link", // Video 13,
@@ -928,25 +914,16 @@
     /*
       DATI PERSISTENTI NEL BROWSER
 
-      localStorage mantiene utenti, risposte e stato dell'ultimo invio:
+      localStorage mantiene le risposte:
       - restano disponibili dopo aggiornamenti, chiusura della scheda e riavvio del browser;
-      - sono separati per codice utente;
+      - sono separate per codice utente;
       - rimangono soltanto su questo browser, dispositivo e sito;
       - possono essere rimossi cancellando i dati del sito o usando la navigazione privata.
 
       Le funzioni di lettura sottostanti migrano automaticamente eventuali dati
       già presenti nel precedente sessionStorage.
     */
-    const USERS_KEY = "maia2_session_users_v1";
     const RESPONSES_PREFIX = "maia2_session_responses_v1_";
-    const SUBMISSION_PREFIX = "maia2_session_submission_v1_";
-
-    /*
-      Dopo aver pubblicato Code.gs come applicazione web, sostituisci
-      il valore sottostante con l'URL che termina in /exec.
-    */
-    const GOOGLE_APPS_SCRIPT_URL =
-      "https://script.google.com/macros/s/AKfycbxcIP9_u6GWT9j4SHI9G8QObYMtyOeyDi_qPsFdeVhnT8dKuscbqQLMFd_j9JiOmcPd/exec";
 
     let currentUser = "";
     let isAdmin = false;
@@ -964,14 +941,11 @@
       roleBadge: document.getElementById("roleBadge"),
       logoutBtn: document.getElementById("logoutBtn"),
       videoSelector: document.getElementById("videoSelector"),
-      adminUserPanel: document.getElementById("adminUserPanel"),
-      exportUserSelector: document.getElementById("exportUserSelector"),
       progressBar: document.getElementById("progressBar"),
       progressText: document.getElementById("progressText"),
       toggleModeBtn: document.getElementById("toggleModeBtn"),
-      exportCsvBtn: document.getElementById("exportCsvBtn"),
-      submitAnswersBtn: document.getElementById("submitAnswersBtn"),
-      submitStatus: document.getElementById("submitStatus"),
+      downloadCsvBtn: document.getElementById("downloadCsvBtn"),
+      downloadStatus: document.getElementById("downloadStatus"),
       fillCard: document.getElementById("fillCard"),
       configCard: document.getElementById("configCard"),
       videoTitle: document.getElementById("videoTitle"),
@@ -1052,99 +1026,6 @@
       return RESPONSES_PREFIX + encodeURIComponent(userCode);
     }
 
-    function submissionKey(userCode) {
-      return SUBMISSION_PREFIX + encodeURIComponent(userCode);
-    }
-
-    function readBrowserStorage(key) {
-      try {
-        const persistentValue = localStorage.getItem(key);
-        if (persistentValue !== null) return persistentValue;
-      } catch (error) {
-        console.warn("localStorage non disponibile in lettura:", error);
-      }
-
-      // Migrazione trasparente dei dati creati dalla precedente versione.
-      try {
-        const sessionValue = sessionStorage.getItem(key);
-        if (sessionValue !== null) {
-          try {
-            localStorage.setItem(key, sessionValue);
-            sessionStorage.removeItem(key);
-          } catch (error) {
-            console.warn("Impossibile migrare il dato in localStorage:", error);
-          }
-          return sessionValue;
-        }
-      } catch (error) {
-        console.warn("sessionStorage non disponibile in lettura:", error);
-      }
-
-      return null;
-    }
-
-    function writeBrowserStorage(key, value) {
-      try {
-        localStorage.setItem(key, value);
-        return true;
-      } catch (error) {
-        console.warn("localStorage non disponibile in scrittura:", error);
-
-        // Ripiego temporaneo: evita di perdere subito il lavoro nella scheda corrente.
-        try {
-          sessionStorage.setItem(key, value);
-        } catch (sessionError) {
-          console.error("Impossibile salvare le risposte nel browser:", sessionError);
-        }
-        return false;
-      }
-    }
-
-    function getCurrentSubmissionSignature() {
-      const normalized = config.map((item, videoIndex) => {
-        const current = getResponse(videoIndex);
-        return {
-          title: item.title,
-          answers: current.answers.map(answer => String(answer || "").trim())
-        };
-      });
-      return JSON.stringify(normalized);
-    }
-
-    function getSavedSubmissionSignature() {
-      return readBrowserStorage(submissionKey(currentUser)) || "";
-    }
-
-    function isSubmissionEndpointConfigured() {
-      return GOOGLE_APPS_SCRIPT_URL.startsWith("https://script.google.com/macros/s/") &&
-        GOOGLE_APPS_SCRIPT_URL.endsWith("/exec");
-    }
-
-    function buildSubmissionPayload() {
-      const macroareas = ["spaziale", "temporale", "causale"];
-      const rows = [];
-
-      config.forEach((item, videoIndex) => {
-        const response = getResponse(videoIndex);
-        item.questions.forEach((_, questionIndex) => {
-          rows.push({
-            titolo_video: item.title,
-            macroarea: macroareas[questionIndex],
-            risposta: String(response.answers[questionIndex] || "").trim()
-          });
-        });
-      });
-
-      return {
-        userCode: currentUser,
-        submittedAt: new Date().toISOString(),
-        submissionId: (
-          window.crypto && typeof window.crypto.randomUUID === "function"
-        ) ? window.crypto.randomUUID() : `${Date.now()}-${Math.random().toString(16).slice(2)}`,
-        rows
-      };
-    }
-
     function loadResponses(userCode) {
       try {
         const raw = readBrowserStorage(responseKey(userCode));
@@ -1154,25 +1035,6 @@
         console.warn("Risposte salvate non valide:", error);
       }
       return {};
-    }
-
-    function loadUsers() {
-      try {
-        const raw = readBrowserStorage(USERS_KEY);
-        const saved = raw ? JSON.parse(raw) : null;
-        if (Array.isArray(saved)) return saved;
-      } catch (error) {
-        console.warn("Elenco utenti salvato non valido:", error);
-      }
-      return [];
-    }
-
-    function registerUser(userCode) {
-      const users = loadUsers();
-      if (!users.includes(userCode)) {
-        users.push(userCode);
-        writeBrowserStorage(USERS_KEY, JSON.stringify(users));
-      }
     }
 
     function getResponse(index, source = responses) {
@@ -1254,8 +1116,8 @@
       root.querySelector("#configCard")?.classList.add("hidden");
 
       const clearIds = [
-        "videoSelector", "exportUserSelector", "videoBox", "questionsContainer",
-        "progressText", "saveStatus", "submitStatus", "configStatus", "roleBadge"
+        "videoSelector", "videoBox", "questionsContainer",
+        "progressText", "saveStatus", "downloadStatus", "configStatus", "roleBadge"
       ];
       clearIds.forEach(id => {
         const node = root.querySelector(`#${id}`);
@@ -1269,9 +1131,12 @@
       if (progressBar) progressBar.setAttribute("style", "width:0%");
 
       root.querySelector("#toggleModeBtn")?.classList.add("hidden");
-      root.querySelector("#exportCsvBtn")?.classList.add("hidden");
-      root.querySelector("#adminUserPanel")?.classList.add("hidden");
-      root.querySelector("#submitAnswersBtn")?.classList.remove("hidden");
+      const downloadCsvBtn = root.querySelector("#downloadCsvBtn");
+      if (downloadCsvBtn) {
+        downloadCsvBtn.classList.remove("hidden");
+        downloadCsvBtn.disabled = true;
+        downloadCsvBtn.textContent = "Completa tutte le risposte per scaricare il CSV";
+      }
     }
 
     function downloadConfiguredHtml() {
@@ -1311,28 +1176,6 @@
         option.textContent = `${index + 1}. ${item.title}`;
         els.videoSelector.appendChild(option);
       });
-    }
-
-    function initExportUserSelector() {
-      els.exportUserSelector.innerHTML = "";
-      const users = loadUsers().filter(user => !ADMIN_CODES.includes(user));
-
-      if (users.length === 0) {
-        const option = document.createElement("option");
-        option.value = currentUser;
-        option.textContent = "Nessun compilatore registrato";
-        els.exportUserSelector.appendChild(option);
-        els.exportCsvBtn.disabled = true;
-        return;
-      }
-
-      users.forEach(user => {
-        const option = document.createElement("option");
-        option.value = user;
-        option.textContent = user;
-        els.exportUserSelector.appendChild(option);
-      });
-      els.exportCsvBtn.disabled = false;
     }
 
     function youtubeEmbed(input, recursionDepth = 0) {
@@ -1573,7 +1416,7 @@
           response.answers[questionIndex] = textarea.value;
           response.updatedAt = new Date().toISOString();
           saveResponses();
-          updateSubmitButton();
+          updateDownloadButton();
         });
 
         wrapper.appendChild(label);
@@ -1593,171 +1436,27 @@
       return completedVideos() === TOTAL_VIDEOS;
     }
 
-    function hasAnyAnswer() {
-      return config.some((_, videoIndex) => {
-        const answerSet = getResponse(videoIndex).answers || [];
-        return answerSet.some(answer => String(answer || "").trim().length > 0);
-      });
-    }
-
-    function updateSubmitButton() {
+    function updateDownloadButton() {
       if (!currentUser) {
-        els.submitAnswersBtn.classList.add("hidden");
+        els.downloadCsvBtn.disabled = true;
+        els.downloadCsvBtn.textContent = "Completa tutte le risposte per scaricare il CSV";
+        els.downloadStatus.textContent = "";
         return;
       }
 
-      els.submitAnswersBtn.classList.remove("hidden");
-
-      if (!isSubmissionEndpointConfigured()) {
-        els.submitAnswersBtn.disabled = true;
-        els.submitAnswersBtn.textContent = "Invio non configurato";
-        els.submitStatus.textContent =
-          "L’amministratore deve inserire nel file HTML l’URL della web app Google Apps Script.";
+      if (!allAnswersCompleted()) {
+        const missingVideos = TOTAL_VIDEOS - completedVideos();
+        els.downloadCsvBtn.disabled = true;
+        els.downloadCsvBtn.textContent = "Completa tutte le risposte per scaricare il CSV";
+        els.downloadStatus.textContent =
+          `Il download sarà disponibile dopo aver completato tutti i video. Ne mancano ${missingVideos}.`;
         return;
       }
 
-      // Gli utenti amministratori Michela e Davide possono inviare anche una
-      // compilazione parziale. Gli altri utenti devono completare tutti i video.
-      if (isAdmin && !hasAnyAnswer()) {
-        els.submitAnswersBtn.disabled = true;
-        els.submitAnswersBtn.textContent = "Inserisci almeno una risposta";
-        els.submitStatus.textContent =
-          "Come amministratore puoi inviare anche risposte parziali, dopo aver compilato almeno un campo.";
-        return;
-      }
-
-      if (!isAdmin && !allAnswersCompleted()) {
-        els.submitAnswersBtn.disabled = true;
-        els.submitAnswersBtn.textContent = "Completa tutte le risposte";
-        els.submitStatus.textContent =
-          "Il pulsante si attiverà dopo aver risposto alle tre domande di tutti i 100 video.";
-        return;
-      }
-
-      const alreadySubmitted =
-        getSavedSubmissionSignature() === getCurrentSubmissionSignature();
-
-      if (alreadySubmitted) {
-        els.submitAnswersBtn.disabled = true;
-        els.submitAnswersBtn.textContent = "Risposte già inviate";
-        els.submitStatus.textContent =
-          "Questa versione delle risposte è già stata inviata. Modificando una risposta potrai inviarne una versione aggiornata.";
-        return;
-      }
-
-      els.submitAnswersBtn.disabled = false;
-      els.submitAnswersBtn.textContent = isAdmin
-        ? "Invia le risposte (anche parziali)"
-        : "Invia le risposte";
-      els.submitStatus.textContent = isAdmin
-        ? "Puoi inviare le risposte già compilate anche senza completare tutti i 100 video."
-        : "Tutte le risposte sono complete. Premi il pulsante per inviarle definitivamente.";
-    }
-
-    let pendingSubmission = null;
-
-    function clearPendingSubmission() {
-      if (!pendingSubmission) return;
-
-      clearTimeout(pendingSubmission.timeoutId);
-      pendingSubmission.form?.remove();
-      pendingSubmission.iframe?.remove();
-      pendingSubmission = null;
-    }
-
-    function handleSubmissionResponse(event) {
-      const data = event.data;
-
-      if (
-        !pendingSubmission ||
-        !data ||
-        data.source !== "maia2-apps-script" ||
-        data.submissionId !== pendingSubmission.submissionId
-      ) {
-        return;
-      }
-
-      const signature = pendingSubmission.signature;
-      clearPendingSubmission();
-
-      if (data.ok) {
-        writeBrowserStorage(submissionKey(currentUser), signature);
-        els.submitAnswersBtn.disabled = true;
-        els.submitAnswersBtn.textContent = "Risposte inviate";
-        els.submitStatus.textContent =
-          "Invio completato: lo script ha confermato la spedizione dell’email.";
-      } else {
-        els.submitAnswersBtn.disabled = false;
-        els.submitAnswersBtn.textContent = "Riprova l’invio";
-        els.submitStatus.textContent =
-          `Invio non riuscito: ${data.message || "errore non specificato."}`;
-      }
-    }
-
-    function submitAnswers() {
-      if (els.submitAnswersBtn.disabled) return;
-      if (isAdmin && !hasAnyAnswer()) return;
-      if (!isAdmin && !allAnswersCompleted()) return;
-
-      if (!isSubmissionEndpointConfigured()) {
-        alert("L’URL di Google Apps Script non è stato ancora configurato.");
-        return;
-      }
-
-      const confirmed = confirm(
-        isAdmin
-          ? "Vuoi inviare le risposte attualmente compilate, anche se parziali? Verrà spedito un file CSV all’indirizzo configurato."
-          : "Vuoi inviare definitivamente tutte le risposte? Verrà spedito un file CSV all’indirizzo configurato."
-      );
-      if (!confirmed) return;
-
-      clearPendingSubmission();
-
-      const signature = getCurrentSubmissionSignature();
-      const payload = buildSubmissionPayload();
-      const iframeName = `maia2_submit_${Date.now()}`;
-
-      const iframe = document.createElement("iframe");
-      iframe.name = iframeName;
-      iframe.title = "Invio risposte MAIA 2.0";
-      iframe.className = "hidden";
-
-      const form = document.createElement("form");
-      form.method = "POST";
-      form.action = GOOGLE_APPS_SCRIPT_URL;
-      form.target = iframeName;
-      form.className = "hidden";
-
-      const payloadInput = document.createElement("input");
-      payloadInput.type = "hidden";
-      payloadInput.name = "payload";
-      payloadInput.value = JSON.stringify(payload);
-      form.appendChild(payloadInput);
-
-      document.body.appendChild(iframe);
-      document.body.appendChild(form);
-
-      els.submitAnswersBtn.disabled = true;
-      els.submitAnswersBtn.textContent = "Invio in corso…";
-      els.submitStatus.textContent = "Trasmissione e spedizione dell’email in corso.";
-
-      const timeoutId = setTimeout(() => {
-        clearPendingSubmission();
-        els.submitAnswersBtn.disabled = false;
-        els.submitAnswersBtn.textContent = "Verifica e riprova";
-        els.submitStatus.textContent =
-          "Non è arrivata una conferma dallo script. Verifica l’email prima di ripetere l’invio.";
-      }, 60000);
-
-      pendingSubmission = {
-        submissionId: payload.submissionId,
-        signature,
-        iframe,
-        form,
-        timeoutId
-      };
-
-      form.submit();
+      els.downloadCsvBtn.disabled = false;
+      els.downloadCsvBtn.textContent = "Scarica le risposte CSV";
+      els.downloadStatus.textContent =
+        "Tutte le 300 risposte sono complete. Ora puoi scaricare il file CSV.";
     }
 
     function updateProgress() {
@@ -1765,7 +1464,7 @@
       const percentage = (completed / TOTAL_VIDEOS) * 100;
       els.progressBar.style.width = `${percentage}%`;
       els.progressText.textContent = `${completed} video completati su ${TOTAL_VIDEOS} · ${Math.round(percentage)}%`;
-      if (currentUser) updateSubmitButton();
+      if (currentUser) updateDownloadButton();
     }
 
     function renderConfig() {
@@ -1832,7 +1531,6 @@
 
       currentUser = code;
       isAdmin = ADMIN_CODES.includes(currentUser);
-      registerUser(currentUser);
       responses = loadResponses(currentUser);
       currentIndex = 0;
       mode = "fill";
@@ -1847,13 +1545,10 @@
       els.roleBadge.classList.toggle("admin", isAdmin);
 
       els.toggleModeBtn.classList.toggle("hidden", !isAdmin);
-      els.exportCsvBtn.classList.toggle("hidden", !isAdmin);
-      els.adminUserPanel.classList.toggle("hidden", !isAdmin);
-      els.submitAnswersBtn.classList.remove("hidden");
-      els.submitStatus.textContent = "";
+      els.downloadCsvBtn.classList.remove("hidden");
+      els.downloadStatus.textContent = "";
 
       initVideoSelector();
-      if (isAdmin) initExportUserSelector();
       setMode("fill");
     }
 
@@ -1864,7 +1559,7 @@
       currentIndex = 0;
       mode = "fill";
       els.loginCode.value = "";
-      els.submitStatus.textContent = "";
+      els.downloadStatus.textContent = "";
       els.app.classList.add("hidden");
       els.loginScreen.classList.remove("hidden");
       els.loginCode.focus();
@@ -1887,13 +1582,21 @@
       URL.revokeObjectURL(url);
     }
 
-    function exportResponsesCsv() {
-      if (!isAdmin) return;
+    function sanitizeFilename(value) {
+      const cleaned = String(value || "utente")
+        .trim()
+        .replace(/[^a-zA-Z0-9_-]+/g, "_")
+        .replace(/^_+|_+$/g, "");
+      return cleaned || "utente";
+    }
 
-      const selectedUser = els.exportUserSelector.value;
-      const selectedResponses = loadResponses(selectedUser);
+    function downloadCurrentUserCsv() {
+      if (!currentUser || !allAnswersCompleted()) {
+        updateDownloadButton();
+        return;
+      }
+
       const macroareas = ["spaziale", "temporale", "causale"];
-
       const rows = [[
         "titolo_video",
         "macroarea",
@@ -1901,22 +1604,24 @@
       ]];
 
       config.forEach((item, videoIndex) => {
-        const response = getResponse(videoIndex, selectedResponses);
+        const response = getResponse(videoIndex);
 
         item.questions.forEach((_, questionIndex) => {
           rows.push([
             item.title,
             macroareas[questionIndex],
-            response.answers[questionIndex] || ""
+            String(response.answers[questionIndex] || "").trim()
           ]);
         });
       });
 
       const csv = "\uFEFF" + rows
         .map(row => row.map(csvEscape).join(";"))
-        .join("\n");
+        .join("\r\n");
 
-      download(`risposte_${selectedUser}.csv`, csv, "text/csv;charset=utf-8");
+      const filename = `risposte_${sanitizeFilename(currentUser)}.csv`;
+      download(filename, csv, "text/csv;charset=utf-8");
+      els.downloadStatus.textContent = `File ${filename} scaricato correttamente.`;
     }
 
     els.loginBtn.addEventListener("click", login);
@@ -1966,9 +1671,7 @@
 
     els.downloadConfiguredHtmlBtn.addEventListener("click", downloadConfiguredHtml);
 
-    window.addEventListener("message", handleSubmissionResponse);
-    els.exportCsvBtn.addEventListener("click", exportResponsesCsv);
-    els.submitAnswersBtn.addEventListener("click", submitAnswers);
+    els.downloadCsvBtn.addEventListener("click", downloadCurrentUserCsv);
     els.loginCode.focus();
   </script>
 </body>
