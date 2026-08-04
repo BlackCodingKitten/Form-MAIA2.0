@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1785501357.70845 "main.bcf" "main.bbl" "main" 1785502436.5122 0
-  "bibliography.bib" 1785484083 10894 007a5546bde187d5ed0bec62f57af022 ""
-  "main.bcf" 1785502436 109920 70e1ba1e242b75888c6a3f938296b9c1 "pdflatex"
+["biber main"] 1785748163.47555 "main.bcf" "main.bbl" "main" 1785772951.28144 0
+  "bibliography.bib" 1785572837 10773 69e9cb6b456459dc8dd3b4c9d63fccbe ""
+  "main.bcf" 1785772951 110276 5e6574a9766249b9f1827964bd432583 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1785502433.28287 "c:/Users/USER/Desktop/Uni/Tesi/MAIA-AV/latex/main.tex" "main.pdf" "main" 1785502436.51377 0
-  "c:/Users/USER/Desktop/Uni/Tesi/MAIA-AV/latex/main.tex" 1785484246 7526 90554abce5691aa96609611f29644a6e ""
+["pdflatex"] 1785772948.34381 "c:/Users/USER/Desktop/Uni/Tesi/MAIA-AV/latex/main.tex" "main.pdf" "main" 1785772951.28385 0
+  "c:/Users/USER/Desktop/Uni/Tesi/MAIA-AV/latex/main.tex" 1785772940 7541 f68f4f6d3c2ad6fea927adf9d9ec0a09 ""
   "c:/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc" 1779190698 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1779191140 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1779195044 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -105,18 +105,18 @@
   "c:/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1779196292 3651065 04d97a6af36b4ade2f3eac635b71192c ""
   "c:/texlive/2026/texmf.cnf" 1779195939 713 e69b156964470283e0530f5060668171 ""
   "chapter/Introduzione.tex" 1785484064 4950 ef7b485148f034291aaa8af7c4a260f2 ""
-  "chapter/Primo.tex" 1785502423 9058 2ecb3e4538780e0aa58a45ba48a01414 ""
+  "chapter/Primo.tex" 1785772857 18170 26ee219353ecc4bb656ca3372a3e5701 ""
   "chapter/Quarto.tex" 1785172392 37 666040437a0a836b5a1505301a89e8d2 ""
   "chapter/Quinto.tex" 1785052820 61 d570db7e751cfa58ce9df26a510cad93 ""
   "chapter/Secondo.tex" 1785172309 144 79ee29e13a9b89f8c462763d27d4031d ""
   "chapter/SviluppiFuturi.tex" 1785172459 46 5371a2c2337e0c6b6b616ab94de5abdc ""
   "chapter/Terzo.tex" 1785172368 45 aa735981f3056adfe0901ba4959d6fe0 ""
   "immagini/logo_unipi.png" 1785166145 76338 08f04e8e0e3464405b5fd4cd7b0f5f9a ""
-  "main.aux" 1785502436 4511 aab256dfabb9e082a5488e9e2c8ebf62 "pdflatex"
-  "main.bbl" 1785501368 40957 5825b566fd79ea696f84ed15b3d8e28d "biber main"
-  "main.run.xml" 1785502436 2307 fa280d158a7733084a6a66e2106e4193 "pdflatex"
-  "main.tex" 1785484246 7526 90554abce5691aa96609611f29644a6e ""
-  "main.toc" 1785502436 461 1e662f6c4d1e264abfca8dd655ccbada "pdflatex"
+  "main.aux" 1785772951 5199 afcfb9aedb3aea3c3d20280bb8e04286 "pdflatex"
+  "main.bbl" 1785748173 55090 a7fa93170848e703e1ae85ea853fd12e "biber main"
+  "main.run.xml" 1785772951 2307 fa280d158a7733084a6a66e2106e4193 "pdflatex"
+  "main.tex" 1785772940 7541 f68f4f6d3c2ad6fea927adf9d9ec0a09 ""
+  "main.toc" 1785772951 464 51e0bed2f6b9cd09f54de924ea2e1e5d "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

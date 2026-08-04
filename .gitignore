@@ -11,3 +11,5 @@
 *.fbd_latexmk
 .dist
 .venv
+.git
+
