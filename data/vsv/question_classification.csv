@@ -1,0 +1,301 @@
+﻿video_id;ordine_domanda;dimensione_principale;domanda;etichette_diagnostiche;livello_complessita_1_5;numero_entita_coinvolte;numero_eventi_coinvolti;numero_passaggi_inferenziali;esplicitezza_informazione;dipendenza_sequenza_temporale;estensione_evidenza;composizionalita
+1;1;spaziale;Dove cerca  il rimedio al singhiozzo l'uomo con il camice?;S0|T0|S3;2;2;1;2;esplicita;moderata;breve intervallo;solo spaziale
+1;2;temporale;L'uomo con gli occhiali urla prima o dopo che l'uomo dietro il bancone esca?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+1;3;causale;Perché il signore con gli occhiali balbetta?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+2;1;spaziale;Dove si trova la moglie dell'uomo con gli occhiali?;S0|S1;1;2;0;1;esplicita;nessuna;singolo frame;solo spaziale
+2;2;temporale;La donna bionda sbuffa prima o dopo che il telefono squilli?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+2;3;causale;Perché l'uomo con gli occhiali fa degli strani versi al telefono e lo allontana dall'orecchio?;C0|C1|C2|C3|C4;5;3;2;3;implicita;moderata;intero video;combinata
+3;1;spaziale;Quando l'uomo con la maglietta gialla dice:'Ma chi c'ha messo qui?' dov'è il 'qui'? ;S0|T0|S3;4;1;1;2;parzialmente implicita;moderata;breve intervallo;combinata
+3;2;temporale;La finestra del balcone viene chiusa prima o dopo che l'uomo urli 'barbone'?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+3;3;causale;Perché l'uomo con la maglietta gialla si preoccupa di cosa dirà allo zio?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+4;1;spaziale;Dove si trova il cane quando viene dato il comando 'dietro'?;S0|T0|S3;3;1;1;2;esplicita;moderata;breve intervallo;combinata
+4;2;temporale;Cosa viene ordinato prima al cane 'due' o 'spin' ?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+4;3;causale;Perché il il padrone dice al cane 'incrocia bene'?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+5;1;spaziale;Dove viene inserito il beccuccio della lozione?;S0|T0|S3;2;2;1;2;esplicita;moderata;breve intervallo;solo spaziale
+5;2;temporale;Il massaggio viene fatto prima o dopo aver fatto uscire il detergente auricolare?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+5;3;causale;Perché il massaggio all'orecchio del cane produce un suono?;C0|C1|C2|C3;3;2;2;2;esplicita;moderata;breve intervallo;combinata
+6;1;spaziale;Dove parla il ragazzo che dice 'pizza'?;S0|T0|S3;2;2;1;2;esplicita;moderata;breve intervallo;solo spaziale
+6;2;temporale;Chi è che saluta per primo l'uomo con la maglia bianca o quello con la maglia verde?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+6;3;causale;Perché l'uomo decide di non pagare il ragazzo?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+7;1;spaziale;Dove si trova Anastasia quando inizia a piangere?;S0|T0|S3;3;1;1;2;esplicita;moderata;breve intervallo;combinata
+7;2;temporale;La bambina ride prima o dopo essere caduta?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+7;3;causale;Perché la Anastasia piange?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+8;1;spaziale;Dove mette 'spesa proletaria' l'uomo con la fascia rossa?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+8;2;temporale;La donna con il grembiule rosso arriva prima o dopo che l'uomo con il gilet nero spieghi il piano di fuga all'uomo col completo?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+8;3;causale;Perché l'uomo con la fascia rossa è preoccupato di finire 'elemosinaro' ?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+9;1;spaziale;Dove mette i 100 dollari l'uomo col cappello peloso?;S0|T0|S3;2;2;1;2;esplicita;moderata;breve intervallo;solo spaziale
+9;2;temporale;L'uomo con il cappelo peloso viene scambiato per omosessuale prima o dopo aver chiesto il cambio di camera?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+9;3;causale;Perché l'uomo con il cappello peloso urla 'a me non piacciono gli uomini'?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+10;1;spaziale;Da dove scende l'acqua?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+10;2;temporale;I familiari dei pazienti denunciano i danni all'ospedale prima o dopo che piova?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+10;3;causale;Perché i pazienti e i familiari sono arrabbiati?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+11;1;spaziale;Dove si trova il cellulare?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+11;2;temporale;La figlia si arrabbia prima o dopo aver chiamato il padre?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+11;3;causale;Perché la figlia dice al padre 'scandaloso'?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+12;1;spaziale;Dove viene applicato l'ombretto dorato?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+12;2;temporale;Il la base viene stesa prima o dopo l'ombretto sulla palpebra?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+12;3;causale;Perchè la donna decide di non partire dal fondotinta?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+13;1;spaziale;Dove vengono aggiunti i due cucchiai in più di farina?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+13;2;temporale;La donna parlad ello zucchero di canna prima o dopo aver rotto le uova?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+13;3;causale;Perché la farina viene messa dopo lo zucchero?;C0|C1|C2|C3|C4;3;2;2;3;parzialmente implicita;moderata;intero video;solo causale
+14;1;spaziale;Dove va messa la piantina?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+14;2;temporale;L'uomo trova l'animale trasparente prima o dopo aver piantato la lattuga?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+14;3;causale;Perchè la tecnica di trapiantare solo due dita va bene sulla piantina mostrata?;C0|C1|C2|C3|C4;4;1;2;3;parzialmente implicita;moderata;intero video;combinata
+15;1;spaziale;Dove fanno esercizi le ginnaste dell''Eterea'?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+15;2;temporale;Quando si è qualificata alla fase nazionale la squadra di ginnaste?;T0|T1|T3|T5;4;2;1;3;parzialmente implicita;alta;breve intervallo;solo temporale
+15;3;causale;Perché Alice Caldora è stata premiata nel 2016?;C0|C1|C2|C3|C4;4;1;2;4;parzialmente implicita;moderata;intero video;solo causale
+16;1;spaziale;Dove viene messo il pepe macinato al momento?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+16;2;temporale;Il pepe viene macinato prima o dopo aver messo a fare il brodo vegetale?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+16;3;causale;Perchè l'uomo taglia una quantità superiore di sedano?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+17;1;spaziale;Dove si trovano le biglie?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+17;2;temporale;La donna donna guarda la foto prima o dopo aver chiuso il manuale?;T0|T2;2;4;2;2;esplicita;alta;intero video;solo temporale
+17;3;causale;Perché il padre ironizza sul futuro da architetto del filgio? ;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+18;1;spaziale;Dove si siede l'uomo per lavorare?;S0|T0|S3;4;1;1;3;esplicita;moderata;breve intervallo;combinata
+18;2;temporale;L'uomo da i suoi omaggi alla donna prima o dopo essersi seduto?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+18;3;causale;Perché la donna crede che l'uomo voglia stare solo?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+19;1;spaziale;Dove appoggia il libro il padre?;S0|T0|S3;2;2;1;2;esplicita;moderata;breve intervallo;solo spaziale
+19;2;temporale;Si mangerà prima o dopo che il papà lavori?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+19;3;causale;Perché l'uomo dice alla bambina di guardare le figure?;C0|C1|C2|C3|C4;4;3;2;3;implicita;moderata;intero video;solo causale
+20;1;spaziale;Da dove è caduto 'Caruso' secondo il professore?;S0|T0|S3;3;1;1;2;parzialmente implicita;moderata;breve intervallo;solo spaziale
+20;2;temporale;La classe fa casino prima o dopo il botto?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+20;3;causale;Perché accorre il collaboratore scolastico preoccupato?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+21;1;spaziale;Dove è rivolto lo sguardo di Italo quando la donna lo rimprovera di guardarla?;S0|T0|S3;3;3;1;2;esplicita;moderata;breve intervallo;combinata
+21;2;temporale;Cosa deve fare Italo prima di 'rimettere piede' in casa?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+21;3;causale;Perché la donna si arrabbia con Italo?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+22;1;spaziale;Dove si sono incontrati Scott e Luis per la prima volta?;S0|T0|S3|T2;4;2;2;3;esplicita;alta;intero video;combinata
+22;2;temporale;La moglie di Scott lo ha lasciato prima o dopo che incontrasse per la prima volta Luis?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+22;3;causale;Perché Scott è triste mentre guarda i fogli in prigione?;C0|C1|C2|C3|C4;4;3;2;3;implicita;moderata;intero video;solo causale
+23;1;spaziale;Da dove cade la bambina?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+23;2;temporale;La donna dice ad 'Ani' di salire prima o dopo essere scesa nell'acqua?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+23;3;causale;Perché la donna ringrazia Anastasia?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+24;1;spaziale;Le bambine la nonna stanno giocando dentro casa o fuori in giardino?;S0|T0|S3;2;4;1;2;esplicita;moderata;breve intervallo;solo spaziale
+24;2;temporale;Alla nonna girda la testa prima o dopo essersi coperta gli occhi?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+24;3;causale;Perché la nonna porta la mascherina sugli occhi?;C0|C1|C2|C3|C4;4;3;2;3;implicita;moderata;intero video;solo causale
+25;1;spaziale;Dove si trova lo scivolo?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+25;2;temporale;La bambina con il costume azzurro va sullo scivolo prima o dopo che Aria saluti la donna?;T0|T2;2;4;2;2;esplicita;alta;intero video;solo temporale
+25;3;causale;Perché la mamma fa i complimenti alla bambina?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+26;1;spaziale;Dove deve rilasciare liberi i pesi l'uomo sull'attrezzo?;S0|T0|S3;2;3;1;2;esplicita;moderata;breve intervallo;solo spaziale
+26;2;temporale;Dopo quale numero di ripetizione il pelato da assistenza?;T0|T1|T4;3;1;1;3;esplicita;alta;intero video;solo temporale
+26;3;causale;Perché l'uomo in piedi dice che 'ora è bello per lo spotter'?;C0|C1|C2|C3|C4;4;1;2;4;parzialmente implicita;moderata;intero video;solo causale
+27;1;spaziale;Dove indica di dormire l'uomo?;S0|T0|S3;3;1;1;2;parzialmente implicita;moderata;breve intervallo;solo spaziale
+27;2;temporale;La ragazza ride prima o dopo aver aperto la porta?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+27;3;causale;Perché la ragazza trova la situazione divertente? ;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+28;1;spaziale;Dove vengono messe le banane?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+28;2;temporale;I due uomini con gli occhiali si accordano su cosa prendere prima o dopo aver salutato l'uomo con il grembiule giallo?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+28;3;causale;Perché l'uomo con gli occhiali chiede le banane all'uomo con il grembiule giallo?;C0|C1|C2|C3|C4;4;3;2;3;implicita;moderata;intero video;solo causale
+29;1;spaziale;Dove si trova il tabbaccaio?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+29;2;temporale;Il tabbaccaio si arrabbia prima o dopo che il signore con la magia a righe dia indicazioni?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+29;3;causale;Perché il signore con la camicia bianca urla al tabbaccaio?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+30;1;spaziale;Dove vuole mettere i gonfiabili la donna fuori campo?;S0|T0|S3;2;2;1;2;esplicita;moderata;breve intervallo;solo spaziale
+30;2;temporale;La bambina con la maglia rosa ha cenato prima di mettere il piede in piscina o mette il piede in piscina prima di aver cenato?;T0|T2;2;5;2;2;esplicita;alta;intero video;solo temporale
+30;3;causale;Perché la bambina con la maglietta binaca urla?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+31;1;spaziale;Dover mette la donna fuori campo l'avocado per farlo assaggiare alla bambina?;S0|T0|S3;4;3;1;3;esplicita;moderata;breve intervallo;combinata
+31;2;temporale;La bambina acconsente a mangiare il frutto prima o dopo che la donna dica 'dai prova amore'?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+31;3;causale;Perché la bambina urla?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+32;1;spaziale;Dove si trova l'oggetto che vuole la bambina dalla maglietta rossa e bianca?;S0|S1;1;2;0;1;esplicita;nessuna;singolo frame;solo spaziale
+32;2;temporale;La bambina con la maglietta rossa e bianca prende la forchetta in mano prima o dopo che la bambina con la maglia rosa dica 'no'?;T0|T2;2;4;2;2;esplicita;alta;intero video;solo temporale
+32;3;causale;Perché la bambina con la maglietta rosa dice di 'no'?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+33;1;spaziale;Dove si tuffano i due uomini in costume?;S0|T0|S3;2;2;1;2;esplicita;moderata;breve intervallo;solo spaziale
+33;2;temporale;Chi si trova in vantaggio per primo tra 'Bobo' e 'Massi'?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+33;3;causale;Perché la donna in sottofondo è preoccupata?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+34;1;spaziale;Dove si trova la palla all'inizio, nella mani di Ansatasia o nelle mani di Vanessa?;S0|T0|S3|T2|S2;3;5;1;2;esplicita;alta;intero video;combinata
+34;2;temporale;Anstasia fa le flessioni prima o dopo che vanessa venga rimproverata?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+34;3;causale;Perché la donna rimprovera Vanessa?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+35;1;spaziale;Dove si trova il cliente che non saluta?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+35;2;temporale;Il cliente che risponde al saluto si presenta prima o dopo il cliente che non saluta?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+35;3;causale;Perché il contatore in rosso apparso a video incrementa?;C0|C1|C2|C3;2;2;2;2;esplicita;moderata;breve intervallo;solo causale
+36;1;spaziale;Dove si trova il finto cieco?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+36;2;temporale;Il ragazzo si abbassa gli occhiali da sole prima o dopo aver detto che si fingerà cieco?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+36;3;causale;Perché il ragazzo che finge di essere cieco non attraversa la strada?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+37;1;spaziale;Dove si trovano i rifiuti?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+37;2;temporale;Le trombette vengono suonate prima o dopo che la donna vestita di nero si pieghi?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+37;3;causale;Perché il ragzzo con il cappellino a punta suona la trombetta?;C0|C1|C2|C3|C4;3;1;2;3;parzialmente implicita;moderata;intero video;solo causale
+38;1;spaziale;Dove si trovano le 'ragazze'?;S0|S1;3;1;0;2;parzialmente implicita;nessuna;singolo frame;solo spaziale
+38;2;temporale;L'osso viene fatto annusare prima a 'Nandina' o a 'Giulietta'?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+38;3;causale;Perché l'uomo con la tuta blu definisce la situazione inquietante?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+39;1;spaziale;Dove guarda l'uomo con la camicia azzurra quando fa un verso di sorpresa?;S0|T0|S3;3;1;2;2;esplicita;moderata;breve intervallo;combinata
+39;2;temporale;L'uomo con la maglia grigia intima l'uomo in camicia che pagherà lui prima o dopo essersi seduti?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+39;3;causale;Perché l'uomo con la maglietta grigia vuole pagare il conto?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+40;1;spaziale;Dove brucia a vanessa secondo la voce fuori campo?;S0|T0|S3;3;2;1;2;parzialmente implicita;moderata;breve intervallo;solo spaziale
+40;2;temporale;La voce fuori campo quando dice che disinfetterà il piedino di Vanessa?;T0|T1|T3;2;2;1;2;esplicita;alta;breve intervallo;solo temporale
+40;3;causale;Perché la voce fuori campo chiede ad Anastasia 'come va?' ?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+41;1;spaziale;Dove sono andate le circa 60 persone secondo la tradizione?;S0|T0|S3;3;1;1;2;parzialmente implicita;moderata;breve intervallo;solo spaziale
+41;2;temporale;Quando si è aperto il 'Capod'anno pesarese' secondo la voce narrante?;T0|T1|T3|T5;4;1;1;3;parzialmente implicita;alta;breve intervallo;solo temporale
+41;3;causale;Perché le persone portano il cappello di babbo natale al mare?;C0|C1|C2|C3|C4;3;3;2;3;parzialmente implicita;moderata;intero video;solo causale
+42;1;spaziale;Dove hanno lavato le mani il bambino con la maglietta blu e la bambiona con il vestito rosa?;S0|T0|S3;2;3;1;2;esplicita;moderata;breve intervallo;solo spaziale
+42;2;temporale;Sami si mette la crema solare prima o dopo essere andata a riva?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+42;3;causale;Perché la bambina con la maglietta gialla torna correndo sull'asciugamano?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+43;1;spaziale;Dove si allena la ragazza?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+43;2;temporale;La ragazza con gli occhiali tira un calcio posteriore prima o dopo che l'uomo con la felpa rossa e blu le parli?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+43;3;causale;Perché Sara Luconi porta gli occhiali?;C0|C1|C2|C3|C4;4;3;2;3;implicita;moderata;intero video;solo causale
+44;1;spaziale;In questa scena tratta da un film da dove viene afferrata la ragazza?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+44;2;temporale;In questa scena tratta da un film la donna colpisce il malvivente prima o dopo aver detto :'Io i soldi me li fatico'?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+44;3;causale;Perchè in questo spezzone di film la donna alla fine scappa?;C0|C1|C2|C3|C4;5;1;2;3;implicita;moderata;intero video;combinata
+45;1;spaziale;Dove sono stati postati i video dei fatti raccontati al telegiornale?;S0|T0|S3;3;2;1;2;parzialmente implicita;moderata;breve intervallo;solo spaziale
+45;2;temporale;I fatti si sono svolti prima o dopo mezzogiorno?;T0|T2;4;1;2;3;parzialmente implicita;alta;intero video;solo temporale
+45;3;causale;Perchè le forze dell'ordine reclamano i rinforzi per aiutarli a sedare la folla? ;C0|C1|C2|C3|C4;4;2;2;4;parzialmente implicita;moderata;intero video;solo causale
+46;1;spaziale;Dove possiamo vedere che la prima risposta del comando vocale è giusta?;S0|S1;3;1;0;2;parzialmente implicita;nessuna;singolo frame;solo spaziale
+46;2;temporale;Il ragazzo chiede prima 'Chi ti ha programmato?' o l'orario?;T0|T2;2;1;2;2;esplicita;alta;breve intervallo;solo temporale
+46;3;causale;Perché l'uomo dice che le 23 e 47 è giusto?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+47;1;spaziale;Dove si trovava il tefono prima che la donna rispondesse?;S0|T0|S3|T2|S2;3;2;1;2;esplicita;alta;intero video;combinata
+47;2;temporale;La signira anziana grida 'Oddio! Cosa posso fare?' prima o dopo aver detto di essere sola?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+47;3;causale;Perché la donna anziana è preoccupata?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+48;1;spaziale;Dove sbatte la mano la professoressa?;S0|T0|S3;2;2;1;2;esplicita;moderata;breve intervallo;solo spaziale
+48;2;temporale;Quale bambino inzia a ridere per primo?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+48;3;causale;Perché i professori iniziano a comportarsi come dei bambini maleducati?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+49;1;spaziale;Dove si trovano gli operai?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+49;2;temporale;Quanto tempo ci vuole per i ragazzi nel video per ottenere la qualifica come operatore edile?;T0|T1|T4;3;3;1;3;esplicita;alta;intero video;solo temporale
+49;3;causale;Perché gli studenti stanno lavorando come manovali?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+50;1;spaziale;I bambini si trovano dentro un autobus o per strada?;S0|S1;1;3;0;1;esplicita;nessuna;singolo frame;solo spaziale
+50;2;temporale;L'app del 'Piedibus' è stata sviluppata alla nascita del proggetto o dopo?;T0|T2;4;1;2;3;parzialmente implicita;alta;intero video;solo temporale
+50;3;causale;Perché il 'Piedibus' è ecologico?;C0|C1|C2|C3|C4;4;1;2;4;parzialmente implicita;moderata;intero video;solo causale
+51;1;spaziale;Dove si trova la freccia per tornare indietro?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+51;2;temporale;La bambina si muove prima o dopo le voci fuori campo elogino il bambino?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+51;3;causale;Perché la donna fuori campo è contenta della bambina che si muove indietro?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+52;1;spaziale;Dove si trovava l'oggetto che pesa un quintale prima che l'uomo lo prendesse in mano?;S0|T0|S3|T2|S2;3;3;1;2;esplicita;alta;intero video;combinata
+52;2;temporale;l'uomo con la pelliccia tossisce prima o dopo aver preso la bambola in mano?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+52;3;causale;Perché l'uomo con il cappello da la bambola all'uomo con il sigaro?;C0|C1|C2|C3|C4;4;3;2;3;implicita;moderata;intero video;solo causale
+53;1;spaziale;Dove si mette la mano il facchino quando il receptionist gli dice:'Hai visto che sventola?'?;S0|T0|S3;3;3;2;2;esplicita;moderata;breve intervallo;combinata
+53;2;temporale;la donna con la pelliccia bianca si tapa le orecchie prima o dopo che il reptionist prema il campanello?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+53;3;causale;Perché il receptionist non da la chiave all'uomo con la pelliccia?;C0|C1|C2|C3|C4;4;3;2;3;implicita;moderata;intero video;solo causale
+54;1;spaziale;Dove stanno passando per andare al mare?;S0|T0|S3;4;1;1;3;esplicita;moderata;breve intervallo;combinata
+54;2;temporale;Hanno visto ora quindici Cinquecento grige o è successo prima?;T0|T2;2;1;2;2;esplicita;alta;breve intervallo;solo temporale
+54;3;causale;Perché la bambina con la maglia azzurra crede che non troveranno più la macchina?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+55;1;spaziale;Dove si svolge la scena?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+55;2;temporale;Il padre è andato a farsi il bagno prima o dopo dell bambine?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+55;3;causale;Perchè Vane corre subito inidetro quando tocca l'acquatocca l'acqua?;C0|C1|C2|C3|C4;4;1;2;3;parzialmente implicita;moderata;intero video;combinata
+56;1;spaziale;Dove si trova il pecorino in crema?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+56;2;temporale;La bambina mangia prima o dopo che venga buttato via l'insetto?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+56;3;causale;Perché la bambina butta via l'insetto?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+57;1;spaziale;I 'Malloreddu alla campinadese' nel piatto di Anastasia o di un'altra bambina?;S0|S1;1;3;0;1;esplicita;nessuna;singolo frame;solo spaziale
+57;2;temporale;Anastasia inizia a masticare dopo che la voce le chieda se è buona o stava già masticando?;T0|T2|T5;3;1;2;3;esplicita;alta;intero video;solo temporale
+57;3;causale;Perché la donna fuori campo dice che c'è un profumo buonissimo?;C0|C1|C2|C3;2;1;2;2;esplicita;moderata;breve intervallo;solo causale
+58;1;spaziale;Dove si trova la macchia che sembra un livido?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+58;2;temporale;Anastasia fa un balletto mentre è sul treno o dopo che è scesa?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+58;3;causale;Perché la donna crede che la bambina abbia preso un pugno?;C0|C1|C2|C3;2;2;2;2;esplicita;moderata;breve intervallo;solo causale
+59;1;spaziale;Dove sono seduti ?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+59;2;temporale;La bambina si pulisce le mani prima o dopo aver raccolto la sabbia?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+59;3;causale;Perché la con la canottiera verde/azzurra sorride ?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+60;1;spaziale;Dove si attacca la sabbia alla bambina dopo essersi asciugata?;S0|T0|S3|T2;4;2;2;3;esplicita;alta;intero video;combinata
+60;2;temporale;La bambina indica col dito la sabbia prima o dopo che le si è attaccata alla mano? ;T0|T2;2;4;2;2;esplicita;alta;intero video;solo temporale
+60;3;causale;Perché dopo che la bambina tocca l'asciugamano la sabbia le sì attacca in mano?;C0|C1|C2|C3;3;4;2;2;esplicita;moderata;breve intervallo;combinata
+61;1;spaziale;Dove è caduto il telefono?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+61;2;temporale;Il telfono cade a terra prima che la donna entri nella stanza o dopo?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+61;3;causale;Perché la mamma rimprovera le bambine?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+62;1;spaziale;Dove si appoggia la gonna la signora per controllare che le stia?;S0|T0|S3;4;2;1;3;esplicita;moderata;breve intervallo;combinata
+62;2;temporale;Dopo la gonna la singora vuole vedere un'altra gonna o un pantalone?;T0|T2;2;2;2;2;esplicita;alta;breve intervallo;solo temporale
+62;3;causale;Perché la donna scarta la prima gonna?;C0|C1|C2|C3|C4;5;2;2;3;implicita;moderata;intero video;combinata
+63;1;spaziale;Dove si trova Gigi?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+63;2;temporale;Gigi inizia a cantare prima o dopo che la bambina parli?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+63;3;causale;Perché Gigi canta?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+64;1;spaziale;Da dove viene il cuscino?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+64;2;temporale;Le due bambine sitemano il cuscino sul divano prima o dopo che la bambina con il pigiama rosa scenda le scale?;T0|T2;2;5;2;2;esplicita;alta;intero video;solo temporale
+64;3;causale;Perché la ragazza sdraiata sul divano si agita?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+65;1;spaziale;Dove si svolge la premiazione?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+65;2;temporale;I ragazzi che ricevono la premiazione hanno conseguito prima il diploma di maturità o lo stanno ricevendo ora?;T0|T2|T5;3;1;2;3;esplicita;alta;intero video;solo temporale
+65;3;causale;Perché il ragazzo con la giacca grigia riceve un premio?;C0|C1|C2|C3|C4;4;1;2;4;parzialmente implicita;moderata;intero video;solo causale
+66;1;spaziale;Dove si trova il quadro di Antonio?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+66;2;temporale;La donna dice che l'uomo ha una fissazione prima o dopo aver ricevuto il suo regalo?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+66;3;causale;Perchè Peppino chiede a Lietta di togliere il quadro?;C0|C1|C2|C3|C4;4;3;2;3;implicita;moderata;intero video;solo causale
+67;1;spaziale;Dove mette le mani l'uomo col cappello?;S0|T0|S3;2;2;1;2;esplicita;moderata;breve intervallo;solo spaziale
+67;2;temporale;L'uomo con il cappello ride prima o dopo che l'uomo in grigio scansi le sue mani ? ;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+67;3;causale;Perché l'uomo senza cappello continua a spostare le mani dell'uomo col cappello?;C0|C1|C2|C3|C4;4;4;2;3;implicita;moderata;intero video;solo causale
+68;1;spaziale;Dove si trova la reception?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+68;2;temporale;Il ragazzo trova un volantino prima o dopo andare a parlare con la donna?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+68;3;causale;Perché la ragazza tira fuori un foglio da mostrare al ragazzo?;C0|C1|C2|C3|C4;4;3;2;3;implicita;moderata;intero video;solo causale
+69;1;spaziale;Dove si trova il ragazzo quando fa l'esercizio?;S0|T0|S3;3;1;1;2;esplicita;moderata;breve intervallo;combinata
+69;2;temporale;L'allenatore rimprovera il ragazzo prima o dopo avergli detto che deve fare le flessioni?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+69;3;causale;Perché il ragazzo si trova in terra a fare flessioni? ;C0|C1|C2|C3|C4;5;2;2;3;implicita;moderata;intero video;combinata
+70;1;spaziale;Dove si trova la donna quando inizia a scalciare?;S0|T0|S3;3;1;1;2;esplicita;moderata;breve intervallo;combinata
+70;2;temporale;La donna viene presa in braccio prima o dopo di arrivare alla carrozza?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+70;3;causale;Perché la donna oppone resistenza all'uomo?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+71;1;spaziale;Dove si trovano gli ostacoli che la bambina bendata deve superare?;S0|S1;1;2;0;1;esplicita;nessuna;singolo frame;solo spaziale
+71;2;temporale;La ragazzina con la benda sugli occhi scavalca lo step prima o dopo di ruotare?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+71;3;causale;Perché la ragazza con la benda riesce a superare gli ostacoli?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+72;1;spaziale;Dove vengono messe le cose lasciate in giro ?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+72;2;temporale;Cosa succede prima: albi viene rimproverato o il ragazzo con la maglia nera sistema il disordine? ;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+72;3;causale;Perché albi viene rimproverato dal ragazzo con la maglia nera?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+73;1;spaziale;Dove é seduta la coppia?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+73;2;temporale;Chi si sveglia prima tra il ragazzo e la ragazza?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+73;3;causale;Perché il ragazzo abbraccia la ragazza?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+74;1;spaziale;Dove si trovano le bambine?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+74;2;temporale;La bambina con lo spazzozolino viola ride prima o dopo aver detto di si?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+74;3;causale;Perché la bambina con lo spazzolino arancione rallenta i movimenti quando spazzola i denti?;C0|C1|C2|C3|C4;5;2;2;3;implicita;moderata;intero video;combinata
+75;1;spaziale;Dove si trova il bambino che tira la palla di neve alla giornalista?;S0|S1;1;4;0;1;esplicita;nessuna;singolo frame;solo spaziale
+75;2;temporale;La giornalista intervista il bambino prima o dopo che venga tirata la palla di neve?;T0|T2;2;4;2;2;esplicita;alta;intero video;solo temporale
+75;3;causale;Perché i bambini non sono a scuola?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+76;1;spaziale;Dove vengono messi gli ufo?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+76;2;temporale;Il babbo passa gli ufo ai bambini rpima o dopo che l'acqua si colori?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+76;3;causale;Perché le due ciotole d'acqua si colorano in maniera diversa?;C0|C1|C2|C3;2;2;2;2;esplicita;moderata;breve intervallo;solo causale
+77;1;spaziale;Dove si è addormentato Cristian?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+77;2;temporale;La donna chiama Cristian a mangiare prima o dopo averlo trovato addormentato?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+77;3;causale;Perché il bambino non risponde alla donna?;C0|C1|C2|C3;2;2;2;2;esplicita;moderata;breve intervallo;solo causale
+78;1;spaziale;Dove legge 'l'imperfetto del verbo mangiare' la bambina?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+78;2;temporale;La donna si arrabbia prima o dopo aver abbassato il quaderno della bambina?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+78;3;causale;Perché la donna si arrabbia?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+79;1;spaziale;Dove si trovano i ragazzi?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+79;2;temporale;I due ragazzi parlano prima o dopo le 11:30 di mattina?;T0|T2;4;1;2;3;parzialmente implicita;alta;intero video;solo temporale
+79;3;causale;Perché la ragazza crede che l'amico si sia 'impressionato'?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+80;1;spaziale;Dov'è il libro preferito di 'Ele'?;S0|S1;1;2;0;1;esplicita;nessuna;singolo frame;solo spaziale
+80;2;temporale;La ragazza con la felpa rosa dice ad un'altra di sorridere prima o dopo aver finito di girare il video?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+80;3;causale;Perché le ragazze mandano un video a 'Ele'?;C0|C1|C2|C3|C4;4;3;2;3;implicita;moderata;intero video;solo causale
+81;1;spaziale;Dov'è il biscotto quando la ragazza con la felpa nera corregge l'esercizio?;S0|T0|S3;3;2;1;2;esplicita;moderata;breve intervallo;combinata
+81;2;temporale;La ragazza con la felpa nera prende il quaderno dell'altra prima o dopo aver confrontato con lei il risultato?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+81;3;causale;Perché la ragazza con la canottiera verde è sorpresa di sentire che il risultato è '-4'?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+82;1;spaziale;Dove indica l'uomo senza un braccio quando chiede aiuto?;S0|T0|S3;4;2;2;2;parzialmente implicita;moderata;breve intervallo;combinata
+82;2;temporale;Il signore con la maglietta nera chiede al''uomo con la camicia a quadri informazioni sul suo braccio prima o dopo di avergli allacciato la scarpa?;T0|T2;2;4;2;2;esplicita;alta;intero video;solo temporale
+82;3;causale;Perché l'uomo con la camicia a quadri si fa allacciare la scarpa dal signore sulla panchina?;C0|C1|C2|C3|C4;4;4;2;3;implicita;moderata;intero video;solo causale
+83;1;spaziale;Dove porta la mamma il piatto?;S0|T0|S3;2;3;1;2;esplicita;moderata;breve intervallo;solo spaziale
+83;2;temporale;Vanessa piange prima o dopo che la mamma le dia la panna?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+83;3;causale;Perché Vanessa è sorpresa?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+84;1;spaziale;Dove mette la bambina con la maglia grigia il 'qualcosa' che le da la bambina con la maglia rosa?;S0|T0|S3;3;2;1;2;parzialmente implicita;moderata;breve intervallo;solo spaziale
+84;2;temporale;La bambina con la maglia grigia urla prima o dopo che quella con la mglia rosa inizi a correre?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+84;3;causale;Cosa ha causato il dolore della bambina con la maglia grigia?;C0|C1|C2|C3;2;1;2;2;esplicita;moderata;breve intervallo;solo causale
+85;1;spaziale;Dove stanno giocando le bambine?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+85;2;temporale;La bambina con i braccioli cade in acqua prima o dopo che la donna l'aiuti? ;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+85;3;causale;Perché la bambina con i braccioli non riesce a salire sul gonfiabile?;C0|C1|C2|C3;2;2;2;2;esplicita;moderata;breve intervallo;solo causale
+86;1;spaziale;Dove è inciampata la bambina?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+86;2;temporale;La bambina con i braccioli cade prima o dopo che la sorella esca dalla piscina?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+86;3;causale;Perché la bambina in piscina deve aiutare la sorella?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+87;1;spaziale;Dove si mette il dito la bambina davanti allo specchio?;S0|T0|S3;2;3;1;2;esplicita;moderata;breve intervallo;solo spaziale
+87;2;temporale;La donna prova topgliere il dente alla bambina prima o dopo aver detto che ne sono già caduti altri?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+87;3;causale;Perché la bambina sta soffrendo?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+88;1;spaziale;Dove va tenuto il foglio per fargli produrre il rumore?;S0|T0|S3;4;1;1;3;esplicita;moderata;breve intervallo;combinata
+88;2;temporale;Il foglio di carta fa rumore prima o dopo essere stato piegato?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+88;3;causale;Perché si sente un botto?;C0|C1|C2|C3;2;1;2;2;esplicita;moderata;breve intervallo;solo causale
+89;1;spaziale;Dove si trova la spigola?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+89;2;temporale;Il 'Collega Bonanno' mostra una spigola prima o dopo aver iniziato ad urlare?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+89;3;causale;Perché il 'Collega Bonanno' viene espulso dall'aula?;C0|C1|C2|C3|C4;4;1;2;4;parzialmente implicita;moderata;intero video;solo causale
+90;1;spaziale;Dove guarda l'uomo quando i musicisti gli chiedono il giorno?;S0|T0|S3;3;2;2;2;esplicita;moderata;breve intervallo;combinata
+90;2;temporale;Il perito industriale Gudo Colsi arriva prima o dopo l'appuntamento stabilito?;T0|T2;4;1;2;3;parzialmente implicita;alta;intero video;solo temporale
+90;3;causale;Perché l'uomo in costume si è congleato?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+91;1;spaziale;Dove salgono i passeggeri?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+91;2;temporale;La donna urla agli uomini prima o dopo che inizino a correre?;T0|T2;2;2;2;2;esplicita;alta;intero video;solo temporale
+91;3;causale;Cosa causa l'ira della donna?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+92;1;spaziale;Dove va l'uomo con i pantaloncini blu dopo che si è alzato?;S0|T0|S3|T2|S2;3;1;1;2;esplicita;alta;intero video;combinata
+92;2;temporale;LA donna con la scopa si arrabbia prima o dopo essere caduta nel buco?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+92;3;causale;Perché l'hostess si arrabbia?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+93;1;spaziale;Dove indica la bambina con la maglietta gialla?;S0|T0|S3;3;1;1;2;parzialmente implicita;moderata;breve intervallo;solo spaziale
+93;2;temporale;La bambina con la maglia gialla chiede alla mamma di comprare le patatine prima o dopo che la bambina con la cornoncina salga sulla Ferrari?;T0|T2;2;5;2;2;esplicita;alta;intero video;solo temporale
+93;3;causale;Perché la donna dice alla bambina di andare piano?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+94;1;spaziale;Dove inciampa la donna col vestito verde?;S0|T0|S3;2;2;1;2;esplicita;moderata;breve intervallo;solo spaziale
+94;2;temporale;La fola ride prima o dopo che la donna urti l'uomo?;T0|T2;2;3;2;2;esplicita;alta;intero video;solo temporale
+94;3;causale;Perché la folla ride?;C0|C1|C2|C3|C4;4;1;2;3;implicita;moderata;intero video;solo causale
+95;1;spaziale;dov'era il professore prima dio andare dal preside?;S0|T0|S3|T2|S2;3;2;1;2;esplicita;alta;intero video;combinata
+95;2;temporale;Il professore va nell'ufficio del preside prima o dopo di aver parlato con il bidello;T0|T2;2;4;2;2;esplicita;alta;intero video;solo temporale
+95;3;causale;Perché il professore esce dalla classe?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+96;1;spaziale;Dove si trova la cagnolina?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+96;2;temporale;L'animale mangia il bioscotto prima o dopo il comando?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+96;3;causale;Perché l'uomo da un biscotto alla cagnolina?;C0|C1|C2|C3|C4;4;3;2;3;implicita;moderata;intero video;solo causale
+97;1;spaziale;Dove si sono appese le ragazze?;S0|T0|S3;2;1;1;2;esplicita;moderata;breve intervallo;solo spaziale
+97;2;temporale;Le ragazze si sono appese prima o  dopo aver alzato le ginocchia?;T0|T2;2;2;2;2;esplicita;alta;breve intervallo;solo temporale
+97;3;causale;Perché le ragazze si sono appese alle sbarre??;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+98;1;spaziale;Dove si trova il jack di picche?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+98;2;temporale;Dopo quante carte vioene estratta la carta corretta? ;T0|T1|T4;3;1;1;3;esplicita;alta;intero video;solo temporale
+98;3;causale;Perché la donna è sorpresa di trovare il jack di picche?;C0|C1|C2|C3|C4;4;2;2;3;implicita;moderata;intero video;solo causale
+99;1;spaziale;Dove si trovana la leccia?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+99;2;temporale;Il pescatore capisce che la leccia è grossa prima o dopo averla pescata?;T0|T2;2;1;2;2;esplicita;alta;intero video;solo temporale
+99;3;causale;Perché la leccia non entra nel guadino?;C0|C1|C2|C3;3;2;2;2;esplicita;moderata;breve intervallo;combinata
+100;1;spaziale;Dove si trova il cartello con le istruzioni per entrare?;S0|S1;1;1;0;1;esplicita;nessuna;singolo frame;solo spaziale
+100;2;temporale;Cosa mostra prima la bambina il disegno di lei o quello di sua Vanessa?;T0|T2;2;3;2;2;esplicita;alta;breve intervallo;solo temporale
+100;3;causale;perché la mamma dice alla bambina che da grande farà l'artistico?;C0|C1|C2|C3|C4;4;2;2;4;parzialmente implicita;moderata;intero video;solo causale
