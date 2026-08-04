@@ -12,51 +12,55 @@ import spacy
 CSV_PATH = Path("data/transcription/transcriptions.csv")
 
 TRANSCRIPTION_COLUMN = "transcription"
-COMMON_NOUNS_COLUMN = "common_nouns"
+VERBS_COLUMN = "verbs"
 
-MODEL_NAME = "it_core_news_lg"
+SPACY_MODEL = "it_core_news_lg"
 
 
 # ============================================================
-# LOAD THE ITALIAN NLP PIPELINE
+# LOAD THE ITALIAN SPACY MODEL
 # ============================================================
 
-# The parser and NER components are not needed for noun extraction
+# The parser and NER components are not required for POS tagging
 nlp = spacy.load(
-    MODEL_NAME,
+    SPACY_MODEL,
     exclude=["parser", "ner"],
 )
 
 
-def extract_common_nouns(text: str) -> list[str]:
-    """Extract unique common-noun lemmas from a text."""
+def extract_verbs(text: str) -> list[str]:
+    """Extract unique verb lemmas from the provided text."""
 
     if not text or not text.strip():
         return []
 
-    doc = nlp(text)
+    document = nlp(text)
 
-    nouns = [
+    verbs = [
         token.lemma_.strip().lower()
-        for token in doc
-        if token.pos_ == "NOUN"
+        for token in document
+        if token.pos_ in {"VERB", "AUX"}
         and token.is_alpha
         and token.lemma_.strip()
     ]
 
-    # Remove duplicates while preserving their original order
-    return list(dict.fromkeys(nouns))
+    # Remove duplicates while preserving the original order
+    return list(dict.fromkeys(verbs))
 
 
 def main() -> None:
     if not CSV_PATH.exists():
-        raise FileNotFoundError(f"CSV file not found: {CSV_PATH}")
+        raise FileNotFoundError(
+            f"CSV file not found: {CSV_PATH}"
+        )
 
+    # Read the original CSV
     with CSV_PATH.open(
         mode="r",
         encoding="utf-8-sig",
         newline="",
     ) as csv_file:
+
         reader = csv.DictReader(
             csv_file,
             delimiter=";",
@@ -74,32 +78,38 @@ def main() -> None:
         rows = list(reader)
         fieldnames = list(reader.fieldnames)
 
-    if COMMON_NOUNS_COLUMN not in fieldnames:
-        fieldnames.append(COMMON_NOUNS_COLUMN)
+    # Add the verbs column if it does not already exist
+    if VERBS_COLUMN not in fieldnames:
+        fieldnames.append(VERBS_COLUMN)
 
+    # Process every transcription
     for index, row in enumerate(rows, start=1):
         video_name = row.get("video_name", f"row {index}")
         transcription = row.get(TRANSCRIPTION_COLUMN, "")
 
-        print(f"[{index}/{len(rows)}] Processing {video_name}")
+        print(
+            f"[{index}/{len(rows)}] "
+            f"Processing {video_name}"
+        )
 
         try:
-            common_nouns = extract_common_nouns(transcription)
+            verbs = extract_verbs(transcription)
 
-            # Store the Python list as JSON inside one CSV cell
-            row[COMMON_NOUNS_COLUMN] = json.dumps(
-                common_nouns,
+            # Store the list as JSON inside a single CSV cell
+            row[VERBS_COLUMN] = json.dumps(
+                verbs,
                 ensure_ascii=False,
             )
 
         except Exception as error:
             print(f"Processing error: {error}")
 
-            row[COMMON_NOUNS_COLUMN] = json.dumps(
+            row[VERBS_COLUMN] = json.dumps(
                 [],
                 ensure_ascii=False,
             )
 
+    # Write the updated data to a temporary file
     temporary_csv = CSV_PATH.with_suffix(".temporary.csv")
 
     with temporary_csv.open(
@@ -107,6 +117,7 @@ def main() -> None:
         encoding="utf-8-sig",
         newline="",
     ) as csv_file:
+
         writer = csv.DictWriter(
             csv_file,
             fieldnames=fieldnames,
