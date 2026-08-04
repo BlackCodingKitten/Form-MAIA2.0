@@ -3,6 +3,9 @@
 *.bcf
 *.blg
 *.fls
+*.lof
+.hf_cache
+*.fdb_latexmk
 *.log 
 *.xml
 *.gz
@@ -12,4 +15,4 @@
 .dist
 .venv
 .git
-
+Tesi
