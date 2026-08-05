@@ -208,25 +208,43 @@ Academic Year 2026/2027
 \setcounter{page}{1}
 \addtocontents{toc}{\protect\thispagestyle{empty}}
 \addcontentsline{toc}{chapter}{Introduzione} % Capitolo non numerato
+\chapter*{Introduction}
+%-------INTRODUZIONE-----------
+\label{ch:intro}
 \input{chapter/Introduzione.tex}
-
 \clearpage
-
-\input{chapter/Primo.tex}
-
+%------STATE OF THE ART-------
+\chapter{Literature review}
+\label{ch:LiteratureReview}
+\input{chapter/State_of_the_art.tex}
 \clearpage
-\input{chapter/Secondo.tex}
+%-----DATASET------------
+\chapter{Dataset}
+\label{ch:dataset}
+\input{chapter/Dataset.tex}
 \clearpage
-\input{chapter/Terzo.tex}
+%------MATERIALI E METODI
+\chapter{Materiali e metodi}
+\label{ch:MeMs}
+\input{chapter/MandM.tex}
 \clearpage
-\input{chapter/Quarto.tex}
+%----RESULTS AND DISCUSSIONS----
+\chapter{Results and Discussions}
+\label{ch:results}
+\input{chapter/Results_and_Discussions.tex}
 \clearpage
-
-\addcontentsline{toc}{chapter}{Conclusioni} % Capitolo non numerato
-\input{chapter/SviluppiFuturi.tex}
-\clearpage
+%--------Consclusioni------
+\chapter{Conclusions}
+\label{ch:conclusion} 
 \input{chapter/Quinto.tex}
 \clearpage
+
+\chapter{Future Perspectives}
+\label{ch:future}
+\input{chapter/SviluppiFuturi.tex}
+\clearpage
+
+
 
 
 
