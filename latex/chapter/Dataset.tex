@@ -1,5 +1,102 @@
+%Descrizione del dataset, da cosa origina, come viene creato ecc
+\section{The Original Video Dataset and Audio Enrichment}
+The benchmark \textbf{\ac{MAIA-AV}}, created for this experiment, is an expansion of the original \textit{\ac{MAIA}} dataset.
+The original dataset was developed as a native Italian collection of videos and tasks oriented to the fine-grained assessment of the reasoning and comprehension abilities of \acp{VLM}. The advantage of this design is that both the video content and linguistic data were natively created within an italian linguistic context.
+The original set of one hundred videos has an average duration of approximately thirty seconds per video. The dataset originates from \textit{YouTube Italia}, the original selection guidelines emphasized italian cultural representation and thematic variety. Videos containing people and clearly observable actions were privileged to provide sufficiently rich visual evidence for formulating questions related to events, relationships, and temporal changes.
+The original \textit{\ac{MAIA}} structure was built around nine main reasoning categories and twelve fine-grained sub-categories:
+\begin{description}
+\item[\textbf{Causal}]: Focuses on the causes and effects of events depicted in the video. It includes both explicit causal relations, which are directly observable, and implicit causes or effects that must be inferred from the available visual evidence.
+\item[\textbf{Counterfactual}]: Concerns hypothetical events that do not occur in the video but could plausibly happen under different conditions. It evaluates the model's ability to reason about alternative scenarios while remaining grounded in the context of the video.
+\item[\textbf{Implicit}]: Targets entities, actions, or events that are not directly visible but can be inferred from contextual information. The relevant information may be entirely absent from the video or may have appeared only during an earlier part of it.
+\item[\textbf{Out-of-Scope}]: Introduces questions that presuppose the existence of entities or events that are not present in the video. It assesses whether the model recognises the absence of sufficient visual evidence instead of producing an unsupported or hallucinatory answer.
+\item[\textbf{Planning}]: Focuses on the sequence of actions required to achieve a goal related to the situation shown in the video. It evaluates the model's ability to infer appropriate future steps from the available visual context.
+\item[\textbf{Sentiment}]: Examines the emotions, attitudes, moods, or reactions expressed by the characters in the video. It tests the model's ability to identify affective states from observable visual cues and interactions.
+\item[\textbf{Spatial}]: Concerns the position of entities and the spatial relationships between them. It includes both stable relationships that remain valid throughout the video and time-dependent configurations that apply only at specific moments.
+\item[\textbf{Temporal}]: Focuses on the temporal organisation of the events shown in the video. It evaluates the model's ability to identify when events occur, determine their order, and estimate their duration.
+\item[\textbf{Uncertainty}]: Addresses questions about entities or events that are visible but for which the video does not provide enough information to formulate a definitive answer. It evaluates the model's ability to recognise ambiguity and avoid unjustifiably assertive predictions.
+\end{description}
+For the purpose of \textbf{\ac{MAIA-AV}}, we select only three of these categories, omitting their corresponding sub-categories: \textbf{Spatial}, \textbf{Temporal}, and \textbf{Causal}.
+This restriction is motivated by the need for a distinct performance evaluation based on question complexity, as detailed in Section \ref{subsec:questions}.
 
-\section{Video}
-\section{Audio}
-\section{Transcription}
-Analisi dettagliata del fenomeno specifico ed esposizione delle ipotesi di ricerca.
+\section{Selection of Multimodal Materials}
+\subsection{Video Collection Procedure}
+%In Italiano
+Per il dataset di MAIA-AV Sono stati selezionati sempre cento video, la dutata va dai 15 ai 45 secondi, sono tutti video in italiano che contengono dialoghi o narrazione delle scene che avvengono. La scelta di queste 
+caratteristiche audiovisive non è casuale, ma è ben pensata sulla base delle indagini che si faranno dopo sul modello, c'è bisognio strettamente che nel video ci sia almeno un evento che abbia una causa e una 
+%In Inglese
+%Non Corretto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\paragraph{Technical walkthrough} The first step of the dataset construction pipeline is executed via the \texttt{videodownloader.py}\cite{deodati2026maiaav} script. The code is designed to retrieve video segments from \textit{YouTube Italia} and save them in \texttt{.mp4} format. The core library utilized in the script is \texttt{yt\_dlp}, which enables downloading audio-visual content from various online platforms, and also, it leverages the \texttt{download\_range\_func} function to specify the exact time interval to extract.
+\begin{lstlisting}[language=Python]
+    import yt_dlp
+    from yt_dlp.utils import download_range_func
+\end{lstlisting}
+When executed, the script prompts the user for the URL of the target video, the start time of the desired segment in \texttt{HH:MM:SS} format, and its duration in seconds. The start time is subsequently converted into a numerical timestamp in seconds using the custom \texttt{parse\_time()} function:
+\begin{lstlisting}[language=Python]
+    def parse_time(time_str):
+    parts = [int(p) for p in time_str.split(':')]
+    return parts[0] * 3600 + parts[1] * 60 + parts[2]
+\end{lstlisting}
+The main function, \texttt{download\_clip()}, handles user interaction and coordinates the extraction process.
+The script is configured to consistently retrieve the highest available quality format:
+\begin{lstlisting}[language=Python]
+    'format': 'bestvideo[height<=2160]+bestaudio/best'
+\end{lstlisting}
+The primary directive is utilized when \textit{YouTube} streams audio and video separately. The fall-back option, \texttt{best}, serves as a secondary solution: whenever separate but compatible streams cannot be fetched, the function downloads the optimal pre-merged audio-visual stream.
+The time interval is defined via \texttt{download\_range\_func()}:
+\begin{lstlisting}[language=Python]
+    'download_ranges': download_range_func(None,[(start_sec, end_sec)])
+\end{lstlisting}
+In this manner, \texttt{yt\_dlp} instructs \texttt{FFmpeg} to download only the segment bounded by \texttt{start\_sec} and \texttt{end\_sec}.
+To prevent black or frozen frames, keyframe creation is explicitly forced at the cutting boundaries:
+\begin{lstlisting}[language=Python]
+    'force_keyframes_at_cuts': True,
+\end{lstlisting}
+This process is necessary because compressed video formats do not contain full images in every frame, relying instead on inter-frame dependencies. Cutting at a position lacking a keyframe can result in corrupted frames at the beginning of the video segment. Forcing keyframes at cut points enhances the temporal precision of the segment, albeit at the cost of requiring content re-encoding.
+Finally, the output video is explicitly configured to the \texttt{MP4} format:
+\begin{lstlisting}[language=Python]
+    'merge_output_format': 'mp4',
+\end{lstlisting}
+Following the segment download, \texttt{FFmpeg} re-encodes the video stream using the \texttt{H.264} codec and the audio stream using \texttt{AAC}:
+\begin{lstlisting}[language=Python]
+    'postprocessor_args': {
+        'ffmpeg': [
+            '-c:v', 'libx264',
+            '-preset', 'fast',
+            '-c:a', 'aac'
+        ]
+    },
+\end{lstlisting}
+This step is fundamental to ensuring that every file in the dataset maintains a homogeneous configuration compatible with downstream processing tools. Such uniformity is required for subsequent frame extraction and \texttt{MP3} audio conversion.
+
+
+
+\subsection{Audio Conversion}
+%Non Corretto
+\subsection{Transcription Pipeline}
+%Non Corretto
+\section{Task Design and Collection}
+%Non Corretto
+\subsection{Questions Design}
+\label{subsec:questions}
+%Non Corretto
+\subsection{Answers Collection}
+%Non Corretto
