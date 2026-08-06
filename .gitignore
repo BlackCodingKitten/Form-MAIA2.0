@@ -16,3 +16,5 @@
 .venv
 .git
 Tesi
+global_frame
+yolo11n.pt
