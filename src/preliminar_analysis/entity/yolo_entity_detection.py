@@ -199,7 +199,7 @@ def main() -> None:
     )
     parser.add_argument(
         "output_directory",
-        default="data/preliminar_analysis/entity_analysis",
+        default="data/preliminar_analysis/entity_detection",
         type=Path,
         help="Directory in cui salvare i risultati.",
     )
