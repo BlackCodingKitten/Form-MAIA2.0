@@ -1,0 +1,577 @@
+{
+  "video_id": "video004",
+  "global_frames": [
+    {
+      "frame_id": "global_0000",
+      "timestamp": 0.319,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0000_t0000.319.jpg"
+    },
+    {
+      "frame_id": "global_0001",
+      "timestamp": 0.956,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0001_t0000.956.jpg"
+    },
+    {
+      "frame_id": "global_0002",
+      "timestamp": 1.593,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0002_t0001.593.jpg"
+    },
+    {
+      "frame_id": "global_0003",
+      "timestamp": 2.23,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0003_t0002.230.jpg"
+    },
+    {
+      "frame_id": "global_0004",
+      "timestamp": 2.867,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0004_t0002.867.jpg"
+    },
+    {
+      "frame_id": "global_0005",
+      "timestamp": 3.504,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0005_t0003.504.jpg"
+    },
+    {
+      "frame_id": "global_0006",
+      "timestamp": 4.141,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0006_t0004.141.jpg"
+    },
+    {
+      "frame_id": "global_0007",
+      "timestamp": 4.778,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0007_t0004.778.jpg"
+    },
+    {
+      "frame_id": "global_0008",
+      "timestamp": 5.415,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0008_t0005.415.jpg"
+    },
+    {
+      "frame_id": "global_0009",
+      "timestamp": 6.052,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0009_t0006.052.jpg"
+    },
+    {
+      "frame_id": "global_0010",
+      "timestamp": 6.689,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0010_t0006.689.jpg"
+    },
+    {
+      "frame_id": "global_0011",
+      "timestamp": 7.327,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0011_t0007.327.jpg"
+    },
+    {
+      "frame_id": "global_0012",
+      "timestamp": 7.964,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0012_t0007.964.jpg"
+    },
+    {
+      "frame_id": "global_0013",
+      "timestamp": 8.601,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0013_t0008.601.jpg"
+    },
+    {
+      "frame_id": "global_0014",
+      "timestamp": 9.238,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0014_t0009.238.jpg"
+    },
+    {
+      "frame_id": "global_0015",
+      "timestamp": 9.875,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0015_t0009.875.jpg"
+    },
+    {
+      "frame_id": "global_0016",
+      "timestamp": 10.512,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0016_t0010.512.jpg"
+    },
+    {
+      "frame_id": "global_0017",
+      "timestamp": 11.149,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0017_t0011.149.jpg"
+    },
+    {
+      "frame_id": "global_0018",
+      "timestamp": 11.786,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0018_t0011.786.jpg"
+    },
+    {
+      "frame_id": "global_0019",
+      "timestamp": 12.423,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0019_t0012.423.jpg"
+    },
+    {
+      "frame_id": "global_0020",
+      "timestamp": 13.06,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0020_t0013.060.jpg"
+    },
+    {
+      "frame_id": "global_0021",
+      "timestamp": 13.698,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0021_t0013.698.jpg"
+    },
+    {
+      "frame_id": "global_0022",
+      "timestamp": 14.335,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0022_t0014.335.jpg"
+    },
+    {
+      "frame_id": "global_0023",
+      "timestamp": 14.972,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0023_t0014.972.jpg"
+    },
+    {
+      "frame_id": "global_0024",
+      "timestamp": 15.609,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0024_t0015.609.jpg"
+    },
+    {
+      "frame_id": "global_0025",
+      "timestamp": 16.246,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0025_t0016.246.jpg"
+    },
+    {
+      "frame_id": "global_0026",
+      "timestamp": 16.883,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0026_t0016.883.jpg"
+    },
+    {
+      "frame_id": "global_0027",
+      "timestamp": 17.52,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0027_t0017.520.jpg"
+    },
+    {
+      "frame_id": "global_0028",
+      "timestamp": 18.157,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0028_t0018.157.jpg"
+    },
+    {
+      "frame_id": "global_0029",
+      "timestamp": 18.794,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0029_t0018.794.jpg"
+    },
+    {
+      "frame_id": "global_0030",
+      "timestamp": 19.431,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0030_t0019.431.jpg"
+    },
+    {
+      "frame_id": "global_0031",
+      "timestamp": 20.068,
+      "file": "data/preliminar_analysis/preprocessing/video004/global_frames/global_0031_t0020.068.jpg"
+    }
+  ],
+  "dense_frames": [
+    {
+      "frame_id": "dense_0000",
+      "timestamp": 0.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0000_t0000.000.jpg"
+    },
+    {
+      "frame_id": "dense_0001",
+      "timestamp": 0.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0001_t0000.250.jpg"
+    },
+    {
+      "frame_id": "dense_0002",
+      "timestamp": 0.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0002_t0000.500.jpg"
+    },
+    {
+      "frame_id": "dense_0003",
+      "timestamp": 0.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0003_t0000.750.jpg"
+    },
+    {
+      "frame_id": "dense_0004",
+      "timestamp": 1.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0004_t0001.000.jpg"
+    },
+    {
+      "frame_id": "dense_0005",
+      "timestamp": 1.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0005_t0001.250.jpg"
+    },
+    {
+      "frame_id": "dense_0006",
+      "timestamp": 1.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0006_t0001.500.jpg"
+    },
+    {
+      "frame_id": "dense_0007",
+      "timestamp": 1.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0007_t0001.750.jpg"
+    },
+    {
+      "frame_id": "dense_0008",
+      "timestamp": 2.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0008_t0002.000.jpg"
+    },
+    {
+      "frame_id": "dense_0009",
+      "timestamp": 2.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0009_t0002.250.jpg"
+    },
+    {
+      "frame_id": "dense_0010",
+      "timestamp": 2.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0010_t0002.500.jpg"
+    },
+    {
+      "frame_id": "dense_0011",
+      "timestamp": 2.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0011_t0002.750.jpg"
+    },
+    {
+      "frame_id": "dense_0012",
+      "timestamp": 3.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0012_t0003.000.jpg"
+    },
+    {
+      "frame_id": "dense_0013",
+      "timestamp": 3.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0013_t0003.250.jpg"
+    },
+    {
+      "frame_id": "dense_0014",
+      "timestamp": 3.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0014_t0003.500.jpg"
+    },
+    {
+      "frame_id": "dense_0015",
+      "timestamp": 3.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0015_t0003.750.jpg"
+    },
+    {
+      "frame_id": "dense_0016",
+      "timestamp": 4.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0016_t0004.000.jpg"
+    },
+    {
+      "frame_id": "dense_0017",
+      "timestamp": 4.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0017_t0004.250.jpg"
+    },
+    {
+      "frame_id": "dense_0018",
+      "timestamp": 4.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0018_t0004.500.jpg"
+    },
+    {
+      "frame_id": "dense_0019",
+      "timestamp": 4.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0019_t0004.750.jpg"
+    },
+    {
+      "frame_id": "dense_0020",
+      "timestamp": 5.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0020_t0005.000.jpg"
+    },
+    {
+      "frame_id": "dense_0021",
+      "timestamp": 5.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0021_t0005.250.jpg"
+    },
+    {
+      "frame_id": "dense_0022",
+      "timestamp": 5.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0022_t0005.500.jpg"
+    },
+    {
+      "frame_id": "dense_0023",
+      "timestamp": 5.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0023_t0005.750.jpg"
+    },
+    {
+      "frame_id": "dense_0024",
+      "timestamp": 6.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0024_t0006.000.jpg"
+    },
+    {
+      "frame_id": "dense_0025",
+      "timestamp": 6.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0025_t0006.250.jpg"
+    },
+    {
+      "frame_id": "dense_0026",
+      "timestamp": 6.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0026_t0006.500.jpg"
+    },
+    {
+      "frame_id": "dense_0027",
+      "timestamp": 6.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0027_t0006.750.jpg"
+    },
+    {
+      "frame_id": "dense_0028",
+      "timestamp": 7.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0028_t0007.000.jpg"
+    },
+    {
+      "frame_id": "dense_0029",
+      "timestamp": 7.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0029_t0007.250.jpg"
+    },
+    {
+      "frame_id": "dense_0030",
+      "timestamp": 7.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0030_t0007.500.jpg"
+    },
+    {
+      "frame_id": "dense_0031",
+      "timestamp": 7.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0031_t0007.750.jpg"
+    },
+    {
+      "frame_id": "dense_0032",
+      "timestamp": 8.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0032_t0008.000.jpg"
+    },
+    {
+      "frame_id": "dense_0033",
+      "timestamp": 8.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0033_t0008.250.jpg"
+    },
+    {
+      "frame_id": "dense_0034",
+      "timestamp": 8.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0034_t0008.500.jpg"
+    },
+    {
+      "frame_id": "dense_0035",
+      "timestamp": 8.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0035_t0008.750.jpg"
+    },
+    {
+      "frame_id": "dense_0036",
+      "timestamp": 9.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0036_t0009.000.jpg"
+    },
+    {
+      "frame_id": "dense_0037",
+      "timestamp": 9.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0037_t0009.250.jpg"
+    },
+    {
+      "frame_id": "dense_0038",
+      "timestamp": 9.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0038_t0009.500.jpg"
+    },
+    {
+      "frame_id": "dense_0039",
+      "timestamp": 9.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0039_t0009.750.jpg"
+    },
+    {
+      "frame_id": "dense_0040",
+      "timestamp": 10.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0040_t0010.000.jpg"
+    },
+    {
+      "frame_id": "dense_0041",
+      "timestamp": 10.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0041_t0010.250.jpg"
+    },
+    {
+      "frame_id": "dense_0042",
+      "timestamp": 10.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0042_t0010.500.jpg"
+    },
+    {
+      "frame_id": "dense_0043",
+      "timestamp": 10.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0043_t0010.750.jpg"
+    },
+    {
+      "frame_id": "dense_0044",
+      "timestamp": 11.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0044_t0011.000.jpg"
+    },
+    {
+      "frame_id": "dense_0045",
+      "timestamp": 11.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0045_t0011.250.jpg"
+    },
+    {
+      "frame_id": "dense_0046",
+      "timestamp": 11.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0046_t0011.500.jpg"
+    },
+    {
+      "frame_id": "dense_0047",
+      "timestamp": 11.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0047_t0011.750.jpg"
+    },
+    {
+      "frame_id": "dense_0048",
+      "timestamp": 12.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0048_t0012.000.jpg"
+    },
+    {
+      "frame_id": "dense_0049",
+      "timestamp": 12.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0049_t0012.250.jpg"
+    },
+    {
+      "frame_id": "dense_0050",
+      "timestamp": 12.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0050_t0012.500.jpg"
+    },
+    {
+      "frame_id": "dense_0051",
+      "timestamp": 12.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0051_t0012.750.jpg"
+    },
+    {
+      "frame_id": "dense_0052",
+      "timestamp": 13.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0052_t0013.000.jpg"
+    },
+    {
+      "frame_id": "dense_0053",
+      "timestamp": 13.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0053_t0013.250.jpg"
+    },
+    {
+      "frame_id": "dense_0054",
+      "timestamp": 13.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0054_t0013.500.jpg"
+    },
+    {
+      "frame_id": "dense_0055",
+      "timestamp": 13.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0055_t0013.750.jpg"
+    },
+    {
+      "frame_id": "dense_0056",
+      "timestamp": 14.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0056_t0014.000.jpg"
+    },
+    {
+      "frame_id": "dense_0057",
+      "timestamp": 14.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0057_t0014.250.jpg"
+    },
+    {
+      "frame_id": "dense_0058",
+      "timestamp": 14.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0058_t0014.500.jpg"
+    },
+    {
+      "frame_id": "dense_0059",
+      "timestamp": 14.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0059_t0014.750.jpg"
+    },
+    {
+      "frame_id": "dense_0060",
+      "timestamp": 15.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0060_t0015.000.jpg"
+    },
+    {
+      "frame_id": "dense_0061",
+      "timestamp": 15.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0061_t0015.250.jpg"
+    },
+    {
+      "frame_id": "dense_0062",
+      "timestamp": 15.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0062_t0015.500.jpg"
+    },
+    {
+      "frame_id": "dense_0063",
+      "timestamp": 15.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0063_t0015.750.jpg"
+    },
+    {
+      "frame_id": "dense_0064",
+      "timestamp": 16.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0064_t0016.000.jpg"
+    },
+    {
+      "frame_id": "dense_0065",
+      "timestamp": 16.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0065_t0016.250.jpg"
+    },
+    {
+      "frame_id": "dense_0066",
+      "timestamp": 16.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0066_t0016.500.jpg"
+    },
+    {
+      "frame_id": "dense_0067",
+      "timestamp": 16.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0067_t0016.750.jpg"
+    },
+    {
+      "frame_id": "dense_0068",
+      "timestamp": 17.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0068_t0017.000.jpg"
+    },
+    {
+      "frame_id": "dense_0069",
+      "timestamp": 17.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0069_t0017.250.jpg"
+    },
+    {
+      "frame_id": "dense_0070",
+      "timestamp": 17.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0070_t0017.500.jpg"
+    },
+    {
+      "frame_id": "dense_0071",
+      "timestamp": 17.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0071_t0017.750.jpg"
+    },
+    {
+      "frame_id": "dense_0072",
+      "timestamp": 18.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0072_t0018.000.jpg"
+    },
+    {
+      "frame_id": "dense_0073",
+      "timestamp": 18.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0073_t0018.250.jpg"
+    },
+    {
+      "frame_id": "dense_0074",
+      "timestamp": 18.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0074_t0018.500.jpg"
+    },
+    {
+      "frame_id": "dense_0075",
+      "timestamp": 18.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0075_t0018.750.jpg"
+    },
+    {
+      "frame_id": "dense_0076",
+      "timestamp": 19.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0076_t0019.000.jpg"
+    },
+    {
+      "frame_id": "dense_0077",
+      "timestamp": 19.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0077_t0019.250.jpg"
+    },
+    {
+      "frame_id": "dense_0078",
+      "timestamp": 19.5,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0078_t0019.500.jpg"
+    },
+    {
+      "frame_id": "dense_0079",
+      "timestamp": 19.75,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0079_t0019.750.jpg"
+    },
+    {
+      "frame_id": "dense_0080",
+      "timestamp": 20.0,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0080_t0020.000.jpg"
+    },
+    {
+      "frame_id": "dense_0081",
+      "timestamp": 20.25,
+      "file": "data/preliminar_analysis/preprocessing/video004/dense_frames/dense_0081_t0020.250.jpg"
+    }
+  ]
+}

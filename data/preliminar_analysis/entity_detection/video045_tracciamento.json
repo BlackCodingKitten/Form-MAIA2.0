@@ -1,0 +1,8750 @@
+{
+  "id_video": "video045",
+  "modello": "yolo11n.pt",
+  "tracker": "ByteTrack",
+  "dispositivo": "CUDA:3",
+  "soglia_confidenza": 0.25,
+  "numero_frame": 128,
+  "numero_tracce": 43,
+  "frame": [
+    {
+      "id_frame": "dense_0000",
+      "nome_file": "dense_0000_t0000.000.jpg",
+      "timestamp": 0.0,
+      "numero_rilevamenti": 0,
+      "rilevamenti": []
+    },
+    {
+      "id_frame": "dense_0001",
+      "nome_file": "dense_0001_t0000.250.jpg",
+      "timestamp": 0.25,
+      "numero_rilevamenti": 5,
+      "rilevamenti": [
+        {
+          "id_traccia": null,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8496,
+          "riquadro_xyxy": [
+            581.06,
+            293.43,
+            869.39,
+            517.28
+          ]
+        },
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5886,
+          "riquadro_xyxy": [
+            515.66,
+            240.35,
+            590.05,
+            455.58
+          ]
+        },
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5542,
+          "riquadro_xyxy": [
+            410.49,
+            284.82,
+            523.94,
+            460.74
+          ]
+        },
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3138,
+          "riquadro_xyxy": [
+            631.8,
+            247.89,
+            666.83,
+            336.14
+          ]
+        },
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.2722,
+          "riquadro_xyxy": [
+            580.07,
+            242.37,
+            629.93,
+            360.74
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0002",
+      "nome_file": "dense_0002_t0000.500.jpg",
+      "timestamp": 0.5,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7157,
+          "riquadro_xyxy": [
+            516.1,
+            299.55,
+            839.17,
+            549.82
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0003",
+      "nome_file": "dense_0003_t0000.750.jpg",
+      "timestamp": 0.75,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 3,
+          "nome_classe": "motorcycle",
+          "confidenza": 0.5015,
+          "riquadro_xyxy": [
+            497.91,
+            306.76,
+            833.36,
+            565.47
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0004",
+      "nome_file": "dense_0004_t0001.000.jpg",
+      "timestamp": 1.0,
+      "numero_rilevamenti": 5,
+      "rilevamenti": [
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7178,
+          "riquadro_xyxy": [
+            410.43,
+            270.32,
+            490.55,
+            493.3
+          ]
+        },
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.447,
+          "riquadro_xyxy": [
+            470.53,
+            277.78,
+            520.38,
+            377.42
+          ]
+        },
+        {
+          "id_traccia": null,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.3121,
+          "riquadro_xyxy": [
+            721.51,
+            320.26,
+            868.75,
+            415.03
+          ]
+        },
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.2714,
+          "riquadro_xyxy": [
+            411.6,
+            270.75,
+            491.83,
+            429.29
+          ]
+        },
+        {
+          "id_traccia": null,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.2565,
+          "riquadro_xyxy": [
+            444.49,
+            331.43,
+            870.98,
+            573.71
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0005",
+      "nome_file": "dense_0005_t0001.250.jpg",
+      "timestamp": 1.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 9,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4205,
+          "riquadro_xyxy": [
+            412.73,
+            272.56,
+            491.61,
+            491.89
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.472,
+          "riquadro_xyxy": [
+            490.74,
+            326.77,
+            811.17,
+            570.26
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0006",
+      "nome_file": "dense_0006_t0001.500.jpg",
+      "timestamp": 1.5,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 9,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8293,
+          "riquadro_xyxy": [
+            408.51,
+            263.92,
+            488.79,
+            487.53
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.4642,
+          "riquadro_xyxy": [
+            488.66,
+            329.05,
+            818.41,
+            576.51
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0007",
+      "nome_file": "dense_0007_t0001.750.jpg",
+      "timestamp": 1.75,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 9,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7743,
+          "riquadro_xyxy": [
+            407.45,
+            260.68,
+            488.67,
+            487.48
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.5846,
+          "riquadro_xyxy": [
+            491.37,
+            329.41,
+            828.28,
+            579.27
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0008",
+      "nome_file": "dense_0008_t0002.000.jpg",
+      "timestamp": 2.0,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 9,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8206,
+          "riquadro_xyxy": [
+            411.41,
+            260.04,
+            493.54,
+            489.0
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6536,
+          "riquadro_xyxy": [
+            500.21,
+            332.06,
+            832.56,
+            575.66
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0009",
+      "nome_file": "dense_0009_t0002.250.jpg",
+      "timestamp": 2.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 9,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7195,
+          "riquadro_xyxy": [
+            418.36,
+            263.7,
+            499.92,
+            489.93
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7996,
+          "riquadro_xyxy": [
+            503.49,
+            333.74,
+            833.82,
+            573.87
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0010",
+      "nome_file": "dense_0010_t0002.500.jpg",
+      "timestamp": 2.5,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 9,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7606,
+          "riquadro_xyxy": [
+            433.34,
+            267.27,
+            514.26,
+            489.88
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.5596,
+          "riquadro_xyxy": [
+            503.12,
+            334.54,
+            829.97,
+            571.52
+          ]
+        },
+        {
+          "id_traccia": 24,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7986,
+          "riquadro_xyxy": [
+            770.21,
+            337.84,
+            870.8,
+            579.71
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0011",
+      "nome_file": "dense_0011_t0002.750.jpg",
+      "timestamp": 2.75,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 9,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6251,
+          "riquadro_xyxy": [
+            447.59,
+            261.95,
+            529.25,
+            484.55
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7208,
+          "riquadro_xyxy": [
+            493.74,
+            305.76,
+            864.35,
+            575.75
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0012",
+      "nome_file": "dense_0012_t0003.000.jpg",
+      "timestamp": 3.0,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 9,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5247,
+          "riquadro_xyxy": [
+            460.95,
+            280.59,
+            537.28,
+            487.12
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.4671,
+          "riquadro_xyxy": [
+            499.46,
+            322.31,
+            849.95,
+            577.33
+          ]
+        },
+        {
+          "id_traccia": 28,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7968,
+          "riquadro_xyxy": [
+            408.08,
+            258.04,
+            445.74,
+            392.99
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0013",
+      "nome_file": "dense_0013_t0003.250.jpg",
+      "timestamp": 3.25,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 8,
+          "nome_classe": "boat",
+          "confidenza": 0.3881,
+          "riquadro_xyxy": [
+            511.91,
+            335.28,
+            838.69,
+            572.35
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0014",
+      "nome_file": "dense_0014_t0003.500.jpg",
+      "timestamp": 3.5,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 3,
+          "nome_classe": "motorcycle",
+          "confidenza": 0.4889,
+          "riquadro_xyxy": [
+            475.32,
+            359.38,
+            777.59,
+            579.64
+          ]
+        },
+        {
+          "id_traccia": 36,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7373,
+          "riquadro_xyxy": [
+            413.32,
+            308.59,
+            479.84,
+            516.03
+          ]
+        },
+        {
+          "id_traccia": 9,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6845,
+          "riquadro_xyxy": [
+            467.77,
+            306.88,
+            548.5,
+            520.19
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0015",
+      "nome_file": "dense_0015_t0003.750.jpg",
+      "timestamp": 3.75,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.4319,
+          "riquadro_xyxy": [
+            507.94,
+            378.23,
+            793.85,
+            581.73
+          ]
+        },
+        {
+          "id_traccia": 36,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.631,
+          "riquadro_xyxy": [
+            418.55,
+            317.61,
+            485.54,
+            525.88
+          ]
+        },
+        {
+          "id_traccia": 9,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5035,
+          "riquadro_xyxy": [
+            471.19,
+            325.67,
+            551.62,
+            531.98
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0016",
+      "nome_file": "dense_0016_t0004.000.jpg",
+      "timestamp": 4.0,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 3,
+          "nome_classe": "motorcycle",
+          "confidenza": 0.5513,
+          "riquadro_xyxy": [
+            567.45,
+            382.27,
+            847.44,
+            581.9
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0017",
+      "nome_file": "dense_0017_t0004.250.jpg",
+      "timestamp": 4.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 3,
+          "nome_classe": "motorcycle",
+          "confidenza": 0.4033,
+          "riquadro_xyxy": [
+            621.93,
+            408.98,
+            863.57,
+            581.34
+          ]
+        },
+        {
+          "id_traccia": 9,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6228,
+          "riquadro_xyxy": [
+            504.77,
+            307.81,
+            580.47,
+            501.9
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0018",
+      "nome_file": "dense_0018_t0004.500.jpg",
+      "timestamp": 4.5,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6474,
+          "riquadro_xyxy": [
+            544.76,
+            418.63,
+            794.69,
+            582.51
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0019",
+      "nome_file": "dense_0019_t0004.750.jpg",
+      "timestamp": 4.75,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5415,
+          "riquadro_xyxy": [
+            536.73,
+            362.93,
+            830.8,
+            565.65
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0020",
+      "nome_file": "dense_0020_t0005.000.jpg",
+      "timestamp": 5.0,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 28,
+          "nome_classe": "suitcase",
+          "confidenza": 0.4281,
+          "riquadro_xyxy": [
+            580.5,
+            362.21,
+            844.98,
+            549.87
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0021",
+      "nome_file": "dense_0021_t0005.250.jpg",
+      "timestamp": 5.25,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7051,
+          "riquadro_xyxy": [
+            523.88,
+            342.84,
+            817.61,
+            566.51
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0022",
+      "nome_file": "dense_0022_t0005.500.jpg",
+      "timestamp": 5.5,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6943,
+          "riquadro_xyxy": [
+            544.21,
+            354.26,
+            820.33,
+            575.07
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0023",
+      "nome_file": "dense_0023_t0005.750.jpg",
+      "timestamp": 5.75,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6453,
+          "riquadro_xyxy": [
+            493.99,
+            348.14,
+            790.46,
+            575.23
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0024",
+      "nome_file": "dense_0024_t0006.000.jpg",
+      "timestamp": 6.0,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": 77,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5607,
+          "riquadro_xyxy": [
+            573.41,
+            323.3,
+            713.93,
+            570.41
+          ]
+        },
+        {
+          "id_traccia": 24,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6167,
+          "riquadro_xyxy": [
+            769.99,
+            271.47,
+            891.16,
+            578.31
+          ]
+        },
+        {
+          "id_traccia": 36,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.5257,
+          "riquadro_xyxy": [
+            438.19,
+            354.28,
+            515.13,
+            574.14
+          ]
+        },
+        {
+          "id_traccia": 9,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.607,
+          "riquadro_xyxy": [
+            530.3,
+            336.55,
+            619.41,
+            557.39
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0025",
+      "nome_file": "dense_0025_t0006.250.jpg",
+      "timestamp": 6.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 77,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8048,
+          "riquadro_xyxy": [
+            572.18,
+            344.88,
+            696.13,
+            562.69
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.3837,
+          "riquadro_xyxy": [
+            454.85,
+            336.12,
+            775.25,
+            575.21
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0026",
+      "nome_file": "dense_0026_t0006.500.jpg",
+      "timestamp": 6.5,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 77,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7265,
+          "riquadro_xyxy": [
+            601.7,
+            339.89,
+            731.89,
+            568.1
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0027",
+      "nome_file": "dense_0027_t0006.750.jpg",
+      "timestamp": 6.75,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 77,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5024,
+          "riquadro_xyxy": [
+            617.59,
+            346.3,
+            740.23,
+            561.41
+          ]
+        },
+        {
+          "id_traccia": 24,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8025,
+          "riquadro_xyxy": [
+            740.94,
+            333.0,
+            838.61,
+            579.35
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6409,
+          "riquadro_xyxy": [
+            430.23,
+            333.56,
+            756.97,
+            574.1
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0028",
+      "nome_file": "dense_0028_t0007.000.jpg",
+      "timestamp": 7.0,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 77,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7592,
+          "riquadro_xyxy": [
+            610.92,
+            335.01,
+            742.2,
+            567.54
+          ]
+        },
+        {
+          "id_traccia": 24,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8362,
+          "riquadro_xyxy": [
+            761.14,
+            339.2,
+            857.78,
+            578.08
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.5589,
+          "riquadro_xyxy": [
+            397.72,
+            339.86,
+            699.76,
+            567.71
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0029",
+      "nome_file": "dense_0029_t0007.250.jpg",
+      "timestamp": 7.25,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 24,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7913,
+          "riquadro_xyxy": [
+            768.23,
+            337.85,
+            865.15,
+            577.26
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 3,
+          "nome_classe": "motorcycle",
+          "confidenza": 0.5582,
+          "riquadro_xyxy": [
+            421.71,
+            326.86,
+            737.36,
+            563.64
+          ]
+        },
+        {
+          "id_traccia": 105,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4734,
+          "riquadro_xyxy": [
+            691.4,
+            322.58,
+            804.33,
+            572.03
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0030",
+      "nome_file": "dense_0030_t0007.500.jpg",
+      "timestamp": 7.5,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": 24,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7678,
+          "riquadro_xyxy": [
+            781.29,
+            336.13,
+            874.95,
+            574.96
+          ]
+        },
+        {
+          "id_traccia": 105,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6934,
+          "riquadro_xyxy": [
+            708.23,
+            339.24,
+            814.75,
+            573.77
+          ]
+        },
+        {
+          "id_traccia": 28,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5148,
+          "riquadro_xyxy": [
+            408.19,
+            296.69,
+            454.55,
+            465.28
+          ]
+        },
+        {
+          "id_traccia": 9,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4489,
+          "riquadro_xyxy": [
+            566.25,
+            348.59,
+            656.37,
+            559.44
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0031",
+      "nome_file": "dense_0031_t0007.750.jpg",
+      "timestamp": 7.75,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 105,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7261,
+          "riquadro_xyxy": [
+            725.13,
+            341.1,
+            830.79,
+            571.71
+          ]
+        },
+        {
+          "id_traccia": 28,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5829,
+          "riquadro_xyxy": [
+            417.6,
+            293.11,
+            465.27,
+            465.28
+          ]
+        },
+        {
+          "id_traccia": 9,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.612,
+          "riquadro_xyxy": [
+            560.51,
+            357.98,
+            657.79,
+            562.06
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0032",
+      "nome_file": "dense_0032_t0008.000.jpg",
+      "timestamp": 8.0,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": 105,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7736,
+          "riquadro_xyxy": [
+            729.49,
+            318.51,
+            846.97,
+            575.08
+          ]
+        },
+        {
+          "id_traccia": 9,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6065,
+          "riquadro_xyxy": [
+            564.67,
+            364.85,
+            662.88,
+            562.79
+          ]
+        },
+        {
+          "id_traccia": 121,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5352,
+          "riquadro_xyxy": [
+            520.95,
+            288.92,
+            570.29,
+            387.17
+          ]
+        },
+        {
+          "id_traccia": 77,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5992,
+          "riquadro_xyxy": [
+            646.63,
+            341.49,
+            766.52,
+            558.14
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0033",
+      "nome_file": "dense_0033_t0008.250.jpg",
+      "timestamp": 8.25,
+      "numero_rilevamenti": 5,
+      "rilevamenti": [
+        {
+          "id_traccia": 105,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7442,
+          "riquadro_xyxy": [
+            732.33,
+            353.63,
+            837.05,
+            578.11
+          ]
+        },
+        {
+          "id_traccia": 9,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3526,
+          "riquadro_xyxy": [
+            567.28,
+            366.52,
+            663.59,
+            561.95
+          ]
+        },
+        {
+          "id_traccia": 121,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3207,
+          "riquadro_xyxy": [
+            525.53,
+            291.73,
+            574.24,
+            389.04
+          ]
+        },
+        {
+          "id_traccia": 123,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5909,
+          "riquadro_xyxy": [
+            448.47,
+            284.16,
+            506.23,
+            463.2
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.4185,
+          "riquadro_xyxy": [
+            464.17,
+            338.1,
+            756.45,
+            558.25
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0034",
+      "nome_file": "dense_0034_t0008.500.jpg",
+      "timestamp": 8.5,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 105,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8149,
+          "riquadro_xyxy": [
+            757.01,
+            355.99,
+            860.75,
+            577.58
+          ]
+        },
+        {
+          "id_traccia": 9,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6657,
+          "riquadro_xyxy": [
+            575.17,
+            362.98,
+            675.36,
+            567.24
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0035",
+      "nome_file": "dense_0035_t0008.750.jpg",
+      "timestamp": 8.75,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 129,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6677,
+          "riquadro_xyxy": [
+            443.34,
+            287.15,
+            482.64,
+            390.52
+          ]
+        },
+        {
+          "id_traccia": 24,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5341,
+          "riquadro_xyxy": [
+            793.08,
+            365.67,
+            874.77,
+            577.22
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.3939,
+          "riquadro_xyxy": [
+            474.04,
+            337.87,
+            776.86,
+            568.73
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0036",
+      "nome_file": "dense_0036_t0009.000.jpg",
+      "timestamp": 9.0,
+      "numero_rilevamenti": 6,
+      "rilevamenti": [
+        {
+          "id_traccia": 129,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4738,
+          "riquadro_xyxy": [
+            439.73,
+            293.62,
+            478.67,
+            395.72
+          ]
+        },
+        {
+          "id_traccia": 131,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4165,
+          "riquadro_xyxy": [
+            486.54,
+            272.01,
+            519.75,
+            361.05
+          ]
+        },
+        {
+          "id_traccia": 135,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3621,
+          "riquadro_xyxy": [
+            410.56,
+            280.3,
+            448.82,
+            402.73
+          ]
+        },
+        {
+          "id_traccia": 24,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4111,
+          "riquadro_xyxy": [
+            794.36,
+            358.32,
+            874.47,
+            570.85
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 3,
+          "nome_classe": "motorcycle",
+          "confidenza": 0.3872,
+          "riquadro_xyxy": [
+            475.67,
+            341.0,
+            777.04,
+            573.6
+          ]
+        },
+        {
+          "id_traccia": 105,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6777,
+          "riquadro_xyxy": [
+            737.78,
+            298.24,
+            861.03,
+            565.65
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0037",
+      "nome_file": "dense_0037_t0009.250.jpg",
+      "timestamp": 9.25,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 129,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5191,
+          "riquadro_xyxy": [
+            446.47,
+            296.49,
+            482.93,
+            392.81
+          ]
+        },
+        {
+          "id_traccia": 135,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3354,
+          "riquadro_xyxy": [
+            412.96,
+            276.23,
+            451.76,
+            400.28
+          ]
+        },
+        {
+          "id_traccia": 105,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6865,
+          "riquadro_xyxy": [
+            743.08,
+            332.14,
+            852.54,
+            563.14
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0038",
+      "nome_file": "dense_0038_t0009.500.jpg",
+      "timestamp": 9.5,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 77,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5173,
+          "riquadro_xyxy": [
+            721.11,
+            367.41,
+            823.74,
+            554.5
+          ]
+        },
+        {
+          "id_traccia": 24,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3754,
+          "riquadro_xyxy": [
+            786.24,
+            306.08,
+            879.78,
+            562.65
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.501,
+          "riquadro_xyxy": [
+            500.85,
+            329.74,
+            811.37,
+            567.82
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0039",
+      "nome_file": "dense_0039_t0009.750.jpg",
+      "timestamp": 9.75,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8875,
+          "riquadro_xyxy": [
+            512.24,
+            331.76,
+            828.29,
+            569.02
+          ]
+        },
+        {
+          "id_traccia": 28,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8332,
+          "riquadro_xyxy": [
+            415.18,
+            319.99,
+            485.44,
+            568.36
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0040",
+      "nome_file": "dense_0040_t0010.000.jpg",
+      "timestamp": 10.0,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8342,
+          "riquadro_xyxy": [
+            521.19,
+            325.59,
+            842.98,
+            562.98
+          ]
+        },
+        {
+          "id_traccia": 141,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4481,
+          "riquadro_xyxy": [
+            521.76,
+            304.02,
+            564.69,
+            417.6
+          ]
+        },
+        {
+          "id_traccia": 28,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7613,
+          "riquadro_xyxy": [
+            414.33,
+            328.29,
+            486.86,
+            580.52
+          ]
+        },
+        {
+          "id_traccia": 9,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6112,
+          "riquadro_xyxy": [
+            614.78,
+            367.28,
+            712.74,
+            562.68
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0041",
+      "nome_file": "dense_0041_t0010.250.jpg",
+      "timestamp": 10.25,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6308,
+          "riquadro_xyxy": [
+            523.39,
+            324.7,
+            851.11,
+            562.83
+          ]
+        },
+        {
+          "id_traccia": 141,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4046,
+          "riquadro_xyxy": [
+            511.49,
+            301.27,
+            558.96,
+            426.75
+          ]
+        },
+        {
+          "id_traccia": 28,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4628,
+          "riquadro_xyxy": [
+            404.84,
+            301.82,
+            482.01,
+            583.66
+          ]
+        },
+        {
+          "id_traccia": 143,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.574,
+          "riquadro_xyxy": [
+            468.77,
+            278.29,
+            506.05,
+            380.34
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0042",
+      "nome_file": "dense_0042_t0010.500.jpg",
+      "timestamp": 10.5,
+      "numero_rilevamenti": 0,
+      "rilevamenti": []
+    },
+    {
+      "id_frame": "dense_0043",
+      "nome_file": "dense_0043_t0010.750.jpg",
+      "timestamp": 10.75,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6261,
+          "riquadro_xyxy": [
+            391.07,
+            211.99,
+            877.4,
+            576.4
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0044",
+      "nome_file": "dense_0044_t0011.000.jpg",
+      "timestamp": 11.0,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4746,
+          "riquadro_xyxy": [
+            362.75,
+            158.59,
+            911.01,
+            581.57
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0045",
+      "nome_file": "dense_0045_t0011.250.jpg",
+      "timestamp": 11.25,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 147,
+          "id_classe": 49,
+          "nome_classe": "orange",
+          "confidenza": 0.3739,
+          "riquadro_xyxy": [
+            888.56,
+            112.87,
+            1259.19,
+            594.39
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0046",
+      "nome_file": "dense_0046_t0011.500.jpg",
+      "timestamp": 11.5,
+      "numero_rilevamenti": 0,
+      "rilevamenti": []
+    },
+    {
+      "id_frame": "dense_0047",
+      "nome_file": "dense_0047_t0011.750.jpg",
+      "timestamp": 11.75,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7484,
+          "riquadro_xyxy": [
+            415.81,
+            68.03,
+            952.26,
+            503.28
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0048",
+      "nome_file": "dense_0048_t0012.000.jpg",
+      "timestamp": 12.0,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 151,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5374,
+          "riquadro_xyxy": [
+            400.16,
+            274.08,
+            728.25,
+            582.18
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7993,
+          "riquadro_xyxy": [
+            397.33,
+            32.1,
+            924.36,
+            483.23
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0049",
+      "nome_file": "dense_0049_t0012.250.jpg",
+      "timestamp": 12.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 151,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7717,
+          "riquadro_xyxy": [
+            402.17,
+            325.61,
+            673.55,
+            580.79
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8974,
+          "riquadro_xyxy": [
+            385.71,
+            32.2,
+            892.27,
+            493.19
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0050",
+      "nome_file": "dense_0050_t0012.500.jpg",
+      "timestamp": 12.5,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 151,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4935,
+          "riquadro_xyxy": [
+            401.45,
+            389.54,
+            604.84,
+            581.39
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9048,
+          "riquadro_xyxy": [
+            371.07,
+            31.69,
+            869.13,
+            519.01
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0051",
+      "nome_file": "dense_0051_t0012.750.jpg",
+      "timestamp": 12.75,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 151,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3883,
+          "riquadro_xyxy": [
+            408.85,
+            447.95,
+            549.96,
+            581.2
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9235,
+          "riquadro_xyxy": [
+            361.87,
+            31.76,
+            859.34,
+            554.5
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0052",
+      "nome_file": "dense_0052_t0013.000.jpg",
+      "timestamp": 13.0,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 151,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.2762,
+          "riquadro_xyxy": [
+            399.53,
+            476.61,
+            509.6,
+            581.64
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9195,
+          "riquadro_xyxy": [
+            383.75,
+            50.41,
+            846.26,
+            569.98
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0053",
+      "nome_file": "dense_0053_t0013.250.jpg",
+      "timestamp": 13.25,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8789,
+          "riquadro_xyxy": [
+            446.0,
+            65.3,
+            871.12,
+            575.72
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0054",
+      "nome_file": "dense_0054_t0013.500.jpg",
+      "timestamp": 13.5,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9285,
+          "riquadro_xyxy": [
+            498.28,
+            105.44,
+            874.67,
+            578.0
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0055",
+      "nome_file": "dense_0055_t0013.750.jpg",
+      "timestamp": 13.75,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9027,
+          "riquadro_xyxy": [
+            505.01,
+            139.97,
+            834.9,
+            575.31
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0056",
+      "nome_file": "dense_0056_t0014.000.jpg",
+      "timestamp": 14.0,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8621,
+          "riquadro_xyxy": [
+            469.95,
+            175.95,
+            759.84,
+            578.04
+          ]
+        },
+        {
+          "id_traccia": 169,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5568,
+          "riquadro_xyxy": [
+            416.97,
+            40.45,
+            466.84,
+            196.05
+          ]
+        },
+        {
+          "id_traccia": 170,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7511,
+          "riquadro_xyxy": [
+            783.49,
+            52.21,
+            866.12,
+            340.11
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0057",
+      "nome_file": "dense_0057_t0014.250.jpg",
+      "timestamp": 14.25,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 179,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6982,
+          "riquadro_xyxy": [
+            585.07,
+            120.28,
+            663.07,
+            301.05
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0058",
+      "nome_file": "dense_0058_t0014.500.jpg",
+      "timestamp": 14.5,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 179,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6842,
+          "riquadro_xyxy": [
+            581.42,
+            163.06,
+            658.2,
+            339.92
+          ]
+        },
+        {
+          "id_traccia": 170,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5814,
+          "riquadro_xyxy": [
+            803.39,
+            145.81,
+            858.22,
+            334.35
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0059",
+      "nome_file": "dense_0059_t0014.750.jpg",
+      "timestamp": 14.75,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.9277,
+          "riquadro_xyxy": [
+            620.96,
+            244.92,
+            815.01,
+            497.35
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0060",
+      "nome_file": "dense_0060_t0015.000.jpg",
+      "timestamp": 15.0,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 191,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5791,
+          "riquadro_xyxy": [
+            520.33,
+            227.91,
+            549.03,
+            316.26
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8614,
+          "riquadro_xyxy": [
+            565.72,
+            265.73,
+            768.89,
+            496.13
+          ]
+        },
+        {
+          "id_traccia": 135,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5941,
+          "riquadro_xyxy": [
+            423.88,
+            226.75,
+            482.29,
+            413.53
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0061",
+      "nome_file": "dense_0061_t0015.250.jpg",
+      "timestamp": 15.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6046,
+          "riquadro_xyxy": [
+            530.9,
+            269.49,
+            757.65,
+            497.12
+          ]
+        },
+        {
+          "id_traccia": 192,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.486,
+          "riquadro_xyxy": [
+            835.67,
+            191.67,
+            868.37,
+            316.13
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0062",
+      "nome_file": "dense_0062_t0015.500.jpg",
+      "timestamp": 15.5,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 3,
+          "nome_classe": "motorcycle",
+          "confidenza": 0.5439,
+          "riquadro_xyxy": [
+            508.3,
+            252.04,
+            767.7,
+            491.82
+          ]
+        },
+        {
+          "id_traccia": 197,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4709,
+          "riquadro_xyxy": [
+            777.81,
+            180.79,
+            818.87,
+            295.24
+          ]
+        },
+        {
+          "id_traccia": 199,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.4993,
+          "riquadro_xyxy": [
+            407.11,
+            469.93,
+            875.09,
+            584.1
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0063",
+      "nome_file": "dense_0063_t0015.750.jpg",
+      "timestamp": 15.75,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8048,
+          "riquadro_xyxy": [
+            552.45,
+            256.57,
+            803.95,
+            479.13
+          ]
+        },
+        {
+          "id_traccia": 199,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.4864,
+          "riquadro_xyxy": [
+            394.81,
+            465.0,
+            885.64,
+            584.95
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0064",
+      "nome_file": "dense_0064_t0016.000.jpg",
+      "timestamp": 16.0,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 123,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7699,
+          "riquadro_xyxy": [
+            460.54,
+            235.03,
+            559.95,
+            488.23
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0065",
+      "nome_file": "dense_0065_t0016.250.jpg",
+      "timestamp": 16.25,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4772,
+          "riquadro_xyxy": [
+            410.6,
+            2.29,
+            500.64,
+            290.84
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0066",
+      "nome_file": "dense_0066_t0016.500.jpg",
+      "timestamp": 16.5,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 169,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6875,
+          "riquadro_xyxy": [
+            425.33,
+            3.22,
+            487.73,
+            188.19
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0067",
+      "nome_file": "dense_0067_t0016.750.jpg",
+      "timestamp": 16.75,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 169,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.865,
+          "riquadro_xyxy": [
+            427.22,
+            1.27,
+            500.16,
+            206.85
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0068",
+      "nome_file": "dense_0068_t0017.000.jpg",
+      "timestamp": 17.0,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 169,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6989,
+          "riquadro_xyxy": [
+            397.18,
+            0.99,
+            520.48,
+            365.64
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0069",
+      "nome_file": "dense_0069_t0017.250.jpg",
+      "timestamp": 17.25,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 199,
+          "id_classe": 28,
+          "nome_classe": "suitcase",
+          "confidenza": 0.7874,
+          "riquadro_xyxy": [
+            324.73,
+            390.72,
+            1067.31,
+            579.88
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0070",
+      "nome_file": "dense_0070_t0017.500.jpg",
+      "timestamp": 17.5,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 123,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8828,
+          "riquadro_xyxy": [
+            486.01,
+            290.13,
+            594.57,
+            534.48
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0071",
+      "nome_file": "dense_0071_t0017.750.jpg",
+      "timestamp": 17.75,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 135,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6875,
+          "riquadro_xyxy": [
+            453.62,
+            213.41,
+            517.22,
+            409.87
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8768,
+          "riquadro_xyxy": [
+            665.86,
+            272.47,
+            897.83,
+            487.76
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0072",
+      "nome_file": "dense_0072_t0018.000.jpg",
+      "timestamp": 18.0,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 135,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4531,
+          "riquadro_xyxy": [
+            444.76,
+            219.28,
+            515.42,
+            444.18
+          ]
+        },
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.9022,
+          "riquadro_xyxy": [
+            582.12,
+            255.7,
+            845.82,
+            487.86
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0073",
+      "nome_file": "dense_0073_t0018.250.jpg",
+      "timestamp": 18.25,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6949,
+          "riquadro_xyxy": [
+            506.6,
+            249.5,
+            788.99,
+            489.36
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0074",
+      "nome_file": "dense_0074_t0018.500.jpg",
+      "timestamp": 18.5,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7543,
+          "riquadro_xyxy": [
+            499.39,
+            247.07,
+            791.26,
+            488.17
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8326,
+          "riquadro_xyxy": [
+            766.84,
+            217.42,
+            877.88,
+            485.68
+          ]
+        },
+        {
+          "id_traccia": 135,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3652,
+          "riquadro_xyxy": [
+            445.3,
+            227.39,
+            509.29,
+            426.53
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0075",
+      "nome_file": "dense_0075_t0018.750.jpg",
+      "timestamp": 18.75,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8541,
+          "riquadro_xyxy": [
+            513.81,
+            254.43,
+            815.82,
+            494.09
+          ]
+        },
+        {
+          "id_traccia": 232,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.764,
+          "riquadro_xyxy": [
+            413.21,
+            226.24,
+            463.14,
+            469.17
+          ]
+        },
+        {
+          "id_traccia": 233,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.5541,
+          "riquadro_xyxy": [
+            739.98,
+            203.37,
+            862.04,
+            284.12
+          ]
+        },
+        {
+          "id_traccia": 135,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4627,
+          "riquadro_xyxy": [
+            449.89,
+            229.71,
+            503.34,
+            392.51
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0076",
+      "nome_file": "dense_0076_t0019.000.jpg",
+      "timestamp": 19.0,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.903,
+          "riquadro_xyxy": [
+            525.56,
+            270.12,
+            834.88,
+            510.55
+          ]
+        },
+        {
+          "id_traccia": 232,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.749,
+          "riquadro_xyxy": [
+            430.34,
+            238.97,
+            476.6,
+            461.7
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0077",
+      "nome_file": "dense_0077_t0019.250.jpg",
+      "timestamp": 19.25,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8954,
+          "riquadro_xyxy": [
+            554.61,
+            284.46,
+            865.34,
+            528.58
+          ]
+        },
+        {
+          "id_traccia": 232,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7014,
+          "riquadro_xyxy": [
+            447.37,
+            257.61,
+            490.67,
+            463.35
+          ]
+        },
+        {
+          "id_traccia": 242,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6667,
+          "riquadro_xyxy": [
+            496.94,
+            230.14,
+            563.91,
+            437.77
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0078",
+      "nome_file": "dense_0078_t0019.500.jpg",
+      "timestamp": 19.5,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.846,
+          "riquadro_xyxy": [
+            409.98,
+            340.27,
+            490.19,
+            567.74
+          ]
+        },
+        {
+          "id_traccia": null,
+          "id_classe": 25,
+          "nome_classe": "umbrella",
+          "confidenza": 0.5945,
+          "riquadro_xyxy": [
+            503.49,
+            419.6,
+            757.85,
+            580.85
+          ]
+        },
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3086,
+          "riquadro_xyxy": [
+            532.53,
+            370.46,
+            606.46,
+            497.83
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0079",
+      "nome_file": "dense_0079_t0019.750.jpg",
+      "timestamp": 19.75,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7122,
+          "riquadro_xyxy": [
+            452.07,
+            406.66,
+            529.82,
+            576.34
+          ]
+        },
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4361,
+          "riquadro_xyxy": [
+            572.75,
+            411.59,
+            602.16,
+            496.37
+          ]
+        },
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3472,
+          "riquadro_xyxy": [
+            410.29,
+            398.78,
+            468.04,
+            562.18
+          ]
+        },
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.2822,
+          "riquadro_xyxy": [
+            532.37,
+            405.03,
+            580.08,
+            518.77
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0080",
+      "nome_file": "dense_0080_t0020.000.jpg",
+      "timestamp": 20.0,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3857,
+          "riquadro_xyxy": [
+            453.83,
+            422.02,
+            517.95,
+            580.9
+          ]
+        },
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3161,
+          "riquadro_xyxy": [
+            528.25,
+            395.69,
+            573.65,
+            520.99
+          ]
+        },
+        {
+          "id_traccia": null,
+          "id_classe": 3,
+          "nome_classe": "motorcycle",
+          "confidenza": 0.3016,
+          "riquadro_xyxy": [
+            493.34,
+            484.91,
+            829.35,
+            584.05
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0081",
+      "nome_file": "dense_0081_t0020.250.jpg",
+      "timestamp": 20.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 252,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5032,
+          "riquadro_xyxy": [
+            457.78,
+            445.76,
+            512.39,
+            580.66
+          ]
+        },
+        {
+          "id_traccia": 253,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4932,
+          "riquadro_xyxy": [
+            532.82,
+            402.75,
+            571.7,
+            509.93
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0082",
+      "nome_file": "dense_0082_t0020.500.jpg",
+      "timestamp": 20.5,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 252,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4709,
+          "riquadro_xyxy": [
+            446.81,
+            423.85,
+            509.99,
+            579.88
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0083",
+      "nome_file": "dense_0083_t0020.750.jpg",
+      "timestamp": 20.75,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 261,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.4307,
+          "riquadro_xyxy": [
+            427.19,
+            474.63,
+            835.72,
+            585.43
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0084",
+      "nome_file": "dense_0084_t0021.000.jpg",
+      "timestamp": 21.0,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 264,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4513,
+          "riquadro_xyxy": [
+            807.51,
+            391.0,
+            849.15,
+            517.06
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0085",
+      "nome_file": "dense_0085_t0021.250.jpg",
+      "timestamp": 21.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 252,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5521,
+          "riquadro_xyxy": [
+            417.24,
+            379.64,
+            496.88,
+            576.58
+          ]
+        },
+        {
+          "id_traccia": 261,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.5737,
+          "riquadro_xyxy": [
+            414.39,
+            457.52,
+            881.16,
+            584.44
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0086",
+      "nome_file": "dense_0086_t0021.500.jpg",
+      "timestamp": 21.5,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 261,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.28,
+          "riquadro_xyxy": [
+            417.89,
+            455.0,
+            890.19,
+            583.81
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0087",
+      "nome_file": "dense_0087_t0021.750.jpg",
+      "timestamp": 21.75,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 261,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.44,
+          "riquadro_xyxy": [
+            414.2,
+            452.88,
+            892.24,
+            583.74
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0088",
+      "nome_file": "dense_0088_t0022.000.jpg",
+      "timestamp": 22.0,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 261,
+          "id_classe": 3,
+          "nome_classe": "motorcycle",
+          "confidenza": 0.4155,
+          "riquadro_xyxy": [
+            411.32,
+            454.37,
+            881.85,
+            583.34
+          ]
+        },
+        {
+          "id_traccia": 264,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5131,
+          "riquadro_xyxy": [
+            803.89,
+            377.7,
+            846.54,
+            507.57
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0089",
+      "nome_file": "dense_0089_t0022.250.jpg",
+      "timestamp": 22.25,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 261,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7525,
+          "riquadro_xyxy": [
+            404.65,
+            454.28,
+            876.37,
+            583.73
+          ]
+        },
+        {
+          "id_traccia": 282,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.515,
+          "riquadro_xyxy": [
+            451.6,
+            398.21,
+            517.74,
+            520.94
+          ]
+        },
+        {
+          "id_traccia": 264,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5084,
+          "riquadro_xyxy": [
+            810.74,
+            373.66,
+            859.1,
+            520.79
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0090",
+      "nome_file": "dense_0090_t0022.500.jpg",
+      "timestamp": 22.5,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 261,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.4754,
+          "riquadro_xyxy": [
+            403.55,
+            456.27,
+            866.0,
+            583.38
+          ]
+        },
+        {
+          "id_traccia": 264,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3769,
+          "riquadro_xyxy": [
+            820.61,
+            370.88,
+            866.99,
+            512.13
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0091",
+      "nome_file": "dense_0091_t0022.750.jpg",
+      "timestamp": 22.75,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 261,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7183,
+          "riquadro_xyxy": [
+            395.62,
+            455.32,
+            857.59,
+            582.97
+          ]
+        },
+        {
+          "id_traccia": 264,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5234,
+          "riquadro_xyxy": [
+            819.23,
+            368.72,
+            877.75,
+            551.54
+          ]
+        },
+        {
+          "id_traccia": 292,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5586,
+          "riquadro_xyxy": [
+            769.58,
+            389.41,
+            846.7,
+            540.05
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0092",
+      "nome_file": "dense_0092_t0023.000.jpg",
+      "timestamp": 23.0,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 264,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4338,
+          "riquadro_xyxy": [
+            822.22,
+            377.61,
+            881.75,
+            568.73
+          ]
+        },
+        {
+          "id_traccia": 292,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3635,
+          "riquadro_xyxy": [
+            767.93,
+            383.81,
+            859.36,
+            563.85
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0093",
+      "nome_file": "dense_0093_t0023.250.jpg",
+      "timestamp": 23.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 292,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3988,
+          "riquadro_xyxy": [
+            769.46,
+            370.03,
+            873.31,
+            577.39
+          ]
+        },
+        {
+          "id_traccia": 261,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7814,
+          "riquadro_xyxy": [
+            350.25,
+            440.3,
+            855.57,
+            583.43
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0094",
+      "nome_file": "dense_0094_t0023.500.jpg",
+      "timestamp": 23.5,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 261,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8073,
+          "riquadro_xyxy": [
+            287.45,
+            408.11,
+            871.2,
+            581.04
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0095",
+      "nome_file": "dense_0095_t0023.750.jpg",
+      "timestamp": 23.75,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 261,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8529,
+          "riquadro_xyxy": [
+            238.84,
+            379.22,
+            878.82,
+            579.39
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0096",
+      "nome_file": "dense_0096_t0024.000.jpg",
+      "timestamp": 24.0,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 261,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8864,
+          "riquadro_xyxy": [
+            207.38,
+            355.85,
+            876.06,
+            577.85
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0097",
+      "nome_file": "dense_0097_t0024.250.jpg",
+      "timestamp": 24.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 169,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8655,
+          "riquadro_xyxy": [
+            464.72,
+            316.93,
+            593.32,
+            571.66
+          ]
+        },
+        {
+          "id_traccia": 232,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6563,
+          "riquadro_xyxy": [
+            655.75,
+            280.34,
+            705.37,
+            501.74
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0098",
+      "nome_file": "dense_0098_t0024.500.jpg",
+      "timestamp": 24.5,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": 327,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5976,
+          "riquadro_xyxy": [
+            735.11,
+            258.66,
+            785.3,
+            436.29
+          ]
+        },
+        {
+          "id_traccia": 334,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4211,
+          "riquadro_xyxy": [
+            696.82,
+            241.34,
+            742.98,
+            418.72
+          ]
+        },
+        {
+          "id_traccia": 169,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8542,
+          "riquadro_xyxy": [
+            453.32,
+            321.08,
+            594.83,
+            551.89
+          ]
+        },
+        {
+          "id_traccia": 232,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7509,
+          "riquadro_xyxy": [
+            645.52,
+            275.08,
+            701.73,
+            504.44
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0099",
+      "nome_file": "dense_0099_t0024.750.jpg",
+      "timestamp": 24.75,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 327,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6246,
+          "riquadro_xyxy": [
+            719.75,
+            248.22,
+            772.1,
+            433.21
+          ]
+        },
+        {
+          "id_traccia": 169,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7811,
+          "riquadro_xyxy": [
+            440.34,
+            312.49,
+            593.92,
+            543.44
+          ]
+        },
+        {
+          "id_traccia": 232,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7317,
+          "riquadro_xyxy": [
+            634.83,
+            273.67,
+            694.67,
+            502.12
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0100",
+      "nome_file": "dense_0100_t0025.000.jpg",
+      "timestamp": 25.0,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": 169,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8511,
+          "riquadro_xyxy": [
+            430.13,
+            313.28,
+            586.74,
+            539.04
+          ]
+        },
+        {
+          "id_traccia": 123,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7819,
+          "riquadro_xyxy": [
+            575.84,
+            273.74,
+            677.14,
+            507.75
+          ]
+        },
+        {
+          "id_traccia": 135,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5272,
+          "riquadro_xyxy": [
+            472.92,
+            218.72,
+            518.98,
+            337.5
+          ]
+        },
+        {
+          "id_traccia": 334,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5416,
+          "riquadro_xyxy": [
+            686.13,
+            244.15,
+            735.33,
+            431.37
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0101",
+      "nome_file": "dense_0101_t0025.250.jpg",
+      "timestamp": 25.25,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 169,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8176,
+          "riquadro_xyxy": [
+            423.45,
+            328.3,
+            551.68,
+            506.71
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4509,
+          "riquadro_xyxy": [
+            767.33,
+            232.34,
+            896.97,
+            579.36
+          ]
+        },
+        {
+          "id_traccia": 327,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4762,
+          "riquadro_xyxy": [
+            716.84,
+            236.21,
+            759.64,
+            385.68
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0102",
+      "nome_file": "dense_0102_t0025.500.jpg",
+      "timestamp": 25.5,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6275,
+          "riquadro_xyxy": [
+            535.56,
+            250.51,
+            607.12,
+            405.19
+          ]
+        },
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3624,
+          "riquadro_xyxy": [
+            681.09,
+            2.74,
+            869.29,
+            578.13
+          ]
+        },
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3294,
+          "riquadro_xyxy": [
+            657.68,
+            230.63,
+            701.25,
+            361.12
+          ]
+        },
+        {
+          "id_traccia": null,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3084,
+          "riquadro_xyxy": [
+            678.14,
+            3.81,
+            1277.96,
+            713.79
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0103",
+      "nome_file": "dense_0103_t0025.750.jpg",
+      "timestamp": 25.75,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8322,
+          "riquadro_xyxy": [
+            459.16,
+            3.72,
+            1057.67,
+            581.9
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0104",
+      "nome_file": "dense_0104_t0026.000.jpg",
+      "timestamp": 26.0,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6934,
+          "riquadro_xyxy": [
+            551.45,
+            0.0,
+            1194.44,
+            635.6
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0105",
+      "nome_file": "dense_0105_t0026.250.jpg",
+      "timestamp": 26.25,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7308,
+          "riquadro_xyxy": [
+            439.74,
+            144.15,
+            556.49,
+            503.36
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0106",
+      "nome_file": "dense_0106_t0026.500.jpg",
+      "timestamp": 26.5,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7745,
+          "riquadro_xyxy": [
+            455.0,
+            155.89,
+            561.47,
+            483.24
+          ]
+        },
+        {
+          "id_traccia": 123,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6232,
+          "riquadro_xyxy": [
+            596.73,
+            183.89,
+            688.97,
+            406.79
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4533,
+          "riquadro_xyxy": [
+            726.31,
+            92.97,
+            896.32,
+            580.52
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0107",
+      "nome_file": "dense_0107_t0026.750.jpg",
+      "timestamp": 26.75,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8551,
+          "riquadro_xyxy": [
+            439.19,
+            174.84,
+            534.14,
+            430.23
+          ]
+        },
+        {
+          "id_traccia": 369,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7945,
+          "riquadro_xyxy": [
+            523.5,
+            150.62,
+            614.9,
+            417.03
+          ]
+        },
+        {
+          "id_traccia": 123,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8772,
+          "riquadro_xyxy": [
+            606.17,
+            186.77,
+            710.06,
+            422.14
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4193,
+          "riquadro_xyxy": [
+            725.71,
+            79.2,
+            891.61,
+            580.76
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0108",
+      "nome_file": "dense_0108_t0027.000.jpg",
+      "timestamp": 27.0,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7678,
+          "riquadro_xyxy": [
+            435.72,
+            157.8,
+            534.97,
+            398.76
+          ]
+        },
+        {
+          "id_traccia": 369,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7337,
+          "riquadro_xyxy": [
+            532.55,
+            133.95,
+            627.05,
+            410.12
+          ]
+        },
+        {
+          "id_traccia": 123,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7161,
+          "riquadro_xyxy": [
+            599.89,
+            183.77,
+            708.34,
+            443.84
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7201,
+          "riquadro_xyxy": [
+            401.35,
+            385.08,
+            708.14,
+            581.01
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0109",
+      "nome_file": "dense_0109_t0027.250.jpg",
+      "timestamp": 27.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7091,
+          "riquadro_xyxy": [
+            441.42,
+            161.49,
+            548.59,
+            392.28
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6941,
+          "riquadro_xyxy": [
+            410.53,
+            380.84,
+            726.56,
+            582.61
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0110",
+      "nome_file": "dense_0110_t0027.500.jpg",
+      "timestamp": 27.5,
+      "numero_rilevamenti": 5,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.487,
+          "riquadro_xyxy": [
+            443.25,
+            170.99,
+            559.81,
+            398.43
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7667,
+          "riquadro_xyxy": [
+            432.48,
+            385.78,
+            744.2,
+            583.7
+          ]
+        },
+        {
+          "id_traccia": 387,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5758,
+          "riquadro_xyxy": [
+            754.42,
+            121.36,
+            807.77,
+            259.14
+          ]
+        },
+        {
+          "id_traccia": 369,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3883,
+          "riquadro_xyxy": [
+            559.24,
+            179.83,
+            643.55,
+            419.26
+          ]
+        },
+        {
+          "id_traccia": 123,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6887,
+          "riquadro_xyxy": [
+            515.03,
+            169.74,
+            652.27,
+            411.77
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0111",
+      "nome_file": "dense_0111_t0027.750.jpg",
+      "timestamp": 27.75,
+      "numero_rilevamenti": 6,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6581,
+          "riquadro_xyxy": [
+            432.76,
+            185.24,
+            550.43,
+            404.86
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7757,
+          "riquadro_xyxy": [
+            450.17,
+            405.96,
+            733.63,
+            583.7
+          ]
+        },
+        {
+          "id_traccia": 387,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5956,
+          "riquadro_xyxy": [
+            743.21,
+            136.07,
+            794.87,
+            269.27
+          ]
+        },
+        {
+          "id_traccia": 389,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.648,
+          "riquadro_xyxy": [
+            426.19,
+            137.35,
+            593.65,
+            219.97
+          ]
+        },
+        {
+          "id_traccia": 390,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.648,
+          "riquadro_xyxy": [
+            686.18,
+            143.95,
+            744.31,
+            275.0
+          ]
+        },
+        {
+          "id_traccia": 123,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7285,
+          "riquadro_xyxy": [
+            511.5,
+            162.91,
+            657.41,
+            424.98
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0112",
+      "nome_file": "dense_0112_t0028.000.jpg",
+      "timestamp": 28.0,
+      "numero_rilevamenti": 5,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6885,
+          "riquadro_xyxy": [
+            420.17,
+            195.71,
+            542.23,
+            421.21
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7933,
+          "riquadro_xyxy": [
+            456.38,
+            421.32,
+            719.67,
+            583.67
+          ]
+        },
+        {
+          "id_traccia": 389,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6693,
+          "riquadro_xyxy": [
+            408.9,
+            148.91,
+            576.41,
+            231.7
+          ]
+        },
+        {
+          "id_traccia": 390,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4522,
+          "riquadro_xyxy": [
+            675.05,
+            157.8,
+            741.7,
+            308.02
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7503,
+          "riquadro_xyxy": [
+            740.01,
+            154.2,
+            841.53,
+            451.82
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0113",
+      "nome_file": "dense_0113_t0028.250.jpg",
+      "timestamp": 28.25,
+      "numero_rilevamenti": 5,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.5047,
+          "riquadro_xyxy": [
+            420.73,
+            202.63,
+            547.7,
+            431.85
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7859,
+          "riquadro_xyxy": [
+            466.12,
+            431.86,
+            721.44,
+            585.45
+          ]
+        },
+        {
+          "id_traccia": 389,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.5504,
+          "riquadro_xyxy": [
+            414.91,
+            160.69,
+            569.29,
+            237.31
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8497,
+          "riquadro_xyxy": [
+            733.27,
+            192.38,
+            829.54,
+            465.28
+          ]
+        },
+        {
+          "id_traccia": 123,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6623,
+          "riquadro_xyxy": [
+            516.37,
+            172.95,
+            662.22,
+            444.66
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0114",
+      "nome_file": "dense_0114_t0028.500.jpg",
+      "timestamp": 28.5,
+      "numero_rilevamenti": 5,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.565,
+          "riquadro_xyxy": [
+            430.94,
+            204.35,
+            568.52,
+            440.49
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6876,
+          "riquadro_xyxy": [
+            474.59,
+            434.34,
+            732.57,
+            584.8
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8527,
+          "riquadro_xyxy": [
+            741.66,
+            175.61,
+            854.84,
+            496.03
+          ]
+        },
+        {
+          "id_traccia": 369,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6411,
+          "riquadro_xyxy": [
+            588.13,
+            173.05,
+            690.92,
+            458.99
+          ]
+        },
+        {
+          "id_traccia": 387,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4264,
+          "riquadro_xyxy": [
+            713.09,
+            150.96,
+            768.46,
+            293.09
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0115",
+      "nome_file": "dense_0115_t0028.750.jpg",
+      "timestamp": 28.75,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.503,
+          "riquadro_xyxy": [
+            445.34,
+            202.94,
+            596.18,
+            443.65
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7357,
+          "riquadro_xyxy": [
+            475.69,
+            432.57,
+            744.53,
+            584.72
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7188,
+          "riquadro_xyxy": [
+            752.17,
+            151.67,
+            871.71,
+            502.19
+          ]
+        },
+        {
+          "id_traccia": 369,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5644,
+          "riquadro_xyxy": [
+            618.3,
+            182.46,
+            719.33,
+            462.27
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0116",
+      "nome_file": "dense_0116_t0029.000.jpg",
+      "timestamp": 29.0,
+      "numero_rilevamenti": 5,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7542,
+          "riquadro_xyxy": [
+            460.01,
+            202.33,
+            626.06,
+            445.28
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7419,
+          "riquadro_xyxy": [
+            472.22,
+            434.14,
+            749.05,
+            586.22
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6581,
+          "riquadro_xyxy": [
+            770.68,
+            151.59,
+            884.96,
+            505.1
+          ]
+        },
+        {
+          "id_traccia": 402,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.488,
+          "riquadro_xyxy": [
+            776.78,
+            150.02,
+            843.78,
+            313.29
+          ]
+        },
+        {
+          "id_traccia": 387,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7128,
+          "riquadro_xyxy": [
+            678.73,
+            178.04,
+            766.95,
+            409.1
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0117",
+      "nome_file": "dense_0117_t0029.250.jpg",
+      "timestamp": 29.25,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7885,
+          "riquadro_xyxy": [
+            457.06,
+            206.82,
+            629.8,
+            444.24
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8133,
+          "riquadro_xyxy": [
+            469.05,
+            432.21,
+            751.82,
+            583.1
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7484,
+          "riquadro_xyxy": [
+            778.98,
+            181.07,
+            881.55,
+            507.2
+          ]
+        },
+        {
+          "id_traccia": 387,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6092,
+          "riquadro_xyxy": [
+            663.04,
+            188.62,
+            757.37,
+            434.27
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0118",
+      "nome_file": "dense_0118_t0029.500.jpg",
+      "timestamp": 29.5,
+      "numero_rilevamenti": 5,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8281,
+          "riquadro_xyxy": [
+            454.12,
+            220.5,
+            624.64,
+            441.12
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8048,
+          "riquadro_xyxy": [
+            461.09,
+            431.16,
+            752.69,
+            582.79
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7305,
+          "riquadro_xyxy": [
+            774.74,
+            172.6,
+            877.67,
+            505.0
+          ]
+        },
+        {
+          "id_traccia": 387,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5854,
+          "riquadro_xyxy": [
+            645.06,
+            186.6,
+            742.1,
+            440.11
+          ]
+        },
+        {
+          "id_traccia": 369,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5277,
+          "riquadro_xyxy": [
+            658.65,
+            175.53,
+            753.38,
+            436.75
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0119",
+      "nome_file": "dense_0119_t0029.750.jpg",
+      "timestamp": 29.75,
+      "numero_rilevamenti": 5,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6323,
+          "riquadro_xyxy": [
+            446.05,
+            228.42,
+            614.2,
+            436.98
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.8246,
+          "riquadro_xyxy": [
+            454.22,
+            433.04,
+            747.0,
+            581.94
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7767,
+          "riquadro_xyxy": [
+            769.72,
+            169.46,
+            872.7,
+            503.08
+          ]
+        },
+        {
+          "id_traccia": 387,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8026,
+          "riquadro_xyxy": [
+            630.62,
+            198.9,
+            726.46,
+            444.32
+          ]
+        },
+        {
+          "id_traccia": 414,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.514,
+          "riquadro_xyxy": [
+            413.2,
+            164.01,
+            620.29,
+            241.45
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0120",
+      "nome_file": "dense_0120_t0030.000.jpg",
+      "timestamp": 30.0,
+      "numero_rilevamenti": 5,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6627,
+          "riquadro_xyxy": [
+            436.7,
+            235.02,
+            611.87,
+            446.57
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7205,
+          "riquadro_xyxy": [
+            452.11,
+            442.33,
+            735.7,
+            582.79
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7362,
+          "riquadro_xyxy": [
+            757.81,
+            170.74,
+            861.09,
+            507.65
+          ]
+        },
+        {
+          "id_traccia": 387,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7259,
+          "riquadro_xyxy": [
+            612.4,
+            215.39,
+            707.97,
+            454.77
+          ]
+        },
+        {
+          "id_traccia": 414,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6537,
+          "riquadro_xyxy": [
+            391.13,
+            172.62,
+            587.55,
+            246.48
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0121",
+      "nome_file": "dense_0121_t0030.250.jpg",
+      "timestamp": 30.25,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7495,
+          "riquadro_xyxy": [
+            420.83,
+            244.88,
+            596.52,
+            456.75
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7969,
+          "riquadro_xyxy": [
+            449.65,
+            451.61,
+            723.55,
+            583.78
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.642,
+          "riquadro_xyxy": [
+            742.86,
+            179.93,
+            844.04,
+            512.43
+          ]
+        },
+        {
+          "id_traccia": 387,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5469,
+          "riquadro_xyxy": [
+            585.36,
+            228.61,
+            681.0,
+            465.55
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0122",
+      "nome_file": "dense_0122_t0030.500.jpg",
+      "timestamp": 30.5,
+      "numero_rilevamenti": 6,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7172,
+          "riquadro_xyxy": [
+            413.42,
+            252.63,
+            587.33,
+            462.44
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7377,
+          "riquadro_xyxy": [
+            446.23,
+            457.64,
+            714.3,
+            583.95
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6338,
+          "riquadro_xyxy": [
+            728.31,
+            207.04,
+            823.68,
+            515.77
+          ]
+        },
+        {
+          "id_traccia": 387,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5831,
+          "riquadro_xyxy": [
+            571.28,
+            232.61,
+            675.94,
+            486.15
+          ]
+        },
+        {
+          "id_traccia": 425,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4666,
+          "riquadro_xyxy": [
+            672.78,
+            179.18,
+            728.23,
+            304.66
+          ]
+        },
+        {
+          "id_traccia": 369,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3671,
+          "riquadro_xyxy": [
+            716.69,
+            181.97,
+            790.96,
+            382.85
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0123",
+      "nome_file": "dense_0123_t0030.750.jpg",
+      "timestamp": 30.75,
+      "numero_rilevamenti": 6,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7388,
+          "riquadro_xyxy": [
+            410.52,
+            257.96,
+            581.67,
+            464.65
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6929,
+          "riquadro_xyxy": [
+            444.89,
+            460.58,
+            711.55,
+            583.13
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7242,
+          "riquadro_xyxy": [
+            721.73,
+            203.4,
+            818.16,
+            524.06
+          ]
+        },
+        {
+          "id_traccia": 387,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5783,
+          "riquadro_xyxy": [
+            564.85,
+            244.24,
+            672.1,
+            497.85
+          ]
+        },
+        {
+          "id_traccia": 425,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7008,
+          "riquadro_xyxy": [
+            672.6,
+            183.1,
+            738.87,
+            333.92
+          ]
+        },
+        {
+          "id_traccia": 402,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5694,
+          "riquadro_xyxy": [
+            772.58,
+            201.6,
+            859.98,
+            419.17
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0124",
+      "nome_file": "dense_0124_t0031.000.jpg",
+      "timestamp": 31.0,
+      "numero_rilevamenti": 5,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.7626,
+          "riquadro_xyxy": [
+            406.88,
+            258.34,
+            580.47,
+            469.14
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6411,
+          "riquadro_xyxy": [
+            445.88,
+            464.95,
+            711.7,
+            583.98
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8294,
+          "riquadro_xyxy": [
+            706.78,
+            218.34,
+            802.53,
+            531.55
+          ]
+        },
+        {
+          "id_traccia": 387,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6622,
+          "riquadro_xyxy": [
+            552.51,
+            252.6,
+            655.15,
+            496.63
+          ]
+        },
+        {
+          "id_traccia": 402,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5781,
+          "riquadro_xyxy": [
+            773.74,
+            211.0,
+            861.58,
+            433.64
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0125",
+      "nome_file": "dense_0125_t0031.250.jpg",
+      "timestamp": 31.25,
+      "numero_rilevamenti": 5,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.4246,
+          "riquadro_xyxy": [
+            407.37,
+            261.91,
+            581.56,
+            474.09
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.5626,
+          "riquadro_xyxy": [
+            449.48,
+            469.47,
+            710.33,
+            582.82
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7664,
+          "riquadro_xyxy": [
+            699.61,
+            211.94,
+            798.67,
+            536.63
+          ]
+        },
+        {
+          "id_traccia": 387,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5262,
+          "riquadro_xyxy": [
+            537.11,
+            255.19,
+            636.5,
+            494.33
+          ]
+        },
+        {
+          "id_traccia": 402,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.4571,
+          "riquadro_xyxy": [
+            769.97,
+            219.57,
+            860.61,
+            455.17
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0126",
+      "nome_file": "dense_0126_t0031.500.jpg",
+      "timestamp": 31.5,
+      "numero_rilevamenti": 5,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.6854,
+          "riquadro_xyxy": [
+            443.17,
+            263.66,
+            621.78,
+            466.94
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.4069,
+          "riquadro_xyxy": [
+            453.36,
+            472.62,
+            714.55,
+            582.31
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5923,
+          "riquadro_xyxy": [
+            696.99,
+            204.46,
+            797.51,
+            539.38
+          ]
+        },
+        {
+          "id_traccia": 387,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7274,
+          "riquadro_xyxy": [
+            516.93,
+            256.82,
+            614.02,
+            488.2
+          ]
+        },
+        {
+          "id_traccia": 402,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7115,
+          "riquadro_xyxy": [
+            768.21,
+            228.54,
+            861.1,
+            474.23
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0127",
+      "nome_file": "dense_0127_t0031.750.jpg",
+      "timestamp": 31.75,
+      "numero_rilevamenti": 5,
+      "rilevamenti": [
+        {
+          "id_traccia": 242,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5528,
+          "riquadro_xyxy": [
+            428.08,
+            242.96,
+            623.19,
+            475.81
+          ]
+        },
+        {
+          "id_traccia": 370,
+          "id_classe": 2,
+          "nome_classe": "car",
+          "confidenza": 0.3716,
+          "riquadro_xyxy": [
+            447.3,
+            471.81,
+            714.45,
+            581.27
+          ]
+        },
+        {
+          "id_traccia": 227,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6403,
+          "riquadro_xyxy": [
+            681.18,
+            210.62,
+            776.2,
+            532.16
+          ]
+        },
+        {
+          "id_traccia": 387,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.3409,
+          "riquadro_xyxy": [
+            495.86,
+            238.36,
+            596.82,
+            484.13
+          ]
+        },
+        {
+          "id_traccia": 402,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6335,
+          "riquadro_xyxy": [
+            770.04,
+            229.34,
+            862.59,
+            480.64
+          ]
+        }
+      ]
+    }
+  ],
+  "tracce": [
+    {
+      "id_traccia": 1,
+      "id_classe": 2,
+      "nome_classe": "car",
+      "prima_comparsa": 0.5,
+      "ultima_comparsa": 26.0,
+      "numero_osservazioni": 58,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0002",
+          "timestamp": 0.5,
+          "confidenza": 0.7157,
+          "riquadro_xyxy": [
+            516.1,
+            299.55,
+            839.17,
+            549.82
+          ]
+        },
+        {
+          "id_frame": "dense_0003",
+          "timestamp": 0.75,
+          "confidenza": 0.5015,
+          "riquadro_xyxy": [
+            497.91,
+            306.76,
+            833.36,
+            565.47
+          ]
+        },
+        {
+          "id_frame": "dense_0005",
+          "timestamp": 1.25,
+          "confidenza": 0.472,
+          "riquadro_xyxy": [
+            490.74,
+            326.77,
+            811.17,
+            570.26
+          ]
+        },
+        {
+          "id_frame": "dense_0006",
+          "timestamp": 1.5,
+          "confidenza": 0.4642,
+          "riquadro_xyxy": [
+            488.66,
+            329.05,
+            818.41,
+            576.51
+          ]
+        },
+        {
+          "id_frame": "dense_0007",
+          "timestamp": 1.75,
+          "confidenza": 0.5846,
+          "riquadro_xyxy": [
+            491.37,
+            329.41,
+            828.28,
+            579.27
+          ]
+        },
+        {
+          "id_frame": "dense_0008",
+          "timestamp": 2.0,
+          "confidenza": 0.6536,
+          "riquadro_xyxy": [
+            500.21,
+            332.06,
+            832.56,
+            575.66
+          ]
+        },
+        {
+          "id_frame": "dense_0009",
+          "timestamp": 2.25,
+          "confidenza": 0.7996,
+          "riquadro_xyxy": [
+            503.49,
+            333.74,
+            833.82,
+            573.87
+          ]
+        },
+        {
+          "id_frame": "dense_0010",
+          "timestamp": 2.5,
+          "confidenza": 0.5596,
+          "riquadro_xyxy": [
+            503.12,
+            334.54,
+            829.97,
+            571.52
+          ]
+        },
+        {
+          "id_frame": "dense_0011",
+          "timestamp": 2.75,
+          "confidenza": 0.7208,
+          "riquadro_xyxy": [
+            493.74,
+            305.76,
+            864.35,
+            575.75
+          ]
+        },
+        {
+          "id_frame": "dense_0012",
+          "timestamp": 3.0,
+          "confidenza": 0.4671,
+          "riquadro_xyxy": [
+            499.46,
+            322.31,
+            849.95,
+            577.33
+          ]
+        },
+        {
+          "id_frame": "dense_0013",
+          "timestamp": 3.25,
+          "confidenza": 0.3881,
+          "riquadro_xyxy": [
+            511.91,
+            335.28,
+            838.69,
+            572.35
+          ]
+        },
+        {
+          "id_frame": "dense_0014",
+          "timestamp": 3.5,
+          "confidenza": 0.4889,
+          "riquadro_xyxy": [
+            475.32,
+            359.38,
+            777.59,
+            579.64
+          ]
+        },
+        {
+          "id_frame": "dense_0015",
+          "timestamp": 3.75,
+          "confidenza": 0.4319,
+          "riquadro_xyxy": [
+            507.94,
+            378.23,
+            793.85,
+            581.73
+          ]
+        },
+        {
+          "id_frame": "dense_0016",
+          "timestamp": 4.0,
+          "confidenza": 0.5513,
+          "riquadro_xyxy": [
+            567.45,
+            382.27,
+            847.44,
+            581.9
+          ]
+        },
+        {
+          "id_frame": "dense_0017",
+          "timestamp": 4.25,
+          "confidenza": 0.4033,
+          "riquadro_xyxy": [
+            621.93,
+            408.98,
+            863.57,
+            581.34
+          ]
+        },
+        {
+          "id_frame": "dense_0018",
+          "timestamp": 4.5,
+          "confidenza": 0.6474,
+          "riquadro_xyxy": [
+            544.76,
+            418.63,
+            794.69,
+            582.51
+          ]
+        },
+        {
+          "id_frame": "dense_0019",
+          "timestamp": 4.75,
+          "confidenza": 0.5415,
+          "riquadro_xyxy": [
+            536.73,
+            362.93,
+            830.8,
+            565.65
+          ]
+        },
+        {
+          "id_frame": "dense_0020",
+          "timestamp": 5.0,
+          "confidenza": 0.4281,
+          "riquadro_xyxy": [
+            580.5,
+            362.21,
+            844.98,
+            549.87
+          ]
+        },
+        {
+          "id_frame": "dense_0021",
+          "timestamp": 5.25,
+          "confidenza": 0.7051,
+          "riquadro_xyxy": [
+            523.88,
+            342.84,
+            817.61,
+            566.51
+          ]
+        },
+        {
+          "id_frame": "dense_0022",
+          "timestamp": 5.5,
+          "confidenza": 0.6943,
+          "riquadro_xyxy": [
+            544.21,
+            354.26,
+            820.33,
+            575.07
+          ]
+        },
+        {
+          "id_frame": "dense_0023",
+          "timestamp": 5.75,
+          "confidenza": 0.6453,
+          "riquadro_xyxy": [
+            493.99,
+            348.14,
+            790.46,
+            575.23
+          ]
+        },
+        {
+          "id_frame": "dense_0025",
+          "timestamp": 6.25,
+          "confidenza": 0.3837,
+          "riquadro_xyxy": [
+            454.85,
+            336.12,
+            775.25,
+            575.21
+          ]
+        },
+        {
+          "id_frame": "dense_0027",
+          "timestamp": 6.75,
+          "confidenza": 0.6409,
+          "riquadro_xyxy": [
+            430.23,
+            333.56,
+            756.97,
+            574.1
+          ]
+        },
+        {
+          "id_frame": "dense_0028",
+          "timestamp": 7.0,
+          "confidenza": 0.5589,
+          "riquadro_xyxy": [
+            397.72,
+            339.86,
+            699.76,
+            567.71
+          ]
+        },
+        {
+          "id_frame": "dense_0029",
+          "timestamp": 7.25,
+          "confidenza": 0.5582,
+          "riquadro_xyxy": [
+            421.71,
+            326.86,
+            737.36,
+            563.64
+          ]
+        },
+        {
+          "id_frame": "dense_0033",
+          "timestamp": 8.25,
+          "confidenza": 0.4185,
+          "riquadro_xyxy": [
+            464.17,
+            338.1,
+            756.45,
+            558.25
+          ]
+        },
+        {
+          "id_frame": "dense_0035",
+          "timestamp": 8.75,
+          "confidenza": 0.3939,
+          "riquadro_xyxy": [
+            474.04,
+            337.87,
+            776.86,
+            568.73
+          ]
+        },
+        {
+          "id_frame": "dense_0036",
+          "timestamp": 9.0,
+          "confidenza": 0.3872,
+          "riquadro_xyxy": [
+            475.67,
+            341.0,
+            777.04,
+            573.6
+          ]
+        },
+        {
+          "id_frame": "dense_0038",
+          "timestamp": 9.5,
+          "confidenza": 0.501,
+          "riquadro_xyxy": [
+            500.85,
+            329.74,
+            811.37,
+            567.82
+          ]
+        },
+        {
+          "id_frame": "dense_0039",
+          "timestamp": 9.75,
+          "confidenza": 0.8875,
+          "riquadro_xyxy": [
+            512.24,
+            331.76,
+            828.29,
+            569.02
+          ]
+        },
+        {
+          "id_frame": "dense_0040",
+          "timestamp": 10.0,
+          "confidenza": 0.8342,
+          "riquadro_xyxy": [
+            521.19,
+            325.59,
+            842.98,
+            562.98
+          ]
+        },
+        {
+          "id_frame": "dense_0041",
+          "timestamp": 10.25,
+          "confidenza": 0.6308,
+          "riquadro_xyxy": [
+            523.39,
+            324.7,
+            851.11,
+            562.83
+          ]
+        },
+        {
+          "id_frame": "dense_0043",
+          "timestamp": 10.75,
+          "confidenza": 0.6261,
+          "riquadro_xyxy": [
+            391.07,
+            211.99,
+            877.4,
+            576.4
+          ]
+        },
+        {
+          "id_frame": "dense_0044",
+          "timestamp": 11.0,
+          "confidenza": 0.4746,
+          "riquadro_xyxy": [
+            362.75,
+            158.59,
+            911.01,
+            581.57
+          ]
+        },
+        {
+          "id_frame": "dense_0047",
+          "timestamp": 11.75,
+          "confidenza": 0.7484,
+          "riquadro_xyxy": [
+            415.81,
+            68.03,
+            952.26,
+            503.28
+          ]
+        },
+        {
+          "id_frame": "dense_0048",
+          "timestamp": 12.0,
+          "confidenza": 0.7993,
+          "riquadro_xyxy": [
+            397.33,
+            32.1,
+            924.36,
+            483.23
+          ]
+        },
+        {
+          "id_frame": "dense_0049",
+          "timestamp": 12.25,
+          "confidenza": 0.8974,
+          "riquadro_xyxy": [
+            385.71,
+            32.2,
+            892.27,
+            493.19
+          ]
+        },
+        {
+          "id_frame": "dense_0050",
+          "timestamp": 12.5,
+          "confidenza": 0.9048,
+          "riquadro_xyxy": [
+            371.07,
+            31.69,
+            869.13,
+            519.01
+          ]
+        },
+        {
+          "id_frame": "dense_0051",
+          "timestamp": 12.75,
+          "confidenza": 0.9235,
+          "riquadro_xyxy": [
+            361.87,
+            31.76,
+            859.34,
+            554.5
+          ]
+        },
+        {
+          "id_frame": "dense_0052",
+          "timestamp": 13.0,
+          "confidenza": 0.9195,
+          "riquadro_xyxy": [
+            383.75,
+            50.41,
+            846.26,
+            569.98
+          ]
+        },
+        {
+          "id_frame": "dense_0053",
+          "timestamp": 13.25,
+          "confidenza": 0.8789,
+          "riquadro_xyxy": [
+            446.0,
+            65.3,
+            871.12,
+            575.72
+          ]
+        },
+        {
+          "id_frame": "dense_0054",
+          "timestamp": 13.5,
+          "confidenza": 0.9285,
+          "riquadro_xyxy": [
+            498.28,
+            105.44,
+            874.67,
+            578.0
+          ]
+        },
+        {
+          "id_frame": "dense_0055",
+          "timestamp": 13.75,
+          "confidenza": 0.9027,
+          "riquadro_xyxy": [
+            505.01,
+            139.97,
+            834.9,
+            575.31
+          ]
+        },
+        {
+          "id_frame": "dense_0056",
+          "timestamp": 14.0,
+          "confidenza": 0.8621,
+          "riquadro_xyxy": [
+            469.95,
+            175.95,
+            759.84,
+            578.04
+          ]
+        },
+        {
+          "id_frame": "dense_0059",
+          "timestamp": 14.75,
+          "confidenza": 0.9277,
+          "riquadro_xyxy": [
+            620.96,
+            244.92,
+            815.01,
+            497.35
+          ]
+        },
+        {
+          "id_frame": "dense_0060",
+          "timestamp": 15.0,
+          "confidenza": 0.8614,
+          "riquadro_xyxy": [
+            565.72,
+            265.73,
+            768.89,
+            496.13
+          ]
+        },
+        {
+          "id_frame": "dense_0061",
+          "timestamp": 15.25,
+          "confidenza": 0.6046,
+          "riquadro_xyxy": [
+            530.9,
+            269.49,
+            757.65,
+            497.12
+          ]
+        },
+        {
+          "id_frame": "dense_0062",
+          "timestamp": 15.5,
+          "confidenza": 0.5439,
+          "riquadro_xyxy": [
+            508.3,
+            252.04,
+            767.7,
+            491.82
+          ]
+        },
+        {
+          "id_frame": "dense_0063",
+          "timestamp": 15.75,
+          "confidenza": 0.8048,
+          "riquadro_xyxy": [
+            552.45,
+            256.57,
+            803.95,
+            479.13
+          ]
+        },
+        {
+          "id_frame": "dense_0071",
+          "timestamp": 17.75,
+          "confidenza": 0.8768,
+          "riquadro_xyxy": [
+            665.86,
+            272.47,
+            897.83,
+            487.76
+          ]
+        },
+        {
+          "id_frame": "dense_0072",
+          "timestamp": 18.0,
+          "confidenza": 0.9022,
+          "riquadro_xyxy": [
+            582.12,
+            255.7,
+            845.82,
+            487.86
+          ]
+        },
+        {
+          "id_frame": "dense_0073",
+          "timestamp": 18.25,
+          "confidenza": 0.6949,
+          "riquadro_xyxy": [
+            506.6,
+            249.5,
+            788.99,
+            489.36
+          ]
+        },
+        {
+          "id_frame": "dense_0074",
+          "timestamp": 18.5,
+          "confidenza": 0.7543,
+          "riquadro_xyxy": [
+            499.39,
+            247.07,
+            791.26,
+            488.17
+          ]
+        },
+        {
+          "id_frame": "dense_0075",
+          "timestamp": 18.75,
+          "confidenza": 0.8541,
+          "riquadro_xyxy": [
+            513.81,
+            254.43,
+            815.82,
+            494.09
+          ]
+        },
+        {
+          "id_frame": "dense_0076",
+          "timestamp": 19.0,
+          "confidenza": 0.903,
+          "riquadro_xyxy": [
+            525.56,
+            270.12,
+            834.88,
+            510.55
+          ]
+        },
+        {
+          "id_frame": "dense_0077",
+          "timestamp": 19.25,
+          "confidenza": 0.8954,
+          "riquadro_xyxy": [
+            554.61,
+            284.46,
+            865.34,
+            528.58
+          ]
+        },
+        {
+          "id_frame": "dense_0103",
+          "timestamp": 25.75,
+          "confidenza": 0.8322,
+          "riquadro_xyxy": [
+            459.16,
+            3.72,
+            1057.67,
+            581.9
+          ]
+        },
+        {
+          "id_frame": "dense_0104",
+          "timestamp": 26.0,
+          "confidenza": 0.6934,
+          "riquadro_xyxy": [
+            551.45,
+            0.0,
+            1194.44,
+            635.6
+          ]
+        }
+      ],
+      "durata_traccia": 25.5,
+      "confidenza_media": 0.6737
+    },
+    {
+      "id_traccia": 9,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 1.25,
+      "ultima_comparsa": 10.0,
+      "numero_osservazioni": 18,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0005",
+          "timestamp": 1.25,
+          "confidenza": 0.4205,
+          "riquadro_xyxy": [
+            412.73,
+            272.56,
+            491.61,
+            491.89
+          ]
+        },
+        {
+          "id_frame": "dense_0006",
+          "timestamp": 1.5,
+          "confidenza": 0.8293,
+          "riquadro_xyxy": [
+            408.51,
+            263.92,
+            488.79,
+            487.53
+          ]
+        },
+        {
+          "id_frame": "dense_0007",
+          "timestamp": 1.75,
+          "confidenza": 0.7743,
+          "riquadro_xyxy": [
+            407.45,
+            260.68,
+            488.67,
+            487.48
+          ]
+        },
+        {
+          "id_frame": "dense_0008",
+          "timestamp": 2.0,
+          "confidenza": 0.8206,
+          "riquadro_xyxy": [
+            411.41,
+            260.04,
+            493.54,
+            489.0
+          ]
+        },
+        {
+          "id_frame": "dense_0009",
+          "timestamp": 2.25,
+          "confidenza": 0.7195,
+          "riquadro_xyxy": [
+            418.36,
+            263.7,
+            499.92,
+            489.93
+          ]
+        },
+        {
+          "id_frame": "dense_0010",
+          "timestamp": 2.5,
+          "confidenza": 0.7606,
+          "riquadro_xyxy": [
+            433.34,
+            267.27,
+            514.26,
+            489.88
+          ]
+        },
+        {
+          "id_frame": "dense_0011",
+          "timestamp": 2.75,
+          "confidenza": 0.6251,
+          "riquadro_xyxy": [
+            447.59,
+            261.95,
+            529.25,
+            484.55
+          ]
+        },
+        {
+          "id_frame": "dense_0012",
+          "timestamp": 3.0,
+          "confidenza": 0.5247,
+          "riquadro_xyxy": [
+            460.95,
+            280.59,
+            537.28,
+            487.12
+          ]
+        },
+        {
+          "id_frame": "dense_0014",
+          "timestamp": 3.5,
+          "confidenza": 0.6845,
+          "riquadro_xyxy": [
+            467.77,
+            306.88,
+            548.5,
+            520.19
+          ]
+        },
+        {
+          "id_frame": "dense_0015",
+          "timestamp": 3.75,
+          "confidenza": 0.5035,
+          "riquadro_xyxy": [
+            471.19,
+            325.67,
+            551.62,
+            531.98
+          ]
+        },
+        {
+          "id_frame": "dense_0017",
+          "timestamp": 4.25,
+          "confidenza": 0.6228,
+          "riquadro_xyxy": [
+            504.77,
+            307.81,
+            580.47,
+            501.9
+          ]
+        },
+        {
+          "id_frame": "dense_0024",
+          "timestamp": 6.0,
+          "confidenza": 0.607,
+          "riquadro_xyxy": [
+            530.3,
+            336.55,
+            619.41,
+            557.39
+          ]
+        },
+        {
+          "id_frame": "dense_0030",
+          "timestamp": 7.5,
+          "confidenza": 0.4489,
+          "riquadro_xyxy": [
+            566.25,
+            348.59,
+            656.37,
+            559.44
+          ]
+        },
+        {
+          "id_frame": "dense_0031",
+          "timestamp": 7.75,
+          "confidenza": 0.612,
+          "riquadro_xyxy": [
+            560.51,
+            357.98,
+            657.79,
+            562.06
+          ]
+        },
+        {
+          "id_frame": "dense_0032",
+          "timestamp": 8.0,
+          "confidenza": 0.6065,
+          "riquadro_xyxy": [
+            564.67,
+            364.85,
+            662.88,
+            562.79
+          ]
+        },
+        {
+          "id_frame": "dense_0033",
+          "timestamp": 8.25,
+          "confidenza": 0.3526,
+          "riquadro_xyxy": [
+            567.28,
+            366.52,
+            663.59,
+            561.95
+          ]
+        },
+        {
+          "id_frame": "dense_0034",
+          "timestamp": 8.5,
+          "confidenza": 0.6657,
+          "riquadro_xyxy": [
+            575.17,
+            362.98,
+            675.36,
+            567.24
+          ]
+        },
+        {
+          "id_frame": "dense_0040",
+          "timestamp": 10.0,
+          "confidenza": 0.6112,
+          "riquadro_xyxy": [
+            614.78,
+            367.28,
+            712.74,
+            562.68
+          ]
+        }
+      ],
+      "durata_traccia": 8.75,
+      "confidenza_media": 0.6216
+    },
+    {
+      "id_traccia": 24,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 2.5,
+      "ultima_comparsa": 9.5,
+      "numero_osservazioni": 9,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0010",
+          "timestamp": 2.5,
+          "confidenza": 0.7986,
+          "riquadro_xyxy": [
+            770.21,
+            337.84,
+            870.8,
+            579.71
+          ]
+        },
+        {
+          "id_frame": "dense_0024",
+          "timestamp": 6.0,
+          "confidenza": 0.6167,
+          "riquadro_xyxy": [
+            769.99,
+            271.47,
+            891.16,
+            578.31
+          ]
+        },
+        {
+          "id_frame": "dense_0027",
+          "timestamp": 6.75,
+          "confidenza": 0.8025,
+          "riquadro_xyxy": [
+            740.94,
+            333.0,
+            838.61,
+            579.35
+          ]
+        },
+        {
+          "id_frame": "dense_0028",
+          "timestamp": 7.0,
+          "confidenza": 0.8362,
+          "riquadro_xyxy": [
+            761.14,
+            339.2,
+            857.78,
+            578.08
+          ]
+        },
+        {
+          "id_frame": "dense_0029",
+          "timestamp": 7.25,
+          "confidenza": 0.7913,
+          "riquadro_xyxy": [
+            768.23,
+            337.85,
+            865.15,
+            577.26
+          ]
+        },
+        {
+          "id_frame": "dense_0030",
+          "timestamp": 7.5,
+          "confidenza": 0.7678,
+          "riquadro_xyxy": [
+            781.29,
+            336.13,
+            874.95,
+            574.96
+          ]
+        },
+        {
+          "id_frame": "dense_0035",
+          "timestamp": 8.75,
+          "confidenza": 0.5341,
+          "riquadro_xyxy": [
+            793.08,
+            365.67,
+            874.77,
+            577.22
+          ]
+        },
+        {
+          "id_frame": "dense_0036",
+          "timestamp": 9.0,
+          "confidenza": 0.4111,
+          "riquadro_xyxy": [
+            794.36,
+            358.32,
+            874.47,
+            570.85
+          ]
+        },
+        {
+          "id_frame": "dense_0038",
+          "timestamp": 9.5,
+          "confidenza": 0.3754,
+          "riquadro_xyxy": [
+            786.24,
+            306.08,
+            879.78,
+            562.65
+          ]
+        }
+      ],
+      "durata_traccia": 7.0,
+      "confidenza_media": 0.6593
+    },
+    {
+      "id_traccia": 28,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 3.0,
+      "ultima_comparsa": 10.25,
+      "numero_osservazioni": 6,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0012",
+          "timestamp": 3.0,
+          "confidenza": 0.7968,
+          "riquadro_xyxy": [
+            408.08,
+            258.04,
+            445.74,
+            392.99
+          ]
+        },
+        {
+          "id_frame": "dense_0030",
+          "timestamp": 7.5,
+          "confidenza": 0.5148,
+          "riquadro_xyxy": [
+            408.19,
+            296.69,
+            454.55,
+            465.28
+          ]
+        },
+        {
+          "id_frame": "dense_0031",
+          "timestamp": 7.75,
+          "confidenza": 0.5829,
+          "riquadro_xyxy": [
+            417.6,
+            293.11,
+            465.27,
+            465.28
+          ]
+        },
+        {
+          "id_frame": "dense_0039",
+          "timestamp": 9.75,
+          "confidenza": 0.8332,
+          "riquadro_xyxy": [
+            415.18,
+            319.99,
+            485.44,
+            568.36
+          ]
+        },
+        {
+          "id_frame": "dense_0040",
+          "timestamp": 10.0,
+          "confidenza": 0.7613,
+          "riquadro_xyxy": [
+            414.33,
+            328.29,
+            486.86,
+            580.52
+          ]
+        },
+        {
+          "id_frame": "dense_0041",
+          "timestamp": 10.25,
+          "confidenza": 0.4628,
+          "riquadro_xyxy": [
+            404.84,
+            301.82,
+            482.01,
+            583.66
+          ]
+        }
+      ],
+      "durata_traccia": 7.25,
+      "confidenza_media": 0.6587
+    },
+    {
+      "id_traccia": 36,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 3.5,
+      "ultima_comparsa": 6.0,
+      "numero_osservazioni": 3,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0014",
+          "timestamp": 3.5,
+          "confidenza": 0.7373,
+          "riquadro_xyxy": [
+            413.32,
+            308.59,
+            479.84,
+            516.03
+          ]
+        },
+        {
+          "id_frame": "dense_0015",
+          "timestamp": 3.75,
+          "confidenza": 0.631,
+          "riquadro_xyxy": [
+            418.55,
+            317.61,
+            485.54,
+            525.88
+          ]
+        },
+        {
+          "id_frame": "dense_0024",
+          "timestamp": 6.0,
+          "confidenza": 0.5257,
+          "riquadro_xyxy": [
+            438.19,
+            354.28,
+            515.13,
+            574.14
+          ]
+        }
+      ],
+      "durata_traccia": 2.5,
+      "confidenza_media": 0.6313
+    },
+    {
+      "id_traccia": 77,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 6.0,
+      "ultima_comparsa": 9.5,
+      "numero_osservazioni": 7,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0024",
+          "timestamp": 6.0,
+          "confidenza": 0.5607,
+          "riquadro_xyxy": [
+            573.41,
+            323.3,
+            713.93,
+            570.41
+          ]
+        },
+        {
+          "id_frame": "dense_0025",
+          "timestamp": 6.25,
+          "confidenza": 0.8048,
+          "riquadro_xyxy": [
+            572.18,
+            344.88,
+            696.13,
+            562.69
+          ]
+        },
+        {
+          "id_frame": "dense_0026",
+          "timestamp": 6.5,
+          "confidenza": 0.7265,
+          "riquadro_xyxy": [
+            601.7,
+            339.89,
+            731.89,
+            568.1
+          ]
+        },
+        {
+          "id_frame": "dense_0027",
+          "timestamp": 6.75,
+          "confidenza": 0.5024,
+          "riquadro_xyxy": [
+            617.59,
+            346.3,
+            740.23,
+            561.41
+          ]
+        },
+        {
+          "id_frame": "dense_0028",
+          "timestamp": 7.0,
+          "confidenza": 0.7592,
+          "riquadro_xyxy": [
+            610.92,
+            335.01,
+            742.2,
+            567.54
+          ]
+        },
+        {
+          "id_frame": "dense_0032",
+          "timestamp": 8.0,
+          "confidenza": 0.5992,
+          "riquadro_xyxy": [
+            646.63,
+            341.49,
+            766.52,
+            558.14
+          ]
+        },
+        {
+          "id_frame": "dense_0038",
+          "timestamp": 9.5,
+          "confidenza": 0.5173,
+          "riquadro_xyxy": [
+            721.11,
+            367.41,
+            823.74,
+            554.5
+          ]
+        }
+      ],
+      "durata_traccia": 3.5,
+      "confidenza_media": 0.6386
+    },
+    {
+      "id_traccia": 105,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 7.25,
+      "ultima_comparsa": 9.25,
+      "numero_osservazioni": 8,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0029",
+          "timestamp": 7.25,
+          "confidenza": 0.4734,
+          "riquadro_xyxy": [
+            691.4,
+            322.58,
+            804.33,
+            572.03
+          ]
+        },
+        {
+          "id_frame": "dense_0030",
+          "timestamp": 7.5,
+          "confidenza": 0.6934,
+          "riquadro_xyxy": [
+            708.23,
+            339.24,
+            814.75,
+            573.77
+          ]
+        },
+        {
+          "id_frame": "dense_0031",
+          "timestamp": 7.75,
+          "confidenza": 0.7261,
+          "riquadro_xyxy": [
+            725.13,
+            341.1,
+            830.79,
+            571.71
+          ]
+        },
+        {
+          "id_frame": "dense_0032",
+          "timestamp": 8.0,
+          "confidenza": 0.7736,
+          "riquadro_xyxy": [
+            729.49,
+            318.51,
+            846.97,
+            575.08
+          ]
+        },
+        {
+          "id_frame": "dense_0033",
+          "timestamp": 8.25,
+          "confidenza": 0.7442,
+          "riquadro_xyxy": [
+            732.33,
+            353.63,
+            837.05,
+            578.11
+          ]
+        },
+        {
+          "id_frame": "dense_0034",
+          "timestamp": 8.5,
+          "confidenza": 0.8149,
+          "riquadro_xyxy": [
+            757.01,
+            355.99,
+            860.75,
+            577.58
+          ]
+        },
+        {
+          "id_frame": "dense_0036",
+          "timestamp": 9.0,
+          "confidenza": 0.6777,
+          "riquadro_xyxy": [
+            737.78,
+            298.24,
+            861.03,
+            565.65
+          ]
+        },
+        {
+          "id_frame": "dense_0037",
+          "timestamp": 9.25,
+          "confidenza": 0.6865,
+          "riquadro_xyxy": [
+            743.08,
+            332.14,
+            852.54,
+            563.14
+          ]
+        }
+      ],
+      "durata_traccia": 2.0,
+      "confidenza_media": 0.6987
+    },
+    {
+      "id_traccia": 121,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 8.0,
+      "ultima_comparsa": 8.25,
+      "numero_osservazioni": 2,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0032",
+          "timestamp": 8.0,
+          "confidenza": 0.5352,
+          "riquadro_xyxy": [
+            520.95,
+            288.92,
+            570.29,
+            387.17
+          ]
+        },
+        {
+          "id_frame": "dense_0033",
+          "timestamp": 8.25,
+          "confidenza": 0.3207,
+          "riquadro_xyxy": [
+            525.53,
+            291.73,
+            574.24,
+            389.04
+          ]
+        }
+      ],
+      "durata_traccia": 0.25,
+      "confidenza_media": 0.428
+    },
+    {
+      "id_traccia": 123,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 8.25,
+      "ultima_comparsa": 28.25,
+      "numero_osservazioni": 10,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0033",
+          "timestamp": 8.25,
+          "confidenza": 0.5909,
+          "riquadro_xyxy": [
+            448.47,
+            284.16,
+            506.23,
+            463.2
+          ]
+        },
+        {
+          "id_frame": "dense_0064",
+          "timestamp": 16.0,
+          "confidenza": 0.7699,
+          "riquadro_xyxy": [
+            460.54,
+            235.03,
+            559.95,
+            488.23
+          ]
+        },
+        {
+          "id_frame": "dense_0070",
+          "timestamp": 17.5,
+          "confidenza": 0.8828,
+          "riquadro_xyxy": [
+            486.01,
+            290.13,
+            594.57,
+            534.48
+          ]
+        },
+        {
+          "id_frame": "dense_0100",
+          "timestamp": 25.0,
+          "confidenza": 0.7819,
+          "riquadro_xyxy": [
+            575.84,
+            273.74,
+            677.14,
+            507.75
+          ]
+        },
+        {
+          "id_frame": "dense_0106",
+          "timestamp": 26.5,
+          "confidenza": 0.6232,
+          "riquadro_xyxy": [
+            596.73,
+            183.89,
+            688.97,
+            406.79
+          ]
+        },
+        {
+          "id_frame": "dense_0107",
+          "timestamp": 26.75,
+          "confidenza": 0.8772,
+          "riquadro_xyxy": [
+            606.17,
+            186.77,
+            710.06,
+            422.14
+          ]
+        },
+        {
+          "id_frame": "dense_0108",
+          "timestamp": 27.0,
+          "confidenza": 0.7161,
+          "riquadro_xyxy": [
+            599.89,
+            183.77,
+            708.34,
+            443.84
+          ]
+        },
+        {
+          "id_frame": "dense_0110",
+          "timestamp": 27.5,
+          "confidenza": 0.6887,
+          "riquadro_xyxy": [
+            515.03,
+            169.74,
+            652.27,
+            411.77
+          ]
+        },
+        {
+          "id_frame": "dense_0111",
+          "timestamp": 27.75,
+          "confidenza": 0.7285,
+          "riquadro_xyxy": [
+            511.5,
+            162.91,
+            657.41,
+            424.98
+          ]
+        },
+        {
+          "id_frame": "dense_0113",
+          "timestamp": 28.25,
+          "confidenza": 0.6623,
+          "riquadro_xyxy": [
+            516.37,
+            172.95,
+            662.22,
+            444.66
+          ]
+        }
+      ],
+      "durata_traccia": 20.0,
+      "confidenza_media": 0.7321
+    },
+    {
+      "id_traccia": 129,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 8.75,
+      "ultima_comparsa": 9.25,
+      "numero_osservazioni": 3,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0035",
+          "timestamp": 8.75,
+          "confidenza": 0.6677,
+          "riquadro_xyxy": [
+            443.34,
+            287.15,
+            482.64,
+            390.52
+          ]
+        },
+        {
+          "id_frame": "dense_0036",
+          "timestamp": 9.0,
+          "confidenza": 0.4738,
+          "riquadro_xyxy": [
+            439.73,
+            293.62,
+            478.67,
+            395.72
+          ]
+        },
+        {
+          "id_frame": "dense_0037",
+          "timestamp": 9.25,
+          "confidenza": 0.5191,
+          "riquadro_xyxy": [
+            446.47,
+            296.49,
+            482.93,
+            392.81
+          ]
+        }
+      ],
+      "durata_traccia": 0.5,
+      "confidenza_media": 0.5535
+    },
+    {
+      "id_traccia": 131,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 9.0,
+      "ultima_comparsa": 9.0,
+      "numero_osservazioni": 1,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0036",
+          "timestamp": 9.0,
+          "confidenza": 0.4165,
+          "riquadro_xyxy": [
+            486.54,
+            272.01,
+            519.75,
+            361.05
+          ]
+        }
+      ],
+      "durata_traccia": 0.0,
+      "confidenza_media": 0.4165
+    },
+    {
+      "id_traccia": 135,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 9.0,
+      "ultima_comparsa": 25.0,
+      "numero_osservazioni": 8,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0036",
+          "timestamp": 9.0,
+          "confidenza": 0.3621,
+          "riquadro_xyxy": [
+            410.56,
+            280.3,
+            448.82,
+            402.73
+          ]
+        },
+        {
+          "id_frame": "dense_0037",
+          "timestamp": 9.25,
+          "confidenza": 0.3354,
+          "riquadro_xyxy": [
+            412.96,
+            276.23,
+            451.76,
+            400.28
+          ]
+        },
+        {
+          "id_frame": "dense_0060",
+          "timestamp": 15.0,
+          "confidenza": 0.5941,
+          "riquadro_xyxy": [
+            423.88,
+            226.75,
+            482.29,
+            413.53
+          ]
+        },
+        {
+          "id_frame": "dense_0071",
+          "timestamp": 17.75,
+          "confidenza": 0.6875,
+          "riquadro_xyxy": [
+            453.62,
+            213.41,
+            517.22,
+            409.87
+          ]
+        },
+        {
+          "id_frame": "dense_0072",
+          "timestamp": 18.0,
+          "confidenza": 0.4531,
+          "riquadro_xyxy": [
+            444.76,
+            219.28,
+            515.42,
+            444.18
+          ]
+        },
+        {
+          "id_frame": "dense_0074",
+          "timestamp": 18.5,
+          "confidenza": 0.3652,
+          "riquadro_xyxy": [
+            445.3,
+            227.39,
+            509.29,
+            426.53
+          ]
+        },
+        {
+          "id_frame": "dense_0075",
+          "timestamp": 18.75,
+          "confidenza": 0.4627,
+          "riquadro_xyxy": [
+            449.89,
+            229.71,
+            503.34,
+            392.51
+          ]
+        },
+        {
+          "id_frame": "dense_0100",
+          "timestamp": 25.0,
+          "confidenza": 0.5272,
+          "riquadro_xyxy": [
+            472.92,
+            218.72,
+            518.98,
+            337.5
+          ]
+        }
+      ],
+      "durata_traccia": 16.0,
+      "confidenza_media": 0.4734
+    },
+    {
+      "id_traccia": 141,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 10.0,
+      "ultima_comparsa": 10.25,
+      "numero_osservazioni": 2,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0040",
+          "timestamp": 10.0,
+          "confidenza": 0.4481,
+          "riquadro_xyxy": [
+            521.76,
+            304.02,
+            564.69,
+            417.6
+          ]
+        },
+        {
+          "id_frame": "dense_0041",
+          "timestamp": 10.25,
+          "confidenza": 0.4046,
+          "riquadro_xyxy": [
+            511.49,
+            301.27,
+            558.96,
+            426.75
+          ]
+        }
+      ],
+      "durata_traccia": 0.25,
+      "confidenza_media": 0.4264
+    },
+    {
+      "id_traccia": 143,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 10.25,
+      "ultima_comparsa": 10.25,
+      "numero_osservazioni": 1,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0041",
+          "timestamp": 10.25,
+          "confidenza": 0.574,
+          "riquadro_xyxy": [
+            468.77,
+            278.29,
+            506.05,
+            380.34
+          ]
+        }
+      ],
+      "durata_traccia": 0.0,
+      "confidenza_media": 0.574
+    },
+    {
+      "id_traccia": 147,
+      "id_classe": 49,
+      "nome_classe": "orange",
+      "prima_comparsa": 11.25,
+      "ultima_comparsa": 11.25,
+      "numero_osservazioni": 1,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0045",
+          "timestamp": 11.25,
+          "confidenza": 0.3739,
+          "riquadro_xyxy": [
+            888.56,
+            112.87,
+            1259.19,
+            594.39
+          ]
+        }
+      ],
+      "durata_traccia": 0.0,
+      "confidenza_media": 0.3739
+    },
+    {
+      "id_traccia": 151,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 12.0,
+      "ultima_comparsa": 13.0,
+      "numero_osservazioni": 5,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0048",
+          "timestamp": 12.0,
+          "confidenza": 0.5374,
+          "riquadro_xyxy": [
+            400.16,
+            274.08,
+            728.25,
+            582.18
+          ]
+        },
+        {
+          "id_frame": "dense_0049",
+          "timestamp": 12.25,
+          "confidenza": 0.7717,
+          "riquadro_xyxy": [
+            402.17,
+            325.61,
+            673.55,
+            580.79
+          ]
+        },
+        {
+          "id_frame": "dense_0050",
+          "timestamp": 12.5,
+          "confidenza": 0.4935,
+          "riquadro_xyxy": [
+            401.45,
+            389.54,
+            604.84,
+            581.39
+          ]
+        },
+        {
+          "id_frame": "dense_0051",
+          "timestamp": 12.75,
+          "confidenza": 0.3883,
+          "riquadro_xyxy": [
+            408.85,
+            447.95,
+            549.96,
+            581.2
+          ]
+        },
+        {
+          "id_frame": "dense_0052",
+          "timestamp": 13.0,
+          "confidenza": 0.2762,
+          "riquadro_xyxy": [
+            399.53,
+            476.61,
+            509.6,
+            581.64
+          ]
+        }
+      ],
+      "durata_traccia": 1.0,
+      "confidenza_media": 0.4934
+    },
+    {
+      "id_traccia": 169,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 14.0,
+      "ultima_comparsa": 25.25,
+      "numero_osservazioni": 9,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0056",
+          "timestamp": 14.0,
+          "confidenza": 0.5568,
+          "riquadro_xyxy": [
+            416.97,
+            40.45,
+            466.84,
+            196.05
+          ]
+        },
+        {
+          "id_frame": "dense_0066",
+          "timestamp": 16.5,
+          "confidenza": 0.6875,
+          "riquadro_xyxy": [
+            425.33,
+            3.22,
+            487.73,
+            188.19
+          ]
+        },
+        {
+          "id_frame": "dense_0067",
+          "timestamp": 16.75,
+          "confidenza": 0.865,
+          "riquadro_xyxy": [
+            427.22,
+            1.27,
+            500.16,
+            206.85
+          ]
+        },
+        {
+          "id_frame": "dense_0068",
+          "timestamp": 17.0,
+          "confidenza": 0.6989,
+          "riquadro_xyxy": [
+            397.18,
+            0.99,
+            520.48,
+            365.64
+          ]
+        },
+        {
+          "id_frame": "dense_0097",
+          "timestamp": 24.25,
+          "confidenza": 0.8655,
+          "riquadro_xyxy": [
+            464.72,
+            316.93,
+            593.32,
+            571.66
+          ]
+        },
+        {
+          "id_frame": "dense_0098",
+          "timestamp": 24.5,
+          "confidenza": 0.8542,
+          "riquadro_xyxy": [
+            453.32,
+            321.08,
+            594.83,
+            551.89
+          ]
+        },
+        {
+          "id_frame": "dense_0099",
+          "timestamp": 24.75,
+          "confidenza": 0.7811,
+          "riquadro_xyxy": [
+            440.34,
+            312.49,
+            593.92,
+            543.44
+          ]
+        },
+        {
+          "id_frame": "dense_0100",
+          "timestamp": 25.0,
+          "confidenza": 0.8511,
+          "riquadro_xyxy": [
+            430.13,
+            313.28,
+            586.74,
+            539.04
+          ]
+        },
+        {
+          "id_frame": "dense_0101",
+          "timestamp": 25.25,
+          "confidenza": 0.8176,
+          "riquadro_xyxy": [
+            423.45,
+            328.3,
+            551.68,
+            506.71
+          ]
+        }
+      ],
+      "durata_traccia": 11.25,
+      "confidenza_media": 0.7753
+    },
+    {
+      "id_traccia": 170,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 14.0,
+      "ultima_comparsa": 14.5,
+      "numero_osservazioni": 2,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0056",
+          "timestamp": 14.0,
+          "confidenza": 0.7511,
+          "riquadro_xyxy": [
+            783.49,
+            52.21,
+            866.12,
+            340.11
+          ]
+        },
+        {
+          "id_frame": "dense_0058",
+          "timestamp": 14.5,
+          "confidenza": 0.5814,
+          "riquadro_xyxy": [
+            803.39,
+            145.81,
+            858.22,
+            334.35
+          ]
+        }
+      ],
+      "durata_traccia": 0.5,
+      "confidenza_media": 0.6663
+    },
+    {
+      "id_traccia": 179,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 14.25,
+      "ultima_comparsa": 14.5,
+      "numero_osservazioni": 2,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0057",
+          "timestamp": 14.25,
+          "confidenza": 0.6982,
+          "riquadro_xyxy": [
+            585.07,
+            120.28,
+            663.07,
+            301.05
+          ]
+        },
+        {
+          "id_frame": "dense_0058",
+          "timestamp": 14.5,
+          "confidenza": 0.6842,
+          "riquadro_xyxy": [
+            581.42,
+            163.06,
+            658.2,
+            339.92
+          ]
+        }
+      ],
+      "durata_traccia": 0.25,
+      "confidenza_media": 0.6912
+    },
+    {
+      "id_traccia": 191,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 15.0,
+      "ultima_comparsa": 15.0,
+      "numero_osservazioni": 1,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0060",
+          "timestamp": 15.0,
+          "confidenza": 0.5791,
+          "riquadro_xyxy": [
+            520.33,
+            227.91,
+            549.03,
+            316.26
+          ]
+        }
+      ],
+      "durata_traccia": 0.0,
+      "confidenza_media": 0.5791
+    },
+    {
+      "id_traccia": 192,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 15.25,
+      "ultima_comparsa": 15.25,
+      "numero_osservazioni": 1,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0061",
+          "timestamp": 15.25,
+          "confidenza": 0.486,
+          "riquadro_xyxy": [
+            835.67,
+            191.67,
+            868.37,
+            316.13
+          ]
+        }
+      ],
+      "durata_traccia": 0.0,
+      "confidenza_media": 0.486
+    },
+    {
+      "id_traccia": 197,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 15.5,
+      "ultima_comparsa": 15.5,
+      "numero_osservazioni": 1,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0062",
+          "timestamp": 15.5,
+          "confidenza": 0.4709,
+          "riquadro_xyxy": [
+            777.81,
+            180.79,
+            818.87,
+            295.24
+          ]
+        }
+      ],
+      "durata_traccia": 0.0,
+      "confidenza_media": 0.4709
+    },
+    {
+      "id_traccia": 199,
+      "id_classe": 2,
+      "nome_classe": "car",
+      "prima_comparsa": 15.5,
+      "ultima_comparsa": 17.25,
+      "numero_osservazioni": 3,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0062",
+          "timestamp": 15.5,
+          "confidenza": 0.4993,
+          "riquadro_xyxy": [
+            407.11,
+            469.93,
+            875.09,
+            584.1
+          ]
+        },
+        {
+          "id_frame": "dense_0063",
+          "timestamp": 15.75,
+          "confidenza": 0.4864,
+          "riquadro_xyxy": [
+            394.81,
+            465.0,
+            885.64,
+            584.95
+          ]
+        },
+        {
+          "id_frame": "dense_0069",
+          "timestamp": 17.25,
+          "confidenza": 0.7874,
+          "riquadro_xyxy": [
+            324.73,
+            390.72,
+            1067.31,
+            579.88
+          ]
+        }
+      ],
+      "durata_traccia": 1.75,
+      "confidenza_media": 0.591
+    },
+    {
+      "id_traccia": 227,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 18.5,
+      "ultima_comparsa": 31.75,
+      "numero_osservazioni": 20,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0074",
+          "timestamp": 18.5,
+          "confidenza": 0.8326,
+          "riquadro_xyxy": [
+            766.84,
+            217.42,
+            877.88,
+            485.68
+          ]
+        },
+        {
+          "id_frame": "dense_0101",
+          "timestamp": 25.25,
+          "confidenza": 0.4509,
+          "riquadro_xyxy": [
+            767.33,
+            232.34,
+            896.97,
+            579.36
+          ]
+        },
+        {
+          "id_frame": "dense_0106",
+          "timestamp": 26.5,
+          "confidenza": 0.4533,
+          "riquadro_xyxy": [
+            726.31,
+            92.97,
+            896.32,
+            580.52
+          ]
+        },
+        {
+          "id_frame": "dense_0107",
+          "timestamp": 26.75,
+          "confidenza": 0.4193,
+          "riquadro_xyxy": [
+            725.71,
+            79.2,
+            891.61,
+            580.76
+          ]
+        },
+        {
+          "id_frame": "dense_0112",
+          "timestamp": 28.0,
+          "confidenza": 0.7503,
+          "riquadro_xyxy": [
+            740.01,
+            154.2,
+            841.53,
+            451.82
+          ]
+        },
+        {
+          "id_frame": "dense_0113",
+          "timestamp": 28.25,
+          "confidenza": 0.8497,
+          "riquadro_xyxy": [
+            733.27,
+            192.38,
+            829.54,
+            465.28
+          ]
+        },
+        {
+          "id_frame": "dense_0114",
+          "timestamp": 28.5,
+          "confidenza": 0.8527,
+          "riquadro_xyxy": [
+            741.66,
+            175.61,
+            854.84,
+            496.03
+          ]
+        },
+        {
+          "id_frame": "dense_0115",
+          "timestamp": 28.75,
+          "confidenza": 0.7188,
+          "riquadro_xyxy": [
+            752.17,
+            151.67,
+            871.71,
+            502.19
+          ]
+        },
+        {
+          "id_frame": "dense_0116",
+          "timestamp": 29.0,
+          "confidenza": 0.6581,
+          "riquadro_xyxy": [
+            770.68,
+            151.59,
+            884.96,
+            505.1
+          ]
+        },
+        {
+          "id_frame": "dense_0117",
+          "timestamp": 29.25,
+          "confidenza": 0.7484,
+          "riquadro_xyxy": [
+            778.98,
+            181.07,
+            881.55,
+            507.2
+          ]
+        },
+        {
+          "id_frame": "dense_0118",
+          "timestamp": 29.5,
+          "confidenza": 0.7305,
+          "riquadro_xyxy": [
+            774.74,
+            172.6,
+            877.67,
+            505.0
+          ]
+        },
+        {
+          "id_frame": "dense_0119",
+          "timestamp": 29.75,
+          "confidenza": 0.7767,
+          "riquadro_xyxy": [
+            769.72,
+            169.46,
+            872.7,
+            503.08
+          ]
+        },
+        {
+          "id_frame": "dense_0120",
+          "timestamp": 30.0,
+          "confidenza": 0.7362,
+          "riquadro_xyxy": [
+            757.81,
+            170.74,
+            861.09,
+            507.65
+          ]
+        },
+        {
+          "id_frame": "dense_0121",
+          "timestamp": 30.25,
+          "confidenza": 0.642,
+          "riquadro_xyxy": [
+            742.86,
+            179.93,
+            844.04,
+            512.43
+          ]
+        },
+        {
+          "id_frame": "dense_0122",
+          "timestamp": 30.5,
+          "confidenza": 0.6338,
+          "riquadro_xyxy": [
+            728.31,
+            207.04,
+            823.68,
+            515.77
+          ]
+        },
+        {
+          "id_frame": "dense_0123",
+          "timestamp": 30.75,
+          "confidenza": 0.7242,
+          "riquadro_xyxy": [
+            721.73,
+            203.4,
+            818.16,
+            524.06
+          ]
+        },
+        {
+          "id_frame": "dense_0124",
+          "timestamp": 31.0,
+          "confidenza": 0.8294,
+          "riquadro_xyxy": [
+            706.78,
+            218.34,
+            802.53,
+            531.55
+          ]
+        },
+        {
+          "id_frame": "dense_0125",
+          "timestamp": 31.25,
+          "confidenza": 0.7664,
+          "riquadro_xyxy": [
+            699.61,
+            211.94,
+            798.67,
+            536.63
+          ]
+        },
+        {
+          "id_frame": "dense_0126",
+          "timestamp": 31.5,
+          "confidenza": 0.5923,
+          "riquadro_xyxy": [
+            696.99,
+            204.46,
+            797.51,
+            539.38
+          ]
+        },
+        {
+          "id_frame": "dense_0127",
+          "timestamp": 31.75,
+          "confidenza": 0.6403,
+          "riquadro_xyxy": [
+            681.18,
+            210.62,
+            776.2,
+            532.16
+          ]
+        }
+      ],
+      "durata_traccia": 13.25,
+      "confidenza_media": 0.6903
+    },
+    {
+      "id_traccia": 232,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 18.75,
+      "ultima_comparsa": 24.75,
+      "numero_osservazioni": 6,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0075",
+          "timestamp": 18.75,
+          "confidenza": 0.764,
+          "riquadro_xyxy": [
+            413.21,
+            226.24,
+            463.14,
+            469.17
+          ]
+        },
+        {
+          "id_frame": "dense_0076",
+          "timestamp": 19.0,
+          "confidenza": 0.749,
+          "riquadro_xyxy": [
+            430.34,
+            238.97,
+            476.6,
+            461.7
+          ]
+        },
+        {
+          "id_frame": "dense_0077",
+          "timestamp": 19.25,
+          "confidenza": 0.7014,
+          "riquadro_xyxy": [
+            447.37,
+            257.61,
+            490.67,
+            463.35
+          ]
+        },
+        {
+          "id_frame": "dense_0097",
+          "timestamp": 24.25,
+          "confidenza": 0.6563,
+          "riquadro_xyxy": [
+            655.75,
+            280.34,
+            705.37,
+            501.74
+          ]
+        },
+        {
+          "id_frame": "dense_0098",
+          "timestamp": 24.5,
+          "confidenza": 0.7509,
+          "riquadro_xyxy": [
+            645.52,
+            275.08,
+            701.73,
+            504.44
+          ]
+        },
+        {
+          "id_frame": "dense_0099",
+          "timestamp": 24.75,
+          "confidenza": 0.7317,
+          "riquadro_xyxy": [
+            634.83,
+            273.67,
+            694.67,
+            502.12
+          ]
+        }
+      ],
+      "durata_traccia": 6.0,
+      "confidenza_media": 0.7255
+    },
+    {
+      "id_traccia": 233,
+      "id_classe": 2,
+      "nome_classe": "car",
+      "prima_comparsa": 18.75,
+      "ultima_comparsa": 18.75,
+      "numero_osservazioni": 1,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0075",
+          "timestamp": 18.75,
+          "confidenza": 0.5541,
+          "riquadro_xyxy": [
+            739.98,
+            203.37,
+            862.04,
+            284.12
+          ]
+        }
+      ],
+      "durata_traccia": 0.0,
+      "confidenza_media": 0.5541
+    },
+    {
+      "id_traccia": 242,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 19.25,
+      "ultima_comparsa": 31.75,
+      "numero_osservazioni": 24,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0077",
+          "timestamp": 19.25,
+          "confidenza": 0.6667,
+          "riquadro_xyxy": [
+            496.94,
+            230.14,
+            563.91,
+            437.77
+          ]
+        },
+        {
+          "id_frame": "dense_0105",
+          "timestamp": 26.25,
+          "confidenza": 0.7308,
+          "riquadro_xyxy": [
+            439.74,
+            144.15,
+            556.49,
+            503.36
+          ]
+        },
+        {
+          "id_frame": "dense_0106",
+          "timestamp": 26.5,
+          "confidenza": 0.7745,
+          "riquadro_xyxy": [
+            455.0,
+            155.89,
+            561.47,
+            483.24
+          ]
+        },
+        {
+          "id_frame": "dense_0107",
+          "timestamp": 26.75,
+          "confidenza": 0.8551,
+          "riquadro_xyxy": [
+            439.19,
+            174.84,
+            534.14,
+            430.23
+          ]
+        },
+        {
+          "id_frame": "dense_0108",
+          "timestamp": 27.0,
+          "confidenza": 0.7678,
+          "riquadro_xyxy": [
+            435.72,
+            157.8,
+            534.97,
+            398.76
+          ]
+        },
+        {
+          "id_frame": "dense_0109",
+          "timestamp": 27.25,
+          "confidenza": 0.7091,
+          "riquadro_xyxy": [
+            441.42,
+            161.49,
+            548.59,
+            392.28
+          ]
+        },
+        {
+          "id_frame": "dense_0110",
+          "timestamp": 27.5,
+          "confidenza": 0.487,
+          "riquadro_xyxy": [
+            443.25,
+            170.99,
+            559.81,
+            398.43
+          ]
+        },
+        {
+          "id_frame": "dense_0111",
+          "timestamp": 27.75,
+          "confidenza": 0.6581,
+          "riquadro_xyxy": [
+            432.76,
+            185.24,
+            550.43,
+            404.86
+          ]
+        },
+        {
+          "id_frame": "dense_0112",
+          "timestamp": 28.0,
+          "confidenza": 0.6885,
+          "riquadro_xyxy": [
+            420.17,
+            195.71,
+            542.23,
+            421.21
+          ]
+        },
+        {
+          "id_frame": "dense_0113",
+          "timestamp": 28.25,
+          "confidenza": 0.5047,
+          "riquadro_xyxy": [
+            420.73,
+            202.63,
+            547.7,
+            431.85
+          ]
+        },
+        {
+          "id_frame": "dense_0114",
+          "timestamp": 28.5,
+          "confidenza": 0.565,
+          "riquadro_xyxy": [
+            430.94,
+            204.35,
+            568.52,
+            440.49
+          ]
+        },
+        {
+          "id_frame": "dense_0115",
+          "timestamp": 28.75,
+          "confidenza": 0.503,
+          "riquadro_xyxy": [
+            445.34,
+            202.94,
+            596.18,
+            443.65
+          ]
+        },
+        {
+          "id_frame": "dense_0116",
+          "timestamp": 29.0,
+          "confidenza": 0.7542,
+          "riquadro_xyxy": [
+            460.01,
+            202.33,
+            626.06,
+            445.28
+          ]
+        },
+        {
+          "id_frame": "dense_0117",
+          "timestamp": 29.25,
+          "confidenza": 0.7885,
+          "riquadro_xyxy": [
+            457.06,
+            206.82,
+            629.8,
+            444.24
+          ]
+        },
+        {
+          "id_frame": "dense_0118",
+          "timestamp": 29.5,
+          "confidenza": 0.8281,
+          "riquadro_xyxy": [
+            454.12,
+            220.5,
+            624.64,
+            441.12
+          ]
+        },
+        {
+          "id_frame": "dense_0119",
+          "timestamp": 29.75,
+          "confidenza": 0.6323,
+          "riquadro_xyxy": [
+            446.05,
+            228.42,
+            614.2,
+            436.98
+          ]
+        },
+        {
+          "id_frame": "dense_0120",
+          "timestamp": 30.0,
+          "confidenza": 0.6627,
+          "riquadro_xyxy": [
+            436.7,
+            235.02,
+            611.87,
+            446.57
+          ]
+        },
+        {
+          "id_frame": "dense_0121",
+          "timestamp": 30.25,
+          "confidenza": 0.7495,
+          "riquadro_xyxy": [
+            420.83,
+            244.88,
+            596.52,
+            456.75
+          ]
+        },
+        {
+          "id_frame": "dense_0122",
+          "timestamp": 30.5,
+          "confidenza": 0.7172,
+          "riquadro_xyxy": [
+            413.42,
+            252.63,
+            587.33,
+            462.44
+          ]
+        },
+        {
+          "id_frame": "dense_0123",
+          "timestamp": 30.75,
+          "confidenza": 0.7388,
+          "riquadro_xyxy": [
+            410.52,
+            257.96,
+            581.67,
+            464.65
+          ]
+        },
+        {
+          "id_frame": "dense_0124",
+          "timestamp": 31.0,
+          "confidenza": 0.7626,
+          "riquadro_xyxy": [
+            406.88,
+            258.34,
+            580.47,
+            469.14
+          ]
+        },
+        {
+          "id_frame": "dense_0125",
+          "timestamp": 31.25,
+          "confidenza": 0.4246,
+          "riquadro_xyxy": [
+            407.37,
+            261.91,
+            581.56,
+            474.09
+          ]
+        },
+        {
+          "id_frame": "dense_0126",
+          "timestamp": 31.5,
+          "confidenza": 0.6854,
+          "riquadro_xyxy": [
+            443.17,
+            263.66,
+            621.78,
+            466.94
+          ]
+        },
+        {
+          "id_frame": "dense_0127",
+          "timestamp": 31.75,
+          "confidenza": 0.5528,
+          "riquadro_xyxy": [
+            428.08,
+            242.96,
+            623.19,
+            475.81
+          ]
+        }
+      ],
+      "durata_traccia": 12.5,
+      "confidenza_media": 0.6753
+    },
+    {
+      "id_traccia": 252,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 20.25,
+      "ultima_comparsa": 21.25,
+      "numero_osservazioni": 3,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0081",
+          "timestamp": 20.25,
+          "confidenza": 0.5032,
+          "riquadro_xyxy": [
+            457.78,
+            445.76,
+            512.39,
+            580.66
+          ]
+        },
+        {
+          "id_frame": "dense_0082",
+          "timestamp": 20.5,
+          "confidenza": 0.4709,
+          "riquadro_xyxy": [
+            446.81,
+            423.85,
+            509.99,
+            579.88
+          ]
+        },
+        {
+          "id_frame": "dense_0085",
+          "timestamp": 21.25,
+          "confidenza": 0.5521,
+          "riquadro_xyxy": [
+            417.24,
+            379.64,
+            496.88,
+            576.58
+          ]
+        }
+      ],
+      "durata_traccia": 1.0,
+      "confidenza_media": 0.5087
+    },
+    {
+      "id_traccia": 253,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 20.25,
+      "ultima_comparsa": 20.25,
+      "numero_osservazioni": 1,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0081",
+          "timestamp": 20.25,
+          "confidenza": 0.4932,
+          "riquadro_xyxy": [
+            532.82,
+            402.75,
+            571.7,
+            509.93
+          ]
+        }
+      ],
+      "durata_traccia": 0.0,
+      "confidenza_media": 0.4932
+    },
+    {
+      "id_traccia": 261,
+      "id_classe": 2,
+      "nome_classe": "car",
+      "prima_comparsa": 20.75,
+      "ultima_comparsa": 24.0,
+      "numero_osservazioni": 12,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0083",
+          "timestamp": 20.75,
+          "confidenza": 0.4307,
+          "riquadro_xyxy": [
+            427.19,
+            474.63,
+            835.72,
+            585.43
+          ]
+        },
+        {
+          "id_frame": "dense_0085",
+          "timestamp": 21.25,
+          "confidenza": 0.5737,
+          "riquadro_xyxy": [
+            414.39,
+            457.52,
+            881.16,
+            584.44
+          ]
+        },
+        {
+          "id_frame": "dense_0086",
+          "timestamp": 21.5,
+          "confidenza": 0.28,
+          "riquadro_xyxy": [
+            417.89,
+            455.0,
+            890.19,
+            583.81
+          ]
+        },
+        {
+          "id_frame": "dense_0087",
+          "timestamp": 21.75,
+          "confidenza": 0.44,
+          "riquadro_xyxy": [
+            414.2,
+            452.88,
+            892.24,
+            583.74
+          ]
+        },
+        {
+          "id_frame": "dense_0088",
+          "timestamp": 22.0,
+          "confidenza": 0.4155,
+          "riquadro_xyxy": [
+            411.32,
+            454.37,
+            881.85,
+            583.34
+          ]
+        },
+        {
+          "id_frame": "dense_0089",
+          "timestamp": 22.25,
+          "confidenza": 0.7525,
+          "riquadro_xyxy": [
+            404.65,
+            454.28,
+            876.37,
+            583.73
+          ]
+        },
+        {
+          "id_frame": "dense_0090",
+          "timestamp": 22.5,
+          "confidenza": 0.4754,
+          "riquadro_xyxy": [
+            403.55,
+            456.27,
+            866.0,
+            583.38
+          ]
+        },
+        {
+          "id_frame": "dense_0091",
+          "timestamp": 22.75,
+          "confidenza": 0.7183,
+          "riquadro_xyxy": [
+            395.62,
+            455.32,
+            857.59,
+            582.97
+          ]
+        },
+        {
+          "id_frame": "dense_0093",
+          "timestamp": 23.25,
+          "confidenza": 0.7814,
+          "riquadro_xyxy": [
+            350.25,
+            440.3,
+            855.57,
+            583.43
+          ]
+        },
+        {
+          "id_frame": "dense_0094",
+          "timestamp": 23.5,
+          "confidenza": 0.8073,
+          "riquadro_xyxy": [
+            287.45,
+            408.11,
+            871.2,
+            581.04
+          ]
+        },
+        {
+          "id_frame": "dense_0095",
+          "timestamp": 23.75,
+          "confidenza": 0.8529,
+          "riquadro_xyxy": [
+            238.84,
+            379.22,
+            878.82,
+            579.39
+          ]
+        },
+        {
+          "id_frame": "dense_0096",
+          "timestamp": 24.0,
+          "confidenza": 0.8864,
+          "riquadro_xyxy": [
+            207.38,
+            355.85,
+            876.06,
+            577.85
+          ]
+        }
+      ],
+      "durata_traccia": 3.25,
+      "confidenza_media": 0.6179
+    },
+    {
+      "id_traccia": 264,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 21.0,
+      "ultima_comparsa": 23.0,
+      "numero_osservazioni": 6,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0084",
+          "timestamp": 21.0,
+          "confidenza": 0.4513,
+          "riquadro_xyxy": [
+            807.51,
+            391.0,
+            849.15,
+            517.06
+          ]
+        },
+        {
+          "id_frame": "dense_0088",
+          "timestamp": 22.0,
+          "confidenza": 0.5131,
+          "riquadro_xyxy": [
+            803.89,
+            377.7,
+            846.54,
+            507.57
+          ]
+        },
+        {
+          "id_frame": "dense_0089",
+          "timestamp": 22.25,
+          "confidenza": 0.5084,
+          "riquadro_xyxy": [
+            810.74,
+            373.66,
+            859.1,
+            520.79
+          ]
+        },
+        {
+          "id_frame": "dense_0090",
+          "timestamp": 22.5,
+          "confidenza": 0.3769,
+          "riquadro_xyxy": [
+            820.61,
+            370.88,
+            866.99,
+            512.13
+          ]
+        },
+        {
+          "id_frame": "dense_0091",
+          "timestamp": 22.75,
+          "confidenza": 0.5234,
+          "riquadro_xyxy": [
+            819.23,
+            368.72,
+            877.75,
+            551.54
+          ]
+        },
+        {
+          "id_frame": "dense_0092",
+          "timestamp": 23.0,
+          "confidenza": 0.4338,
+          "riquadro_xyxy": [
+            822.22,
+            377.61,
+            881.75,
+            568.73
+          ]
+        }
+      ],
+      "durata_traccia": 2.0,
+      "confidenza_media": 0.4678
+    },
+    {
+      "id_traccia": 282,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 22.25,
+      "ultima_comparsa": 22.25,
+      "numero_osservazioni": 1,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0089",
+          "timestamp": 22.25,
+          "confidenza": 0.515,
+          "riquadro_xyxy": [
+            451.6,
+            398.21,
+            517.74,
+            520.94
+          ]
+        }
+      ],
+      "durata_traccia": 0.0,
+      "confidenza_media": 0.515
+    },
+    {
+      "id_traccia": 292,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 22.75,
+      "ultima_comparsa": 23.25,
+      "numero_osservazioni": 3,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0091",
+          "timestamp": 22.75,
+          "confidenza": 0.5586,
+          "riquadro_xyxy": [
+            769.58,
+            389.41,
+            846.7,
+            540.05
+          ]
+        },
+        {
+          "id_frame": "dense_0092",
+          "timestamp": 23.0,
+          "confidenza": 0.3635,
+          "riquadro_xyxy": [
+            767.93,
+            383.81,
+            859.36,
+            563.85
+          ]
+        },
+        {
+          "id_frame": "dense_0093",
+          "timestamp": 23.25,
+          "confidenza": 0.3988,
+          "riquadro_xyxy": [
+            769.46,
+            370.03,
+            873.31,
+            577.39
+          ]
+        }
+      ],
+      "durata_traccia": 0.5,
+      "confidenza_media": 0.4403
+    },
+    {
+      "id_traccia": 327,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 24.5,
+      "ultima_comparsa": 25.25,
+      "numero_osservazioni": 3,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0098",
+          "timestamp": 24.5,
+          "confidenza": 0.5976,
+          "riquadro_xyxy": [
+            735.11,
+            258.66,
+            785.3,
+            436.29
+          ]
+        },
+        {
+          "id_frame": "dense_0099",
+          "timestamp": 24.75,
+          "confidenza": 0.6246,
+          "riquadro_xyxy": [
+            719.75,
+            248.22,
+            772.1,
+            433.21
+          ]
+        },
+        {
+          "id_frame": "dense_0101",
+          "timestamp": 25.25,
+          "confidenza": 0.4762,
+          "riquadro_xyxy": [
+            716.84,
+            236.21,
+            759.64,
+            385.68
+          ]
+        }
+      ],
+      "durata_traccia": 0.75,
+      "confidenza_media": 0.5661
+    },
+    {
+      "id_traccia": 334,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 24.5,
+      "ultima_comparsa": 25.0,
+      "numero_osservazioni": 2,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0098",
+          "timestamp": 24.5,
+          "confidenza": 0.4211,
+          "riquadro_xyxy": [
+            696.82,
+            241.34,
+            742.98,
+            418.72
+          ]
+        },
+        {
+          "id_frame": "dense_0100",
+          "timestamp": 25.0,
+          "confidenza": 0.5416,
+          "riquadro_xyxy": [
+            686.13,
+            244.15,
+            735.33,
+            431.37
+          ]
+        }
+      ],
+      "durata_traccia": 0.5,
+      "confidenza_media": 0.4814
+    },
+    {
+      "id_traccia": 369,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 26.75,
+      "ultima_comparsa": 30.5,
+      "numero_osservazioni": 7,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0107",
+          "timestamp": 26.75,
+          "confidenza": 0.7945,
+          "riquadro_xyxy": [
+            523.5,
+            150.62,
+            614.9,
+            417.03
+          ]
+        },
+        {
+          "id_frame": "dense_0108",
+          "timestamp": 27.0,
+          "confidenza": 0.7337,
+          "riquadro_xyxy": [
+            532.55,
+            133.95,
+            627.05,
+            410.12
+          ]
+        },
+        {
+          "id_frame": "dense_0110",
+          "timestamp": 27.5,
+          "confidenza": 0.3883,
+          "riquadro_xyxy": [
+            559.24,
+            179.83,
+            643.55,
+            419.26
+          ]
+        },
+        {
+          "id_frame": "dense_0114",
+          "timestamp": 28.5,
+          "confidenza": 0.6411,
+          "riquadro_xyxy": [
+            588.13,
+            173.05,
+            690.92,
+            458.99
+          ]
+        },
+        {
+          "id_frame": "dense_0115",
+          "timestamp": 28.75,
+          "confidenza": 0.5644,
+          "riquadro_xyxy": [
+            618.3,
+            182.46,
+            719.33,
+            462.27
+          ]
+        },
+        {
+          "id_frame": "dense_0118",
+          "timestamp": 29.5,
+          "confidenza": 0.5277,
+          "riquadro_xyxy": [
+            658.65,
+            175.53,
+            753.38,
+            436.75
+          ]
+        },
+        {
+          "id_frame": "dense_0122",
+          "timestamp": 30.5,
+          "confidenza": 0.3671,
+          "riquadro_xyxy": [
+            716.69,
+            181.97,
+            790.96,
+            382.85
+          ]
+        }
+      ],
+      "durata_traccia": 3.75,
+      "confidenza_media": 0.5738
+    },
+    {
+      "id_traccia": 370,
+      "id_classe": 2,
+      "nome_classe": "car",
+      "prima_comparsa": 27.0,
+      "ultima_comparsa": 31.75,
+      "numero_osservazioni": 20,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0108",
+          "timestamp": 27.0,
+          "confidenza": 0.7201,
+          "riquadro_xyxy": [
+            401.35,
+            385.08,
+            708.14,
+            581.01
+          ]
+        },
+        {
+          "id_frame": "dense_0109",
+          "timestamp": 27.25,
+          "confidenza": 0.6941,
+          "riquadro_xyxy": [
+            410.53,
+            380.84,
+            726.56,
+            582.61
+          ]
+        },
+        {
+          "id_frame": "dense_0110",
+          "timestamp": 27.5,
+          "confidenza": 0.7667,
+          "riquadro_xyxy": [
+            432.48,
+            385.78,
+            744.2,
+            583.7
+          ]
+        },
+        {
+          "id_frame": "dense_0111",
+          "timestamp": 27.75,
+          "confidenza": 0.7757,
+          "riquadro_xyxy": [
+            450.17,
+            405.96,
+            733.63,
+            583.7
+          ]
+        },
+        {
+          "id_frame": "dense_0112",
+          "timestamp": 28.0,
+          "confidenza": 0.7933,
+          "riquadro_xyxy": [
+            456.38,
+            421.32,
+            719.67,
+            583.67
+          ]
+        },
+        {
+          "id_frame": "dense_0113",
+          "timestamp": 28.25,
+          "confidenza": 0.7859,
+          "riquadro_xyxy": [
+            466.12,
+            431.86,
+            721.44,
+            585.45
+          ]
+        },
+        {
+          "id_frame": "dense_0114",
+          "timestamp": 28.5,
+          "confidenza": 0.6876,
+          "riquadro_xyxy": [
+            474.59,
+            434.34,
+            732.57,
+            584.8
+          ]
+        },
+        {
+          "id_frame": "dense_0115",
+          "timestamp": 28.75,
+          "confidenza": 0.7357,
+          "riquadro_xyxy": [
+            475.69,
+            432.57,
+            744.53,
+            584.72
+          ]
+        },
+        {
+          "id_frame": "dense_0116",
+          "timestamp": 29.0,
+          "confidenza": 0.7419,
+          "riquadro_xyxy": [
+            472.22,
+            434.14,
+            749.05,
+            586.22
+          ]
+        },
+        {
+          "id_frame": "dense_0117",
+          "timestamp": 29.25,
+          "confidenza": 0.8133,
+          "riquadro_xyxy": [
+            469.05,
+            432.21,
+            751.82,
+            583.1
+          ]
+        },
+        {
+          "id_frame": "dense_0118",
+          "timestamp": 29.5,
+          "confidenza": 0.8048,
+          "riquadro_xyxy": [
+            461.09,
+            431.16,
+            752.69,
+            582.79
+          ]
+        },
+        {
+          "id_frame": "dense_0119",
+          "timestamp": 29.75,
+          "confidenza": 0.8246,
+          "riquadro_xyxy": [
+            454.22,
+            433.04,
+            747.0,
+            581.94
+          ]
+        },
+        {
+          "id_frame": "dense_0120",
+          "timestamp": 30.0,
+          "confidenza": 0.7205,
+          "riquadro_xyxy": [
+            452.11,
+            442.33,
+            735.7,
+            582.79
+          ]
+        },
+        {
+          "id_frame": "dense_0121",
+          "timestamp": 30.25,
+          "confidenza": 0.7969,
+          "riquadro_xyxy": [
+            449.65,
+            451.61,
+            723.55,
+            583.78
+          ]
+        },
+        {
+          "id_frame": "dense_0122",
+          "timestamp": 30.5,
+          "confidenza": 0.7377,
+          "riquadro_xyxy": [
+            446.23,
+            457.64,
+            714.3,
+            583.95
+          ]
+        },
+        {
+          "id_frame": "dense_0123",
+          "timestamp": 30.75,
+          "confidenza": 0.6929,
+          "riquadro_xyxy": [
+            444.89,
+            460.58,
+            711.55,
+            583.13
+          ]
+        },
+        {
+          "id_frame": "dense_0124",
+          "timestamp": 31.0,
+          "confidenza": 0.6411,
+          "riquadro_xyxy": [
+            445.88,
+            464.95,
+            711.7,
+            583.98
+          ]
+        },
+        {
+          "id_frame": "dense_0125",
+          "timestamp": 31.25,
+          "confidenza": 0.5626,
+          "riquadro_xyxy": [
+            449.48,
+            469.47,
+            710.33,
+            582.82
+          ]
+        },
+        {
+          "id_frame": "dense_0126",
+          "timestamp": 31.5,
+          "confidenza": 0.4069,
+          "riquadro_xyxy": [
+            453.36,
+            472.62,
+            714.55,
+            582.31
+          ]
+        },
+        {
+          "id_frame": "dense_0127",
+          "timestamp": 31.75,
+          "confidenza": 0.3716,
+          "riquadro_xyxy": [
+            447.3,
+            471.81,
+            714.45,
+            581.27
+          ]
+        }
+      ],
+      "durata_traccia": 4.75,
+      "confidenza_media": 0.7037
+    },
+    {
+      "id_traccia": 387,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 27.5,
+      "ultima_comparsa": 31.75,
+      "numero_osservazioni": 15,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0110",
+          "timestamp": 27.5,
+          "confidenza": 0.5758,
+          "riquadro_xyxy": [
+            754.42,
+            121.36,
+            807.77,
+            259.14
+          ]
+        },
+        {
+          "id_frame": "dense_0111",
+          "timestamp": 27.75,
+          "confidenza": 0.5956,
+          "riquadro_xyxy": [
+            743.21,
+            136.07,
+            794.87,
+            269.27
+          ]
+        },
+        {
+          "id_frame": "dense_0114",
+          "timestamp": 28.5,
+          "confidenza": 0.4264,
+          "riquadro_xyxy": [
+            713.09,
+            150.96,
+            768.46,
+            293.09
+          ]
+        },
+        {
+          "id_frame": "dense_0116",
+          "timestamp": 29.0,
+          "confidenza": 0.7128,
+          "riquadro_xyxy": [
+            678.73,
+            178.04,
+            766.95,
+            409.1
+          ]
+        },
+        {
+          "id_frame": "dense_0117",
+          "timestamp": 29.25,
+          "confidenza": 0.6092,
+          "riquadro_xyxy": [
+            663.04,
+            188.62,
+            757.37,
+            434.27
+          ]
+        },
+        {
+          "id_frame": "dense_0118",
+          "timestamp": 29.5,
+          "confidenza": 0.5854,
+          "riquadro_xyxy": [
+            645.06,
+            186.6,
+            742.1,
+            440.11
+          ]
+        },
+        {
+          "id_frame": "dense_0119",
+          "timestamp": 29.75,
+          "confidenza": 0.8026,
+          "riquadro_xyxy": [
+            630.62,
+            198.9,
+            726.46,
+            444.32
+          ]
+        },
+        {
+          "id_frame": "dense_0120",
+          "timestamp": 30.0,
+          "confidenza": 0.7259,
+          "riquadro_xyxy": [
+            612.4,
+            215.39,
+            707.97,
+            454.77
+          ]
+        },
+        {
+          "id_frame": "dense_0121",
+          "timestamp": 30.25,
+          "confidenza": 0.5469,
+          "riquadro_xyxy": [
+            585.36,
+            228.61,
+            681.0,
+            465.55
+          ]
+        },
+        {
+          "id_frame": "dense_0122",
+          "timestamp": 30.5,
+          "confidenza": 0.5831,
+          "riquadro_xyxy": [
+            571.28,
+            232.61,
+            675.94,
+            486.15
+          ]
+        },
+        {
+          "id_frame": "dense_0123",
+          "timestamp": 30.75,
+          "confidenza": 0.5783,
+          "riquadro_xyxy": [
+            564.85,
+            244.24,
+            672.1,
+            497.85
+          ]
+        },
+        {
+          "id_frame": "dense_0124",
+          "timestamp": 31.0,
+          "confidenza": 0.6622,
+          "riquadro_xyxy": [
+            552.51,
+            252.6,
+            655.15,
+            496.63
+          ]
+        },
+        {
+          "id_frame": "dense_0125",
+          "timestamp": 31.25,
+          "confidenza": 0.5262,
+          "riquadro_xyxy": [
+            537.11,
+            255.19,
+            636.5,
+            494.33
+          ]
+        },
+        {
+          "id_frame": "dense_0126",
+          "timestamp": 31.5,
+          "confidenza": 0.7274,
+          "riquadro_xyxy": [
+            516.93,
+            256.82,
+            614.02,
+            488.2
+          ]
+        },
+        {
+          "id_frame": "dense_0127",
+          "timestamp": 31.75,
+          "confidenza": 0.3409,
+          "riquadro_xyxy": [
+            495.86,
+            238.36,
+            596.82,
+            484.13
+          ]
+        }
+      ],
+      "durata_traccia": 4.25,
+      "confidenza_media": 0.5999
+    },
+    {
+      "id_traccia": 389,
+      "id_classe": 2,
+      "nome_classe": "car",
+      "prima_comparsa": 27.75,
+      "ultima_comparsa": 28.25,
+      "numero_osservazioni": 3,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0111",
+          "timestamp": 27.75,
+          "confidenza": 0.648,
+          "riquadro_xyxy": [
+            426.19,
+            137.35,
+            593.65,
+            219.97
+          ]
+        },
+        {
+          "id_frame": "dense_0112",
+          "timestamp": 28.0,
+          "confidenza": 0.6693,
+          "riquadro_xyxy": [
+            408.9,
+            148.91,
+            576.41,
+            231.7
+          ]
+        },
+        {
+          "id_frame": "dense_0113",
+          "timestamp": 28.25,
+          "confidenza": 0.5504,
+          "riquadro_xyxy": [
+            414.91,
+            160.69,
+            569.29,
+            237.31
+          ]
+        }
+      ],
+      "durata_traccia": 0.5,
+      "confidenza_media": 0.6226
+    },
+    {
+      "id_traccia": 390,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 27.75,
+      "ultima_comparsa": 28.0,
+      "numero_osservazioni": 2,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0111",
+          "timestamp": 27.75,
+          "confidenza": 0.648,
+          "riquadro_xyxy": [
+            686.18,
+            143.95,
+            744.31,
+            275.0
+          ]
+        },
+        {
+          "id_frame": "dense_0112",
+          "timestamp": 28.0,
+          "confidenza": 0.4522,
+          "riquadro_xyxy": [
+            675.05,
+            157.8,
+            741.7,
+            308.02
+          ]
+        }
+      ],
+      "durata_traccia": 0.25,
+      "confidenza_media": 0.5501
+    },
+    {
+      "id_traccia": 402,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 29.0,
+      "ultima_comparsa": 31.75,
+      "numero_osservazioni": 6,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0116",
+          "timestamp": 29.0,
+          "confidenza": 0.488,
+          "riquadro_xyxy": [
+            776.78,
+            150.02,
+            843.78,
+            313.29
+          ]
+        },
+        {
+          "id_frame": "dense_0123",
+          "timestamp": 30.75,
+          "confidenza": 0.5694,
+          "riquadro_xyxy": [
+            772.58,
+            201.6,
+            859.98,
+            419.17
+          ]
+        },
+        {
+          "id_frame": "dense_0124",
+          "timestamp": 31.0,
+          "confidenza": 0.5781,
+          "riquadro_xyxy": [
+            773.74,
+            211.0,
+            861.58,
+            433.64
+          ]
+        },
+        {
+          "id_frame": "dense_0125",
+          "timestamp": 31.25,
+          "confidenza": 0.4571,
+          "riquadro_xyxy": [
+            769.97,
+            219.57,
+            860.61,
+            455.17
+          ]
+        },
+        {
+          "id_frame": "dense_0126",
+          "timestamp": 31.5,
+          "confidenza": 0.7115,
+          "riquadro_xyxy": [
+            768.21,
+            228.54,
+            861.1,
+            474.23
+          ]
+        },
+        {
+          "id_frame": "dense_0127",
+          "timestamp": 31.75,
+          "confidenza": 0.6335,
+          "riquadro_xyxy": [
+            770.04,
+            229.34,
+            862.59,
+            480.64
+          ]
+        }
+      ],
+      "durata_traccia": 2.75,
+      "confidenza_media": 0.5729
+    },
+    {
+      "id_traccia": 414,
+      "id_classe": 2,
+      "nome_classe": "car",
+      "prima_comparsa": 29.75,
+      "ultima_comparsa": 30.0,
+      "numero_osservazioni": 2,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0119",
+          "timestamp": 29.75,
+          "confidenza": 0.514,
+          "riquadro_xyxy": [
+            413.2,
+            164.01,
+            620.29,
+            241.45
+          ]
+        },
+        {
+          "id_frame": "dense_0120",
+          "timestamp": 30.0,
+          "confidenza": 0.6537,
+          "riquadro_xyxy": [
+            391.13,
+            172.62,
+            587.55,
+            246.48
+          ]
+        }
+      ],
+      "durata_traccia": 0.25,
+      "confidenza_media": 0.5838
+    },
+    {
+      "id_traccia": 425,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 30.5,
+      "ultima_comparsa": 30.75,
+      "numero_osservazioni": 2,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0122",
+          "timestamp": 30.5,
+          "confidenza": 0.4666,
+          "riquadro_xyxy": [
+            672.78,
+            179.18,
+            728.23,
+            304.66
+          ]
+        },
+        {
+          "id_frame": "dense_0123",
+          "timestamp": 30.75,
+          "confidenza": 0.7008,
+          "riquadro_xyxy": [
+            672.6,
+            183.1,
+            738.87,
+            333.92
+          ]
+        }
+      ],
+      "durata_traccia": 0.25,
+      "confidenza_media": 0.5837
+    }
+  ]
+}

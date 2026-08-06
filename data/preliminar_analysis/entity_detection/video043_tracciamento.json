@@ -1,0 +1,4758 @@
+{
+  "id_video": "video043",
+  "modello": "yolo11n.pt",
+  "tracker": "ByteTrack",
+  "dispositivo": "CUDA:3",
+  "soglia_confidenza": 0.25,
+  "numero_frame": 72,
+  "numero_tracce": 12,
+  "frame": [
+    {
+      "id_frame": "dense_0000",
+      "nome_file": "dense_0000_t0000.000.jpg",
+      "timestamp": 0.0,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8907,
+          "riquadro_xyxy": [
+            112.09,
+            100.53,
+            358.55,
+            678.43
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8663,
+          "riquadro_xyxy": [
+            757.2,
+            179.99,
+            944.37,
+            689.31
+          ]
+        },
+        {
+          "id_traccia": 3,
+          "id_classe": 29,
+          "nome_classe": "frisbee",
+          "confidenza": 0.2839,
+          "riquadro_xyxy": [
+            345.53,
+            361.5,
+            421.97,
+            409.91
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0001",
+      "nome_file": "dense_0001_t0000.250.jpg",
+      "timestamp": 0.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9283,
+          "riquadro_xyxy": [
+            155.0,
+            108.04,
+            398.53,
+            674.81
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8963,
+          "riquadro_xyxy": [
+            748.27,
+            158.33,
+            940.72,
+            682.66
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0002",
+      "nome_file": "dense_0002_t0000.500.jpg",
+      "timestamp": 0.5,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9298,
+          "riquadro_xyxy": [
+            182.15,
+            112.02,
+            426.47,
+            672.39
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9202,
+          "riquadro_xyxy": [
+            742.66,
+            173.65,
+            926.43,
+            671.43
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0003",
+      "nome_file": "dense_0003_t0000.750.jpg",
+      "timestamp": 0.75,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9379,
+          "riquadro_xyxy": [
+            181.95,
+            109.94,
+            431.03,
+            672.22
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8862,
+          "riquadro_xyxy": [
+            694.58,
+            152.28,
+            888.38,
+            678.95
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0004",
+      "nome_file": "dense_0004_t0001.000.jpg",
+      "timestamp": 1.0,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8706,
+          "riquadro_xyxy": [
+            146.76,
+            93.59,
+            405.33,
+            672.53
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9089,
+          "riquadro_xyxy": [
+            607.29,
+            151.36,
+            807.28,
+            679.18
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0005",
+      "nome_file": "dense_0005_t0001.250.jpg",
+      "timestamp": 1.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9067,
+          "riquadro_xyxy": [
+            114.64,
+            97.34,
+            371.23,
+            672.42
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8944,
+          "riquadro_xyxy": [
+            557.6,
+            138.68,
+            769.04,
+            678.4
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0006",
+      "nome_file": "dense_0006_t0001.500.jpg",
+      "timestamp": 1.5,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8782,
+          "riquadro_xyxy": [
+            51.92,
+            90.18,
+            309.4,
+            673.77
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9112,
+          "riquadro_xyxy": [
+            572.51,
+            147.68,
+            782.25,
+            678.0
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0007",
+      "nome_file": "dense_0007_t0001.750.jpg",
+      "timestamp": 1.75,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8923,
+          "riquadro_xyxy": [
+            15.32,
+            95.11,
+            264.55,
+            663.79
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9017,
+          "riquadro_xyxy": [
+            583.73,
+            137.85,
+            799.02,
+            683.02
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0008",
+      "nome_file": "dense_0008_t0002.000.jpg",
+      "timestamp": 2.0,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9359,
+          "riquadro_xyxy": [
+            27.27,
+            96.8,
+            276.45,
+            660.07
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9048,
+          "riquadro_xyxy": [
+            594.36,
+            133.79,
+            809.92,
+            683.73
+          ]
+        },
+        {
+          "id_traccia": 23,
+          "id_classe": 35,
+          "nome_classe": "baseball glove",
+          "confidenza": 0.7027,
+          "riquadro_xyxy": [
+            183.45,
+            299.12,
+            238.68,
+            366.0
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0009",
+      "nome_file": "dense_0009_t0002.250.jpg",
+      "timestamp": 2.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9249,
+          "riquadro_xyxy": [
+            39.33,
+            100.71,
+            288.72,
+            659.36
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9056,
+          "riquadro_xyxy": [
+            616.14,
+            155.42,
+            821.92,
+            678.4
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0010",
+      "nome_file": "dense_0010_t0002.500.jpg",
+      "timestamp": 2.5,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9193,
+          "riquadro_xyxy": [
+            61.46,
+            101.42,
+            304.51,
+            647.24
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9104,
+          "riquadro_xyxy": [
+            616.86,
+            142.49,
+            826.94,
+            675.53
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0011",
+      "nome_file": "dense_0011_t0002.750.jpg",
+      "timestamp": 2.75,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.922,
+          "riquadro_xyxy": [
+            83.19,
+            112.21,
+            321.39,
+            642.35
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.901,
+          "riquadro_xyxy": [
+            617.56,
+            159.11,
+            824.18,
+            681.31
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0012",
+      "nome_file": "dense_0012_t0003.000.jpg",
+      "timestamp": 3.0,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8953,
+          "riquadro_xyxy": [
+            105.31,
+            121.53,
+            343.34,
+            640.73
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9053,
+          "riquadro_xyxy": [
+            610.87,
+            158.05,
+            818.12,
+            687.31
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0013",
+      "nome_file": "dense_0013_t0003.250.jpg",
+      "timestamp": 3.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8846,
+          "riquadro_xyxy": [
+            116.96,
+            126.22,
+            358.25,
+            641.5
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9072,
+          "riquadro_xyxy": [
+            612.65,
+            163.61,
+            817.56,
+            689.95
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0014",
+      "nome_file": "dense_0014_t0003.500.jpg",
+      "timestamp": 3.5,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8755,
+          "riquadro_xyxy": [
+            121.63,
+            129.51,
+            366.13,
+            641.73
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.911,
+          "riquadro_xyxy": [
+            607.95,
+            174.79,
+            812.12,
+            693.66
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0015",
+      "nome_file": "dense_0015_t0003.750.jpg",
+      "timestamp": 3.75,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8747,
+          "riquadro_xyxy": [
+            106.55,
+            132.81,
+            354.55,
+            642.55
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8106,
+          "riquadro_xyxy": [
+            574.2,
+            158.01,
+            772.37,
+            662.58
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0016",
+      "nome_file": "dense_0016_t0004.000.jpg",
+      "timestamp": 4.0,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9088,
+          "riquadro_xyxy": [
+            87.18,
+            127.28,
+            336.3,
+            639.98
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8663,
+          "riquadro_xyxy": [
+            496.42,
+            168.18,
+            704.03,
+            670.99
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0017",
+      "nome_file": "dense_0017_t0004.250.jpg",
+      "timestamp": 4.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8692,
+          "riquadro_xyxy": [
+            54.26,
+            117.61,
+            302.85,
+            638.84
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9368,
+          "riquadro_xyxy": [
+            501.26,
+            173.45,
+            716.94,
+            676.59
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0018",
+      "nome_file": "dense_0018_t0004.500.jpg",
+      "timestamp": 4.5,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9169,
+          "riquadro_xyxy": [
+            57.24,
+            126.09,
+            299.44,
+            639.93
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9258,
+          "riquadro_xyxy": [
+            500.05,
+            165.58,
+            722.03,
+            679.98
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0019",
+      "nome_file": "dense_0019_t0004.750.jpg",
+      "timestamp": 4.75,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9372,
+          "riquadro_xyxy": [
+            65.61,
+            134.21,
+            303.06,
+            637.1
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.921,
+          "riquadro_xyxy": [
+            511.46,
+            180.21,
+            738.05,
+            699.76
+          ]
+        },
+        {
+          "id_traccia": 33,
+          "id_classe": 35,
+          "nome_classe": "baseball glove",
+          "confidenza": 0.4828,
+          "riquadro_xyxy": [
+            228.96,
+            351.35,
+            279.06,
+            413.27
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0020",
+      "nome_file": "dense_0020_t0005.000.jpg",
+      "timestamp": 5.0,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9158,
+          "riquadro_xyxy": [
+            82.34,
+            144.28,
+            312.79,
+            634.72
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8954,
+          "riquadro_xyxy": [
+            532.72,
+            172.81,
+            759.16,
+            693.16
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0021",
+      "nome_file": "dense_0021_t0005.250.jpg",
+      "timestamp": 5.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8958,
+          "riquadro_xyxy": [
+            115.79,
+            155.8,
+            338.52,
+            627.98
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.919,
+          "riquadro_xyxy": [
+            560.69,
+            193.95,
+            776.29,
+            685.3
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0022",
+      "nome_file": "dense_0022_t0005.500.jpg",
+      "timestamp": 5.5,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.899,
+          "riquadro_xyxy": [
+            147.54,
+            160.78,
+            365.06,
+            621.72
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9189,
+          "riquadro_xyxy": [
+            584.32,
+            197.96,
+            795.59,
+            678.15
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0023",
+      "nome_file": "dense_0023_t0005.750.jpg",
+      "timestamp": 5.75,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9036,
+          "riquadro_xyxy": [
+            173.21,
+            163.84,
+            385.69,
+            616.96
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.899,
+          "riquadro_xyxy": [
+            586.29,
+            200.61,
+            795.66,
+            674.98
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0024",
+      "nome_file": "dense_0024_t0006.000.jpg",
+      "timestamp": 6.0,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8469,
+          "riquadro_xyxy": [
+            207.53,
+            165.19,
+            416.3,
+            611.69
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9033,
+          "riquadro_xyxy": [
+            570.35,
+            196.21,
+            771.45,
+            652.59
+          ]
+        },
+        {
+          "id_traccia": 23,
+          "id_classe": 13,
+          "nome_classe": "bench",
+          "confidenza": 0.4633,
+          "riquadro_xyxy": [
+            165.36,
+            312.43,
+            214.01,
+            364.24
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0025",
+      "nome_file": "dense_0025_t0006.250.jpg",
+      "timestamp": 6.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.899,
+          "riquadro_xyxy": [
+            221.7,
+            166.03,
+            430.82,
+            608.31
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9053,
+          "riquadro_xyxy": [
+            529.85,
+            201.11,
+            731.97,
+            641.02
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0026",
+      "nome_file": "dense_0026_t0006.500.jpg",
+      "timestamp": 6.5,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9049,
+          "riquadro_xyxy": [
+            227.54,
+            167.23,
+            432.05,
+            602.43
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9153,
+          "riquadro_xyxy": [
+            517.93,
+            205.0,
+            718.66,
+            636.23
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0027",
+      "nome_file": "dense_0027_t0006.750.jpg",
+      "timestamp": 6.75,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8681,
+          "riquadro_xyxy": [
+            227.41,
+            167.34,
+            418.71,
+            576.57
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8309,
+          "riquadro_xyxy": [
+            521.83,
+            205.64,
+            715.47,
+            618.78
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0028",
+      "nome_file": "dense_0028_t0007.000.jpg",
+      "timestamp": 7.0,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8467,
+          "riquadro_xyxy": [
+            240.31,
+            170.3,
+            421.36,
+            558.42
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8894,
+          "riquadro_xyxy": [
+            522.63,
+            213.31,
+            714.17,
+            622.21
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0029",
+      "nome_file": "dense_0029_t0007.250.jpg",
+      "timestamp": 7.25,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8564,
+          "riquadro_xyxy": [
+            258.13,
+            169.25,
+            434.65,
+            549.14
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.811,
+          "riquadro_xyxy": [
+            558.7,
+            199.5,
+            750.13,
+            605.45
+          ]
+        },
+        {
+          "id_traccia": 46,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6736,
+          "riquadro_xyxy": [
+            1.36,
+            291.27,
+            42.59,
+            447.82
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0030",
+      "nome_file": "dense_0030_t0007.500.jpg",
+      "timestamp": 7.5,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9095,
+          "riquadro_xyxy": [
+            305.6,
+            180.89,
+            481.95,
+            547.19
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7631,
+          "riquadro_xyxy": [
+            609.92,
+            202.0,
+            789.6,
+            580.87
+          ]
+        },
+        {
+          "id_traccia": 46,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7133,
+          "riquadro_xyxy": [
+            4.51,
+            287.42,
+            46.13,
+            444.64
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0031",
+      "nome_file": "dense_0031_t0007.750.jpg",
+      "timestamp": 7.75,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.867,
+          "riquadro_xyxy": [
+            371.96,
+            167.97,
+            563.84,
+            546.55
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8564,
+          "riquadro_xyxy": [
+            660.13,
+            218.07,
+            844.66,
+            603.47
+          ]
+        },
+        {
+          "id_traccia": 46,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.6744,
+          "riquadro_xyxy": [
+            6.16,
+            286.2,
+            48.13,
+            443.39
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0032",
+      "nome_file": "dense_0032_t0008.000.jpg",
+      "timestamp": 8.0,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.851,
+          "riquadro_xyxy": [
+            437.33,
+            175.4,
+            636.08,
+            548.73
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8254,
+          "riquadro_xyxy": [
+            715.23,
+            204.25,
+            892.89,
+            573.37
+          ]
+        },
+        {
+          "id_traccia": 46,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7155,
+          "riquadro_xyxy": [
+            6.75,
+            285.2,
+            48.28,
+            438.95
+          ]
+        },
+        {
+          "id_traccia": 52,
+          "id_classe": 13,
+          "nome_classe": "bench",
+          "confidenza": 0.4036,
+          "riquadro_xyxy": [
+            241.67,
+            324.0,
+            318.19,
+            369.64
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0033",
+      "nome_file": "dense_0033_t0008.250.jpg",
+      "timestamp": 8.25,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.858,
+          "riquadro_xyxy": [
+            466.62,
+            178.53,
+            664.27,
+            549.34
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8812,
+          "riquadro_xyxy": [
+            767.55,
+            215.82,
+            959.4,
+            614.5
+          ]
+        },
+        {
+          "id_traccia": 46,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7844,
+          "riquadro_xyxy": [
+            4.54,
+            283.55,
+            48.4,
+            444.88
+          ]
+        },
+        {
+          "id_traccia": 52,
+          "id_classe": 13,
+          "nome_classe": "bench",
+          "confidenza": 0.413,
+          "riquadro_xyxy": [
+            236.34,
+            322.87,
+            316.3,
+            370.59
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0034",
+      "nome_file": "dense_0034_t0008.500.jpg",
+      "timestamp": 8.5,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9022,
+          "riquadro_xyxy": [
+            476.99,
+            175.47,
+            671.77,
+            548.19
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5968,
+          "riquadro_xyxy": [
+            828.28,
+            215.1,
+            1026.3,
+            629.81
+          ]
+        },
+        {
+          "id_traccia": 46,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.676,
+          "riquadro_xyxy": [
+            0.34,
+            285.29,
+            44.14,
+            447.21
+          ]
+        },
+        {
+          "id_traccia": 52,
+          "id_classe": 13,
+          "nome_classe": "bench",
+          "confidenza": 0.3014,
+          "riquadro_xyxy": [
+            227.4,
+            322.48,
+            311.28,
+            372.68
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0035",
+      "nome_file": "dense_0035_t0008.750.jpg",
+      "timestamp": 8.75,
+      "numero_rilevamenti": 4,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.874,
+          "riquadro_xyxy": [
+            488.61,
+            185.81,
+            680.45,
+            548.25
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8699,
+          "riquadro_xyxy": [
+            866.74,
+            211.33,
+            1068.24,
+            635.96
+          ]
+        },
+        {
+          "id_traccia": 46,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.5846,
+          "riquadro_xyxy": [
+            0.6,
+            302.39,
+            35.79,
+            432.09
+          ]
+        },
+        {
+          "id_traccia": 52,
+          "id_classe": 13,
+          "nome_classe": "bench",
+          "confidenza": 0.4104,
+          "riquadro_xyxy": [
+            221.08,
+            320.81,
+            300.47,
+            368.3
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0036",
+      "nome_file": "dense_0036_t0009.000.jpg",
+      "timestamp": 9.0,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8086,
+          "riquadro_xyxy": [
+            492.89,
+            193.68,
+            695.77,
+            569.82
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.866,
+          "riquadro_xyxy": [
+            894.83,
+            220.59,
+            1096.64,
+            649.72
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0037",
+      "nome_file": "dense_0037_t0009.250.jpg",
+      "timestamp": 9.25,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7865,
+          "riquadro_xyxy": [
+            495.51,
+            197.68,
+            700.55,
+            568.44
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7601,
+          "riquadro_xyxy": [
+            903.65,
+            226.6,
+            1105.15,
+            659.57
+          ]
+        },
+        {
+          "id_traccia": 58,
+          "id_classe": 38,
+          "nome_classe": "tennis racket",
+          "confidenza": 0.5334,
+          "riquadro_xyxy": [
+            670.4,
+            317.79,
+            769.21,
+            434.79
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0038",
+      "nome_file": "dense_0038_t0009.500.jpg",
+      "timestamp": 9.5,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8659,
+          "riquadro_xyxy": [
+            489.21,
+            196.98,
+            694.59,
+            558.43
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8878,
+          "riquadro_xyxy": [
+            859.45,
+            210.89,
+            1077.41,
+            665.71
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0039",
+      "nome_file": "dense_0039_t0009.750.jpg",
+      "timestamp": 9.75,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7616,
+          "riquadro_xyxy": [
+            460.73,
+            188.31,
+            670.31,
+            553.88
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9254,
+          "riquadro_xyxy": [
+            806.8,
+            215.11,
+            1032.16,
+            666.19
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0040",
+      "nome_file": "dense_0040_t0010.000.jpg",
+      "timestamp": 10.0,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7227,
+          "riquadro_xyxy": [
+            415.98,
+            178.91,
+            623.84,
+            551.6
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9014,
+          "riquadro_xyxy": [
+            803.12,
+            209.61,
+            1035.32,
+            668.57
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0041",
+      "nome_file": "dense_0041_t0010.250.jpg",
+      "timestamp": 10.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7796,
+          "riquadro_xyxy": [
+            420.81,
+            188.42,
+            683.3,
+            658.72
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.83,
+          "riquadro_xyxy": [
+            745.73,
+            205.73,
+            999.82,
+            699.84
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0042",
+      "nome_file": "dense_0042_t0010.500.jpg",
+      "timestamp": 10.5,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7614,
+          "riquadro_xyxy": [
+            424.16,
+            191.01,
+            707.51,
+            696.73
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.815,
+          "riquadro_xyxy": [
+            722.18,
+            202.3,
+            987.89,
+            711.64
+          ]
+        },
+        {
+          "id_traccia": 68,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.857,
+          "riquadro_xyxy": [
+            128.28,
+            49.44,
+            517.27,
+            712.22
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0043",
+      "nome_file": "dense_0043_t0010.750.jpg",
+      "timestamp": 10.75,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8037,
+          "riquadro_xyxy": [
+            414.41,
+            191.15,
+            709.73,
+            713.03
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7839,
+          "riquadro_xyxy": [
+            705.07,
+            199.3,
+            979.41,
+            716.41
+          ]
+        },
+        {
+          "id_traccia": 68,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8343,
+          "riquadro_xyxy": [
+            121.23,
+            52.44,
+            508.6,
+            712.35
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0044",
+      "nome_file": "dense_0044_t0011.000.jpg",
+      "timestamp": 11.0,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7452,
+          "riquadro_xyxy": [
+            407.12,
+            189.8,
+            709.11,
+            719.83
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7053,
+          "riquadro_xyxy": [
+            694.48,
+            195.32,
+            976.01,
+            718.13
+          ]
+        },
+        {
+          "id_traccia": 68,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8434,
+          "riquadro_xyxy": [
+            113.42,
+            51.85,
+            500.22,
+            710.64
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0045",
+      "nome_file": "dense_0045_t0011.250.jpg",
+      "timestamp": 11.25,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7293,
+          "riquadro_xyxy": [
+            400.58,
+            187.43,
+            707.25,
+            720.0
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7341,
+          "riquadro_xyxy": [
+            689.67,
+            192.46,
+            976.06,
+            718.51
+          ]
+        },
+        {
+          "id_traccia": 68,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8391,
+          "riquadro_xyxy": [
+            105.42,
+            50.71,
+            493.44,
+            711.79
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0046",
+      "nome_file": "dense_0046_t0011.500.jpg",
+      "timestamp": 11.5,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7314,
+          "riquadro_xyxy": [
+            399.97,
+            183.83,
+            713.26,
+            720.0
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7866,
+          "riquadro_xyxy": [
+            685.32,
+            189.61,
+            975.53,
+            718.43
+          ]
+        },
+        {
+          "id_traccia": 68,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7965,
+          "riquadro_xyxy": [
+            99.42,
+            46.7,
+            490.2,
+            712.69
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0047",
+      "nome_file": "dense_0047_t0011.750.jpg",
+      "timestamp": 11.75,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.7698,
+          "riquadro_xyxy": [
+            388.15,
+            180.29,
+            704.02,
+            720.0
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8367,
+          "riquadro_xyxy": [
+            681.59,
+            185.83,
+            975.27,
+            718.05
+          ]
+        },
+        {
+          "id_traccia": 68,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8093,
+          "riquadro_xyxy": [
+            96.4,
+            46.05,
+            486.83,
+            711.7
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0048",
+      "nome_file": "dense_0048_t0012.000.jpg",
+      "timestamp": 12.0,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8059,
+          "riquadro_xyxy": [
+            394.04,
+            176.7,
+            708.92,
+            720.0
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8738,
+          "riquadro_xyxy": [
+            678.58,
+            181.45,
+            975.65,
+            718.26
+          ]
+        },
+        {
+          "id_traccia": 68,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8911,
+          "riquadro_xyxy": [
+            93.5,
+            42.14,
+            487.13,
+            713.05
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0049",
+      "nome_file": "dense_0049_t0012.250.jpg",
+      "timestamp": 12.25,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8714,
+          "riquadro_xyxy": [
+            394.8,
+            175.04,
+            708.25,
+            720.0
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8763,
+          "riquadro_xyxy": [
+            673.91,
+            178.74,
+            973.54,
+            718.02
+          ]
+        },
+        {
+          "id_traccia": 68,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9096,
+          "riquadro_xyxy": [
+            92.58,
+            42.57,
+            486.9,
+            714.34
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0050",
+      "nome_file": "dense_0050_t0012.500.jpg",
+      "timestamp": 12.5,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9014,
+          "riquadro_xyxy": [
+            390.09,
+            173.5,
+            701.45,
+            720.0
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8974,
+          "riquadro_xyxy": [
+            671.52,
+            176.42,
+            972.8,
+            717.19
+          ]
+        },
+        {
+          "id_traccia": 68,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8966,
+          "riquadro_xyxy": [
+            90.2,
+            40.48,
+            486.48,
+            714.97
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0051",
+      "nome_file": "dense_0051_t0012.750.jpg",
+      "timestamp": 12.75,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8621,
+          "riquadro_xyxy": [
+            390.7,
+            170.62,
+            702.71,
+            719.51
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8779,
+          "riquadro_xyxy": [
+            665.41,
+            173.08,
+            969.56,
+            716.72
+          ]
+        },
+        {
+          "id_traccia": 68,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9004,
+          "riquadro_xyxy": [
+            86.49,
+            38.84,
+            483.99,
+            715.03
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0052",
+      "nome_file": "dense_0052_t0013.000.jpg",
+      "timestamp": 13.0,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8479,
+          "riquadro_xyxy": [
+            389.6,
+            166.98,
+            702.61,
+            719.05
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9053,
+          "riquadro_xyxy": [
+            667.96,
+            169.49,
+            973.38,
+            716.41
+          ]
+        },
+        {
+          "id_traccia": 68,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8949,
+          "riquadro_xyxy": [
+            83.02,
+            37.66,
+            481.19,
+            714.67
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0053",
+      "nome_file": "dense_0053_t0013.250.jpg",
+      "timestamp": 13.25,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8771,
+          "riquadro_xyxy": [
+            388.95,
+            160.04,
+            702.77,
+            718.48
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9034,
+          "riquadro_xyxy": [
+            662.63,
+            160.77,
+            974.01,
+            716.18
+          ]
+        },
+        {
+          "id_traccia": 68,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9032,
+          "riquadro_xyxy": [
+            80.37,
+            30.05,
+            482.98,
+            714.02
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0054",
+      "nome_file": "dense_0054_t0013.500.jpg",
+      "timestamp": 13.5,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8969,
+          "riquadro_xyxy": [
+            385.6,
+            150.98,
+            702.72,
+            718.6
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8863,
+          "riquadro_xyxy": [
+            661.45,
+            149.63,
+            980.79,
+            715.66
+          ]
+        },
+        {
+          "id_traccia": 68,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8997,
+          "riquadro_xyxy": [
+            67.64,
+            12.77,
+            480.79,
+            713.45
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0055",
+      "nome_file": "dense_0055_t0013.750.jpg",
+      "timestamp": 13.75,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8952,
+          "riquadro_xyxy": [
+            385.9,
+            142.08,
+            706.01,
+            718.58
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8612,
+          "riquadro_xyxy": [
+            657.61,
+            139.03,
+            986.32,
+            715.22
+          ]
+        },
+        {
+          "id_traccia": 68,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9097,
+          "riquadro_xyxy": [
+            64.02,
+            5.0,
+            483.12,
+            713.46
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0056",
+      "nome_file": "dense_0056_t0014.000.jpg",
+      "timestamp": 14.0,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8659,
+          "riquadro_xyxy": [
+            391.74,
+            139.45,
+            712.0,
+            718.4
+          ]
+        },
+        {
+          "id_traccia": 2,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8407,
+          "riquadro_xyxy": [
+            668.76,
+            136.35,
+            1000.07,
+            714.92
+          ]
+        },
+        {
+          "id_traccia": 68,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9112,
+          "riquadro_xyxy": [
+            71.67,
+            2.38,
+            493.98,
+            713.97
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0057",
+      "nome_file": "dense_0057_t0014.250.jpg",
+      "timestamp": 14.25,
+      "numero_rilevamenti": 1,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9172,
+          "riquadro_xyxy": [
+            324.43,
+            94.13,
+            674.6,
+            715.74
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0058",
+      "nome_file": "dense_0058_t0014.500.jpg",
+      "timestamp": 14.5,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9068,
+          "riquadro_xyxy": [
+            320.03,
+            80.18,
+            683.5,
+            715.66
+          ]
+        },
+        {
+          "id_traccia": 70,
+          "id_classe": 38,
+          "nome_classe": "tennis racket",
+          "confidenza": 0.7547,
+          "riquadro_xyxy": [
+            175.11,
+            370.59,
+            328.67,
+            476.67
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0059",
+      "nome_file": "dense_0059_t0014.750.jpg",
+      "timestamp": 14.75,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8913,
+          "riquadro_xyxy": [
+            324.15,
+            78.22,
+            693.29,
+            716.47
+          ]
+        },
+        {
+          "id_traccia": 73,
+          "id_classe": 38,
+          "nome_classe": "tennis racket",
+          "confidenza": 0.5228,
+          "riquadro_xyxy": [
+            667.93,
+            469.77,
+            744.94,
+            617.36
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0060",
+      "nome_file": "dense_0060_t0015.000.jpg",
+      "timestamp": 15.0,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.91,
+          "riquadro_xyxy": [
+            303.17,
+            77.69,
+            678.82,
+            715.52
+          ]
+        },
+        {
+          "id_traccia": 73,
+          "id_classe": 38,
+          "nome_classe": "tennis racket",
+          "confidenza": 0.5366,
+          "riquadro_xyxy": [
+            654.22,
+            468.5,
+            733.82,
+            621.41
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0061",
+      "nome_file": "dense_0061_t0015.250.jpg",
+      "timestamp": 15.25,
+      "numero_rilevamenti": 3,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9025,
+          "riquadro_xyxy": [
+            305.1,
+            75.41,
+            685.27,
+            714.57
+          ]
+        },
+        {
+          "id_traccia": 73,
+          "id_classe": 38,
+          "nome_classe": "tennis racket",
+          "confidenza": 0.2711,
+          "riquadro_xyxy": [
+            652.69,
+            465.83,
+            729.87,
+            613.77
+          ]
+        },
+        {
+          "id_traccia": 70,
+          "id_classe": 35,
+          "nome_classe": "baseball glove",
+          "confidenza": 0.4087,
+          "riquadro_xyxy": [
+            188.51,
+            367.88,
+            330.95,
+            466.1
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0062",
+      "nome_file": "dense_0062_t0015.500.jpg",
+      "timestamp": 15.5,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8872,
+          "riquadro_xyxy": [
+            336.56,
+            76.48,
+            716.29,
+            714.65
+          ]
+        },
+        {
+          "id_traccia": 78,
+          "id_classe": 13,
+          "nome_classe": "bench",
+          "confidenza": 0.4027,
+          "riquadro_xyxy": [
+            0.0,
+            254.48,
+            133.24,
+            318.33
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0063",
+      "nome_file": "dense_0063_t0015.750.jpg",
+      "timestamp": 15.75,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9099,
+          "riquadro_xyxy": [
+            352.08,
+            79.34,
+            723.44,
+            714.02
+          ]
+        },
+        {
+          "id_traccia": 78,
+          "id_classe": 13,
+          "nome_classe": "bench",
+          "confidenza": 0.4441,
+          "riquadro_xyxy": [
+            0.0,
+            255.1,
+            135.25,
+            320.69
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0064",
+      "nome_file": "dense_0064_t0016.000.jpg",
+      "timestamp": 16.0,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9281,
+          "riquadro_xyxy": [
+            341.03,
+            80.28,
+            697.97,
+            714.11
+          ]
+        },
+        {
+          "id_traccia": 78,
+          "id_classe": 13,
+          "nome_classe": "bench",
+          "confidenza": 0.449,
+          "riquadro_xyxy": [
+            0.0,
+            255.78,
+            136.04,
+            321.56
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0065",
+      "nome_file": "dense_0065_t0016.250.jpg",
+      "timestamp": 16.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8838,
+          "riquadro_xyxy": [
+            325.55,
+            81.24,
+            673.64,
+            714.6
+          ]
+        },
+        {
+          "id_traccia": 78,
+          "id_classe": 13,
+          "nome_classe": "bench",
+          "confidenza": 0.4414,
+          "riquadro_xyxy": [
+            0.0,
+            256.92,
+            135.57,
+            321.24
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0066",
+      "nome_file": "dense_0066_t0016.500.jpg",
+      "timestamp": 16.5,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8563,
+          "riquadro_xyxy": [
+            318.56,
+            82.5,
+            654.46,
+            714.92
+          ]
+        },
+        {
+          "id_traccia": 78,
+          "id_classe": 13,
+          "nome_classe": "bench",
+          "confidenza": 0.5065,
+          "riquadro_xyxy": [
+            2.88,
+            257.84,
+            134.58,
+            320.06
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0067",
+      "nome_file": "dense_0067_t0016.750.jpg",
+      "timestamp": 16.75,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8647,
+          "riquadro_xyxy": [
+            331.61,
+            86.54,
+            654.14,
+            713.13
+          ]
+        },
+        {
+          "id_traccia": 78,
+          "id_classe": 13,
+          "nome_classe": "bench",
+          "confidenza": 0.3313,
+          "riquadro_xyxy": [
+            3.47,
+            259.74,
+            136.41,
+            322.44
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0068",
+      "nome_file": "dense_0068_t0017.000.jpg",
+      "timestamp": 17.0,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9248,
+          "riquadro_xyxy": [
+            361.58,
+            88.12,
+            676.01,
+            713.91
+          ]
+        },
+        {
+          "id_traccia": 78,
+          "id_classe": 13,
+          "nome_classe": "bench",
+          "confidenza": 0.553,
+          "riquadro_xyxy": [
+            5.99,
+            261.99,
+            137.66,
+            323.74
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0069",
+      "nome_file": "dense_0069_t0017.250.jpg",
+      "timestamp": 17.25,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8738,
+          "riquadro_xyxy": [
+            365.14,
+            91.36,
+            680.57,
+            713.69
+          ]
+        },
+        {
+          "id_traccia": 78,
+          "id_classe": 13,
+          "nome_classe": "bench",
+          "confidenza": 0.5967,
+          "riquadro_xyxy": [
+            8.26,
+            263.48,
+            138.9,
+            324.22
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0070",
+      "nome_file": "dense_0070_t0017.500.jpg",
+      "timestamp": 17.5,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.9155,
+          "riquadro_xyxy": [
+            336.25,
+            91.44,
+            658.26,
+            714.01
+          ]
+        },
+        {
+          "id_traccia": 78,
+          "id_classe": 13,
+          "nome_classe": "bench",
+          "confidenza": 0.6224,
+          "riquadro_xyxy": [
+            4.0,
+            264.83,
+            148.0,
+            331.75
+          ]
+        }
+      ]
+    },
+    {
+      "id_frame": "dense_0071",
+      "nome_file": "dense_0071_t0017.750.jpg",
+      "timestamp": 17.75,
+      "numero_rilevamenti": 2,
+      "rilevamenti": [
+        {
+          "id_traccia": 1,
+          "id_classe": 0,
+          "nome_classe": "person",
+          "confidenza": 0.8832,
+          "riquadro_xyxy": [
+            317.81,
+            91.82,
+            645.94,
+            714.36
+          ]
+        },
+        {
+          "id_traccia": 78,
+          "id_classe": 13,
+          "nome_classe": "bench",
+          "confidenza": 0.6916,
+          "riquadro_xyxy": [
+            5.04,
+            266.34,
+            150.86,
+            333.74
+          ]
+        }
+      ]
+    }
+  ],
+  "tracce": [
+    {
+      "id_traccia": 1,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 0.0,
+      "ultima_comparsa": 17.75,
+      "numero_osservazioni": 72,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0000",
+          "timestamp": 0.0,
+          "confidenza": 0.8907,
+          "riquadro_xyxy": [
+            112.09,
+            100.53,
+            358.55,
+            678.43
+          ]
+        },
+        {
+          "id_frame": "dense_0001",
+          "timestamp": 0.25,
+          "confidenza": 0.9283,
+          "riquadro_xyxy": [
+            155.0,
+            108.04,
+            398.53,
+            674.81
+          ]
+        },
+        {
+          "id_frame": "dense_0002",
+          "timestamp": 0.5,
+          "confidenza": 0.9298,
+          "riquadro_xyxy": [
+            182.15,
+            112.02,
+            426.47,
+            672.39
+          ]
+        },
+        {
+          "id_frame": "dense_0003",
+          "timestamp": 0.75,
+          "confidenza": 0.9379,
+          "riquadro_xyxy": [
+            181.95,
+            109.94,
+            431.03,
+            672.22
+          ]
+        },
+        {
+          "id_frame": "dense_0004",
+          "timestamp": 1.0,
+          "confidenza": 0.8706,
+          "riquadro_xyxy": [
+            146.76,
+            93.59,
+            405.33,
+            672.53
+          ]
+        },
+        {
+          "id_frame": "dense_0005",
+          "timestamp": 1.25,
+          "confidenza": 0.9067,
+          "riquadro_xyxy": [
+            114.64,
+            97.34,
+            371.23,
+            672.42
+          ]
+        },
+        {
+          "id_frame": "dense_0006",
+          "timestamp": 1.5,
+          "confidenza": 0.8782,
+          "riquadro_xyxy": [
+            51.92,
+            90.18,
+            309.4,
+            673.77
+          ]
+        },
+        {
+          "id_frame": "dense_0007",
+          "timestamp": 1.75,
+          "confidenza": 0.8923,
+          "riquadro_xyxy": [
+            15.32,
+            95.11,
+            264.55,
+            663.79
+          ]
+        },
+        {
+          "id_frame": "dense_0008",
+          "timestamp": 2.0,
+          "confidenza": 0.9359,
+          "riquadro_xyxy": [
+            27.27,
+            96.8,
+            276.45,
+            660.07
+          ]
+        },
+        {
+          "id_frame": "dense_0009",
+          "timestamp": 2.25,
+          "confidenza": 0.9249,
+          "riquadro_xyxy": [
+            39.33,
+            100.71,
+            288.72,
+            659.36
+          ]
+        },
+        {
+          "id_frame": "dense_0010",
+          "timestamp": 2.5,
+          "confidenza": 0.9193,
+          "riquadro_xyxy": [
+            61.46,
+            101.42,
+            304.51,
+            647.24
+          ]
+        },
+        {
+          "id_frame": "dense_0011",
+          "timestamp": 2.75,
+          "confidenza": 0.922,
+          "riquadro_xyxy": [
+            83.19,
+            112.21,
+            321.39,
+            642.35
+          ]
+        },
+        {
+          "id_frame": "dense_0012",
+          "timestamp": 3.0,
+          "confidenza": 0.8953,
+          "riquadro_xyxy": [
+            105.31,
+            121.53,
+            343.34,
+            640.73
+          ]
+        },
+        {
+          "id_frame": "dense_0013",
+          "timestamp": 3.25,
+          "confidenza": 0.8846,
+          "riquadro_xyxy": [
+            116.96,
+            126.22,
+            358.25,
+            641.5
+          ]
+        },
+        {
+          "id_frame": "dense_0014",
+          "timestamp": 3.5,
+          "confidenza": 0.8755,
+          "riquadro_xyxy": [
+            121.63,
+            129.51,
+            366.13,
+            641.73
+          ]
+        },
+        {
+          "id_frame": "dense_0015",
+          "timestamp": 3.75,
+          "confidenza": 0.8747,
+          "riquadro_xyxy": [
+            106.55,
+            132.81,
+            354.55,
+            642.55
+          ]
+        },
+        {
+          "id_frame": "dense_0016",
+          "timestamp": 4.0,
+          "confidenza": 0.9088,
+          "riquadro_xyxy": [
+            87.18,
+            127.28,
+            336.3,
+            639.98
+          ]
+        },
+        {
+          "id_frame": "dense_0017",
+          "timestamp": 4.25,
+          "confidenza": 0.8692,
+          "riquadro_xyxy": [
+            54.26,
+            117.61,
+            302.85,
+            638.84
+          ]
+        },
+        {
+          "id_frame": "dense_0018",
+          "timestamp": 4.5,
+          "confidenza": 0.9169,
+          "riquadro_xyxy": [
+            57.24,
+            126.09,
+            299.44,
+            639.93
+          ]
+        },
+        {
+          "id_frame": "dense_0019",
+          "timestamp": 4.75,
+          "confidenza": 0.9372,
+          "riquadro_xyxy": [
+            65.61,
+            134.21,
+            303.06,
+            637.1
+          ]
+        },
+        {
+          "id_frame": "dense_0020",
+          "timestamp": 5.0,
+          "confidenza": 0.9158,
+          "riquadro_xyxy": [
+            82.34,
+            144.28,
+            312.79,
+            634.72
+          ]
+        },
+        {
+          "id_frame": "dense_0021",
+          "timestamp": 5.25,
+          "confidenza": 0.8958,
+          "riquadro_xyxy": [
+            115.79,
+            155.8,
+            338.52,
+            627.98
+          ]
+        },
+        {
+          "id_frame": "dense_0022",
+          "timestamp": 5.5,
+          "confidenza": 0.899,
+          "riquadro_xyxy": [
+            147.54,
+            160.78,
+            365.06,
+            621.72
+          ]
+        },
+        {
+          "id_frame": "dense_0023",
+          "timestamp": 5.75,
+          "confidenza": 0.9036,
+          "riquadro_xyxy": [
+            173.21,
+            163.84,
+            385.69,
+            616.96
+          ]
+        },
+        {
+          "id_frame": "dense_0024",
+          "timestamp": 6.0,
+          "confidenza": 0.8469,
+          "riquadro_xyxy": [
+            207.53,
+            165.19,
+            416.3,
+            611.69
+          ]
+        },
+        {
+          "id_frame": "dense_0025",
+          "timestamp": 6.25,
+          "confidenza": 0.899,
+          "riquadro_xyxy": [
+            221.7,
+            166.03,
+            430.82,
+            608.31
+          ]
+        },
+        {
+          "id_frame": "dense_0026",
+          "timestamp": 6.5,
+          "confidenza": 0.9049,
+          "riquadro_xyxy": [
+            227.54,
+            167.23,
+            432.05,
+            602.43
+          ]
+        },
+        {
+          "id_frame": "dense_0027",
+          "timestamp": 6.75,
+          "confidenza": 0.8681,
+          "riquadro_xyxy": [
+            227.41,
+            167.34,
+            418.71,
+            576.57
+          ]
+        },
+        {
+          "id_frame": "dense_0028",
+          "timestamp": 7.0,
+          "confidenza": 0.8467,
+          "riquadro_xyxy": [
+            240.31,
+            170.3,
+            421.36,
+            558.42
+          ]
+        },
+        {
+          "id_frame": "dense_0029",
+          "timestamp": 7.25,
+          "confidenza": 0.8564,
+          "riquadro_xyxy": [
+            258.13,
+            169.25,
+            434.65,
+            549.14
+          ]
+        },
+        {
+          "id_frame": "dense_0030",
+          "timestamp": 7.5,
+          "confidenza": 0.9095,
+          "riquadro_xyxy": [
+            305.6,
+            180.89,
+            481.95,
+            547.19
+          ]
+        },
+        {
+          "id_frame": "dense_0031",
+          "timestamp": 7.75,
+          "confidenza": 0.867,
+          "riquadro_xyxy": [
+            371.96,
+            167.97,
+            563.84,
+            546.55
+          ]
+        },
+        {
+          "id_frame": "dense_0032",
+          "timestamp": 8.0,
+          "confidenza": 0.851,
+          "riquadro_xyxy": [
+            437.33,
+            175.4,
+            636.08,
+            548.73
+          ]
+        },
+        {
+          "id_frame": "dense_0033",
+          "timestamp": 8.25,
+          "confidenza": 0.858,
+          "riquadro_xyxy": [
+            466.62,
+            178.53,
+            664.27,
+            549.34
+          ]
+        },
+        {
+          "id_frame": "dense_0034",
+          "timestamp": 8.5,
+          "confidenza": 0.9022,
+          "riquadro_xyxy": [
+            476.99,
+            175.47,
+            671.77,
+            548.19
+          ]
+        },
+        {
+          "id_frame": "dense_0035",
+          "timestamp": 8.75,
+          "confidenza": 0.874,
+          "riquadro_xyxy": [
+            488.61,
+            185.81,
+            680.45,
+            548.25
+          ]
+        },
+        {
+          "id_frame": "dense_0036",
+          "timestamp": 9.0,
+          "confidenza": 0.8086,
+          "riquadro_xyxy": [
+            492.89,
+            193.68,
+            695.77,
+            569.82
+          ]
+        },
+        {
+          "id_frame": "dense_0037",
+          "timestamp": 9.25,
+          "confidenza": 0.7865,
+          "riquadro_xyxy": [
+            495.51,
+            197.68,
+            700.55,
+            568.44
+          ]
+        },
+        {
+          "id_frame": "dense_0038",
+          "timestamp": 9.5,
+          "confidenza": 0.8659,
+          "riquadro_xyxy": [
+            489.21,
+            196.98,
+            694.59,
+            558.43
+          ]
+        },
+        {
+          "id_frame": "dense_0039",
+          "timestamp": 9.75,
+          "confidenza": 0.7616,
+          "riquadro_xyxy": [
+            460.73,
+            188.31,
+            670.31,
+            553.88
+          ]
+        },
+        {
+          "id_frame": "dense_0040",
+          "timestamp": 10.0,
+          "confidenza": 0.7227,
+          "riquadro_xyxy": [
+            415.98,
+            178.91,
+            623.84,
+            551.6
+          ]
+        },
+        {
+          "id_frame": "dense_0041",
+          "timestamp": 10.25,
+          "confidenza": 0.7796,
+          "riquadro_xyxy": [
+            420.81,
+            188.42,
+            683.3,
+            658.72
+          ]
+        },
+        {
+          "id_frame": "dense_0042",
+          "timestamp": 10.5,
+          "confidenza": 0.7614,
+          "riquadro_xyxy": [
+            424.16,
+            191.01,
+            707.51,
+            696.73
+          ]
+        },
+        {
+          "id_frame": "dense_0043",
+          "timestamp": 10.75,
+          "confidenza": 0.8037,
+          "riquadro_xyxy": [
+            414.41,
+            191.15,
+            709.73,
+            713.03
+          ]
+        },
+        {
+          "id_frame": "dense_0044",
+          "timestamp": 11.0,
+          "confidenza": 0.7452,
+          "riquadro_xyxy": [
+            407.12,
+            189.8,
+            709.11,
+            719.83
+          ]
+        },
+        {
+          "id_frame": "dense_0045",
+          "timestamp": 11.25,
+          "confidenza": 0.7293,
+          "riquadro_xyxy": [
+            400.58,
+            187.43,
+            707.25,
+            720.0
+          ]
+        },
+        {
+          "id_frame": "dense_0046",
+          "timestamp": 11.5,
+          "confidenza": 0.7314,
+          "riquadro_xyxy": [
+            399.97,
+            183.83,
+            713.26,
+            720.0
+          ]
+        },
+        {
+          "id_frame": "dense_0047",
+          "timestamp": 11.75,
+          "confidenza": 0.7698,
+          "riquadro_xyxy": [
+            388.15,
+            180.29,
+            704.02,
+            720.0
+          ]
+        },
+        {
+          "id_frame": "dense_0048",
+          "timestamp": 12.0,
+          "confidenza": 0.8059,
+          "riquadro_xyxy": [
+            394.04,
+            176.7,
+            708.92,
+            720.0
+          ]
+        },
+        {
+          "id_frame": "dense_0049",
+          "timestamp": 12.25,
+          "confidenza": 0.8714,
+          "riquadro_xyxy": [
+            394.8,
+            175.04,
+            708.25,
+            720.0
+          ]
+        },
+        {
+          "id_frame": "dense_0050",
+          "timestamp": 12.5,
+          "confidenza": 0.9014,
+          "riquadro_xyxy": [
+            390.09,
+            173.5,
+            701.45,
+            720.0
+          ]
+        },
+        {
+          "id_frame": "dense_0051",
+          "timestamp": 12.75,
+          "confidenza": 0.8621,
+          "riquadro_xyxy": [
+            390.7,
+            170.62,
+            702.71,
+            719.51
+          ]
+        },
+        {
+          "id_frame": "dense_0052",
+          "timestamp": 13.0,
+          "confidenza": 0.8479,
+          "riquadro_xyxy": [
+            389.6,
+            166.98,
+            702.61,
+            719.05
+          ]
+        },
+        {
+          "id_frame": "dense_0053",
+          "timestamp": 13.25,
+          "confidenza": 0.8771,
+          "riquadro_xyxy": [
+            388.95,
+            160.04,
+            702.77,
+            718.48
+          ]
+        },
+        {
+          "id_frame": "dense_0054",
+          "timestamp": 13.5,
+          "confidenza": 0.8969,
+          "riquadro_xyxy": [
+            385.6,
+            150.98,
+            702.72,
+            718.6
+          ]
+        },
+        {
+          "id_frame": "dense_0055",
+          "timestamp": 13.75,
+          "confidenza": 0.8952,
+          "riquadro_xyxy": [
+            385.9,
+            142.08,
+            706.01,
+            718.58
+          ]
+        },
+        {
+          "id_frame": "dense_0056",
+          "timestamp": 14.0,
+          "confidenza": 0.8659,
+          "riquadro_xyxy": [
+            391.74,
+            139.45,
+            712.0,
+            718.4
+          ]
+        },
+        {
+          "id_frame": "dense_0057",
+          "timestamp": 14.25,
+          "confidenza": 0.9172,
+          "riquadro_xyxy": [
+            324.43,
+            94.13,
+            674.6,
+            715.74
+          ]
+        },
+        {
+          "id_frame": "dense_0058",
+          "timestamp": 14.5,
+          "confidenza": 0.9068,
+          "riquadro_xyxy": [
+            320.03,
+            80.18,
+            683.5,
+            715.66
+          ]
+        },
+        {
+          "id_frame": "dense_0059",
+          "timestamp": 14.75,
+          "confidenza": 0.8913,
+          "riquadro_xyxy": [
+            324.15,
+            78.22,
+            693.29,
+            716.47
+          ]
+        },
+        {
+          "id_frame": "dense_0060",
+          "timestamp": 15.0,
+          "confidenza": 0.91,
+          "riquadro_xyxy": [
+            303.17,
+            77.69,
+            678.82,
+            715.52
+          ]
+        },
+        {
+          "id_frame": "dense_0061",
+          "timestamp": 15.25,
+          "confidenza": 0.9025,
+          "riquadro_xyxy": [
+            305.1,
+            75.41,
+            685.27,
+            714.57
+          ]
+        },
+        {
+          "id_frame": "dense_0062",
+          "timestamp": 15.5,
+          "confidenza": 0.8872,
+          "riquadro_xyxy": [
+            336.56,
+            76.48,
+            716.29,
+            714.65
+          ]
+        },
+        {
+          "id_frame": "dense_0063",
+          "timestamp": 15.75,
+          "confidenza": 0.9099,
+          "riquadro_xyxy": [
+            352.08,
+            79.34,
+            723.44,
+            714.02
+          ]
+        },
+        {
+          "id_frame": "dense_0064",
+          "timestamp": 16.0,
+          "confidenza": 0.9281,
+          "riquadro_xyxy": [
+            341.03,
+            80.28,
+            697.97,
+            714.11
+          ]
+        },
+        {
+          "id_frame": "dense_0065",
+          "timestamp": 16.25,
+          "confidenza": 0.8838,
+          "riquadro_xyxy": [
+            325.55,
+            81.24,
+            673.64,
+            714.6
+          ]
+        },
+        {
+          "id_frame": "dense_0066",
+          "timestamp": 16.5,
+          "confidenza": 0.8563,
+          "riquadro_xyxy": [
+            318.56,
+            82.5,
+            654.46,
+            714.92
+          ]
+        },
+        {
+          "id_frame": "dense_0067",
+          "timestamp": 16.75,
+          "confidenza": 0.8647,
+          "riquadro_xyxy": [
+            331.61,
+            86.54,
+            654.14,
+            713.13
+          ]
+        },
+        {
+          "id_frame": "dense_0068",
+          "timestamp": 17.0,
+          "confidenza": 0.9248,
+          "riquadro_xyxy": [
+            361.58,
+            88.12,
+            676.01,
+            713.91
+          ]
+        },
+        {
+          "id_frame": "dense_0069",
+          "timestamp": 17.25,
+          "confidenza": 0.8738,
+          "riquadro_xyxy": [
+            365.14,
+            91.36,
+            680.57,
+            713.69
+          ]
+        },
+        {
+          "id_frame": "dense_0070",
+          "timestamp": 17.5,
+          "confidenza": 0.9155,
+          "riquadro_xyxy": [
+            336.25,
+            91.44,
+            658.26,
+            714.01
+          ]
+        },
+        {
+          "id_frame": "dense_0071",
+          "timestamp": 17.75,
+          "confidenza": 0.8832,
+          "riquadro_xyxy": [
+            317.81,
+            91.82,
+            645.94,
+            714.36
+          ]
+        }
+      ],
+      "durata_traccia": 17.75,
+      "confidenza_media": 0.8714
+    },
+    {
+      "id_traccia": 2,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 0.0,
+      "ultima_comparsa": 14.0,
+      "numero_osservazioni": 57,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0000",
+          "timestamp": 0.0,
+          "confidenza": 0.8663,
+          "riquadro_xyxy": [
+            757.2,
+            179.99,
+            944.37,
+            689.31
+          ]
+        },
+        {
+          "id_frame": "dense_0001",
+          "timestamp": 0.25,
+          "confidenza": 0.8963,
+          "riquadro_xyxy": [
+            748.27,
+            158.33,
+            940.72,
+            682.66
+          ]
+        },
+        {
+          "id_frame": "dense_0002",
+          "timestamp": 0.5,
+          "confidenza": 0.9202,
+          "riquadro_xyxy": [
+            742.66,
+            173.65,
+            926.43,
+            671.43
+          ]
+        },
+        {
+          "id_frame": "dense_0003",
+          "timestamp": 0.75,
+          "confidenza": 0.8862,
+          "riquadro_xyxy": [
+            694.58,
+            152.28,
+            888.38,
+            678.95
+          ]
+        },
+        {
+          "id_frame": "dense_0004",
+          "timestamp": 1.0,
+          "confidenza": 0.9089,
+          "riquadro_xyxy": [
+            607.29,
+            151.36,
+            807.28,
+            679.18
+          ]
+        },
+        {
+          "id_frame": "dense_0005",
+          "timestamp": 1.25,
+          "confidenza": 0.8944,
+          "riquadro_xyxy": [
+            557.6,
+            138.68,
+            769.04,
+            678.4
+          ]
+        },
+        {
+          "id_frame": "dense_0006",
+          "timestamp": 1.5,
+          "confidenza": 0.9112,
+          "riquadro_xyxy": [
+            572.51,
+            147.68,
+            782.25,
+            678.0
+          ]
+        },
+        {
+          "id_frame": "dense_0007",
+          "timestamp": 1.75,
+          "confidenza": 0.9017,
+          "riquadro_xyxy": [
+            583.73,
+            137.85,
+            799.02,
+            683.02
+          ]
+        },
+        {
+          "id_frame": "dense_0008",
+          "timestamp": 2.0,
+          "confidenza": 0.9048,
+          "riquadro_xyxy": [
+            594.36,
+            133.79,
+            809.92,
+            683.73
+          ]
+        },
+        {
+          "id_frame": "dense_0009",
+          "timestamp": 2.25,
+          "confidenza": 0.9056,
+          "riquadro_xyxy": [
+            616.14,
+            155.42,
+            821.92,
+            678.4
+          ]
+        },
+        {
+          "id_frame": "dense_0010",
+          "timestamp": 2.5,
+          "confidenza": 0.9104,
+          "riquadro_xyxy": [
+            616.86,
+            142.49,
+            826.94,
+            675.53
+          ]
+        },
+        {
+          "id_frame": "dense_0011",
+          "timestamp": 2.75,
+          "confidenza": 0.901,
+          "riquadro_xyxy": [
+            617.56,
+            159.11,
+            824.18,
+            681.31
+          ]
+        },
+        {
+          "id_frame": "dense_0012",
+          "timestamp": 3.0,
+          "confidenza": 0.9053,
+          "riquadro_xyxy": [
+            610.87,
+            158.05,
+            818.12,
+            687.31
+          ]
+        },
+        {
+          "id_frame": "dense_0013",
+          "timestamp": 3.25,
+          "confidenza": 0.9072,
+          "riquadro_xyxy": [
+            612.65,
+            163.61,
+            817.56,
+            689.95
+          ]
+        },
+        {
+          "id_frame": "dense_0014",
+          "timestamp": 3.5,
+          "confidenza": 0.911,
+          "riquadro_xyxy": [
+            607.95,
+            174.79,
+            812.12,
+            693.66
+          ]
+        },
+        {
+          "id_frame": "dense_0015",
+          "timestamp": 3.75,
+          "confidenza": 0.8106,
+          "riquadro_xyxy": [
+            574.2,
+            158.01,
+            772.37,
+            662.58
+          ]
+        },
+        {
+          "id_frame": "dense_0016",
+          "timestamp": 4.0,
+          "confidenza": 0.8663,
+          "riquadro_xyxy": [
+            496.42,
+            168.18,
+            704.03,
+            670.99
+          ]
+        },
+        {
+          "id_frame": "dense_0017",
+          "timestamp": 4.25,
+          "confidenza": 0.9368,
+          "riquadro_xyxy": [
+            501.26,
+            173.45,
+            716.94,
+            676.59
+          ]
+        },
+        {
+          "id_frame": "dense_0018",
+          "timestamp": 4.5,
+          "confidenza": 0.9258,
+          "riquadro_xyxy": [
+            500.05,
+            165.58,
+            722.03,
+            679.98
+          ]
+        },
+        {
+          "id_frame": "dense_0019",
+          "timestamp": 4.75,
+          "confidenza": 0.921,
+          "riquadro_xyxy": [
+            511.46,
+            180.21,
+            738.05,
+            699.76
+          ]
+        },
+        {
+          "id_frame": "dense_0020",
+          "timestamp": 5.0,
+          "confidenza": 0.8954,
+          "riquadro_xyxy": [
+            532.72,
+            172.81,
+            759.16,
+            693.16
+          ]
+        },
+        {
+          "id_frame": "dense_0021",
+          "timestamp": 5.25,
+          "confidenza": 0.919,
+          "riquadro_xyxy": [
+            560.69,
+            193.95,
+            776.29,
+            685.3
+          ]
+        },
+        {
+          "id_frame": "dense_0022",
+          "timestamp": 5.5,
+          "confidenza": 0.9189,
+          "riquadro_xyxy": [
+            584.32,
+            197.96,
+            795.59,
+            678.15
+          ]
+        },
+        {
+          "id_frame": "dense_0023",
+          "timestamp": 5.75,
+          "confidenza": 0.899,
+          "riquadro_xyxy": [
+            586.29,
+            200.61,
+            795.66,
+            674.98
+          ]
+        },
+        {
+          "id_frame": "dense_0024",
+          "timestamp": 6.0,
+          "confidenza": 0.9033,
+          "riquadro_xyxy": [
+            570.35,
+            196.21,
+            771.45,
+            652.59
+          ]
+        },
+        {
+          "id_frame": "dense_0025",
+          "timestamp": 6.25,
+          "confidenza": 0.9053,
+          "riquadro_xyxy": [
+            529.85,
+            201.11,
+            731.97,
+            641.02
+          ]
+        },
+        {
+          "id_frame": "dense_0026",
+          "timestamp": 6.5,
+          "confidenza": 0.9153,
+          "riquadro_xyxy": [
+            517.93,
+            205.0,
+            718.66,
+            636.23
+          ]
+        },
+        {
+          "id_frame": "dense_0027",
+          "timestamp": 6.75,
+          "confidenza": 0.8309,
+          "riquadro_xyxy": [
+            521.83,
+            205.64,
+            715.47,
+            618.78
+          ]
+        },
+        {
+          "id_frame": "dense_0028",
+          "timestamp": 7.0,
+          "confidenza": 0.8894,
+          "riquadro_xyxy": [
+            522.63,
+            213.31,
+            714.17,
+            622.21
+          ]
+        },
+        {
+          "id_frame": "dense_0029",
+          "timestamp": 7.25,
+          "confidenza": 0.811,
+          "riquadro_xyxy": [
+            558.7,
+            199.5,
+            750.13,
+            605.45
+          ]
+        },
+        {
+          "id_frame": "dense_0030",
+          "timestamp": 7.5,
+          "confidenza": 0.7631,
+          "riquadro_xyxy": [
+            609.92,
+            202.0,
+            789.6,
+            580.87
+          ]
+        },
+        {
+          "id_frame": "dense_0031",
+          "timestamp": 7.75,
+          "confidenza": 0.8564,
+          "riquadro_xyxy": [
+            660.13,
+            218.07,
+            844.66,
+            603.47
+          ]
+        },
+        {
+          "id_frame": "dense_0032",
+          "timestamp": 8.0,
+          "confidenza": 0.8254,
+          "riquadro_xyxy": [
+            715.23,
+            204.25,
+            892.89,
+            573.37
+          ]
+        },
+        {
+          "id_frame": "dense_0033",
+          "timestamp": 8.25,
+          "confidenza": 0.8812,
+          "riquadro_xyxy": [
+            767.55,
+            215.82,
+            959.4,
+            614.5
+          ]
+        },
+        {
+          "id_frame": "dense_0034",
+          "timestamp": 8.5,
+          "confidenza": 0.5968,
+          "riquadro_xyxy": [
+            828.28,
+            215.1,
+            1026.3,
+            629.81
+          ]
+        },
+        {
+          "id_frame": "dense_0035",
+          "timestamp": 8.75,
+          "confidenza": 0.8699,
+          "riquadro_xyxy": [
+            866.74,
+            211.33,
+            1068.24,
+            635.96
+          ]
+        },
+        {
+          "id_frame": "dense_0036",
+          "timestamp": 9.0,
+          "confidenza": 0.866,
+          "riquadro_xyxy": [
+            894.83,
+            220.59,
+            1096.64,
+            649.72
+          ]
+        },
+        {
+          "id_frame": "dense_0037",
+          "timestamp": 9.25,
+          "confidenza": 0.7601,
+          "riquadro_xyxy": [
+            903.65,
+            226.6,
+            1105.15,
+            659.57
+          ]
+        },
+        {
+          "id_frame": "dense_0038",
+          "timestamp": 9.5,
+          "confidenza": 0.8878,
+          "riquadro_xyxy": [
+            859.45,
+            210.89,
+            1077.41,
+            665.71
+          ]
+        },
+        {
+          "id_frame": "dense_0039",
+          "timestamp": 9.75,
+          "confidenza": 0.9254,
+          "riquadro_xyxy": [
+            806.8,
+            215.11,
+            1032.16,
+            666.19
+          ]
+        },
+        {
+          "id_frame": "dense_0040",
+          "timestamp": 10.0,
+          "confidenza": 0.9014,
+          "riquadro_xyxy": [
+            803.12,
+            209.61,
+            1035.32,
+            668.57
+          ]
+        },
+        {
+          "id_frame": "dense_0041",
+          "timestamp": 10.25,
+          "confidenza": 0.83,
+          "riquadro_xyxy": [
+            745.73,
+            205.73,
+            999.82,
+            699.84
+          ]
+        },
+        {
+          "id_frame": "dense_0042",
+          "timestamp": 10.5,
+          "confidenza": 0.815,
+          "riquadro_xyxy": [
+            722.18,
+            202.3,
+            987.89,
+            711.64
+          ]
+        },
+        {
+          "id_frame": "dense_0043",
+          "timestamp": 10.75,
+          "confidenza": 0.7839,
+          "riquadro_xyxy": [
+            705.07,
+            199.3,
+            979.41,
+            716.41
+          ]
+        },
+        {
+          "id_frame": "dense_0044",
+          "timestamp": 11.0,
+          "confidenza": 0.7053,
+          "riquadro_xyxy": [
+            694.48,
+            195.32,
+            976.01,
+            718.13
+          ]
+        },
+        {
+          "id_frame": "dense_0045",
+          "timestamp": 11.25,
+          "confidenza": 0.7341,
+          "riquadro_xyxy": [
+            689.67,
+            192.46,
+            976.06,
+            718.51
+          ]
+        },
+        {
+          "id_frame": "dense_0046",
+          "timestamp": 11.5,
+          "confidenza": 0.7866,
+          "riquadro_xyxy": [
+            685.32,
+            189.61,
+            975.53,
+            718.43
+          ]
+        },
+        {
+          "id_frame": "dense_0047",
+          "timestamp": 11.75,
+          "confidenza": 0.8367,
+          "riquadro_xyxy": [
+            681.59,
+            185.83,
+            975.27,
+            718.05
+          ]
+        },
+        {
+          "id_frame": "dense_0048",
+          "timestamp": 12.0,
+          "confidenza": 0.8738,
+          "riquadro_xyxy": [
+            678.58,
+            181.45,
+            975.65,
+            718.26
+          ]
+        },
+        {
+          "id_frame": "dense_0049",
+          "timestamp": 12.25,
+          "confidenza": 0.8763,
+          "riquadro_xyxy": [
+            673.91,
+            178.74,
+            973.54,
+            718.02
+          ]
+        },
+        {
+          "id_frame": "dense_0050",
+          "timestamp": 12.5,
+          "confidenza": 0.8974,
+          "riquadro_xyxy": [
+            671.52,
+            176.42,
+            972.8,
+            717.19
+          ]
+        },
+        {
+          "id_frame": "dense_0051",
+          "timestamp": 12.75,
+          "confidenza": 0.8779,
+          "riquadro_xyxy": [
+            665.41,
+            173.08,
+            969.56,
+            716.72
+          ]
+        },
+        {
+          "id_frame": "dense_0052",
+          "timestamp": 13.0,
+          "confidenza": 0.9053,
+          "riquadro_xyxy": [
+            667.96,
+            169.49,
+            973.38,
+            716.41
+          ]
+        },
+        {
+          "id_frame": "dense_0053",
+          "timestamp": 13.25,
+          "confidenza": 0.9034,
+          "riquadro_xyxy": [
+            662.63,
+            160.77,
+            974.01,
+            716.18
+          ]
+        },
+        {
+          "id_frame": "dense_0054",
+          "timestamp": 13.5,
+          "confidenza": 0.8863,
+          "riquadro_xyxy": [
+            661.45,
+            149.63,
+            980.79,
+            715.66
+          ]
+        },
+        {
+          "id_frame": "dense_0055",
+          "timestamp": 13.75,
+          "confidenza": 0.8612,
+          "riquadro_xyxy": [
+            657.61,
+            139.03,
+            986.32,
+            715.22
+          ]
+        },
+        {
+          "id_frame": "dense_0056",
+          "timestamp": 14.0,
+          "confidenza": 0.8407,
+          "riquadro_xyxy": [
+            668.76,
+            136.35,
+            1000.07,
+            714.92
+          ]
+        }
+      ],
+      "durata_traccia": 14.0,
+      "confidenza_media": 0.8671
+    },
+    {
+      "id_traccia": 3,
+      "id_classe": 29,
+      "nome_classe": "frisbee",
+      "prima_comparsa": 0.0,
+      "ultima_comparsa": 0.0,
+      "numero_osservazioni": 1,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0000",
+          "timestamp": 0.0,
+          "confidenza": 0.2839,
+          "riquadro_xyxy": [
+            345.53,
+            361.5,
+            421.97,
+            409.91
+          ]
+        }
+      ],
+      "durata_traccia": 0.0,
+      "confidenza_media": 0.2839
+    },
+    {
+      "id_traccia": 23,
+      "id_classe": 35,
+      "nome_classe": "baseball glove",
+      "prima_comparsa": 2.0,
+      "ultima_comparsa": 6.0,
+      "numero_osservazioni": 2,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0008",
+          "timestamp": 2.0,
+          "confidenza": 0.7027,
+          "riquadro_xyxy": [
+            183.45,
+            299.12,
+            238.68,
+            366.0
+          ]
+        },
+        {
+          "id_frame": "dense_0024",
+          "timestamp": 6.0,
+          "confidenza": 0.4633,
+          "riquadro_xyxy": [
+            165.36,
+            312.43,
+            214.01,
+            364.24
+          ]
+        }
+      ],
+      "durata_traccia": 4.0,
+      "confidenza_media": 0.583
+    },
+    {
+      "id_traccia": 33,
+      "id_classe": 35,
+      "nome_classe": "baseball glove",
+      "prima_comparsa": 4.75,
+      "ultima_comparsa": 4.75,
+      "numero_osservazioni": 1,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0019",
+          "timestamp": 4.75,
+          "confidenza": 0.4828,
+          "riquadro_xyxy": [
+            228.96,
+            351.35,
+            279.06,
+            413.27
+          ]
+        }
+      ],
+      "durata_traccia": 0.0,
+      "confidenza_media": 0.4828
+    },
+    {
+      "id_traccia": 46,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 7.25,
+      "ultima_comparsa": 8.75,
+      "numero_osservazioni": 7,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0029",
+          "timestamp": 7.25,
+          "confidenza": 0.6736,
+          "riquadro_xyxy": [
+            1.36,
+            291.27,
+            42.59,
+            447.82
+          ]
+        },
+        {
+          "id_frame": "dense_0030",
+          "timestamp": 7.5,
+          "confidenza": 0.7133,
+          "riquadro_xyxy": [
+            4.51,
+            287.42,
+            46.13,
+            444.64
+          ]
+        },
+        {
+          "id_frame": "dense_0031",
+          "timestamp": 7.75,
+          "confidenza": 0.6744,
+          "riquadro_xyxy": [
+            6.16,
+            286.2,
+            48.13,
+            443.39
+          ]
+        },
+        {
+          "id_frame": "dense_0032",
+          "timestamp": 8.0,
+          "confidenza": 0.7155,
+          "riquadro_xyxy": [
+            6.75,
+            285.2,
+            48.28,
+            438.95
+          ]
+        },
+        {
+          "id_frame": "dense_0033",
+          "timestamp": 8.25,
+          "confidenza": 0.7844,
+          "riquadro_xyxy": [
+            4.54,
+            283.55,
+            48.4,
+            444.88
+          ]
+        },
+        {
+          "id_frame": "dense_0034",
+          "timestamp": 8.5,
+          "confidenza": 0.676,
+          "riquadro_xyxy": [
+            0.34,
+            285.29,
+            44.14,
+            447.21
+          ]
+        },
+        {
+          "id_frame": "dense_0035",
+          "timestamp": 8.75,
+          "confidenza": 0.5846,
+          "riquadro_xyxy": [
+            0.6,
+            302.39,
+            35.79,
+            432.09
+          ]
+        }
+      ],
+      "durata_traccia": 1.5,
+      "confidenza_media": 0.6888
+    },
+    {
+      "id_traccia": 52,
+      "id_classe": 13,
+      "nome_classe": "bench",
+      "prima_comparsa": 8.0,
+      "ultima_comparsa": 8.75,
+      "numero_osservazioni": 4,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0032",
+          "timestamp": 8.0,
+          "confidenza": 0.4036,
+          "riquadro_xyxy": [
+            241.67,
+            324.0,
+            318.19,
+            369.64
+          ]
+        },
+        {
+          "id_frame": "dense_0033",
+          "timestamp": 8.25,
+          "confidenza": 0.413,
+          "riquadro_xyxy": [
+            236.34,
+            322.87,
+            316.3,
+            370.59
+          ]
+        },
+        {
+          "id_frame": "dense_0034",
+          "timestamp": 8.5,
+          "confidenza": 0.3014,
+          "riquadro_xyxy": [
+            227.4,
+            322.48,
+            311.28,
+            372.68
+          ]
+        },
+        {
+          "id_frame": "dense_0035",
+          "timestamp": 8.75,
+          "confidenza": 0.4104,
+          "riquadro_xyxy": [
+            221.08,
+            320.81,
+            300.47,
+            368.3
+          ]
+        }
+      ],
+      "durata_traccia": 0.75,
+      "confidenza_media": 0.3821
+    },
+    {
+      "id_traccia": 58,
+      "id_classe": 38,
+      "nome_classe": "tennis racket",
+      "prima_comparsa": 9.25,
+      "ultima_comparsa": 9.25,
+      "numero_osservazioni": 1,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0037",
+          "timestamp": 9.25,
+          "confidenza": 0.5334,
+          "riquadro_xyxy": [
+            670.4,
+            317.79,
+            769.21,
+            434.79
+          ]
+        }
+      ],
+      "durata_traccia": 0.0,
+      "confidenza_media": 0.5334
+    },
+    {
+      "id_traccia": 68,
+      "id_classe": 0,
+      "nome_classe": "person",
+      "prima_comparsa": 10.5,
+      "ultima_comparsa": 14.0,
+      "numero_osservazioni": 15,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0042",
+          "timestamp": 10.5,
+          "confidenza": 0.857,
+          "riquadro_xyxy": [
+            128.28,
+            49.44,
+            517.27,
+            712.22
+          ]
+        },
+        {
+          "id_frame": "dense_0043",
+          "timestamp": 10.75,
+          "confidenza": 0.8343,
+          "riquadro_xyxy": [
+            121.23,
+            52.44,
+            508.6,
+            712.35
+          ]
+        },
+        {
+          "id_frame": "dense_0044",
+          "timestamp": 11.0,
+          "confidenza": 0.8434,
+          "riquadro_xyxy": [
+            113.42,
+            51.85,
+            500.22,
+            710.64
+          ]
+        },
+        {
+          "id_frame": "dense_0045",
+          "timestamp": 11.25,
+          "confidenza": 0.8391,
+          "riquadro_xyxy": [
+            105.42,
+            50.71,
+            493.44,
+            711.79
+          ]
+        },
+        {
+          "id_frame": "dense_0046",
+          "timestamp": 11.5,
+          "confidenza": 0.7965,
+          "riquadro_xyxy": [
+            99.42,
+            46.7,
+            490.2,
+            712.69
+          ]
+        },
+        {
+          "id_frame": "dense_0047",
+          "timestamp": 11.75,
+          "confidenza": 0.8093,
+          "riquadro_xyxy": [
+            96.4,
+            46.05,
+            486.83,
+            711.7
+          ]
+        },
+        {
+          "id_frame": "dense_0048",
+          "timestamp": 12.0,
+          "confidenza": 0.8911,
+          "riquadro_xyxy": [
+            93.5,
+            42.14,
+            487.13,
+            713.05
+          ]
+        },
+        {
+          "id_frame": "dense_0049",
+          "timestamp": 12.25,
+          "confidenza": 0.9096,
+          "riquadro_xyxy": [
+            92.58,
+            42.57,
+            486.9,
+            714.34
+          ]
+        },
+        {
+          "id_frame": "dense_0050",
+          "timestamp": 12.5,
+          "confidenza": 0.8966,
+          "riquadro_xyxy": [
+            90.2,
+            40.48,
+            486.48,
+            714.97
+          ]
+        },
+        {
+          "id_frame": "dense_0051",
+          "timestamp": 12.75,
+          "confidenza": 0.9004,
+          "riquadro_xyxy": [
+            86.49,
+            38.84,
+            483.99,
+            715.03
+          ]
+        },
+        {
+          "id_frame": "dense_0052",
+          "timestamp": 13.0,
+          "confidenza": 0.8949,
+          "riquadro_xyxy": [
+            83.02,
+            37.66,
+            481.19,
+            714.67
+          ]
+        },
+        {
+          "id_frame": "dense_0053",
+          "timestamp": 13.25,
+          "confidenza": 0.9032,
+          "riquadro_xyxy": [
+            80.37,
+            30.05,
+            482.98,
+            714.02
+          ]
+        },
+        {
+          "id_frame": "dense_0054",
+          "timestamp": 13.5,
+          "confidenza": 0.8997,
+          "riquadro_xyxy": [
+            67.64,
+            12.77,
+            480.79,
+            713.45
+          ]
+        },
+        {
+          "id_frame": "dense_0055",
+          "timestamp": 13.75,
+          "confidenza": 0.9097,
+          "riquadro_xyxy": [
+            64.02,
+            5.0,
+            483.12,
+            713.46
+          ]
+        },
+        {
+          "id_frame": "dense_0056",
+          "timestamp": 14.0,
+          "confidenza": 0.9112,
+          "riquadro_xyxy": [
+            71.67,
+            2.38,
+            493.98,
+            713.97
+          ]
+        }
+      ],
+      "durata_traccia": 3.5,
+      "confidenza_media": 0.8731
+    },
+    {
+      "id_traccia": 70,
+      "id_classe": 38,
+      "nome_classe": "tennis racket",
+      "prima_comparsa": 14.5,
+      "ultima_comparsa": 15.25,
+      "numero_osservazioni": 2,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0058",
+          "timestamp": 14.5,
+          "confidenza": 0.7547,
+          "riquadro_xyxy": [
+            175.11,
+            370.59,
+            328.67,
+            476.67
+          ]
+        },
+        {
+          "id_frame": "dense_0061",
+          "timestamp": 15.25,
+          "confidenza": 0.4087,
+          "riquadro_xyxy": [
+            188.51,
+            367.88,
+            330.95,
+            466.1
+          ]
+        }
+      ],
+      "durata_traccia": 0.75,
+      "confidenza_media": 0.5817
+    },
+    {
+      "id_traccia": 73,
+      "id_classe": 38,
+      "nome_classe": "tennis racket",
+      "prima_comparsa": 14.75,
+      "ultima_comparsa": 15.25,
+      "numero_osservazioni": 3,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0059",
+          "timestamp": 14.75,
+          "confidenza": 0.5228,
+          "riquadro_xyxy": [
+            667.93,
+            469.77,
+            744.94,
+            617.36
+          ]
+        },
+        {
+          "id_frame": "dense_0060",
+          "timestamp": 15.0,
+          "confidenza": 0.5366,
+          "riquadro_xyxy": [
+            654.22,
+            468.5,
+            733.82,
+            621.41
+          ]
+        },
+        {
+          "id_frame": "dense_0061",
+          "timestamp": 15.25,
+          "confidenza": 0.2711,
+          "riquadro_xyxy": [
+            652.69,
+            465.83,
+            729.87,
+            613.77
+          ]
+        }
+      ],
+      "durata_traccia": 0.5,
+      "confidenza_media": 0.4435
+    },
+    {
+      "id_traccia": 78,
+      "id_classe": 13,
+      "nome_classe": "bench",
+      "prima_comparsa": 15.5,
+      "ultima_comparsa": 17.75,
+      "numero_osservazioni": 10,
+      "osservazioni": [
+        {
+          "id_frame": "dense_0062",
+          "timestamp": 15.5,
+          "confidenza": 0.4027,
+          "riquadro_xyxy": [
+            0.0,
+            254.48,
+            133.24,
+            318.33
+          ]
+        },
+        {
+          "id_frame": "dense_0063",
+          "timestamp": 15.75,
+          "confidenza": 0.4441,
+          "riquadro_xyxy": [
+            0.0,
+            255.1,
+            135.25,
+            320.69
+          ]
+        },
+        {
+          "id_frame": "dense_0064",
+          "timestamp": 16.0,
+          "confidenza": 0.449,
+          "riquadro_xyxy": [
+            0.0,
+            255.78,
+            136.04,
+            321.56
+          ]
+        },
+        {
+          "id_frame": "dense_0065",
+          "timestamp": 16.25,
+          "confidenza": 0.4414,
+          "riquadro_xyxy": [
+            0.0,
+            256.92,
+            135.57,
+            321.24
+          ]
+        },
+        {
+          "id_frame": "dense_0066",
+          "timestamp": 16.5,
+          "confidenza": 0.5065,
+          "riquadro_xyxy": [
+            2.88,
+            257.84,
+            134.58,
+            320.06
+          ]
+        },
+        {
+          "id_frame": "dense_0067",
+          "timestamp": 16.75,
+          "confidenza": 0.3313,
+          "riquadro_xyxy": [
+            3.47,
+            259.74,
+            136.41,
+            322.44
+          ]
+        },
+        {
+          "id_frame": "dense_0068",
+          "timestamp": 17.0,
+          "confidenza": 0.553,
+          "riquadro_xyxy": [
+            5.99,
+            261.99,
+            137.66,
+            323.74
+          ]
+        },
+        {
+          "id_frame": "dense_0069",
+          "timestamp": 17.25,
+          "confidenza": 0.5967,
+          "riquadro_xyxy": [
+            8.26,
+            263.48,
+            138.9,
+            324.22
+          ]
+        },
+        {
+          "id_frame": "dense_0070",
+          "timestamp": 17.5,
+          "confidenza": 0.6224,
+          "riquadro_xyxy": [
+            4.0,
+            264.83,
+            148.0,
+            331.75
+          ]
+        },
+        {
+          "id_frame": "dense_0071",
+          "timestamp": 17.75,
+          "confidenza": 0.6916,
+          "riquadro_xyxy": [
+            5.04,
+            266.34,
+            150.86,
+            333.74
+          ]
+        }
+      ],
+      "durata_traccia": 2.25,
+      "confidenza_media": 0.5039
+    }
+  ]
+}
