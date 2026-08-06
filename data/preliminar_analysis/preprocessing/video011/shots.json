@@ -1,0 +1,25 @@
+{
+  "video_id": "video011",
+  "shots": [
+    {
+      "shot_id": "shot_000",
+      "start_time": 0.0,
+      "end_time": 16.867
+    },
+    {
+      "shot_id": "shot_001",
+      "start_time": 16.867,
+      "end_time": 23.0
+    },
+    {
+      "shot_id": "shot_002",
+      "start_time": 23.0,
+      "end_time": 24.367
+    },
+    {
+      "shot_id": "shot_003",
+      "start_time": 24.367,
+      "end_time": 24.967
+    }
+  ]
+}
