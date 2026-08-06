@@ -1,0 +1,13 @@
+{
+  "file_name": "video037.mp4",
+  "duration": 32.015,
+  "fps": 59.94,
+  "frame_count": 1919,
+  "width": 1280,
+  "height": 720,
+  "video_codec": "h264",
+  "pixel_format": "yuv420p",
+  "audio_present": true,
+  "audio_codec": "aac",
+  "video_id": "video037"
+}
