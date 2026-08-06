@@ -1,0 +1,13 @@
+{
+  "file_name": "video096.mp4",
+  "duration": 35.0,
+  "fps": 30.0,
+  "frame_count": 1050,
+  "width": 568,
+  "height": 320,
+  "video_codec": "h264",
+  "pixel_format": "yuv420p",
+  "audio_present": true,
+  "audio_codec": "aac",
+  "video_id": "video096"
+}

@@ -1,0 +1,40 @@
+{
+  "video_id": "video080",
+  "shots": [
+    {
+      "shot_id": "shot_000",
+      "start_time": 0.0,
+      "end_time": 0.72
+    },
+    {
+      "shot_id": "shot_001",
+      "start_time": 0.72,
+      "end_time": 2.6
+    },
+    {
+      "shot_id": "shot_002",
+      "start_time": 2.6,
+      "end_time": 4.2
+    },
+    {
+      "shot_id": "shot_003",
+      "start_time": 4.2,
+      "end_time": 9.6
+    },
+    {
+      "shot_id": "shot_004",
+      "start_time": 9.6,
+      "end_time": 15.28
+    },
+    {
+      "shot_id": "shot_005",
+      "start_time": 15.28,
+      "end_time": 28.36
+    },
+    {
+      "shot_id": "shot_006",
+      "start_time": 28.36,
+      "end_time": 33.0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file_name": "video088.mp4",
+  "duration": 41.7,
+  "fps": 30.0,
+  "frame_count": 1251,
+  "width": 1080,
+  "height": 1920,
+  "video_codec": "h264",
+  "pixel_format": "yuv420p",
+  "audio_present": true,
+  "audio_codec": "aac",
+  "video_id": "video088"
+}

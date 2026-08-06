@@ -1,0 +1,269 @@
+{
+  "video_id": "video050",
+  "segments": [
+    {
+      "segment_id": "segment_000",
+      "start_time": 0.0,
+      "end_time": 3.16,
+      "duration": 3.16,
+      "source_shots": [
+        "shot_000",
+        "shot_001"
+      ],
+      "frames": [
+        {
+          "frame_id": "segment_000_0000",
+          "timestamp": 0.198,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_000/segment_000_0000_t0000.198.jpg"
+        },
+        {
+          "frame_id": "segment_000_0001",
+          "timestamp": 0.593,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_000/segment_000_0001_t0000.593.jpg"
+        },
+        {
+          "frame_id": "segment_000_0002",
+          "timestamp": 0.988,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_000/segment_000_0002_t0000.988.jpg"
+        },
+        {
+          "frame_id": "segment_000_0003",
+          "timestamp": 1.383,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_000/segment_000_0003_t0001.383.jpg"
+        },
+        {
+          "frame_id": "segment_000_0004",
+          "timestamp": 1.778,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_000/segment_000_0004_t0001.778.jpg"
+        },
+        {
+          "frame_id": "segment_000_0005",
+          "timestamp": 2.173,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_000/segment_000_0005_t0002.173.jpg"
+        },
+        {
+          "frame_id": "segment_000_0006",
+          "timestamp": 2.567,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_000/segment_000_0006_t0002.567.jpg"
+        },
+        {
+          "frame_id": "segment_000_0007",
+          "timestamp": 2.963,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_000/segment_000_0007_t0002.963.jpg"
+        }
+      ]
+    },
+    {
+      "segment_id": "segment_001",
+      "start_time": 2.66,
+      "end_time": 5.76,
+      "duration": 3.1,
+      "source_shots": [
+        "shot_001",
+        "shot_002"
+      ],
+      "frames": [
+        {
+          "frame_id": "segment_001_0000",
+          "timestamp": 2.854,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_001/segment_001_0000_t0002.854.jpg"
+        },
+        {
+          "frame_id": "segment_001_0001",
+          "timestamp": 3.241,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_001/segment_001_0001_t0003.241.jpg"
+        },
+        {
+          "frame_id": "segment_001_0002",
+          "timestamp": 3.629,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_001/segment_001_0002_t0003.629.jpg"
+        },
+        {
+          "frame_id": "segment_001_0003",
+          "timestamp": 4.016,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_001/segment_001_0003_t0004.016.jpg"
+        },
+        {
+          "frame_id": "segment_001_0004",
+          "timestamp": 4.404,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_001/segment_001_0004_t0004.404.jpg"
+        },
+        {
+          "frame_id": "segment_001_0005",
+          "timestamp": 4.791,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_001/segment_001_0005_t0004.791.jpg"
+        },
+        {
+          "frame_id": "segment_001_0006",
+          "timestamp": 5.179,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_001/segment_001_0006_t0005.179.jpg"
+        },
+        {
+          "frame_id": "segment_001_0007",
+          "timestamp": 5.566,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_001/segment_001_0007_t0005.566.jpg"
+        }
+      ]
+    },
+    {
+      "segment_id": "segment_002",
+      "start_time": 5.26,
+      "end_time": 10.36,
+      "duration": 5.1,
+      "source_shots": [
+        "shot_002",
+        "shot_003"
+      ],
+      "frames": [
+        {
+          "frame_id": "segment_002_0000",
+          "timestamp": 5.579,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_002/segment_002_0000_t0005.579.jpg"
+        },
+        {
+          "frame_id": "segment_002_0001",
+          "timestamp": 6.216,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_002/segment_002_0001_t0006.216.jpg"
+        },
+        {
+          "frame_id": "segment_002_0002",
+          "timestamp": 6.854,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_002/segment_002_0002_t0006.854.jpg"
+        },
+        {
+          "frame_id": "segment_002_0003",
+          "timestamp": 7.491,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_002/segment_002_0003_t0007.491.jpg"
+        },
+        {
+          "frame_id": "segment_002_0004",
+          "timestamp": 8.129,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_002/segment_002_0004_t0008.129.jpg"
+        },
+        {
+          "frame_id": "segment_002_0005",
+          "timestamp": 8.766,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_002/segment_002_0005_t0008.766.jpg"
+        },
+        {
+          "frame_id": "segment_002_0006",
+          "timestamp": 9.404,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_002/segment_002_0006_t0009.404.jpg"
+        },
+        {
+          "frame_id": "segment_002_0007",
+          "timestamp": 10.041,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_002/segment_002_0007_t0010.041.jpg"
+        }
+      ]
+    },
+    {
+      "segment_id": "segment_003",
+      "start_time": 9.86,
+      "end_time": 14.84,
+      "duration": 4.98,
+      "source_shots": [
+        "shot_003",
+        "shot_004",
+        "shot_005",
+        "shot_006",
+        "shot_007"
+      ],
+      "frames": [
+        {
+          "frame_id": "segment_003_0000",
+          "timestamp": 10.171,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_003/segment_003_0000_t0010.171.jpg"
+        },
+        {
+          "frame_id": "segment_003_0001",
+          "timestamp": 10.794,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_003/segment_003_0001_t0010.794.jpg"
+        },
+        {
+          "frame_id": "segment_003_0002",
+          "timestamp": 11.416,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_003/segment_003_0002_t0011.416.jpg"
+        },
+        {
+          "frame_id": "segment_003_0003",
+          "timestamp": 12.039,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_003/segment_003_0003_t0012.039.jpg"
+        },
+        {
+          "frame_id": "segment_003_0004",
+          "timestamp": 12.661,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_003/segment_003_0004_t0012.661.jpg"
+        },
+        {
+          "frame_id": "segment_003_0005",
+          "timestamp": 13.284,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_003/segment_003_0005_t0013.284.jpg"
+        },
+        {
+          "frame_id": "segment_003_0006",
+          "timestamp": 13.906,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_003/segment_003_0006_t0013.906.jpg"
+        },
+        {
+          "frame_id": "segment_003_0007",
+          "timestamp": 14.529,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_003/segment_003_0007_t0014.529.jpg"
+        }
+      ]
+    },
+    {
+      "segment_id": "segment_004",
+      "start_time": 14.34,
+      "end_time": 20.0,
+      "duration": 5.66,
+      "source_shots": [
+        "shot_007",
+        "shot_008",
+        "shot_009"
+      ],
+      "frames": [
+        {
+          "frame_id": "segment_004_0000",
+          "timestamp": 14.694,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_004/segment_004_0000_t0014.694.jpg"
+        },
+        {
+          "frame_id": "segment_004_0001",
+          "timestamp": 15.401,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_004/segment_004_0001_t0015.401.jpg"
+        },
+        {
+          "frame_id": "segment_004_0002",
+          "timestamp": 16.109,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_004/segment_004_0002_t0016.109.jpg"
+        },
+        {
+          "frame_id": "segment_004_0003",
+          "timestamp": 16.816,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_004/segment_004_0003_t0016.816.jpg"
+        },
+        {
+          "frame_id": "segment_004_0004",
+          "timestamp": 17.524,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_004/segment_004_0004_t0017.524.jpg"
+        },
+        {
+          "frame_id": "segment_004_0005",
+          "timestamp": 18.231,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_004/segment_004_0005_t0018.231.jpg"
+        },
+        {
+          "frame_id": "segment_004_0006",
+          "timestamp": 18.939,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_004/segment_004_0006_t0018.939.jpg"
+        },
+        {
+          "frame_id": "segment_004_0007",
+          "timestamp": 19.646,
+          "file": "data/preliminar_analysis/preprocessing/video050/segment_frames/segment_004/segment_004_0007_t0019.646.jpg"
+        }
+      ]
+    }
+  ]
+}
