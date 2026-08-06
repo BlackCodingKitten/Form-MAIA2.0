@@ -1,0 +1,50 @@
+{
+  "video_id": "video028",
+  "shots": [
+    {
+      "shot_id": "shot_000",
+      "start_time": 0.0,
+      "end_time": 2.2
+    },
+    {
+      "shot_id": "shot_001",
+      "start_time": 2.2,
+      "end_time": 7.3
+    },
+    {
+      "shot_id": "shot_002",
+      "start_time": 7.3,
+      "end_time": 11.733
+    },
+    {
+      "shot_id": "shot_003",
+      "start_time": 11.733,
+      "end_time": 12.6
+    },
+    {
+      "shot_id": "shot_004",
+      "start_time": 12.6,
+      "end_time": 16.067
+    },
+    {
+      "shot_id": "shot_005",
+      "start_time": 16.067,
+      "end_time": 17.667
+    },
+    {
+      "shot_id": "shot_006",
+      "start_time": 17.667,
+      "end_time": 21.7
+    },
+    {
+      "shot_id": "shot_007",
+      "start_time": 21.7,
+      "end_time": 27.533
+    },
+    {
+      "shot_id": "shot_008",
+      "start_time": 27.533,
+      "end_time": 30.0
+    }
+  ]
+}
