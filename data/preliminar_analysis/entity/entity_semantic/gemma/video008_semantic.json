@@ -1,0 +1,2849 @@
+{
+  "id_video": "video008",
+  "model": "google/gemma-3n-E4B-it",
+  "configuration": {
+    "window_seconds": 4.0,
+    "stride_seconds": 3.0,
+    "max_frames_per_window": 8,
+    "input_type": "ordered_dense_frames"
+  },
+  "numero_segmenti": 16,
+  "numero_errori": 0,
+  "segments": [
+    {
+      "segment_id": "segment_0000",
+      "start_time": 0.0,
+      "end_time": 3.75,
+      "input_frames": [
+        "dense_0000_t0000.000.jpg",
+        "dense_0002_t0000.500.jpg",
+        "dense_0004_t0001.000.jpg",
+        "dense_0006_t0001.500.jpg",
+        "dense_0009_t0002.250.jpg",
+        "dense_0011_t0002.750.jpg",
+        "dense_0013_t0003.250.jpg",
+        "dense_0015_t0003.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "uomo",
+          "role": "parlante",
+          "attributes": [
+            "giacca",
+            "cravatta"
+          ],
+          "start_time": 0.0,
+          "end_time": 3.75,
+          "evidence_frames": [
+            "dense_0000_t0000.000.jpg",
+            "dense_0002_t0000.500.jpg",
+            "dense_0004_t0001.000.jpg",
+            "dense_0006_t0001.500.jpg",
+            "dense_0009_t0002.250.jpg",
+            "dense_0011_t0002.750.jpg",
+            "dense_0013_t0003.250.jpg",
+            "dense_0015_t0003.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "uomo",
+          "role": "ascoltatore",
+          "attributes": [
+            "rasoio",
+            "bandana"
+          ],
+          "start_time": 0.0,
+          "end_time": 3.75,
+          "evidence_frames": [
+            "dense_0000_t0000.000.jpg",
+            "dense_0002_t0000.500.jpg",
+            "dense_0004_t0001.000.jpg",
+            "dense_0006_t0001.500.jpg",
+            "dense_0009_t0002.250.jpg",
+            "dense_0011_t0002.750.jpg",
+            "dense_0013_t0003.250.jpg",
+            "dense_0015_t0003.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "espositore",
+          "role": "contiene prodotti",
+          "attributes": [
+            "prodotto di rasatura"
+          ],
+          "start_time": 0.0,
+          "end_time": 3.75,
+          "evidence_frames": [
+            "dense_0000_t0000.000.jpg",
+            "dense_0002_t0000.500.jpg",
+            "dense_0004_t0001.000.jpg",
+            "dense_0006_t0001.500.jpg",
+            "dense_0009_t0002.250.jpg",
+            "dense_0011_t0002.750.jpg",
+            "dense_0013_t0003.250.jpg",
+            "dense_0015_t0003.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "parla",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 0.0,
+          "end_time": 3.75,
+          "evidence_frames": [
+            "dense_0000_t0000.000.jpg",
+            "dense_0002_t0000.500.jpg",
+            "dense_0004_t0001.000.jpg",
+            "dense_0006_t0001.500.jpg",
+            "dense_0009_t0002.250.jpg",
+            "dense_0011_t0002.750.jpg",
+            "dense_0013_t0003.250.jpg",
+            "dense_0015_t0003.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "events": [
+        {
+          "description": "conversazione",
+          "participants": [
+            "e1",
+            "e2"
+          ],
+          "start_time": 0.0,
+          "end_time": 3.75,
+          "evidence_frames": [
+            "dense_0000_t0000.000.jpg",
+            "dense_0002_t0000.500.jpg",
+            "dense_0004_t0001.000.jpg",
+            "dense_0006_t0001.500.jpg",
+            "dense_0009_t0002.250.jpg",
+            "dense_0011_t0002.750.jpg",
+            "dense_0013_t0003.250.jpg",
+            "dense_0015_t0003.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "davanti a",
+          "object": "e2",
+          "start_time": 0.0,
+          "end_time": 3.75,
+          "evidence_frames": [
+            "dense_0000_t0000.000.jpg",
+            "dense_0002_t0000.500.jpg",
+            "dense_0004_t0001.000.jpg",
+            "dense_0006_t0001.500.jpg",
+            "dense_0009_t0002.250.jpg",
+            "dense_0011_t0002.750.jpg",
+            "dense_0013_t0003.250.jpg",
+            "dense_0015_t0003.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0001",
+      "start_time": 3.0,
+      "end_time": 6.75,
+      "input_frames": [
+        "dense_0012_t0003.000.jpg",
+        "dense_0014_t0003.500.jpg",
+        "dense_0016_t0004.000.jpg",
+        "dense_0018_t0004.500.jpg",
+        "dense_0021_t0005.250.jpg",
+        "dense_0023_t0005.750.jpg",
+        "dense_0025_t0006.250.jpg",
+        "dense_0027_t0006.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "uomo",
+          "role": "personaggio",
+          "attributes": [
+            "giacca",
+            "camicia",
+            "cravatta"
+          ],
+          "start_time": 3.0,
+          "end_time": 6.75,
+          "evidence_frames": [
+            "dense_0012_t0003.000.jpg",
+            "dense_0014_t0003.500.jpg",
+            "dense_0016_t0004.000.jpg",
+            "dense_0018_t0004.500.jpg",
+            "dense_0021_t0005.250.jpg",
+            "dense_0023_t0005.750.jpg",
+            "dense_0025_t0006.250.jpg",
+            "dense_0027_t0006.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "uomo",
+          "role": "personaggio",
+          "attributes": [
+            "bandana",
+            "canotta",
+            "jeans"
+          ],
+          "start_time": 3.0,
+          "end_time": 6.75,
+          "evidence_frames": [
+            "dense_0012_t0003.000.jpg",
+            "dense_0014_t0003.500.jpg",
+            "dense_0016_t0004.000.jpg",
+            "dense_0018_t0004.500.jpg",
+            "dense_0021_t0005.250.jpg",
+            "dense_0023_t0005.750.jpg",
+            "dense_0025_t0006.250.jpg",
+            "dense_0027_t0006.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "espositore",
+          "role": "oggetto",
+          "attributes": [
+            "bottiglie",
+            "oggetti decorativi"
+          ],
+          "start_time": 3.0,
+          "end_time": 6.75,
+          "evidence_frames": [
+            "dense_0012_t0003.000.jpg",
+            "dense_0014_t0003.500.jpg",
+            "dense_0016_t0004.000.jpg",
+            "dense_0018_t0004.500.jpg",
+            "dense_0021_t0005.250.jpg",
+            "dense_0023_t0005.750.jpg",
+            "dense_0025_t0006.250.jpg",
+            "dense_0027_t0006.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "parlare",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 3.0,
+          "end_time": 6.75,
+          "evidence_frames": [
+            "dense_0012_t0003.000.jpg",
+            "dense_0014_t0003.500.jpg",
+            "dense_0016_t0004.000.jpg",
+            "dense_0018_t0004.500.jpg",
+            "dense_0021_t0005.250.jpg",
+            "dense_0023_t0005.750.jpg",
+            "dense_0025_t0006.250.jpg",
+            "dense_0027_t0006.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.9
+        },
+        {
+          "description": "parlare",
+          "actor": "e2",
+          "object": "e1",
+          "start_time": 3.0,
+          "end_time": 6.75,
+          "evidence_frames": [
+            "dense_0012_t0003.000.jpg",
+            "dense_0014_t0003.500.jpg",
+            "dense_0016_t0004.000.jpg",
+            "dense_0018_t0004.500.jpg",
+            "dense_0021_t0005.250.jpg",
+            "dense_0023_t0005.750.jpg",
+            "dense_0025_t0006.250.jpg",
+            "dense_0027_t0006.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.9
+        }
+      ],
+      "events": [
+        {
+          "description": "conversazione",
+          "participants": [
+            "e1",
+            "e2"
+          ],
+          "start_time": 3.0,
+          "end_time": 6.75,
+          "evidence_frames": [
+            "dense_0012_t0003.000.jpg",
+            "dense_0014_t0003.500.jpg",
+            "dense_0016_t0004.000.jpg",
+            "dense_0018_t0004.500.jpg",
+            "dense_0021_t0005.250.jpg",
+            "dense_0023_t0005.750.jpg",
+            "dense_0025_t0006.250.jpg",
+            "dense_0027_t0006.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "davanti a",
+          "object": "e3",
+          "start_time": 3.0,
+          "end_time": 6.75,
+          "evidence_frames": [
+            "dense_0012_t0003.000.jpg",
+            "dense_0014_t0003.500.jpg",
+            "dense_0016_t0004.000.jpg",
+            "dense_0018_t0004.500.jpg",
+            "dense_0021_t0005.250.jpg",
+            "dense_0023_t0005.750.jpg",
+            "dense_0025_t0006.250.jpg",
+            "dense_0027_t0006.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "subject": "e2",
+          "relation": "davanti a",
+          "object": "e3",
+          "start_time": 3.0,
+          "end_time": 6.75,
+          "evidence_frames": [
+            "dense_0012_t0003.000.jpg",
+            "dense_0014_t0003.500.jpg",
+            "dense_0016_t0004.000.jpg",
+            "dense_0018_t0004.500.jpg",
+            "dense_0021_t0005.250.jpg",
+            "dense_0023_t0005.750.jpg",
+            "dense_0025_t0006.250.jpg",
+            "dense_0027_t0006.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0002",
+      "start_time": 6.0,
+      "end_time": 9.75,
+      "input_frames": [
+        "dense_0024_t0006.000.jpg",
+        "dense_0026_t0006.500.jpg",
+        "dense_0028_t0007.000.jpg",
+        "dense_0030_t0007.500.jpg",
+        "dense_0033_t0008.250.jpg",
+        "dense_0035_t0008.750.jpg",
+        "dense_0037_t0009.250.jpg",
+        "dense_0039_t0009.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "uomo",
+          "role": "personaggio",
+          "attributes": [
+            "giacca",
+            "cravatta"
+          ],
+          "start_time": 6.0,
+          "end_time": 9.75,
+          "evidence_frames": [
+            "dense_0024_t0006.000.jpg",
+            "dense_0026_t0006.500.jpg",
+            "dense_0028_t0007.000.jpg",
+            "dense_0030_t0007.500.jpg",
+            "dense_0033_t0008.250.jpg",
+            "dense_0035_t0008.750.jpg",
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "uomo",
+          "role": "personaggio",
+          "attributes": [
+            "bandana",
+            "canotta",
+            "jeans"
+          ],
+          "start_time": 6.0,
+          "end_time": 9.75,
+          "evidence_frames": [
+            "dense_0024_t0006.000.jpg",
+            "dense_0026_t0006.500.jpg",
+            "dense_0028_t0007.000.jpg",
+            "dense_0030_t0007.500.jpg",
+            "dense_0033_t0008.250.jpg",
+            "dense_0035_t0008.750.jpg",
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "espositore",
+          "role": "oggetto",
+          "attributes": [
+            "bottiglie",
+            "decorazioni"
+          ],
+          "start_time": 6.0,
+          "end_time": 9.75,
+          "evidence_frames": [
+            "dense_0024_t0006.000.jpg",
+            "dense_0026_t0006.500.jpg",
+            "dense_0028_t0007.000.jpg",
+            "dense_0030_t0007.500.jpg",
+            "dense_0033_t0008.250.jpg",
+            "dense_0035_t0008.750.jpg",
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e4",
+          "label": "uomo",
+          "role": "personaggio",
+          "attributes": [],
+          "start_time": 8.25,
+          "end_time": 9.75,
+          "evidence_frames": [
+            "dense_0033_t0008.250.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "parlare",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 6.0,
+          "end_time": 6.5,
+          "evidence_frames": [
+            "dense_0024_t0006.000.jpg",
+            "dense_0026_t0006.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "parlare",
+          "actor": "e2",
+          "object": "e1",
+          "start_time": 6.5,
+          "end_time": 7.0,
+          "evidence_frames": [
+            "dense_0026_t0006.500.jpg",
+            "dense_0028_t0007.000.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "parlare",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 7.0,
+          "end_time": 7.5,
+          "evidence_frames": [
+            "dense_0028_t0007.000.jpg",
+            "dense_0030_t0007.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "parlare",
+          "actor": "e2",
+          "object": "e1",
+          "start_time": 7.5,
+          "end_time": 8.25,
+          "evidence_frames": [
+            "dense_0030_t0007.500.jpg",
+            "dense_0033_t0008.250.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "guardare",
+          "actor": "e4",
+          "object": "e2",
+          "start_time": 8.25,
+          "end_time": 9.75,
+          "evidence_frames": [
+            "dense_0033_t0008.250.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        }
+      ],
+      "events": [
+        {
+          "description": "conversazione",
+          "participants": [
+            "e1",
+            "e2"
+          ],
+          "start_time": 6.0,
+          "end_time": 9.75,
+          "evidence_frames": [
+            "dense_0024_t0006.000.jpg",
+            "dense_0026_t0006.500.jpg",
+            "dense_0028_t0007.000.jpg",
+            "dense_0030_t0007.500.jpg",
+            "dense_0033_t0008.250.jpg",
+            "dense_0035_t0008.750.jpg",
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "di fronte a",
+          "object": "e2",
+          "start_time": 6.0,
+          "end_time": 9.75,
+          "evidence_frames": [
+            "dense_0024_t0006.000.jpg",
+            "dense_0026_t0006.500.jpg",
+            "dense_0028_t0007.000.jpg",
+            "dense_0030_t0007.500.jpg",
+            "dense_0033_t0008.250.jpg",
+            "dense_0035_t0008.750.jpg",
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.9
+        }
+      ],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0003",
+      "start_time": 9.0,
+      "end_time": 12.75,
+      "input_frames": [
+        "dense_0036_t0009.000.jpg",
+        "dense_0038_t0009.500.jpg",
+        "dense_0040_t0010.000.jpg",
+        "dense_0042_t0010.500.jpg",
+        "dense_0045_t0011.250.jpg",
+        "dense_0047_t0011.750.jpg",
+        "dense_0049_t0012.250.jpg",
+        "dense_0051_t0012.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "uomo",
+          "attributes": [
+            "bandana",
+            "canotta",
+            "jeans"
+          ],
+          "start_time": 9.0,
+          "end_time": 12.75,
+          "evidence_frames": [
+            "dense_0036_t0009.000.jpg",
+            "dense_0038_t0009.500.jpg",
+            "dense_0040_t0010.000.jpg",
+            "dense_0042_t0010.500.jpg",
+            "dense_0045_t0011.250.jpg",
+            "dense_0047_t0011.750.jpg",
+            "dense_0049_t0012.250.jpg",
+            "dense_0051_t0012.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "uomo",
+          "role": "uomo",
+          "attributes": [
+            "cappello da bagno a forma di cigno"
+          ],
+          "start_time": 11.25,
+          "end_time": 12.75,
+          "evidence_frames": [
+            "dense_0045_t0011.250.jpg",
+            "dense_0047_t0011.750.jpg",
+            "dense_0049_t0012.250.jpg",
+            "dense_0051_t0012.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "indossa",
+          "actor": "e1",
+          "object": "bandana",
+          "start_time": 9.0,
+          "end_time": 9.0,
+          "evidence_frames": [
+            "dense_0036_t0009.000.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "indossa",
+          "actor": "e1",
+          "object": "canotta",
+          "start_time": 9.0,
+          "end_time": 9.0,
+          "evidence_frames": [
+            "dense_0036_t0009.000.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "indossa",
+          "actor": "e1",
+          "object": "jeans",
+          "start_time": 9.0,
+          "end_time": 9.0,
+          "evidence_frames": [
+            "dense_0036_t0009.000.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "tiene",
+          "actor": "e2",
+          "object": "cappello da bagno a forma di cigno",
+          "start_time": 11.25,
+          "end_time": 12.75,
+          "evidence_frames": [
+            "dense_0045_t0011.250.jpg",
+            "dense_0047_t0011.750.jpg",
+            "dense_0049_t0012.250.jpg",
+            "dense_0051_t0012.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "events": [
+        {
+          "description": "persona che guarda",
+          "participants": [
+            "e1"
+          ],
+          "start_time": 9.0,
+          "end_time": 12.75,
+          "evidence_frames": [
+            "dense_0036_t0009.000.jpg",
+            "dense_0038_t0009.500.jpg",
+            "dense_0040_t0010.000.jpg",
+            "dense_0042_t0010.500.jpg",
+            "dense_0045_t0011.250.jpg",
+            "dense_0047_t0011.750.jpg",
+            "dense_0049_t0012.250.jpg",
+            "dense_0051_t0012.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "vicino a",
+          "object": "e2",
+          "start_time": 11.25,
+          "end_time": 12.75,
+          "evidence_frames": [
+            "dense_0045_t0011.250.jpg",
+            "dense_0047_t0011.750.jpg",
+            "dense_0049_t0012.250.jpg",
+            "dense_0051_t0012.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0004",
+      "start_time": 12.0,
+      "end_time": 15.75,
+      "input_frames": [
+        "dense_0048_t0012.000.jpg",
+        "dense_0050_t0012.500.jpg",
+        "dense_0052_t0013.000.jpg",
+        "dense_0054_t0013.500.jpg",
+        "dense_0057_t0014.250.jpg",
+        "dense_0059_t0014.750.jpg",
+        "dense_0061_t0015.250.jpg",
+        "dense_0063_t0015.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "uomo",
+          "role": "protagonista",
+          "attributes": [
+            "capelli castani",
+            "vestito grigio",
+            "cravatta rosa"
+          ],
+          "start_time": 12.0,
+          "end_time": 15.75,
+          "evidence_frames": [
+            "dense_0048_t0012.000.jpg",
+            "dense_0050_t0012.500.jpg",
+            "dense_0052_t0013.000.jpg",
+            "dense_0054_t0013.500.jpg",
+            "dense_0057_t0014.250.jpg",
+            "dense_0059_t0014.750.jpg",
+            "dense_0061_t0015.250.jpg",
+            "dense_0063_t0015.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "uomo",
+          "role": "antagonista",
+          "attributes": [
+            "capelli scuri",
+            "bandana rossa",
+            "canotta nera",
+            "jeans chiari",
+            "collana",
+            "piercing"
+          ],
+          "start_time": 12.0,
+          "end_time": 15.75,
+          "evidence_frames": [
+            "dense_0048_t0012.000.jpg",
+            "dense_0050_t0012.500.jpg",
+            "dense_0052_t0013.000.jpg",
+            "dense_0054_t0013.500.jpg",
+            "dense_0057_t0014.250.jpg",
+            "dense_0059_t0014.750.jpg",
+            "dense_0061_t0015.250.jpg",
+            "dense_0063_t0015.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "giubbotto",
+          "role": "oggetto",
+          "attributes": [
+            "rosa e bianca"
+          ],
+          "start_time": 12.0,
+          "end_time": 15.75,
+          "evidence_frames": [
+            "dense_0048_t0012.000.jpg",
+            "dense_0050_t0012.500.jpg",
+            "dense_0052_t0013.000.jpg",
+            "dense_0054_t0013.500.jpg",
+            "dense_0057_t0014.250.jpg",
+            "dense_0059_t0014.750.jpg",
+            "dense_0061_t0015.250.jpg",
+            "dense_0063_t0015.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e4",
+          "label": "negozio",
+          "role": "luogo",
+          "attributes": [
+            "espositore con oggetti",
+            "scaffali"
+          ],
+          "start_time": 12.0,
+          "end_time": 15.75,
+          "evidence_frames": [
+            "dense_0048_t0012.000.jpg",
+            "dense_0050_t0012.500.jpg",
+            "dense_0052_t0013.000.jpg",
+            "dense_0054_t0013.500.jpg",
+            "dense_0057_t0014.250.jpg",
+            "dense_0059_t0014.750.jpg",
+            "dense_0061_t0015.250.jpg",
+            "dense_0063_t0015.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "uomo con giubbotto rosa tiene un anpinga",
+          "actor": "e1",
+          "object": "e3",
+          "start_time": 12.0,
+          "end_time": 12.5,
+          "evidence_frames": [
+            "dense_0048_t0012.000.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "uomo con bandana rossa sembra parlare",
+          "actor": "e2",
+          "object": null,
+          "start_time": 12.0,
+          "end_time": 12.5,
+          "evidence_frames": [
+            "dense_0048_t0012.000.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "uomo con giubbotto rosa e uomo con bandana rossa si guardano",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 12.5,
+          "end_time": 13.0,
+          "evidence_frames": [
+            "dense_0050_t0012.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "uomo con giubbotto rosa e uomo con bandana rossa si guardano",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 13.0,
+          "end_time": 13.5,
+          "evidence_frames": [
+            "dense_0052_t0013.000.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "uomo con giubbotto rosa e uomo con bandana rossa si guardano",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 13.5,
+          "end_time": 14.25,
+          "evidence_frames": [
+            "dense_0054_t0013.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "uomo con giubbotto rosa e uomo con bandana rossa si guardano",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 14.25,
+          "end_time": 14.75,
+          "evidence_frames": [
+            "dense_0057_t0014.250.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "uomo con giubbotto rosa e uomo con bandana rossa si guardano",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 14.75,
+          "end_time": 15.25,
+          "evidence_frames": [
+            "dense_0059_t0014.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "uomo con giubbotto rosa e uomo con bandana rossa si guardano",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 15.25,
+          "end_time": 15.75,
+          "evidence_frames": [
+            "dense_0061_t0015.250.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "events": [
+        {
+          "description": "interazione tra due uomini",
+          "participants": [
+            "e1",
+            "e2"
+          ],
+          "start_time": 12.0,
+          "end_time": 15.75,
+          "evidence_frames": [
+            "dense_0048_t0012.000.jpg",
+            "dense_0050_t0012.500.jpg",
+            "dense_0052_t0013.000.jpg",
+            "dense_0054_t0013.500.jpg",
+            "dense_0057_t0014.250.jpg",
+            "dense_0059_t0014.750.jpg",
+            "dense_0061_t0015.250.jpg",
+            "dense_0063_t0015.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "vicino a",
+          "object": "e4",
+          "start_time": 12.0,
+          "end_time": 15.75,
+          "evidence_frames": [
+            "dense_0048_t0012.000.jpg",
+            "dense_0050_t0012.500.jpg",
+            "dense_0052_t0013.000.jpg",
+            "dense_0054_t0013.500.jpg",
+            "dense_0057_t0014.250.jpg",
+            "dense_0059_t0014.750.jpg",
+            "dense_0061_t0015.250.jpg",
+            "dense_0063_t0015.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0005",
+      "start_time": 15.0,
+      "end_time": 18.75,
+      "input_frames": [
+        "dense_0060_t0015.000.jpg",
+        "dense_0062_t0015.500.jpg",
+        "dense_0064_t0016.000.jpg",
+        "dense_0066_t0016.500.jpg",
+        "dense_0069_t0017.250.jpg",
+        "dense_0071_t0017.750.jpg",
+        "dense_0073_t0018.250.jpg",
+        "dense_0075_t0018.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "uomo",
+          "role": "personaggio",
+          "attributes": [
+            "giacca",
+            "cravatta"
+          ],
+          "start_time": 15.0,
+          "end_time": 18.75,
+          "evidence_frames": [
+            "dense_0060_t0015.000.jpg",
+            "dense_0062_t0015.500.jpg",
+            "dense_0064_t0016.000.jpg",
+            "dense_0066_t0016.500.jpg",
+            "dense_0069_t0017.250.jpg",
+            "dense_0071_t0017.750.jpg",
+            "dense_0073_t0018.250.jpg",
+            "dense_0075_t0018.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "uomo",
+          "role": "personaggio",
+          "attributes": [
+            "bandana",
+            "canotta",
+            "jeans"
+          ],
+          "start_time": 15.0,
+          "end_time": 18.75,
+          "evidence_frames": [
+            "dense_0060_t0015.000.jpg",
+            "dense_0062_t0015.500.jpg",
+            "dense_0064_t0016.000.jpg",
+            "dense_0066_t0016.500.jpg",
+            "dense_0069_t0017.250.jpg",
+            "dense_0071_t0017.750.jpg",
+            "dense_0073_t0018.250.jpg",
+            "dense_0075_t0018.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "espositore",
+          "role": "oggetto",
+          "attributes": [
+            "bottiglie",
+            "oggetti decorativi"
+          ],
+          "start_time": 15.0,
+          "end_time": 18.75,
+          "evidence_frames": [
+            "dense_0060_t0015.000.jpg",
+            "dense_0062_t0015.500.jpg",
+            "dense_0064_t0016.000.jpg",
+            "dense_0066_t0016.500.jpg",
+            "dense_0069_t0017.250.jpg",
+            "dense_0071_t0017.750.jpg",
+            "dense_0073_t0018.250.jpg",
+            "dense_0075_t0018.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "parlare",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 15.0,
+          "end_time": 15.5,
+          "evidence_frames": [
+            "dense_0060_t0015.000.jpg",
+            "dense_0062_t0015.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "guardare",
+          "actor": "e1",
+          "object": "e3",
+          "start_time": 15.0,
+          "end_time": 15.5,
+          "evidence_frames": [
+            "dense_0060_t0015.000.jpg",
+            "dense_0062_t0015.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "guardare",
+          "actor": "e2",
+          "object": "e3",
+          "start_time": 15.0,
+          "end_time": 15.5,
+          "evidence_frames": [
+            "dense_0060_t0015.000.jpg",
+            "dense_0062_t0015.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "indicare",
+          "actor": "e2",
+          "object": "e3",
+          "start_time": 15.5,
+          "end_time": 16.0,
+          "evidence_frames": [
+            "dense_0062_t0015.500.jpg",
+            "dense_0064_t0016.000.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "guardare",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 16.0,
+          "end_time": 16.5,
+          "evidence_frames": [
+            "dense_0064_t0016.000.jpg",
+            "dense_0066_t0016.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "guardare",
+          "actor": "e2",
+          "object": "e3",
+          "start_time": 16.5,
+          "end_time": 17.25,
+          "evidence_frames": [
+            "dense_0066_t0016.500.jpg",
+            "dense_0069_t0017.250.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "guardare",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 17.25,
+          "end_time": 17.75,
+          "evidence_frames": [
+            "dense_0069_t0017.250.jpg",
+            "dense_0071_t0017.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "guardare",
+          "actor": "e2",
+          "object": "e3",
+          "start_time": 17.75,
+          "end_time": 18.25,
+          "evidence_frames": [
+            "dense_0071_t0017.750.jpg",
+            "dense_0073_t0018.250.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "guardare",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 18.25,
+          "end_time": 18.75,
+          "evidence_frames": [
+            "dense_0073_t0018.250.jpg",
+            "dense_0075_t0018.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        }
+      ],
+      "events": [
+        {
+          "description": "interazione",
+          "participants": [
+            "e1",
+            "e2"
+          ],
+          "start_time": 15.0,
+          "end_time": 18.75,
+          "evidence_frames": [
+            "dense_0060_t0015.000.jpg",
+            "dense_0062_t0015.500.jpg",
+            "dense_0064_t0016.000.jpg",
+            "dense_0066_t0016.500.jpg",
+            "dense_0069_t0017.250.jpg",
+            "dense_0071_t0017.750.jpg",
+            "dense_0073_t0018.250.jpg",
+            "dense_0075_t0018.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "vicino a",
+          "object": "e3",
+          "start_time": 15.0,
+          "end_time": 18.75,
+          "evidence_frames": [
+            "dense_0060_t0015.000.jpg",
+            "dense_0062_t0015.500.jpg",
+            "dense_0064_t0016.000.jpg",
+            "dense_0066_t0016.500.jpg",
+            "dense_0069_t0017.250.jpg",
+            "dense_0071_t0017.750.jpg",
+            "dense_0073_t0018.250.jpg",
+            "dense_0075_t0018.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.9
+        },
+        {
+          "subject": "e2",
+          "relation": "vicino a",
+          "object": "e3",
+          "start_time": 15.0,
+          "end_time": 18.75,
+          "evidence_frames": [
+            "dense_0060_t0015.000.jpg",
+            "dense_0062_t0015.500.jpg",
+            "dense_0064_t0016.000.jpg",
+            "dense_0066_t0016.500.jpg",
+            "dense_0069_t0017.250.jpg",
+            "dense_0071_t0017.750.jpg",
+            "dense_0073_t0018.250.jpg",
+            "dense_0075_t0018.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.9
+        }
+      ],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0006",
+      "start_time": 18.0,
+      "end_time": 21.75,
+      "input_frames": [
+        "dense_0072_t0018.000.jpg",
+        "dense_0074_t0018.500.jpg",
+        "dense_0076_t0019.000.jpg",
+        "dense_0078_t0019.500.jpg",
+        "dense_0081_t0020.250.jpg",
+        "dense_0083_t0020.750.jpg",
+        "dense_0085_t0021.250.jpg",
+        "dense_0087_t0021.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "uomo",
+          "role": "personaggio",
+          "attributes": [
+            "giacca",
+            "cravatta"
+          ],
+          "start_time": 18.0,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0072_t0018.000.jpg",
+            "dense_0074_t0018.500.jpg",
+            "dense_0076_t0019.000.jpg",
+            "dense_0078_t0019.500.jpg",
+            "dense_0081_t0020.250.jpg",
+            "dense_0083_t0020.750.jpg",
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "uomo",
+          "role": "personaggio",
+          "attributes": [
+            "bandana",
+            "canotta",
+            "jeans"
+          ],
+          "start_time": 18.0,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0072_t0018.000.jpg",
+            "dense_0074_t0018.500.jpg",
+            "dense_0076_t0019.000.jpg",
+            "dense_0078_t0019.500.jpg",
+            "dense_0081_t0020.250.jpg",
+            "dense_0083_t0020.750.jpg",
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [],
+      "events": [],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "vicino a",
+          "object": "e2",
+          "start_time": 18.0,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0072_t0018.000.jpg",
+            "dense_0074_t0018.500.jpg",
+            "dense_0076_t0019.000.jpg",
+            "dense_0078_t0019.500.jpg",
+            "dense_0081_t0020.250.jpg",
+            "dense_0083_t0020.750.jpg",
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0007",
+      "start_time": 21.0,
+      "end_time": 24.75,
+      "input_frames": [
+        "dense_0084_t0021.000.jpg",
+        "dense_0086_t0021.500.jpg",
+        "dense_0088_t0022.000.jpg",
+        "dense_0090_t0022.500.jpg",
+        "dense_0093_t0023.250.jpg",
+        "dense_0095_t0023.750.jpg",
+        "dense_0097_t0024.250.jpg",
+        "dense_0099_t0024.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "uomo",
+          "attributes": [
+            "capelli castani",
+            "barba",
+            "abbigliamento formale"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "persona",
+          "role": "uomo",
+          "attributes": [
+            "capelli castani",
+            "bandana rossa",
+            "abbigliamento casual"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [],
+      "events": [],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "vicino a",
+          "object": "e2",
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0008",
+      "start_time": 24.0,
+      "end_time": 27.75,
+      "input_frames": [
+        "dense_0096_t0024.000.jpg",
+        "dense_0098_t0024.500.jpg",
+        "dense_0100_t0025.000.jpg",
+        "dense_0102_t0025.500.jpg",
+        "dense_0105_t0026.250.jpg",
+        "dense_0107_t0026.750.jpg",
+        "dense_0109_t0027.250.jpg",
+        "dense_0111_t0027.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "protagonista",
+          "attributes": [
+            "uomo",
+            "capelli lunghi",
+            "bandana rossa",
+            "canotta nera",
+            "jeans chiari",
+            "braccialetti",
+            "collane"
+          ],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "uomo",
+          "role": "secondario",
+          "attributes": [
+            "uomo",
+            "capelli corti",
+            "giacca grigia",
+            "cravatta"
+          ],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "uomo",
+          "role": "secondario",
+          "attributes": [
+            "uomo",
+            "capelli lunghi",
+            "bandana rossa",
+            "canotta nera",
+            "jeans chiari",
+            "braccialetti",
+            "collane"
+          ],
+          "start_time": 26.25,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "camminare",
+          "actor": "e1",
+          "object": "null",
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "guardare",
+          "actor": "e1",
+          "object": "scaffali",
+          "start_time": 26.25,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "events": [
+        {
+          "description": "persona che cammina in un negozio",
+          "participants": [
+            "e1",
+            "e2"
+          ],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "vicino a",
+          "object": "e2",
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0009",
+      "start_time": 27.0,
+      "end_time": 30.75,
+      "input_frames": [
+        "dense_0108_t0027.000.jpg",
+        "dense_0110_t0027.500.jpg",
+        "dense_0112_t0028.000.jpg",
+        "dense_0114_t0028.500.jpg",
+        "dense_0117_t0029.250.jpg",
+        "dense_0119_t0029.750.jpg",
+        "dense_0121_t0030.250.jpg",
+        "dense_0123_t0030.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "uomo",
+          "attributes": [
+            "bandana",
+            "canotta",
+            "jeans"
+          ],
+          "start_time": 27.0,
+          "end_time": 30.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg",
+            "dense_0123_t0030.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "persona",
+          "role": "uomo",
+          "attributes": [
+            "cravatta",
+            "giacca grigia"
+          ],
+          "start_time": 27.0,
+          "end_time": 30.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg",
+            "dense_0123_t0030.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "persona",
+          "role": "donna",
+          "attributes": [
+            "vestito rosso",
+            "cintura bianca"
+          ],
+          "start_time": 27.0,
+          "end_time": 30.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg",
+            "dense_0123_t0030.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "uomo che guarda gli scaffali",
+          "actor": "e1",
+          "object": "scaffali",
+          "start_time": 27.0,
+          "end_time": 28.0,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "uomo che guarda gli scaffali",
+          "actor": "e1",
+          "object": "scaffali",
+          "start_time": 28.5,
+          "end_time": 29.25,
+          "evidence_frames": [
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "uomo che guarda gli scaffali",
+          "actor": "e1",
+          "object": "scaffali",
+          "start_time": 29.75,
+          "end_time": 30.25,
+          "evidence_frames": [
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "donna che cammina",
+          "actor": "e3",
+          "object": null,
+          "start_time": 27.0,
+          "end_time": 28.5,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "uomo che guarda",
+          "actor": "e2",
+          "object": "donna",
+          "start_time": 27.0,
+          "end_time": 28.0,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "uomo che guarda",
+          "actor": "e2",
+          "object": "donna",
+          "start_time": 28.5,
+          "end_time": 29.25,
+          "evidence_frames": [
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "uomo che guarda",
+          "actor": "e2",
+          "object": "donna",
+          "start_time": 29.75,
+          "end_time": 30.25,
+          "evidence_frames": [
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "events": [
+        {
+          "description": "persona che guarda gli scaffali",
+          "participants": [
+            "e1"
+          ],
+          "start_time": 27.0,
+          "end_time": 30.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg",
+            "dense_0123_t0030.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "vicino a",
+          "object": "scaffali",
+          "start_time": 27.0,
+          "end_time": 30.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg",
+            "dense_0123_t0030.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "subject": "e3",
+          "relation": "vicino a",
+          "object": "e2",
+          "start_time": 27.0,
+          "end_time": 30.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg",
+            "dense_0123_t0030.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0010",
+      "start_time": 30.0,
+      "end_time": 33.75,
+      "input_frames": [
+        "dense_0120_t0030.000.jpg",
+        "dense_0122_t0030.500.jpg",
+        "dense_0124_t0031.000.jpg",
+        "dense_0126_t0031.500.jpg",
+        "dense_0129_t0032.250.jpg",
+        "dense_0131_t0032.750.jpg",
+        "dense_0133_t0033.250.jpg",
+        "dense_0135_t0033.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "ospite",
+          "attributes": [
+            "vestito rosso",
+            "capelli corti neri"
+          ],
+          "start_time": 30.0,
+          "end_time": 33.75,
+          "evidence_frames": [
+            "dense_0120_t0030.000.jpg",
+            "dense_0122_t0030.500.jpg",
+            "dense_0124_t0031.000.jpg",
+            "dense_0126_t0031.500.jpg",
+            "dense_0129_t0032.250.jpg",
+            "dense_0131_t0032.750.jpg",
+            "dense_0133_t0033.250.jpg",
+            "dense_0135_t0033.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "persona",
+          "role": "commesso",
+          "attributes": [
+            "vestito grigio",
+            "capelli corti"
+          ],
+          "start_time": 30.0,
+          "end_time": 33.75,
+          "evidence_frames": [
+            "dense_0120_t0030.000.jpg",
+            "dense_0122_t0030.500.jpg",
+            "dense_0124_t0031.000.jpg",
+            "dense_0126_t0031.500.jpg",
+            "dense_0129_t0032.250.jpg",
+            "dense_0131_t0032.750.jpg",
+            "dense_0133_t0033.250.jpg",
+            "dense_0135_t0033.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "persona",
+          "role": "ospite",
+          "attributes": [
+            "bandana rossa",
+            "capelli lunghi castani"
+          ],
+          "start_time": 30.0,
+          "end_time": 33.75,
+          "evidence_frames": [
+            "dense_0120_t0030.000.jpg",
+            "dense_0122_t0030.500.jpg",
+            "dense_0124_t0031.000.jpg",
+            "dense_0126_t0031.500.jpg",
+            "dense_0129_t0032.250.jpg",
+            "dense_0131_t0032.750.jpg",
+            "dense_0133_t0033.250.jpg",
+            "dense_0135_t0033.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "persona ospite indica qualcosa",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 30.0,
+          "end_time": 30.5,
+          "evidence_frames": [
+            "dense_0120_t0030.000.jpg",
+            "dense_0122_t0030.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "persona ospite cerca qualcosa sugli scaffali",
+          "actor": "e3",
+          "object": "scaffali",
+          "start_time": 30.5,
+          "end_time": 31.0,
+          "evidence_frames": [
+            "dense_0122_t0030.500.jpg",
+            "dense_0124_t0031.000.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "persona ospite prende una lattina",
+          "actor": "e3",
+          "object": "lattina",
+          "start_time": 31.0,
+          "end_time": 31.5,
+          "evidence_frames": [
+            "dense_0124_t0031.000.jpg",
+            "dense_0126_t0031.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "persona ospite parla con il commesso",
+          "actor": "e3",
+          "object": "e2",
+          "start_time": 31.5,
+          "end_time": 32.25,
+          "evidence_frames": [
+            "dense_0126_t0031.500.jpg",
+            "dense_0129_t0032.250.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "persona ospite prende un'altra lattina",
+          "actor": "e3",
+          "object": "lattina",
+          "start_time": 32.25,
+          "end_time": 32.75,
+          "evidence_frames": [
+            "dense_0129_t0032.250.jpg",
+            "dense_0131_t0032.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "persona ospite parla con il commesso",
+          "actor": "e3",
+          "object": "e2",
+          "start_time": 32.75,
+          "end_time": 33.25,
+          "evidence_frames": [
+            "dense_0131_t0032.750.jpg",
+            "dense_0133_t0033.250.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "description": "persona ospite prende un'altra lattina",
+          "actor": "e3",
+          "object": "lattina",
+          "start_time": 33.25,
+          "end_time": 33.75,
+          "evidence_frames": [
+            "dense_0133_t0033.250.jpg",
+            "dense_0135_t0033.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        }
+      ],
+      "events": [],
+      "spatial_relations": [],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0011",
+      "start_time": 33.0,
+      "end_time": 36.75,
+      "input_frames": [
+        "dense_0132_t0033.000.jpg",
+        "dense_0134_t0033.500.jpg",
+        "dense_0136_t0034.000.jpg",
+        "dense_0138_t0034.500.jpg",
+        "dense_0141_t0035.250.jpg",
+        "dense_0143_t0035.750.jpg",
+        "dense_0145_t0036.250.jpg",
+        "dense_0147_t0036.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "protagonista",
+          "attributes": [
+            "capelli corti",
+            "indossa una tuta rossa"
+          ],
+          "start_time": 33.0,
+          "end_time": 36.75,
+          "evidence_frames": [
+            "dense_0132_t0033.000.jpg",
+            "dense_0134_t0033.500.jpg",
+            "dense_0136_t0034.000.jpg",
+            "dense_0138_t0034.500.jpg",
+            "dense_0141_t0035.250.jpg",
+            "dense_0143_t0035.750.jpg",
+            "dense_0145_t0036.250.jpg",
+            "dense_0147_t0036.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "persona",
+          "role": "antagonista",
+          "attributes": [
+            "capelli lunghi",
+            "indossa una bandana rossa",
+            "indossa una canotta nera"
+          ],
+          "start_time": 33.0,
+          "end_time": 36.75,
+          "evidence_frames": [
+            "dense_0132_t0033.000.jpg",
+            "dense_0134_t0033.500.jpg",
+            "dense_0136_t0034.000.jpg",
+            "dense_0138_t0034.500.jpg",
+            "dense_0141_t0035.250.jpg",
+            "dense_0143_t0035.750.jpg",
+            "dense_0145_t0036.250.jpg",
+            "dense_0147_t0036.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "persona",
+          "role": "spettatore",
+          "attributes": [
+            "capelli corti",
+            "indossa una camicia azzurra"
+          ],
+          "start_time": 33.0,
+          "end_time": 36.75,
+          "evidence_frames": [
+            "dense_0132_t0033.000.jpg",
+            "dense_0134_t0033.500.jpg",
+            "dense_0136_t0034.000.jpg",
+            "dense_0138_t0034.500.jpg",
+            "dense_0141_t0035.250.jpg",
+            "dense_0143_t0035.750.jpg",
+            "dense_0145_t0036.250.jpg",
+            "dense_0147_t0036.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "aggressione fisica",
+          "actor": "e2",
+          "object": "e1",
+          "start_time": 33.0,
+          "end_time": 36.75,
+          "evidence_frames": [
+            "dense_0132_t0033.000.jpg",
+            "dense_0134_t0033.500.jpg",
+            "dense_0136_t0034.000.jpg",
+            "dense_0138_t0034.500.jpg",
+            "dense_0141_t0035.250.jpg",
+            "dense_0143_t0035.750.jpg",
+            "dense_0145_t0036.250.jpg",
+            "dense_0147_t0036.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "events": [
+        {
+          "description": "conflitto",
+          "participants": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "start_time": 33.0,
+          "end_time": 36.75,
+          "evidence_frames": [
+            "dense_0132_t0033.000.jpg",
+            "dense_0134_t0033.500.jpg",
+            "dense_0136_t0034.000.jpg",
+            "dense_0138_t0034.500.jpg",
+            "dense_0141_t0035.250.jpg",
+            "dense_0143_t0035.750.jpg",
+            "dense_0145_t0036.250.jpg",
+            "dense_0147_t0036.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "vicino a",
+          "object": "e2",
+          "start_time": 33.0,
+          "end_time": 36.75,
+          "evidence_frames": [
+            "dense_0132_t0033.000.jpg",
+            "dense_0134_t0033.500.jpg",
+            "dense_0136_t0034.000.jpg",
+            "dense_0138_t0034.500.jpg",
+            "dense_0141_t0035.250.jpg",
+            "dense_0143_t0035.750.jpg",
+            "dense_0145_t0036.250.jpg",
+            "dense_0147_t0036.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "state_changes": [
+        {
+          "entity": "e1",
+          "before": "indossa una tuta rossa",
+          "after": "viene aggredita",
+          "start_time": 33.0,
+          "end_time": 36.75,
+          "evidence_frames": [
+            "dense_0132_t0033.000.jpg",
+            "dense_0134_t0033.500.jpg",
+            "dense_0136_t0034.000.jpg",
+            "dense_0138_t0034.500.jpg",
+            "dense_0141_t0035.250.jpg",
+            "dense_0143_t0035.750.jpg",
+            "dense_0145_t0036.250.jpg",
+            "dense_0147_t0036.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0012",
+      "start_time": 36.0,
+      "end_time": 39.75,
+      "input_frames": [
+        "dense_0144_t0036.000.jpg",
+        "dense_0146_t0036.500.jpg",
+        "dense_0148_t0037.000.jpg",
+        "dense_0150_t0037.500.jpg",
+        "dense_0153_t0038.250.jpg",
+        "dense_0155_t0038.750.jpg",
+        "dense_0157_t0039.250.jpg",
+        "dense_0159_t0039.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "attaccante",
+          "attributes": [
+            "vestito rosso",
+            "capelli scuri",
+            "bandana rossa"
+          ],
+          "start_time": 36.0,
+          "end_time": 39.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "persona",
+          "role": "difensore",
+          "attributes": [
+            "giacca grigia",
+            "capelli grigi",
+            "sorriso"
+          ],
+          "start_time": 36.0,
+          "end_time": 39.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "persona",
+          "role": "osservatore",
+          "attributes": [
+            "bandana rossa",
+            "capelli grigi",
+            "sorriso"
+          ],
+          "start_time": 36.0,
+          "end_time": 39.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "attacco",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 36.0,
+          "end_time": 39.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "events": [
+        {
+          "description": "conflitto fisico",
+          "participants": [
+            "e1",
+            "e2"
+          ],
+          "start_time": 36.0,
+          "end_time": 39.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "davanti a",
+          "object": "e2",
+          "start_time": 36.0,
+          "end_time": 39.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0013",
+      "start_time": 39.0,
+      "end_time": 42.75,
+      "input_frames": [
+        "dense_0156_t0039.000.jpg",
+        "dense_0158_t0039.500.jpg",
+        "dense_0160_t0040.000.jpg",
+        "dense_0162_t0040.500.jpg",
+        "dense_0165_t0041.250.jpg",
+        "dense_0167_t0041.750.jpg",
+        "dense_0169_t0042.250.jpg",
+        "dense_0171_t0042.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "uomo",
+          "attributes": [
+            "capelli corti",
+            "giacca grigia"
+          ],
+          "start_time": 39.0,
+          "end_time": 42.75,
+          "evidence_frames": [
+            "dense_0156_t0039.000.jpg",
+            "dense_0158_t0039.500.jpg",
+            "dense_0160_t0040.000.jpg",
+            "dense_0162_t0040.500.jpg",
+            "dense_0165_t0041.250.jpg",
+            "dense_0167_t0041.750.jpg",
+            "dense_0169_t0042.250.jpg",
+            "dense_0171_t0042.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "persona",
+          "role": "donna",
+          "attributes": [
+            "capelli corti",
+            "vestito rosso",
+            "cerchietto rosa"
+          ],
+          "start_time": 39.0,
+          "end_time": 42.75,
+          "evidence_frames": [
+            "dense_0156_t0039.000.jpg",
+            "dense_0158_t0039.500.jpg",
+            "dense_0160_t0040.000.jpg",
+            "dense_0162_t0040.500.jpg",
+            "dense_0165_t0041.250.jpg",
+            "dense_0167_t0041.750.jpg",
+            "dense_0169_t0042.250.jpg",
+            "dense_0171_t0042.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "uomo",
+          "role": "cassiere",
+          "attributes": [
+            "capelli radi",
+            "bandana rossa",
+            "canotta nera"
+          ],
+          "start_time": 39.0,
+          "end_time": 42.75,
+          "evidence_frames": [
+            "dense_0156_t0039.000.jpg",
+            "dense_0158_t0039.500.jpg",
+            "dense_0160_t0040.000.jpg",
+            "dense_0162_t0040.500.jpg",
+            "dense_0165_t0041.250.jpg",
+            "dense_0167_t0041.750.jpg",
+            "dense_0169_t0042.250.jpg",
+            "dense_0171_t0042.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "uomo abbraccia donna",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 39.0,
+          "end_time": 40.0,
+          "evidence_frames": [
+            "dense_0156_t0039.000.jpg",
+            "dense_0158_t0039.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "uomo abbraccia donna",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 40.0,
+          "end_time": 41.0,
+          "evidence_frames": [
+            "dense_0160_t0040.000.jpg",
+            "dense_0162_t0040.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "uomo abbraccia donna",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 41.0,
+          "end_time": 42.0,
+          "evidence_frames": [
+            "dense_0165_t0041.250.jpg",
+            "dense_0167_t0041.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "uomo abbraccia donna",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 42.0,
+          "end_time": 42.75,
+          "evidence_frames": [
+            "dense_0169_t0042.250.jpg",
+            "dense_0171_t0042.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "events": [
+        {
+          "description": "uomo e donna interagiscono",
+          "participants": [
+            "e1",
+            "e2"
+          ],
+          "start_time": 39.0,
+          "end_time": 42.75,
+          "evidence_frames": [
+            "dense_0156_t0039.000.jpg",
+            "dense_0158_t0039.500.jpg",
+            "dense_0160_t0040.000.jpg",
+            "dense_0162_t0040.500.jpg",
+            "dense_0165_t0041.250.jpg",
+            "dense_0167_t0041.750.jpg",
+            "dense_0169_t0042.250.jpg",
+            "dense_0171_t0042.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "davanti a",
+          "object": "e2",
+          "start_time": 39.0,
+          "end_time": 42.75,
+          "evidence_frames": [
+            "dense_0156_t0039.000.jpg",
+            "dense_0158_t0039.500.jpg",
+            "dense_0160_t0040.000.jpg",
+            "dense_0162_t0040.500.jpg",
+            "dense_0165_t0041.250.jpg",
+            "dense_0167_t0041.750.jpg",
+            "dense_0169_t0042.250.jpg",
+            "dense_0171_t0042.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0014",
+      "start_time": 42.0,
+      "end_time": 45.75,
+      "input_frames": [
+        "dense_0168_t0042.000.jpg",
+        "dense_0170_t0042.500.jpg",
+        "dense_0172_t0043.000.jpg",
+        "dense_0174_t0043.500.jpg",
+        "dense_0177_t0044.250.jpg",
+        "dense_0179_t0044.750.jpg",
+        "dense_0181_t0045.250.jpg",
+        "dense_0183_t0045.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "aggressore",
+          "attributes": [
+            "capelli castani",
+            "indossa una giacca grigia"
+          ],
+          "start_time": 42.0,
+          "end_time": 45.75,
+          "evidence_frames": [
+            "dense_0168_t0042.000.jpg",
+            "dense_0170_t0042.500.jpg",
+            "dense_0172_t0043.000.jpg",
+            "dense_0174_t0043.500.jpg",
+            "dense_0177_t0044.250.jpg",
+            "dense_0179_t0044.750.jpg",
+            "dense_0181_t0045.250.jpg",
+            "dense_0183_t0045.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.95
+        },
+        {
+          "entity_id": "e2",
+          "label": "persona",
+          "role": "vittima",
+          "attributes": [
+            "capelli corti castani",
+            "indossa una tuta rossa"
+          ],
+          "start_time": 42.0,
+          "end_time": 45.75,
+          "evidence_frames": [
+            "dense_0168_t0042.000.jpg",
+            "dense_0170_t0042.500.jpg",
+            "dense_0172_t0043.000.jpg",
+            "dense_0174_t0043.500.jpg",
+            "dense_0177_t0044.250.jpg",
+            "dense_0179_t0044.750.jpg",
+            "dense_0181_t0045.250.jpg",
+            "dense_0183_t0045.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.95
+        },
+        {
+          "entity_id": "e3",
+          "label": "persona",
+          "role": "osservatore",
+          "attributes": [
+            "capelli grigi",
+            "indossa una canotta nera e una bandana rossa"
+          ],
+          "start_time": 42.0,
+          "end_time": 45.75,
+          "evidence_frames": [
+            "dense_0168_t0042.000.jpg",
+            "dense_0170_t0042.500.jpg",
+            "dense_0172_t0043.000.jpg",
+            "dense_0174_t0043.500.jpg",
+            "dense_0177_t0044.250.jpg",
+            "dense_0179_t0044.750.jpg",
+            "dense_0181_t0045.250.jpg",
+            "dense_0183_t0045.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.9
+        }
+      ],
+      "actions": [
+        {
+          "description": "aggressione fisica",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 42.0,
+          "end_time": 45.75,
+          "evidence_frames": [
+            "dense_0168_t0042.000.jpg",
+            "dense_0170_t0042.500.jpg",
+            "dense_0172_t0043.000.jpg",
+            "dense_0174_t0043.500.jpg",
+            "dense_0177_t0044.250.jpg",
+            "dense_0179_t0044.750.jpg",
+            "dense_0181_t0045.250.jpg",
+            "dense_0183_t0045.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.95
+        }
+      ],
+      "events": [
+        {
+          "description": "aggressione",
+          "participants": [
+            "e1",
+            "e2"
+          ],
+          "start_time": 42.0,
+          "end_time": 45.75,
+          "evidence_frames": [
+            "dense_0168_t0042.000.jpg",
+            "dense_0170_t0042.500.jpg",
+            "dense_0172_t0043.000.jpg",
+            "dense_0174_t0043.500.jpg",
+            "dense_0177_t0044.250.jpg",
+            "dense_0179_t0044.750.jpg",
+            "dense_0181_t0045.250.jpg",
+            "dense_0183_t0045.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.95
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "davanti a",
+          "object": "e2",
+          "start_time": 42.0,
+          "end_time": 45.75,
+          "evidence_frames": [
+            "dense_0168_t0042.000.jpg",
+            "dense_0170_t0042.500.jpg",
+            "dense_0172_t0043.000.jpg",
+            "dense_0174_t0043.500.jpg",
+            "dense_0177_t0044.250.jpg",
+            "dense_0179_t0044.750.jpg",
+            "dense_0181_t0045.250.jpg",
+            "dense_0183_t0045.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.95
+        }
+      ],
+      "state_changes": [
+        {
+          "entity": "e2",
+          "before": "indossa una tuta rossa",
+          "after": "indossa una tuta rossa",
+          "start_time": 42.0,
+          "end_time": 45.75,
+          "evidence_frames": [
+            "dense_0168_t0042.000.jpg",
+            "dense_0170_t0042.500.jpg",
+            "dense_0172_t0043.000.jpg",
+            "dense_0174_t0043.500.jpg",
+            "dense_0177_t0044.250.jpg",
+            "dense_0179_t0044.750.jpg",
+            "dense_0181_t0045.250.jpg",
+            "dense_0183_t0045.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.95
+        }
+      ],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0015",
+      "start_time": 45.0,
+      "end_time": 46.75,
+      "input_frames": [
+        "dense_0180_t0045.000.jpg",
+        "dense_0181_t0045.250.jpg",
+        "dense_0182_t0045.500.jpg",
+        "dense_0183_t0045.750.jpg",
+        "dense_0184_t0046.000.jpg",
+        "dense_0185_t0046.250.jpg",
+        "dense_0186_t0046.500.jpg",
+        "dense_0187_t0046.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "aggressore",
+          "attributes": [
+            "uomo",
+            "capelli corti",
+            "indossa una maglietta nera",
+            "indossa pantaloni grigi"
+          ],
+          "start_time": 45.0,
+          "end_time": 46.75,
+          "evidence_frames": [
+            "dense_0180_t0045.000.jpg",
+            "dense_0181_t0045.250.jpg",
+            "dense_0182_t0045.500.jpg",
+            "dense_0183_t0045.750.jpg",
+            "dense_0184_t0046.000.jpg",
+            "dense_0185_t0046.250.jpg",
+            "dense_0186_t0046.500.jpg",
+            "dense_0187_t0046.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "persona",
+          "role": "vittima",
+          "attributes": [
+            "uomo",
+            "capelli grigi",
+            "indossa una camicia azzurra",
+            "indossa pantaloni bianchi"
+          ],
+          "start_time": 45.0,
+          "end_time": 46.75,
+          "evidence_frames": [
+            "dense_0180_t0045.000.jpg",
+            "dense_0181_t0045.250.jpg",
+            "dense_0182_t0045.500.jpg",
+            "dense_0183_t0045.750.jpg",
+            "dense_0184_t0046.000.jpg",
+            "dense_0185_t0046.250.jpg",
+            "dense_0186_t0046.500.jpg",
+            "dense_0187_t0046.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "persona",
+          "role": "spettatore",
+          "attributes": [
+            "uomo",
+            "capelli grigi",
+            "indossa una bandana rossa"
+          ],
+          "start_time": 45.0,
+          "end_time": 46.75,
+          "evidence_frames": [
+            "dense_0180_t0045.000.jpg",
+            "dense_0181_t0045.250.jpg",
+            "dense_0182_t0045.500.jpg",
+            "dense_0183_t0045.750.jpg",
+            "dense_0184_t0046.000.jpg",
+            "dense_0185_t0046.250.jpg",
+            "dense_0186_t0046.500.jpg",
+            "dense_0187_t0046.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "attacco",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 45.0,
+          "end_time": 46.75,
+          "evidence_frames": [
+            "dense_0180_t0045.000.jpg",
+            "dense_0181_t0045.250.jpg",
+            "dense_0182_t0045.500.jpg",
+            "dense_0183_t0045.750.jpg",
+            "dense_0184_t0046.000.jpg",
+            "dense_0185_t0046.250.jpg",
+            "dense_0186_t0046.500.jpg",
+            "dense_0187_t0046.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "events": [
+        {
+          "description": "aggressione",
+          "participants": [
+            "e1",
+            "e2"
+          ],
+          "start_time": 45.0,
+          "end_time": 46.75,
+          "evidence_frames": [
+            "dense_0180_t0045.000.jpg",
+            "dense_0181_t0045.250.jpg",
+            "dense_0182_t0045.500.jpg",
+            "dense_0183_t0045.750.jpg",
+            "dense_0184_t0046.000.jpg",
+            "dense_0185_t0046.250.jpg",
+            "dense_0186_t0046.500.jpg",
+            "dense_0187_t0046.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "davanti a",
+          "object": "e2",
+          "start_time": 45.0,
+          "end_time": 46.75,
+          "evidence_frames": [
+            "dense_0180_t0045.000.jpg",
+            "dense_0181_t0045.250.jpg",
+            "dense_0182_t0045.500.jpg",
+            "dense_0183_t0045.750.jpg",
+            "dense_0184_t0046.000.jpg",
+            "dense_0185_t0046.250.jpg",
+            "dense_0186_t0046.500.jpg",
+            "dense_0187_t0046.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    }
+  ],
+  "errors": []
+}

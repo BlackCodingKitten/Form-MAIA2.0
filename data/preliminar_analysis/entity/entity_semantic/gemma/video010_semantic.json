@@ -1,0 +1,1069 @@
+{
+  "id_video": "video010",
+  "model": "google/gemma-3n-E4B-it",
+  "configuration": {
+    "window_seconds": 4.0,
+    "stride_seconds": 3.0,
+    "max_frames_per_window": 8,
+    "input_type": "ordered_dense_frames"
+  },
+  "numero_segmenti": 8,
+  "numero_errori": 2,
+  "segments": [
+    {
+      "segment_id": "segment_0000",
+      "start_time": 0.0,
+      "end_time": 3.75,
+      "input_frames": [
+        "dense_0000_t0000.000.jpg",
+        "dense_0002_t0000.500.jpg",
+        "dense_0004_t0001.000.jpg",
+        "dense_0006_t0001.500.jpg",
+        "dense_0009_t0002.250.jpg",
+        "dense_0011_t0002.750.jpg",
+        "dense_0013_t0003.250.jpg",
+        "dense_0015_t0003.750.jpg"
+      ],
+      "entities": [],
+      "actions": [],
+      "events": [
+        {
+          "description": "pioggia",
+          "participants": [],
+          "start_time": 0.0,
+          "end_time": 3.75,
+          "evidence_frames": [
+            "dense_0000_t0000.000.jpg",
+            "dense_0002_t0000.500.jpg",
+            "dense_0004_t0001.000.jpg",
+            "dense_0006_t0001.500.jpg",
+            "dense_0009_t0002.250.jpg",
+            "dense_0011_t0002.750.jpg",
+            "dense_0013_t0003.250.jpg",
+            "dense_0015_t0003.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0001",
+      "start_time": 3.0,
+      "end_time": 6.75,
+      "input_frames": [
+        "dense_0012_t0003.000.jpg",
+        "dense_0014_t0003.500.jpg",
+        "dense_0016_t0004.000.jpg",
+        "dense_0018_t0004.500.jpg",
+        "dense_0021_t0005.250.jpg",
+        "dense_0023_t0005.750.jpg",
+        "dense_0025_t0006.250.jpg",
+        "dense_0027_t0006.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "albero",
+          "role": "null",
+          "attributes": [
+            "foglie verdi"
+          ],
+          "start_time": 3.0,
+          "end_time": 6.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "foglia",
+          "role": "null",
+          "attributes": [
+            "verde"
+          ],
+          "start_time": 3.0,
+          "end_time": 6.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "edificio",
+          "role": "null",
+          "attributes": [
+            "bianco",
+            "finestre",
+            "porte"
+          ],
+          "start_time": 6.75,
+          "end_time": 6.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e4",
+          "label": "corridoio",
+          "role": "null",
+          "attributes": [
+            "lungo",
+            "bianco",
+            "porte"
+          ],
+          "start_time": 6.75,
+          "end_time": 6.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e5",
+          "label": "scatola",
+          "role": "null",
+          "attributes": [
+            "nera"
+          ],
+          "start_time": 6.75,
+          "end_time": 6.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [],
+      "events": [],
+      "spatial_relations": [],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0002",
+      "start_time": 6.0,
+      "end_time": 9.75,
+      "input_frames": [
+        "dense_0024_t0006.000.jpg",
+        "dense_0026_t0006.500.jpg",
+        "dense_0028_t0007.000.jpg",
+        "dense_0030_t0007.500.jpg",
+        "dense_0033_t0008.250.jpg",
+        "dense_0035_t0008.750.jpg",
+        "dense_0037_t0009.250.jpg",
+        "dense_0039_t0009.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "corridoio",
+          "role": "null",
+          "attributes": [
+            "lungo",
+            "con porte",
+            "con finestre",
+            "con soffitto danneggiato"
+          ],
+          "start_time": 6.0,
+          "end_time": 9.75,
+          "evidence_frames": [
+            "dense_0024_t0006.000.jpg",
+            "dense_0026_t0006.500.jpg",
+            "dense_0028_t0007.000.jpg",
+            "dense_0030_t0007.500.jpg",
+            "dense_0033_t0008.250.jpg",
+            "dense_0035_t0008.750.jpg",
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "scatole",
+          "role": "null",
+          "attributes": [
+            "nere",
+            "di diverse dimensioni",
+            "disposte lungo il corridoio"
+          ],
+          "start_time": 6.0,
+          "end_time": 9.75,
+          "evidence_frames": [
+            "dense_0024_t0006.000.jpg",
+            "dense_0026_t0006.500.jpg",
+            "dense_0028_t0007.000.jpg",
+            "dense_0030_t0007.500.jpg",
+            "dense_0033_t0008.250.jpg",
+            "dense_0035_t0008.750.jpg",
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "porta",
+          "role": "null",
+          "attributes": [
+            "bianca",
+            "con maniglia",
+            "aperta o chiusa"
+          ],
+          "start_time": 6.0,
+          "end_time": 9.75,
+          "evidence_frames": [
+            "dense_0024_t0006.000.jpg",
+            "dense_0026_t0006.500.jpg",
+            "dense_0028_t0007.000.jpg",
+            "dense_0030_t0007.500.jpg",
+            "dense_0033_t0008.250.jpg",
+            "dense_0035_t0008.750.jpg",
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e4",
+          "label": "soffitto",
+          "role": "null",
+          "attributes": [
+            "danneggiato",
+            "con buchi",
+            "senza pannelli"
+          ],
+          "start_time": 6.0,
+          "end_time": 9.75,
+          "evidence_frames": [
+            "dense_0024_t0006.000.jpg",
+            "dense_0026_t0006.500.jpg",
+            "dense_0028_t0007.000.jpg",
+            "dense_0030_t0007.500.jpg",
+            "dense_0033_t0008.250.jpg",
+            "dense_0035_t0008.750.jpg",
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e5",
+          "label": "finestra",
+          "role": "null",
+          "attributes": [
+            "presente in alcuni corridoi"
+          ],
+          "start_time": 6.0,
+          "end_time": 9.75,
+          "evidence_frames": [
+            "dense_0024_t0006.000.jpg",
+            "dense_0026_t0006.500.jpg",
+            "dense_0028_t0007.000.jpg",
+            "dense_0030_t0007.500.jpg",
+            "dense_0033_t0008.250.jpg",
+            "dense_0035_t0008.750.jpg",
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        },
+        {
+          "entity_id": "e6",
+          "label": "pompiere",
+          "role": "null",
+          "attributes": [
+            "rosso",
+            "montato al muro"
+          ],
+          "start_time": 6.0,
+          "end_time": 9.75,
+          "evidence_frames": [
+            "dense_0024_t0006.000.jpg",
+            "dense_0026_t0006.500.jpg",
+            "dense_0028_t0007.000.jpg",
+            "dense_0030_t0007.500.jpg",
+            "dense_0033_t0008.250.jpg",
+            "dense_0035_t0008.750.jpg",
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.8
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "description": "pioggia all'interno del reparto infettivi",
+          "participants": [
+            "e1",
+            "e2",
+            "e3",
+            "e4",
+            "e5",
+            "e6"
+          ],
+          "start_time": 6.0,
+          "end_time": 9.75,
+          "evidence_frames": [
+            "dense_0024_t0006.000.jpg",
+            "dense_0026_t0006.500.jpg",
+            "dense_0028_t0007.000.jpg",
+            "dense_0030_t0007.500.jpg",
+            "dense_0033_t0008.250.jpg",
+            "dense_0035_t0008.750.jpg",
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0003",
+      "start_time": 9.0,
+      "end_time": 12.75,
+      "input_frames": [
+        "dense_0036_t0009.000.jpg",
+        "dense_0038_t0009.500.jpg",
+        "dense_0040_t0010.000.jpg",
+        "dense_0042_t0010.500.jpg",
+        "dense_0045_t0011.250.jpg",
+        "dense_0047_t0011.750.jpg",
+        "dense_0049_t0012.250.jpg",
+        "dense_0051_t0012.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "tetto",
+          "role": "null",
+          "attributes": [
+            "danneggiato"
+          ],
+          "start_time": 9.0,
+          "end_time": 12.75,
+          "evidence_frames": [
+            "dense_0036_t0009.000.jpg",
+            "dense_0038_t0009.500.jpg",
+            "dense_0040_t0010.000.jpg",
+            "dense_0042_t0010.500.jpg",
+            "dense_0045_t0011.250.jpg",
+            "dense_0047_t0011.750.jpg",
+            "dense_0049_t0012.250.jpg",
+            "dense_0051_t0012.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "corridoio",
+          "role": "null",
+          "attributes": [
+            "lungo",
+            "con porte"
+          ],
+          "start_time": 9.0,
+          "end_time": 12.75,
+          "evidence_frames": [
+            "dense_0036_t0009.000.jpg",
+            "dense_0038_t0009.500.jpg",
+            "dense_0040_t0010.000.jpg",
+            "dense_0042_t0010.500.jpg",
+            "dense_0045_t0011.250.jpg",
+            "dense_0047_t0011.750.jpg",
+            "dense_0049_t0012.250.jpg",
+            "dense_0051_t0012.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "porta",
+          "role": "null",
+          "attributes": [
+            "chiusa"
+          ],
+          "start_time": 9.0,
+          "end_time": 12.75,
+          "evidence_frames": [
+            "dense_0036_t0009.000.jpg",
+            "dense_0038_t0009.500.jpg",
+            "dense_0040_t0010.000.jpg",
+            "dense_0042_t0010.500.jpg",
+            "dense_0045_t0011.250.jpg",
+            "dense_0047_t0011.750.jpg",
+            "dense_0049_t0012.250.jpg",
+            "dense_0051_t0012.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e4",
+          "label": "scatola",
+          "role": "null",
+          "attributes": [
+            "nera"
+          ],
+          "start_time": 9.0,
+          "end_time": 12.75,
+          "evidence_frames": [
+            "dense_0036_t0009.000.jpg",
+            "dense_0038_t0009.500.jpg",
+            "dense_0040_t0010.000.jpg",
+            "dense_0042_t0010.500.jpg",
+            "dense_0045_t0011.250.jpg",
+            "dense_0047_t0011.750.jpg",
+            "dense_0049_t0012.250.jpg",
+            "dense_0051_t0012.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e5",
+          "label": "tubo",
+          "role": "null",
+          "attributes": [
+            "bianco"
+          ],
+          "start_time": 9.0,
+          "end_time": 12.75,
+          "evidence_frames": [
+            "dense_0036_t0009.000.jpg",
+            "dense_0038_t0009.500.jpg",
+            "dense_0040_t0010.000.jpg",
+            "dense_0042_t0010.500.jpg",
+            "dense_0045_t0011.250.jpg",
+            "dense_0047_t0011.750.jpg",
+            "dense_0049_t0012.250.jpg",
+            "dense_0051_t0012.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e6",
+          "label": "cartone",
+          "role": "null",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 9.0,
+          "end_time": 12.75,
+          "evidence_frames": [
+            "dense_0036_t0009.000.jpg",
+            "dense_0038_t0009.500.jpg",
+            "dense_0040_t0010.000.jpg",
+            "dense_0042_t0010.500.jpg",
+            "dense_0045_t0011.250.jpg",
+            "dense_0047_t0011.750.jpg",
+            "dense_0049_t0012.250.jpg",
+            "dense_0051_t0012.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e7",
+          "label": "pompa",
+          "role": "null",
+          "attributes": [
+            "rossa"
+          ],
+          "start_time": 9.0,
+          "end_time": 12.75,
+          "evidence_frames": [
+            "dense_0036_t0009.000.jpg",
+            "dense_0038_t0009.500.jpg",
+            "dense_0040_t0010.000.jpg",
+            "dense_0042_t0010.500.jpg",
+            "dense_0045_t0011.250.jpg",
+            "dense_0047_t0011.750.jpg",
+            "dense_0049_t0012.250.jpg",
+            "dense_0051_t0012.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "description": "danneggiamento del tetto",
+          "participants": [
+            "e1"
+          ],
+          "start_time": 9.0,
+          "end_time": 12.75,
+          "evidence_frames": [
+            "dense_0036_t0009.000.jpg",
+            "dense_0038_t0009.500.jpg",
+            "dense_0040_t0010.000.jpg",
+            "dense_0042_t0010.500.jpg",
+            "dense_0045_t0011.250.jpg",
+            "dense_0047_t0011.750.jpg",
+            "dense_0049_t0012.250.jpg",
+            "dense_0051_t0012.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0004",
+      "start_time": 12.0,
+      "end_time": 15.75,
+      "input_frames": [
+        "dense_0048_t0012.000.jpg",
+        "dense_0050_t0012.500.jpg",
+        "dense_0052_t0013.000.jpg",
+        "dense_0054_t0013.500.jpg",
+        "dense_0057_t0014.250.jpg",
+        "dense_0059_t0014.750.jpg",
+        "dense_0061_t0015.250.jpg",
+        "dense_0063_t0015.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "tetto",
+          "attributes": [],
+          "start_time": 12.0,
+          "end_time": 15.75,
+          "evidence_frames": [
+            "dense_0048_t0012.000.jpg",
+            "dense_0050_t0012.500.jpg",
+            "dense_0052_t0013.000.jpg",
+            "dense_0054_t0013.500.jpg",
+            "dense_0057_t0014.250.jpg",
+            "dense_0059_t0014.750.jpg",
+            "dense_0061_t0015.250.jpg",
+            "dense_0063_t0015.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "pioggia",
+          "attributes": [],
+          "start_time": 12.0,
+          "end_time": 15.75,
+          "evidence_frames": [
+            "dense_0048_t0012.000.jpg",
+            "dense_0050_t0012.500.jpg",
+            "dense_0052_t0013.000.jpg",
+            "dense_0054_t0013.500.jpg",
+            "dense_0057_t0014.250.jpg",
+            "dense_0059_t0014.750.jpg",
+            "dense_0061_t0015.250.jpg",
+            "dense_0063_t0015.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "corridoio",
+          "attributes": [],
+          "start_time": 12.0,
+          "end_time": 15.75,
+          "evidence_frames": [
+            "dense_0048_t0012.000.jpg",
+            "dense_0050_t0012.500.jpg",
+            "dense_0052_t0013.000.jpg",
+            "dense_0054_t0013.500.jpg",
+            "dense_0057_t0014.250.jpg",
+            "dense_0059_t0014.750.jpg",
+            "dense_0061_t0015.250.jpg",
+            "dense_0063_t0015.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "description": "pioggia che cade attraverso il tetto",
+          "participants": [
+            "e2",
+            "e1"
+          ],
+          "start_time": 12.0,
+          "end_time": 15.75,
+          "evidence_frames": [
+            "dense_0048_t0012.000.jpg",
+            "dense_0050_t0012.500.jpg",
+            "dense_0052_t0013.000.jpg",
+            "dense_0054_t0013.500.jpg",
+            "dense_0057_t0014.250.jpg",
+            "dense_0059_t0014.750.jpg",
+            "dense_0061_t0015.250.jpg",
+            "dense_0063_t0015.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0005",
+      "start_time": 15.0,
+      "end_time": 18.75,
+      "input_frames": [
+        "dense_0060_t0015.000.jpg",
+        "dense_0062_t0015.500.jpg",
+        "dense_0064_t0016.000.jpg",
+        "dense_0066_t0016.500.jpg",
+        "dense_0069_t0017.250.jpg",
+        "dense_0071_t0017.750.jpg",
+        "dense_0073_t0018.250.jpg",
+        "dense_0075_t0018.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "acqua",
+          "role": "pioggia",
+          "attributes": [],
+          "start_time": 15.0,
+          "end_time": 18.75,
+          "evidence_frames": [
+            "dense_0060_t0015.000.jpg",
+            "dense_0062_t0015.500.jpg",
+            "dense_0064_t0016.000.jpg",
+            "dense_0066_t0016.500.jpg",
+            "dense_0069_t0017.250.jpg",
+            "dense_0071_t0017.750.jpg",
+            "dense_0073_t0018.250.jpg",
+            "dense_0075_t0018.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "pavimento",
+          "role": "superficie",
+          "attributes": [
+            "grigio",
+            "liscio"
+          ],
+          "start_time": 15.0,
+          "end_time": 18.75,
+          "evidence_frames": [
+            "dense_0060_t0015.000.jpg",
+            "dense_0062_t0015.500.jpg",
+            "dense_0064_t0016.000.jpg",
+            "dense_0066_t0016.500.jpg",
+            "dense_0069_t0017.250.jpg",
+            "dense_0071_t0017.750.jpg",
+            "dense_0073_t0018.250.jpg",
+            "dense_0075_t0018.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "scatola",
+          "role": "contenitore",
+          "attributes": [
+            "gialla"
+          ],
+          "start_time": 15.0,
+          "end_time": 18.75,
+          "evidence_frames": [
+            "dense_0060_t0015.000.jpg",
+            "dense_0062_t0015.500.jpg",
+            "dense_0064_t0016.000.jpg",
+            "dense_0066_t0016.500.jpg",
+            "dense_0069_t0017.250.jpg",
+            "dense_0071_t0017.750.jpg",
+            "dense_0073_t0018.250.jpg",
+            "dense_0075_t0018.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e4",
+          "label": "cartone",
+          "role": "materiale",
+          "attributes": [
+            "bianco"
+          ],
+          "start_time": 15.0,
+          "end_time": 18.75,
+          "evidence_frames": [
+            "dense_0060_t0015.000.jpg",
+            "dense_0062_t0015.500.jpg",
+            "dense_0064_t0016.000.jpg",
+            "dense_0066_t0016.500.jpg",
+            "dense_0069_t0017.250.jpg",
+            "dense_0071_t0017.750.jpg",
+            "dense_0073_t0018.250.jpg",
+            "dense_0075_t0018.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e5",
+          "label": "porta",
+          "role": "elemento architettonico",
+          "attributes": [
+            "bianca"
+          ],
+          "start_time": 15.0,
+          "end_time": 18.75,
+          "evidence_frames": [
+            "dense_0060_t0015.000.jpg",
+            "dense_0062_t0015.500.jpg",
+            "dense_0064_t0016.000.jpg",
+            "dense_0066_t0016.500.jpg",
+            "dense_0069_t0017.250.jpg",
+            "dense_0071_t0017.750.jpg",
+            "dense_0073_t0018.250.jpg",
+            "dense_0075_t0018.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e6",
+          "label": "cartello",
+          "role": "segnaletica",
+          "attributes": [
+            "giallo",
+            "triangolare"
+          ],
+          "start_time": 15.0,
+          "end_time": 18.75,
+          "evidence_frames": [
+            "dense_0060_t0015.000.jpg",
+            "dense_0062_t0015.500.jpg",
+            "dense_0064_t0016.000.jpg",
+            "dense_0066_t0016.500.jpg",
+            "dense_0069_t0017.250.jpg",
+            "dense_0071_t0017.750.jpg",
+            "dense_0073_t0018.250.jpg",
+            "dense_0075_t0018.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "description": "pioggia intensa",
+          "participants": [
+            "e1"
+          ],
+          "start_time": 15.0,
+          "end_time": 18.75,
+          "evidence_frames": [
+            "dense_0060_t0015.000.jpg",
+            "dense_0062_t0015.500.jpg",
+            "dense_0064_t0016.000.jpg",
+            "dense_0066_t0016.500.jpg",
+            "dense_0069_t0017.250.jpg",
+            "dense_0071_t0017.750.jpg",
+            "dense_0073_t0018.250.jpg",
+            "dense_0075_t0018.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0008",
+      "start_time": 24.0,
+      "end_time": 27.75,
+      "input_frames": [
+        "dense_0096_t0024.000.jpg",
+        "dense_0098_t0024.500.jpg",
+        "dense_0100_t0025.000.jpg",
+        "dense_0102_t0025.500.jpg",
+        "dense_0105_t0026.250.jpg",
+        "dense_0107_t0026.750.jpg",
+        "dense_0109_t0027.250.jpg",
+        "dense_0111_t0027.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "scatola",
+          "role": "null",
+          "attributes": [
+            "gialla"
+          ],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "cartello",
+          "role": "null",
+          "attributes": [
+            "giallo",
+            "triangolo nero"
+          ],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "pavimento",
+          "role": "null",
+          "attributes": [
+            "grigio"
+          ],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e4",
+          "label": "porta",
+          "role": "null",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "description": "crolla il soffitto",
+          "participants": [
+            "e3",
+            "e1"
+          ],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "su",
+          "object": "e3",
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "subject": "e2",
+          "relation": "vicino a",
+          "object": "e3",
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "subject": "e4",
+          "relation": "vicino a",
+          "object": "e3",
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": [
+        {
+          "cause": "crolla il soffitto",
+          "effect": "scatole e cartelli cadono sul pavimento",
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [],
+          "evidence_type": "inferred",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "segment_id": "segment_0009",
+      "start_time": 27.0,
+      "end_time": 29.75,
+      "input_frames": [
+        "dense_0108_t0027.000.jpg",
+        "dense_0110_t0027.500.jpg",
+        "dense_0111_t0027.750.jpg",
+        "dense_0113_t0028.250.jpg",
+        "dense_0114_t0028.500.jpg",
+        "dense_0116_t0029.000.jpg",
+        "dense_0117_t0029.250.jpg",
+        "dense_0119_t0029.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "scatola",
+          "role": "null",
+          "attributes": [
+            "bianca",
+            "con griglie"
+          ],
+          "start_time": 27.0,
+          "end_time": 29.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0111_t0027.750.jpg",
+            "dense_0113_t0028.250.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0116_t0029.000.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "tubi",
+          "role": "null",
+          "attributes": [
+            "bianchi",
+            "rossi",
+            "grigi"
+          ],
+          "start_time": 27.0,
+          "end_time": 29.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0111_t0027.750.jpg",
+            "dense_0113_t0028.250.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0116_t0029.000.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [],
+      "events": [],
+      "spatial_relations": [
+        {
+          "subject": "e2",
+          "relation": "dentro",
+          "object": "e1",
+          "start_time": 27.0,
+          "end_time": 29.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0111_t0027.750.jpg",
+            "dense_0113_t0028.250.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0116_t0029.000.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    }
+  ],
+  "errors": [
+    {
+      "segment_id": "segment_0006",
+      "start_time": 18.0,
+      "end_time": 21.75,
+      "input_frames": [
+        "dense_0072_t0018.000.jpg",
+        "dense_0074_t0018.500.jpg",
+        "dense_0076_t0019.000.jpg",
+        "dense_0078_t0019.500.jpg",
+        "dense_0081_t0020.250.jpg",
+        "dense_0083_t0020.750.jpg",
+        "dense_0085_t0021.250.jpg",
+        "dense_0087_t0021.750.jpg"
+      ],
+      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
+      "raw_response": "```json\n{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e2\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e3\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e4\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e5\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e6\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e7\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e8\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e9\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e10\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e11\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e12\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t"
+    },
+    {
+      "segment_id": "segment_0007",
+      "start_time": 21.0,
+      "end_time": 24.75,
+      "input_frames": [
+        "dense_0084_t0021.000.jpg",
+        "dense_0086_t0021.500.jpg",
+        "dense_0088_t0022.000.jpg",
+        "dense_0090_t0022.500.jpg",
+        "dense_0093_t0023.250.jpg",
+        "dense_0095_t0023.750.jpg",
+        "dense_0097_t0024.250.jpg",
+        "dense_0099_t0024.750.jpg"
+      ],
+      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
+      "raw_response": "```json\n{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"vaso\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"giallo\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e2\",\n      \"label\": \"tovaglia\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"bianca\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e3\",\n      \"label\": \"cartone\",\n      \"role\": \"oggetto\",\n      \"attributes\": [],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e4\",\n      \"label\": \"cartone rotto\",\n      \"role\": \"oggetto\",\n      \"attributes\": [],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e5\",\n      \"label\": \"cartone\",\n      \"role\": \"oggetto\",\n      \"attributes\": [],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e6\",\n      \"label\": \"cartone\",\n      \"role\": \"oggetto\",\n      \"attributes\": [],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e7\",\n      \"label\": \"cartone\",\n      \"role\": \"oggetto\",\n      \"attributes\": [],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e8\",\n      \"label\": \"vaso\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"giallo\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e9\",\n      \"label\": \"vaso\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"giallo\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e10\",\n      \"label\": \"vaso\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"giallo\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e11\",\n      \"label\": \"vaso\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"giallo\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e12\",\n      \"label\": \"vaso\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"giallo\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090"
+    }
+  ]
+}

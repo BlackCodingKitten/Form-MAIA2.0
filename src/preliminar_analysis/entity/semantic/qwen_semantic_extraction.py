@@ -162,7 +162,7 @@ def main() -> None:
     parser.add_argument("--window-seconds", type=float, default=4.0)
     parser.add_argument("--stride-seconds", type=float, default=3.0)
     parser.add_argument("--max-frames", type=int, default=8)
-    parser.add_argument("--max-new-tokens", type=int, default=1400)
+    parser.add_argument("--max-new-tokens", type=int, default=16384)
     parser.add_argument(
         "--limit-videos",
         type=int,
