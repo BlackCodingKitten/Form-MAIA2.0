@@ -1,201 +1,290 @@
-import json
-import os
-import re
-import subprocess
-import tempfile
+from __future__ import annotations
+
+import argparse
 from pathlib import Path
 
-# Use the two free 43-GB GPUs. Inside the process they become cuda:0 and cuda:1.
-os.environ.setdefault("CUDA_VISIBLE_DEVICES", "1,2")
-
-import torch
-from transformers import Qwen3OmniMoeForConditionalGeneration, Qwen3OmniMoeProcessor
-from qwen_omni_utils import process_mm_info
-
-MODEL_ID = "Qwen/Qwen3-Omni-30B-A3B-Instruct"
-VIDEO_DIR = Path("data/video")
-OUTPUT_FILE = Path("data/semantic/qwen3_omni_30b_semantic.json")
-
-WINDOW_SECONDS = 4.0
-STRIDE_SECONDS = 3.0
-VIDEO_FPS = 2  # 4 s x 2 fps = at most 8 frames/window
-MAX_NEW_TOKENS = 1200
-
-SEMANTIC_PROMPT = """Analyze ONLY the supplied audio-video window.
-Return one valid JSON object and nothing else.
-Do not invent information that is not supported by the visual or acoustic evidence.
-Use concise natural-language descriptions.
-
-Required schema:
-{
-  "entities": ["..."],
-  "actions": ["..."],
-  "events": ["..."],
-  "spatial_relations": ["..."],
-  "state_changes": ["..."],
-  "temporal_relations": ["..."],
-  "causal_hypotheses": ["..."]
-}
-
-Rules:
-- entities: people, objects, places, visible or clearly audible agents/sources.
-- actions: directly observable actions.
-- events: meaningful occurrences in this window, combining actors/actions/objects when possible.
-- spatial_relations: only relations supported by the video.
-- state_changes: observable changes from one state to another.
-- temporal_relations: ordering/overlap among events visible or audible in this same window.
-- causal_hypotheses: include only causality strongly suggested by the local evidence; otherwise [].
-- If a field has no reliable information, return [].
-"""
-
-
-def run(cmd):
-    subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-
-
-def duration(path: Path) -> float:
-    out = subprocess.check_output([
-        "ffprobe", "-v", "error", "-show_entries", "format=duration",
-        "-of", "default=noprint_wrappers=1:nokey=1", str(path)
-    ], text=True)
-    return float(out.strip())
-
-
-def make_window(src: Path, dst: Path, start: float, length: float):
-    # Re-encode so every 4-s window has exactly ~2 fps while preserving its audio.
-    run([
-        "ffmpeg", "-y", "-ss", f"{start:.3f}", "-i", str(src), "-t", f"{length:.3f}",
-        "-vf", f"fps={VIDEO_FPS}",
-        "-c:v", "libx264", "-preset", "ultrafast", "-crf", "23",
-        "-c:a", "aac", "-b:a", "128k",
-        str(dst)
-    ])
-
-
-def parse_json(text: str):
-    text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text.strip(), flags=re.I | re.S)
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError:
-        a, b = text.find("{"), text.rfind("}")
-        if a != -1 and b > a:
-            return json.loads(text[a:b + 1])
-        raise
-
-
-def load_results():
-    if not OUTPUT_FILE.exists():
-        return {}
-    with OUTPUT_FILE.open(encoding="utf-8") as f:
-        data = json.load(f)
-    return {item["video"]: item for item in data}
-
-
-def save_results(results):
-    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with OUTPUT_FILE.open("w", encoding="utf-8") as f:
-        json.dump(list(results.values()), f, ensure_ascii=False, indent=2)
-
-
-print(f"Loading {MODEL_ID} on visible GPUs {os.environ['CUDA_VISIBLE_DEVICES']}...")
-model = Qwen3OmniMoeForConditionalGeneration.from_pretrained(
-    MODEL_ID,
-    dtype=torch.bfloat16,
-    device_map="auto",
-    max_memory={0: "41GiB", 1: "41GiB", "cpu": "120GiB"},
-    attn_implementation="flash_attention_2",
+from semantic_common import (
+    discover_video_directories,
+    process_video_with_inferencer,
+    write_csv,
 )
-model.disable_talker()  # text only; saves about 10 GB of GPU memory
-model.eval()
-processor = Qwen3OmniMoeProcessor.from_pretrained(MODEL_ID)
 
-results = load_results()
-videos = sorted(p for p in VIDEO_DIR.iterdir() if p.suffix.lower() in {".mp4", ".mov", ".mkv", ".webm", ".avi"})
+MODEL_ID = "Qwen/Qwen3-VL-30B-A3B-Instruct"
+GPU_IDS = (5, 6)
 
-for video_index, video in enumerate(videos, 1):
-    if video.name in results:
-        print(f"[{video_index}/{len(videos)}] SKIP {video.name}")
-        continue
 
-    print(f"[{video_index}/{len(videos)}] {video.name}")
-    video_duration = duration(video)
-    windows = []
+def _device_is_allowed(device) -> bool:
+    if isinstance(device, int):
+        return device in GPU_IDS
+    text = str(device)
+    return text in {"5", "6", "cuda:5", "cuda:6"}
 
-    with tempfile.TemporaryDirectory(prefix="qwen3_semantic_") as tmp:
-        start = 0.0
-        window_id = 0
 
-        while start < video_duration:
-            end = min(start + WINDOW_SECONDS, video_duration)
-            clip = Path(tmp) / f"window_{window_id:03d}.mp4"
-            make_window(video, clip, start, end - start)
-
-            messages = [{
-                "role": "user",
-                "content": [
-                    {"type": "video", "video": str(clip)},
-                    {"type": "text", "text": SEMANTIC_PROMPT},
-                ],
-            }]
-
-            chat_text = processor.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
-            audios, images, video_inputs = process_mm_info(messages, use_audio_in_video=True)
-            inputs = processor(
-                text=chat_text,
-                audio=audios,
-                images=images,
-                videos=video_inputs,
-                return_tensors="pt",
-                padding=True,
-                use_audio_in_video=True,
+class Qwen30Inferencer:
+    def __init__(
+        self,
+        model_id: str,
+        max_new_tokens: int,
+        flash_attention: bool,
+    ) -> None:
+        try:
+            import torch
+            from PIL import Image
+            from transformers import (
+                AutoProcessor,
+                Qwen3VLMoeForConditionalGeneration,
             )
-            inputs = inputs.to(model.device).to(model.dtype)
+        except ImportError as error:
+            raise RuntimeError(
+                "Dipendenze Qwen3-VL mancanti. Installa una versione recente "
+                "di transformers, accelerate, torch e Pillow."
+            ) from error
 
-            with torch.inference_mode():
-                generated, _ = model.generate(
+        self.torch = torch
+        self.Image = Image
+        self.max_new_tokens = max_new_tokens
+        self.input_device = torch.device("cuda:5")
+
+        if not torch.cuda.is_available():
+            raise RuntimeError("CUDA non disponibile.")
+
+        if torch.cuda.device_count() <= max(GPU_IDS):
+            raise RuntimeError(
+                f"Servono almeno {max(GPU_IDS) + 1} GPU visibili a PyTorch "
+                f"per usare cuda:5 e cuda:6. GPU visibili: "
+                f"{torch.cuda.device_count()}."
+            )
+
+        # Solo cuda:5 e cuda:6 possono contenere i pesi.
+        # cuda:5 ha un po' più di margine libero perché riceve anche input/output.
+        max_memory = {
+            5: "38GiB",
+            6: "40GiB",
+            "cpu": "1MiB",
+        }
+
+        load_kwargs = {
+            "dtype": torch.bfloat16,
+            "device_map": "balanced",
+            "max_memory": max_memory,
+        }
+
+        if flash_attention:
+            load_kwargs["attn_implementation"] = "flash_attention_2"
+
+        print(
+            f"Caricamento di {model_id} in BF16 su cuda:5 e cuda:6..."
+        )
+
+        self.model = Qwen3VLMoeForConditionalGeneration.from_pretrained(
+            model_id,
+            **load_kwargs,
+        ).eval()
+
+        self.processor = AutoProcessor.from_pretrained(model_id)
+
+        # Controllo forte: nessun layer deve finire su altre GPU/CPU/disk.
+        invalid_devices = {
+            str(device)
+            for device in self.model.hf_device_map.values()
+            if not _device_is_allowed(device)
+        }
+
+        if invalid_devices:
+            raise RuntimeError(
+                "Il modello non è stato confinato a cuda:5 e cuda:6. "
+                f"Device inattesi: {sorted(invalid_devices)}"
+            )
+
+        print("Device map Qwen30:")
+        for module_name, device in self.model.hf_device_map.items():
+            print(f"  {module_name or '<root>'}: {device}")
+
+    def __call__(self, frame_paths: tuple[Path, ...], prompt: str) -> str:
+        images = [self.Image.open(path).convert("RGB") for path in frame_paths]
+
+        try:
+            content = [
+                {"type": "image", "image": image}
+                for image in images
+            ]
+            content.append({"type": "text", "text": prompt})
+
+            messages = [
+                {
+                    "role": "system",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": (
+                                "Sei un annotatore scientifico di video. "
+                                "Restituisci esclusivamente JSON valido, "
+                                "conciso e verificabile."
+                            ),
+                        }
+                    ],
+                },
+                {
+                    "role": "user",
+                    "content": content,
+                },
+            ]
+
+            inputs = self.processor.apply_chat_template(
+                messages,
+                tokenize=True,
+                add_generation_prompt=True,
+                return_dict=True,
+                return_tensors="pt",
+            )
+
+            # Gli input entrano da cuda:5. Accelerate sposta automaticamente
+            # gli hidden state tra i layer distribuiti su cuda:5 e cuda:6.
+            for key, value in list(inputs.items()):
+                if hasattr(value, "to"):
+                    value = value.to(self.input_device)
+                    if key in {"pixel_values", "pixel_values_videos"}:
+                        value = value.to(dtype=self.torch.bfloat16)
+                    inputs[key] = value
+
+            input_length = inputs["input_ids"].shape[-1]
+
+            with self.torch.inference_mode():
+                generated_ids = self.model.generate(
                     **inputs,
-                    return_audio=False,
-                    thinker_return_dict_in_generate=True,
-                    use_audio_in_video=True,
+                    max_new_tokens=self.max_new_tokens,
                     do_sample=False,
-                    max_new_tokens=MAX_NEW_TOKENS,
                 )
 
-            answer = processor.batch_decode(
-                generated.sequences[:, inputs["input_ids"].shape[1]:],
+            generated_ids = generated_ids[:, input_length:]
+
+            return self.processor.batch_decode(
+                generated_ids,
                 skip_special_tokens=True,
                 clean_up_tokenization_spaces=False,
-            )[0]
+            )[0].strip()
 
-            try:
-                semantic = parse_json(answer)
-                error = None
-            except Exception as exc:
-                semantic = None
-                error = f"{type(exc).__name__}: {exc}"
+        finally:
+            for image in images:
+                image.close()
 
-            windows.append({
-                "window_id": window_id,
-                "start": round(start, 3),
-                "end": round(end, 3),
-                "semantic": semantic,
-                "error": error,
-                "raw_output": None if semantic is not None else answer,
-            })
 
-            print(f"    window {window_id}: {start:.1f}-{end:.1f}s" + (" OK" if semantic is not None else " ERROR"))
-            start += STRIDE_SECONDS
-            window_id += 1
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        description=(
+            "Analisi semantica dei dense frame con "
+            "Qwen3-VL-30B-A3B-Instruct su cuda:5 e cuda:6."
+        )
+    )
 
-    results[video.name] = {
-        "video": video.name,
-        "duration": round(video_duration, 3),
-        "model": MODEL_ID,
-        "window_seconds": WINDOW_SECONDS,
-        "stride_seconds": STRIDE_SECONDS,
-        "fps": VIDEO_FPS,
-        "windows": windows,
-    }
-    save_results(results)  # checkpoint after every video
+    parser.add_argument(
+        "preprocessing_directory",
+        nargs="?",
+        type=Path,
+        default="data/preliminar_analysis/preprocessing",
+        help=(
+            "Directory contenente una cartella per video, ognuna con "
+            "dense_frames/."
+        ),
+    )
 
-print(f"Done: {len(results)} videos -> {OUTPUT_FILE}")
+    parser.add_argument(
+        "output_directory",
+        nargs="?",
+        type=Path,
+        default="data/preliminar_analysis/entity/entity_semantic/qwen-30B",
+    )
+
+    parser.add_argument("--model", default=MODEL_ID)
+
+    parser.add_argument("--window-seconds", type=float, default=4.0)
+    parser.add_argument("--stride-seconds", type=float, default=3.0)
+    parser.add_argument("--max-frames", type=int, default=8)
+    parser.add_argument("--max-new-tokens", type=int, default=3000)
+
+    parser.add_argument(
+        "--limit-videos",
+        type=int,
+        default=0,
+        help="Numero massimo di video; 0 = tutti.",
+    )
+
+    parser.add_argument(
+        "--flash-attention",
+        action="store_true",
+        help="Usa FlashAttention2 se installata.",
+    )
+
+    parser.add_argument("--overwrite", action="store_true")
+    parser.add_argument("--keep-raw", action="store_true")
+
+    args = parser.parse_args()
+
+    video_directories = discover_video_directories(
+        args.preprocessing_directory
+    )
+
+    if args.limit_videos > 0:
+        video_directories = video_directories[: args.limit_videos]
+
+    if not video_directories:
+        parser.error(
+            "Non sono state trovate cartelle video contenenti dense_frames."
+        )
+
+    args.output_directory.mkdir(parents=True, exist_ok=True)
+
+    inferencer = Qwen30Inferencer(
+        model_id=args.model,
+        max_new_tokens=args.max_new_tokens,
+        flash_attention=args.flash_attention,
+    )
+
+    rows = []
+
+    for index, video_directory in enumerate(video_directories, start=1):
+        print(
+            f"[{index}/{len(video_directories)}] "
+            f"Qwen30 semantic: {video_directory.name}"
+        )
+
+        try:
+            rows.append(
+                process_video_with_inferencer(
+                    model_name=args.model,
+                    video_directory=video_directory,
+                    output_directory=args.output_directory,
+                    window_seconds=args.window_seconds,
+                    stride_seconds=args.stride_seconds,
+                    max_frames=args.max_frames,
+                    inferencer=inferencer,
+                    overwrite=args.overwrite,
+                    keep_raw=args.keep_raw,
+                )
+            )
+        except Exception as error:
+            print(
+                f"Errore durante {video_directory.name}: "
+                f"{type(error).__name__}: {error}"
+            )
+            rows.append(
+                {
+                    "id_video": video_directory.name,
+                    "status": "failed",
+                    "numero_segmenti": None,
+                    "numero_elementi": None,
+                    "numero_errori": 1,
+                    "output": f"{type(error).__name__}: {error}",
+                }
+            )
+
+    write_csv(
+        args.output_directory / "riepilogo_video.csv",
+        rows,
+    )
+
+    print(f"Risultati salvati in: {args.output_directory}")
+
+
+if __name__ == "__main__":
+    main()

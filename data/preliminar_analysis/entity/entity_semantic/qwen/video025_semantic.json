@@ -1,0 +1,842 @@
+{
+  "id_video": "video025",
+  "model": "Qwen/Qwen2.5-Omni-3B",
+  "configuration": {
+    "window_seconds": 4.0,
+    "stride_seconds": 3.0,
+    "max_frames_per_window": 8,
+    "input_type": "ordered_dense_frames"
+  },
+  "numero_segmenti": 6,
+  "numero_errori": 9,
+  "segments": [
+    {
+      "segment_id": "segment_0002",
+      "start_time": 6.0,
+      "end_time": 9.75,
+      "input_frames": [
+        "dense_0024_t0006.000.jpg",
+        "dense_0026_t0006.500.jpg",
+        "dense_0028_t0007.000.jpg",
+        "dense_0030_t0007.500.jpg",
+        "dense_0033_t0008.250.jpg",
+        "dense_0035_t0008.750.jpg",
+        "dense_0037_t0009.250.jpg",
+        "dense_0039_t0009.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "ruolo visibile o null",
+          "attributes": [
+            "attributo osservabile"
+          ],
+          "start_time": 6.0,
+          "end_time": 9.75,
+          "evidence_frames": [
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "azione osservata",
+          "actor": "e1 o descrizione",
+          "object": "e2, descrizione o null",
+          "start_time": 6.0,
+          "end_time": 6.0,
+          "evidence_frames": [
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "events": [
+        {
+          "description": "evento temporalmente esteso",
+          "participants": [
+            "e1"
+          ],
+          "start_time": 6.0,
+          "end_time": 6.0,
+          "evidence_frames": [
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1 o descrizione",
+          "relation": "davanti a|dietro a|sopra|sotto|dentro|fuori|a sinistra di|a destra di|vicino a|lontano da|su|tra",
+          "object": "e2 o descrizione",
+          "start_time": 6.0,
+          "end_time": 6.0,
+          "evidence_frames": [
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "state_changes": [
+        {
+          "entity": "e1 o descrizione",
+          "before": "stato precedente",
+          "after": "stato successivo",
+          "start_time": 6.0,
+          "end_time": 6.0,
+          "evidence_frames": [
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "temporal_relations": [
+        {
+          "first_event": "evento A",
+          "relation": "before|after|overlaps|during|starts|finishes|simultaneous",
+          "second_event": "evento B",
+          "evidence_frames": [
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.0,
+          "start_time": 6.0,
+          "end_time": 9.75
+        }
+      ],
+      "causal_hypotheses": [
+        {
+          "cause": "causa candidata",
+          "effect": "effetto osservato",
+          "start_time": 6.0,
+          "end_time": 6.0,
+          "evidence_frames": [
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "inferred",
+          "confidence": 0.0
+        }
+      ]
+    },
+    {
+      "segment_id": "segment_0003",
+      "start_time": 9.0,
+      "end_time": 12.75,
+      "input_frames": [
+        "dense_0036_t0009.000.jpg",
+        "dense_0038_t0009.500.jpg",
+        "dense_0040_t0010.000.jpg",
+        "dense_0042_t0010.500.jpg",
+        "dense_0045_t0011.250.jpg",
+        "dense_0047_t0011.750.jpg",
+        "dense_0049_t0012.250.jpg",
+        "dense_0051_t0012.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "ruolo visibile o null",
+          "attributes": [
+            "attributo osservabile"
+          ],
+          "start_time": 9.0,
+          "end_time": 12.75,
+          "evidence_frames": [
+            "dense_0049_t0012.250.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "azione osservata",
+          "actor": "e1 o descrizione",
+          "object": "e2, descrizione o null",
+          "start_time": 9.0,
+          "end_time": 9.0,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "events": [
+        {
+          "description": "evento temporalmente esteso",
+          "participants": [
+            "e1"
+          ],
+          "start_time": 9.0,
+          "end_time": 9.0,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1 o descrizione",
+          "relation": "davanti a|dietro a|sopra|sotto|dentro|fuori|a sinistra di|a destra di|vicino a|lontano da|su|tra",
+          "object": "e2 o descrizione",
+          "start_time": 9.0,
+          "end_time": 9.0,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "state_changes": [
+        {
+          "entity": "e1 o descrizione",
+          "before": "stato precedente",
+          "after": "stato successivo",
+          "start_time": 9.0,
+          "end_time": 9.0,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "temporal_relations": [
+        {
+          "first_event": "evento A",
+          "relation": "before|after|overlaps|during|starts|finishes|simultaneous",
+          "second_event": "evento B",
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0,
+          "start_time": 9.0,
+          "end_time": 12.75
+        }
+      ],
+      "causal_hypotheses": [
+        {
+          "cause": "causa candidata",
+          "effect": "effetto osservato",
+          "start_time": 9.0,
+          "end_time": 9.0,
+          "evidence_frames": [],
+          "evidence_type": "inferred",
+          "confidence": 0.0
+        }
+      ]
+    },
+    {
+      "segment_id": "segment_0004",
+      "start_time": 12.0,
+      "end_time": 15.75,
+      "input_frames": [
+        "dense_0048_t0012.000.jpg",
+        "dense_0050_t0012.500.jpg",
+        "dense_0052_t0013.000.jpg",
+        "dense_0054_t0013.500.jpg",
+        "dense_0057_t0014.250.jpg",
+        "dense_0059_t0014.750.jpg",
+        "dense_0061_t0015.250.jpg",
+        "dense_0063_t0015.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "ruolo visibile o null",
+          "attributes": [
+            "attributo osservabile"
+          ],
+          "start_time": 12.0,
+          "end_time": 15.75,
+          "evidence_frames": [
+            "dense_0048_t0012.000.jpg",
+            "dense_0050_t0012.500.jpg",
+            "dense_0052_t0013.000.jpg",
+            "dense_0054_t0013.500.jpg",
+            "dense_0057_t0014.250.jpg",
+            "dense_0059_t0014.750.jpg",
+            "dense_0061_t0015.250.jpg",
+            "dense_0063_t0015.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "azione osservata",
+          "actor": "e1 o descrizione",
+          "object": "e2, descrizione o null",
+          "start_time": 12.0,
+          "end_time": 12.0,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "events": [
+        {
+          "description": "evento temporalmente esteso",
+          "participants": [
+            "e1 o descrizione"
+          ],
+          "start_time": 12.0,
+          "end_time": 12.0,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1 o descrizione",
+          "relation": "davanti a|dietro a|sopra|sotto|dentro|fuori|a sinistra di|a destra di|vicino a|lontano da|su|tra",
+          "object": "e2 o descrizione",
+          "start_time": 12.0,
+          "end_time": 12.0,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "state_changes": [
+        {
+          "entity": "e1 o descrizione",
+          "before": "stato precedente",
+          "after": "stato successivo",
+          "start_time": 12.0,
+          "end_time": 12.0,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "temporal_relations": [
+        {
+          "first_event": "evento A",
+          "relation": "before|after|overlaps|during|starts|finishes|simultaneous",
+          "second_event": "evento B",
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0,
+          "start_time": 12.0,
+          "end_time": 15.75
+        }
+      ],
+      "causal_hypotheses": [
+        {
+          "cause": "causa candidata",
+          "effect": "effetto osservato",
+          "start_time": 12.0,
+          "end_time": 12.0,
+          "evidence_frames": [],
+          "evidence_type": "inferred",
+          "confidence": 0.0
+        }
+      ]
+    },
+    {
+      "segment_id": "segment_0008",
+      "start_time": 24.0,
+      "end_time": 27.75,
+      "input_frames": [
+        "dense_0096_t0024.000.jpg",
+        "dense_0098_t0024.500.jpg",
+        "dense_0100_t0025.000.jpg",
+        "dense_0102_t0025.500.jpg",
+        "dense_0105_t0026.250.jpg",
+        "dense_0107_t0026.750.jpg",
+        "dense_0109_t0027.250.jpg",
+        "dense_0111_t0027.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "ruolo visibile o null",
+          "attributes": [
+            "attributo osservabile"
+          ],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "azione osservata",
+          "actor": "e1 o descrizione",
+          "object": "e2, descrizione o null",
+          "start_time": 24.0,
+          "end_time": 24.0,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "events": [
+        {
+          "description": "evento temporalmente esteso",
+          "participants": [
+            "e1"
+          ],
+          "start_time": 24.0,
+          "end_time": 24.0,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1 o descrizione",
+          "relation": "davanti a|dietro a|sopra|sotto|dentro|fuori|a sinistra di|a destra di|vicino a|lontano da|su|tra",
+          "object": "e2 o descrizione",
+          "start_time": 24.0,
+          "end_time": 24.0,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "state_changes": [
+        {
+          "entity": "e1 o descrizione",
+          "before": "stato precedente",
+          "after": "stato successivo",
+          "start_time": 24.0,
+          "end_time": 24.0,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "temporal_relations": [
+        {
+          "first_event": "evento A",
+          "relation": "before|after|overlaps|during|starts|finishes|simultaneous",
+          "second_event": "evento B",
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0,
+          "start_time": 24.0,
+          "end_time": 27.75
+        }
+      ],
+      "causal_hypotheses": [
+        {
+          "cause": "causa candidata",
+          "effect": "effetto osservato",
+          "start_time": 24.0,
+          "end_time": 24.0,
+          "evidence_frames": [],
+          "evidence_type": "inferred",
+          "confidence": 0.0
+        }
+      ]
+    },
+    {
+      "segment_id": "segment_0012",
+      "start_time": 36.0,
+      "end_time": 39.75,
+      "input_frames": [
+        "dense_0144_t0036.000.jpg",
+        "dense_0146_t0036.500.jpg",
+        "dense_0148_t0037.000.jpg",
+        "dense_0150_t0037.500.jpg",
+        "dense_0153_t0038.250.jpg",
+        "dense_0155_t0038.750.jpg",
+        "dense_0157_t0039.250.jpg",
+        "dense_0159_t0039.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "ruolo visibile o null",
+          "attributes": [
+            "attributo osservabile"
+          ],
+          "start_time": 36.0,
+          "end_time": 39.75,
+          "evidence_frames": [
+            "dense_0157_t0039.250.jpg",
+            "dense_0159_t0039.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "azione osservata",
+          "actor": "e1 o descrizione",
+          "object": "e2, descrizione o null",
+          "start_time": 36.0,
+          "end_time": 36.0,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "events": [
+        {
+          "description": "evento temporalmente esteso",
+          "participants": [
+            "e1"
+          ],
+          "start_time": 36.0,
+          "end_time": 36.0,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1 o descrizione",
+          "relation": "davanti a|dietro a|sopra|sotto|dentro|fuori|a sinistra di|a destra di|vicino a|lontano da|su|tra",
+          "object": "e2 o descrizione",
+          "start_time": 36.0,
+          "end_time": 36.0,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "state_changes": [
+        {
+          "entity": "e1 o descrizione",
+          "before": "stato precedente",
+          "after": "stato successivo",
+          "start_time": 36.0,
+          "end_time": 36.0,
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0
+        }
+      ],
+      "temporal_relations": [
+        {
+          "first_event": "evento A",
+          "relation": "before|after|overlaps|during|starts|finishes|simultaneous",
+          "second_event": "evento B",
+          "evidence_frames": [],
+          "evidence_type": "observed",
+          "confidence": 0.0,
+          "start_time": 36.0,
+          "end_time": 39.75
+        }
+      ],
+      "causal_hypotheses": [
+        {
+          "cause": "causa candidata",
+          "effect": "effetto osservato",
+          "start_time": 36.0,
+          "end_time": 36.0,
+          "evidence_frames": [],
+          "evidence_type": "inferred",
+          "confidence": 0.0
+        }
+      ]
+    },
+    {
+      "segment_id": "segment_0014",
+      "start_time": 42.0,
+      "end_time": 42.5,
+      "input_frames": [
+        "dense_0168_t0042.000.jpg",
+        "dense_0169_t0042.250.jpg",
+        "dense_0170_t0042.500.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "ruolo visibile o null",
+          "attributes": [
+            "attributo osservabile"
+          ],
+          "start_time": 42.0,
+          "end_time": 42.5,
+          "evidence_frames": [
+            "dense_0168_t0042.000.jpg",
+            "dense_0169_t0042.250.jpg",
+            "dense_0170_t0042.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "azione osservata",
+          "actor": "e1 o descrizione",
+          "object": "e2, descrizione o null",
+          "start_time": 42.0,
+          "end_time": 42.0,
+          "evidence_frames": [
+            "dense_0168_t0042.000.jpg",
+            "dense_0169_t0042.250.jpg",
+            "dense_0170_t0042.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "events": [
+        {
+          "description": "evento temporalmente esteso",
+          "participants": [
+            "e1 o descrizione"
+          ],
+          "start_time": 42.0,
+          "end_time": 42.0,
+          "evidence_frames": [
+            "dense_0168_t0042.000.jpg",
+            "dense_0169_t0042.250.jpg",
+            "dense_0170_t0042.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1 o descrizione",
+          "relation": "davanti a|dietro a|sopra|sotto|dentro|fuori|a sinistra di|a destra di|vicino a|lontano da|su|tra",
+          "object": "e2 o descrizione",
+          "start_time": 42.0,
+          "end_time": 42.0,
+          "evidence_frames": [
+            "dense_0168_t0042.000.jpg",
+            "dense_0169_t0042.250.jpg",
+            "dense_0170_t0042.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "state_changes": [
+        {
+          "entity": "e1 o descrizione",
+          "before": "stato precedente",
+          "after": "stato successivo",
+          "start_time": 42.0,
+          "end_time": 42.0,
+          "evidence_frames": [
+            "dense_0168_t0042.000.jpg",
+            "dense_0169_t0042.250.jpg",
+            "dense_0170_t0042.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "temporal_relations": [
+        {
+          "first_event": "evento A",
+          "relation": "before|after|overlaps|during|starts|finishes|simultaneous",
+          "second_event": "evento B",
+          "evidence_frames": [
+            "dense_0168_t0042.000.jpg",
+            "dense_0169_t0042.250.jpg",
+            "dense_0170_t0042.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0,
+          "start_time": 42.0,
+          "end_time": 42.5
+        }
+      ],
+      "causal_hypotheses": [
+        {
+          "cause": "causa candidata",
+          "effect": "effetto osservato",
+          "start_time": 42.0,
+          "end_time": 42.0,
+          "evidence_frames": [
+            "dense_0168_t0042.000.jpg",
+            "dense_0169_t0042.250.jpg",
+            "dense_0170_t0042.500.jpg"
+          ],
+          "evidence_type": "inferred",
+          "confidence": 1.0
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "segment_id": "segment_0000",
+      "start_time": 0.0,
+      "end_time": 3.75,
+      "input_frames": [
+        "dense_0000_t0000.000.jpg",
+        "dense_0002_t0000.500.jpg",
+        "dense_0004_t0001.000.jpg",
+        "dense_0006_t0001.500.jpg",
+        "dense_0009_t0002.250.jpg",
+        "dense_0011_t0002.750.jpg",
+        "dense_0013_t0003.250.jpg",
+        "dense_0015_t0003.750.jpg"
+      ],
+      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
+      "raw_response": "{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"persona\",\n      \"role\": \"ruolo visibile o null\",\n      \"attributes\": [\"attributo osservabile\"],\n      \"start_time\": 0.000,\n      \"end_time\": 3.750,\n      \"evidence_frames\": [\"dense_0000_t0000.000.jpg\", \"dense_0002_t0000.500.jpg\", \"dense_0004_t0001.000.jpg\", \"dense_0006_t0001.500.jpg\", \"dense_0009_t0002.250.jpg\", \"dense_0011_t0002.750.jpg\", \"dense_0013_t0003.250.jpg\", \"dense_0015_t0003.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"actions\": [\n    {\n      \"description\": \"azione osservata\",\n      \"actor\": \"e1 o descrizione\",\n      \"object\": \"e2, descrizione o null\",\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0000_t0000.000.jpg\", \"dense_0002_t0000.500.jpg\", \"dense_0004_t0001.000.jpg\", \"dense_0006_t0001.500.jpg\", \"dense_0009_t0002.250.jpg\", \"dense_0011_t0002.750.jpg\", \"dense_0013_t0003.250.jpg\", \"dense_0015_t0003.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"events\": [\n    {\n      \"description\": \"evento temporalmente esteso\",\n      \"participants\": [\"e1 o descrizione\"],\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0000_t0000.000.jpg\", \"dense_0002_t0000.500.jpg\", \"dense_0004_t0001.000.jpg\", \"dense_0006_t0001.500.jpg\", \"dense_0009_t0002.250.jpg\", \"dense_0011_t0002.750.jpg\", \"dense_0013_t0003.250.jpg\", \"dense_0015_t0003.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"spatial_relations\": [\n    {\n      \"subject\": \"e1 o descrizione\",\n      \"relation\": \"davanti a|dietro a|sopra|sotto|dentro|fuori|a sinistra di|a destra di|vicino a|lontano da|su|tra\",\n      \"object\": \"e2 o descrizione\",\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0000_t0000.000.jpg\", \"dense_0002_t0000.500.jpg\", \"dense_0004_t0001.000.jpg\", \"dense_0006_t0001.500.jpg\", \"dense_0009_t0002.250.jpg\", \"dense_0011_t0002.750.jpg\", \"dense_0013_t0003.250.jpg\", \"dense_0015_t0003.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"state_changes\": [\n    {\n      \"entity\": \"e1 o descrizione\",\n      \"before\": \"stato precedente\",\n      \"after\": \"stato successivo\",\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0000_t0000.000.jpg\", \"dense_0002_t0000.500.jpg\", \"dense_0004_t0001.000.jpg\", \"dense_0006_t0001.500.jpg\", \"dense_0009_t0002.250.jpg\", \"dense_0011_t0002.750.jpg\", \"dense_0013_t0003.250.jpg\", \"dense_0015_t0003.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"temporal_relations\": [\n    {\n      \"first_event\": \"evento A\",\n      \"relation\": \"before|after|overlaps|during|starts|finishes|simultaneous\",\n      \"second_event\": \"evento B\",\n      \"evidence_frames\": [\"dense_0000_t0000.000.jpg\", \"dense_0002_t0000.500.jpg\", \"dense_0004_t0001.000.jpg\", \"dense_0006_t0001.500.jpg\", \"dense_0009_t0002.250.jpg\", \"dense_0011_t0002.750.jpg\", \"dense_0013_t0003.250.jpg\", \"dense_0015_t0003"
+    },
+    {
+      "segment_id": "segment_0001",
+      "start_time": 3.0,
+      "end_time": 6.75,
+      "input_frames": [
+        "dense_0012_t0003.000.jpg",
+        "dense_0014_t0003.500.jpg",
+        "dense_0016_t0004.000.jpg",
+        "dense_0018_t0004.500.jpg",
+        "dense_0021_t0005.250.jpg",
+        "dense_0023_t0005.750.jpg",
+        "dense_0025_t0006.250.jpg",
+        "dense_0027_t0006.750.jpg"
+      ],
+      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
+      "raw_response": "{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"persona\",\n      \"role\": \"ruolo visibile o null\",\n      \"attributes\": [\"attributo osservabile\"],\n      \"start_time\": 3.000,\n      \"end_time\": 6.750,\n      \"evidence_frames\": [\"dense_0012_t0003.000.jpg\", \"dense_0014_t0003.500.jpg\", \"dense_0016_t0004.000.jpg\", \"dense_0018_t0004.500.jpg\", \"dense_0021_t0005.250.jpg\", \"dense_0023_t0005.750.jpg\", \"dense_0025_t0006.250.jpg\", \"dense_0027_t0006.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"actions\": [\n    {\n      \"description\": \"azione osservata\",\n      \"actor\": \"e1 o descrizione\",\n      \"object\": \"e2, descrizione o null\",\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0012_t0003.000.jpg\", \"dense_0014_t0003.500.jpg\", \"dense_0016_t0004.000.jpg\", \"dense_0018_t0004.500.jpg\", \"dense_0021_t0005.250.jpg\", \"dense_0023_t0005.750.jpg\", \"dense_0025_t0006.250.jpg\", \"dense_0027_t0006.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"events\": [\n    {\n      \"description\": \"evento temporalmente esteso\",\n      \"participants\": [\"e1 o descrizione\"],\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0012_t0003.000.jpg\", \"dense_0014_t0003.500.jpg\", \"dense_0016_t0004.000.jpg\", \"dense_0018_t0004.500.jpg\", \"dense_0021_t0005.250.jpg\", \"dense_0023_t0005.750.jpg\", \"dense_0025_t0006.250.jpg\", \"dense_0027_t0006.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"spatial_relations\": [\n    {\n      \"subject\": \"e1 o descrizione\",\n      \"relation\": \"davanti a|dietro a|sopra|sotto|dentro|fuori|a sinistra di|a destra di|vicino a|lontano da|su|tra\",\n      \"object\": \"e2 o descrizione\",\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0012_t0003.000.jpg\", \"dense_0014_t0003.500.jpg\", \"dense_0016_t0004.000.jpg\", \"dense_0018_t0004.500.jpg\", \"dense_0021_t0005.250.jpg\", \"dense_0023_t0005.750.jpg\", \"dense_0025_t0006.250.jpg\", \"dense_0027_t0006.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"state_changes\": [\n    {\n      \"entity\": \"e1 o descrizione\",\n      \"before\": \"stato precedente\",\n      \"after\": \"stato successivo\",\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0012_t0003.000.jpg\", \"dense_0014_t0003.500.jpg\", \"dense_0016_t0004.000.jpg\", \"dense_0018_t0004.500.jpg\", \"dense_0021_t0005.250.jpg\", \"dense_0023_t0005.750.jpg\", \"dense_0025_t0006.250.jpg\", \"dense_0027_t0006.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"temporal_relations\": [\n    {\n      \"first_event\": \"evento A\",\n      \"relation\": \"before|after|overlaps|during|starts|finishes|simultaneous\",\n      \"second_event\": \"evento B\",\n      \"evidence_frames\": [\"dense_0012_t0003.000.jpg\", \"dense_0014_t0003.500.jpg\", \"dense_0016_t0004.000.jpg\", \"dense_0018_t0004.500.jpg\", \"dense_0021_t0005.250.jpg\", \"dense_0023_t0005.750.jpg\", \"dense_0025_t0006.250.jpg\", \"dense_0027_t0006"
+    },
+    {
+      "segment_id": "segment_0005",
+      "start_time": 15.0,
+      "end_time": 18.75,
+      "input_frames": [
+        "dense_0060_t0015.000.jpg",
+        "dense_0062_t0015.500.jpg",
+        "dense_0064_t0016.000.jpg",
+        "dense_0066_t0016.500.jpg",
+        "dense_0069_t0017.250.jpg",
+        "dense_0071_t0017.750.jpg",
+        "dense_0073_t0018.250.jpg",
+        "dense_0075_t0018.750.jpg"
+      ],
+      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
+      "raw_response": "{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"persona\",\n      \"role\": \"ruolo visibile o null\",\n      \"attributes\": [\"attributo osservabile\"],\n      \"start_time\": 15.000,\n      \"end_time\": 18.750,\n      \"evidence_frames\": [\"dense_0060_t0015.000.jpg\", \"dense_0062_t0015.500.jpg\", \"dense_0064_t0016.000.jpg\", \"dense_0066_t0016.500.jpg\", \"dense_0069_t0017.250.jpg\", \"dense_0071_t0017.750.jpg\", \"dense_0073_t0018.250.jpg\", \"dense_0075_t0018.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"actions\": [\n    {\n      \"description\": \"azione osservata\",\n      \"actor\": \"e1 o descrizione\",\n      \"object\": \"e2, descrizione o null\",\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0060_t0015.000.jpg\", \"dense_0062_t0015.500.jpg\", \"dense_0064_t0016.000.jpg\", \"dense_0066_t0016.500.jpg\", \"dense_0069_t0017.250.jpg\", \"dense_0071_t0017.750.jpg\", \"dense_0073_t0018.250.jpg\", \"dense_0075_t0018.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"events\": [\n    {\n      \"description\": \"evento temporalmente esteso\",\n      \"participants\": [\"e1 o descrizione\"],\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0060_t0015.000.jpg\", \"dense_0062_t0015.500.jpg\", \"dense_0064_t0016.000.jpg\", \"dense_0066_t0016.500.jpg\", \"dense_0069_t0017.250.jpg\", \"dense_0071_t0017.750.jpg\", \"dense_0073_t0018.250.jpg\", \"dense_0075_t0018.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"spatial_relations\": [\n    {\n      \"subject\": \"e1 o descrizione\",\n      \"relation\": \"davanti a|dietro a|sopra|sotto|dentro|fuori|a sinistra di|a destra di|vicino a|lontano da|su|tra\",\n      \"object\": \"e2 o descrizione\",\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0060_t0015.000.jpg\", \"dense_0062_t0015.500.jpg\", \"dense_0064_t0016.000.jpg\", \"dense_0066_t0016.500.jpg\", \"dense_0069_t0017.250.jpg\", \"dense_0071_t0017.750.jpg\", \"dense_0073_t0018.250.jpg\", \"dense_0075_t0018.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"state_changes\": [\n    {\n      \"entity\": \"e1 o descrizione\",\n      \"before\": \"stato precedente\",\n      \"after\": \"stato successivo\",\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0060_t0015.000.jpg\", \"dense_0062_t0015.500.jpg\", \"dense_0064_t0016.000.jpg\", \"dense_0066_t0016.500.jpg\", \"dense_0069_t0017.250.jpg\", \"dense_0071_t0017.750.jpg\", \"dense_0073_t0018.250.jpg\", \"dense_0075_t0018.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"temporal_relations\": [\n    {\n      \"first_event\": \"evento A\",\n      \"relation\": \"before|after|overlaps|during|starts|finishes|simultaneous\",\n      \"second_event\": \"evento B\",\n      \"evidence_frames\": [\"dense_0060_t0015.000.jpg\", \"dense_0062_t0015.500.jpg\", \"dense_0064_t0016.000.jpg\", \"dense_0066_t0016.500.jpg\", \"dense_0069_t0017.250.jpg\", \"dense_0071_t0017.750.jpg\", \"dense_0073_t0018.250.jpg\", \"dense_0075_t00"
+    },
+    {
+      "segment_id": "segment_0006",
+      "start_time": 18.0,
+      "end_time": 21.75,
+      "input_frames": [
+        "dense_0072_t0018.000.jpg",
+        "dense_0074_t0018.500.jpg",
+        "dense_0076_t0019.000.jpg",
+        "dense_0078_t0019.500.jpg",
+        "dense_0081_t0020.250.jpg",
+        "dense_0083_t0020.750.jpg",
+        "dense_0085_t0021.250.jpg",
+        "dense_0087_t0021.750.jpg"
+      ],
+      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
+      "raw_response": "{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"persona\",\n      \"role\": \"ruolo visibile o null\",\n      \"attributes\": [\"attributo osservabile\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"actions\": [\n    {\n      \"description\": \"azione osservata\",\n      \"actor\": \"e1 o descrizione\",\n      \"object\": \"e2, descrizione o null\",\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"events\": [\n    {\n      \"description\": \"evento temporalmente esteso\",\n      \"participants\": [\"e1\"],\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"spatial_relations\": [\n    {\n      \"subject\": \"e1 o descrizione\",\n      \"relation\": \"davanti a|dietro a|sopra|sotto|dentro|fuori|a sinistra di|a destra di|vicino a|lontano da|su|tra\",\n      \"object\": \"e2 o descrizione\",\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"state_changes\": [\n    {\n      \"entity\": \"e1 o descrizione\",\n      \"before\": \"stato precedente\",\n      \"after\": \"stato successivo\",\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"temporal_relations\": [\n    {\n      \"first_event\": \"evento A\",\n      \"relation\": \"before|after|overlaps|during|starts|finishes|simultaneous\",\n      \"second_event\": \"evento B\",\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021."
+    },
+    {
+      "segment_id": "segment_0007",
+      "start_time": 21.0,
+      "end_time": 24.75,
+      "input_frames": [
+        "dense_0084_t0021.000.jpg",
+        "dense_0086_t0021.500.jpg",
+        "dense_0088_t0022.000.jpg",
+        "dense_0090_t0022.500.jpg",
+        "dense_0093_t0023.250.jpg",
+        "dense_0095_t0023.750.jpg",
+        "dense_0097_t0024.250.jpg",
+        "dense_0099_t0024.750.jpg"
+      ],
+      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
+      "raw_response": "{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"persona\",\n      \"role\": \"ruolo visibile o null\",\n      \"attributes\": [\"attributo osservabile\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"actions\": [\n    {\n      \"description\": \"azione osservata\",\n      \"actor\": \"e1 o descrizione\",\n      \"object\": \"e2, descrizione o null\",\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"events\": [\n    {\n      \"description\": \"evento temporalmente esteso\",\n      \"participants\": [\"e1\"],\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"spatial_relations\": [\n    {\n      \"subject\": \"e1 o descrizione\",\n      \"relation\": \"davanti a|dietro a|sopra|sotto|dentro|fuori|a sinistra di|a destra di|vicino a|lontano da|su|tra\",\n      \"object\": \"e2 o descrizione\",\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"state_changes\": [\n    {\n      \"entity\": \"e1 o descrizione\",\n      \"before\": \"stato precedente\",\n      \"after\": \"stato successivo\",\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"temporal_relations\": [\n    {\n      \"first_event\": \"evento A\",\n      \"relation\": \"before|after|overlaps|during|starts|finishes|simultaneous\",\n      \"second_event\": \"evento B\",\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024."
+    },
+    {
+      "segment_id": "segment_0009",
+      "start_time": 27.0,
+      "end_time": 30.75,
+      "input_frames": [
+        "dense_0108_t0027.000.jpg",
+        "dense_0110_t0027.500.jpg",
+        "dense_0112_t0028.000.jpg",
+        "dense_0114_t0028.500.jpg",
+        "dense_0117_t0029.250.jpg",
+        "dense_0119_t0029.750.jpg",
+        "dense_0121_t0030.250.jpg",
+        "dense_0123_t0030.750.jpg"
+      ],
+      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
+      "raw_response": "{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"persona\",\n      \"role\": \"ruolo visibile o null\",\n      \"attributes\": [\"attributo osservabile\"],\n      \"start_time\": 27.000,\n      \"end_time\": 30.750,\n      \"evidence_frames\": [\"dense_0108_t0027.000.jpg\", \"dense_0110_t0027.500.jpg\", \"dense_0112_t0028.000.jpg\", \"dense_0114_t0028.500.jpg\", \"dense_0117_t0029.250.jpg\", \"dense_0119_t0029.750.jpg\", \"dense_0121_t0030.250.jpg\", \"dense_0123_t0030.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"actions\": [\n    {\n      \"description\": \"azione osservata\",\n      \"actor\": \"e1 o descrizione\",\n      \"object\": \"e2, descrizione o null\",\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0108_t0027.000.jpg\", \"dense_0110_t0027.500.jpg\", \"dense_0112_t0028.000.jpg\", \"dense_0114_t0028.500.jpg\", \"dense_0117_t0029.250.jpg\", \"dense_0119_t0029.750.jpg\", \"dense_0121_t0030.250.jpg\", \"dense_0123_t0030.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"events\": [\n    {\n      \"description\": \"evento temporalmente esteso\",\n      \"participants\": [\"e1\"],\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0108_t0027.000.jpg\", \"dense_0110_t0027.500.jpg\", \"dense_0112_t0028.000.jpg\", \"dense_0114_t0028.500.jpg\", \"dense_0117_t0029.250.jpg\", \"dense_0119_t0029.750.jpg\", \"dense_0121_t0030.250.jpg\", \"dense_0123_t0030.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"spatial_relations\": [\n    {\n      \"subject\": \"e1 o descrizione\",\n      \"relation\": \"davanti a|dietro a|sopra|sotto|dentro|fuori|a sinistra di|a destra di|vicino a|lontano da|su|tra\",\n      \"object\": \"e2 o descrizione\",\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0108_t0027.000.jpg\", \"dense_0110_t0027.500.jpg\", \"dense_0112_t0028.000.jpg\", \"dense_0114_t0028.500.jpg\", \"dense_0117_t0029.250.jpg\", \"dense_0119_t0029.750.jpg\", \"dense_0121_t0030.250.jpg\", \"dense_0123_t0030.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"state_changes\": [\n    {\n      \"entity\": \"e1 o descrizione\",\n      \"before\": \"stato precedente\",\n      \"after\": \"stato successivo\",\n      \"start_time\": 0.0,\n      \"end_time\": 0.0,\n      \"evidence_frames\": [\"dense_0108_t0027.000.jpg\", \"dense_0110_t0027.500.jpg\", \"dense_0112_t0028.000.jpg\", \"dense_0114_t0028.500.jpg\", \"dense_0117_t0029.250.jpg\", \"dense_0119_t0029.750.jpg\", \"dense_0121_t0030.250.jpg\", \"dense_0123_t0030.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"temporal_relations\": [\n    {\n      \"first_event\": \"evento A\",\n      \"relation\": \"before|after|overlaps|during|starts|finishes|simultaneous\",\n      \"second_event\": \"evento B\",\n      \"evidence_frames\": [\"dense_0108_t0027.000.jpg\", \"dense_0110_t0027.500.jpg\", \"dense_0112_t0028.000.jpg\", \"dense_0114_t0028.500.jpg\", \"dense_0117_t0029.250.jpg\", \"dense_0119_t0029.750.jpg\", \"dense_0121_t0030.250.jpg\", \"dense_0123_t0030."
+    },
+    {
+      "segment_id": "segment_0010",
+      "start_time": 30.0,
+      "end_time": 33.75,
+      "input_frames": [
+        "dense_0120_t0030.000.jpg",
+        "dense_0122_t0030.500.jpg",
+        "dense_0124_t0031.000.jpg",
+        "dense_0126_t0031.500.jpg",
+        "dense_0129_t0032.250.jpg",
+        "dense_0131_t0032.750.jpg",
+        "dense_0133_t0033.250.jpg",
+        "dense_0135_t0033.750.jpg"
+      ],
+      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
+      "raw_response": "{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"persona\",\n      \"role\": \"ruolo visibile o null\",\n      \"attributes\": [\"attributo osservabile\"],\n      \"start_time\": 30.000,\n      \"end_time\": 33.750,\n      \"evidence_frames\": [\"dense_0120_t0030.000.jpg\", \"dense_0122_t0030.500.jpg\", \"dense_0124_t0031.000.jpg\", \"dense_0126_t0031.500.jpg\", \"dense_0129_t0032.250.jpg\", \"dense_0131_t0032.750.jpg\", \"dense_0133_t0033.250.jpg\", \"dense_0135_t0033.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"actions\": [\n    {\n      \"description\": \"azione osservata\",\n      \"actor\": \"e1 o descrizione\",\n      \"object\": \"e2, descrizione o null\",\n      \"start_time\": 30.000,\n      \"end_time\": 33.750,\n      \"evidence_frames\": [\"dense_0120_t0030.000.jpg\", \"dense_0122_t0030.500.jpg\", \"dense_0124_t0031.000.jpg\", \"dense_0126_t0031.500.jpg\", \"dense_0129_t0032.250.jpg\", \"dense_0131_t0032.750.jpg\", \"dense_0133_t0033.250.jpg\", \"dense_0135_t0033.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"events\": [\n    {\n      \"description\": \"evento temporalmente esteso\",\n      \"participants\": [\"e1\"],\n      \"start_time\": 30.000,\n      \"end_time\": 33.750,\n      \"evidence_frames\": [\"dense_0120_t0030.000.jpg\", \"dense_0122_t0030.500.jpg\", \"dense_0124_t0031.000.jpg\", \"dense_0126_t0031.500.jpg\", \"dense_0129_t0032.250.jpg\", \"dense_0131_t0032.750.jpg\", \"dense_0133_t0033.250.jpg\", \"dense_0135_t0033.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"spatial_relations\": [\n    {\n      \"subject\": \"e1 o descrizione\",\n      \"relation\": \"davanti a|dietro a|sopra|sotto|dentro|fuori|a sinistra di|a destra di|vicino a|lontano da|su|tra\",\n      \"object\": \"e2 o descrizione\",\n      \"start_time\": 30.000,\n      \"end_time\": 33.750,\n      \"evidence_frames\": [\"dense_0120_t0030.000.jpg\", \"dense_0122_t0030.500.jpg\", \"dense_0124_t0031.000.jpg\", \"dense_0126_t0031.500.jpg\", \"dense_0129_t0032.250.jpg\", \"dense_0131_t0032.750.jpg\", \"dense_0133_t0033.250.jpg\", \"dense_0135_t0033.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"state_changes\": [\n    {\n      \"entity\": \"e1 o descrizione\",\n      \"before\": \"stato precedente\",\n      \"after\": \"stato successivo\",\n      \"start_time\": 30.000,\n      \"end_time\": 33.750,\n      \"evidence_frames\": [\"dense_0120_t0030.000.jpg\", \"dense_0122_t0030.500.jpg\", \"dense_0124_t0031.000.jpg\", \"dense_0126_t0031.500.jpg\", \"dense_0129_t0032.250.jpg\", \"dense_0131_t0032.750.jpg\", \"dense_0133_t0033.250.jpg\", \"dense_0135_t0033.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"temporal_relations\": [\n    {\n      \"first_event\": \"evento A\",\n      \"relation\": \"before|after|overlaps|during|starts|finishes|simultaneous\",\n      \"second_event\": \"evento B\",\n      \"evidence_frames\": [\"dense_0120_t0030.000.jpg\", \"dense_0122_t0030.500.jpg\", \"dense_0124_t0031.000.jpg\", \"dense_0126_t0031.500.jpg\", \"dense_0129_t0032.250.jpg\", \"dense_0131_t0032.750.jpg\", \"dense_0133"
+    },
+    {
+      "segment_id": "segment_0011",
+      "start_time": 33.0,
+      "end_time": 36.75,
+      "input_frames": [
+        "dense_0132_t0033.000.jpg",
+        "dense_0134_t0033.500.jpg",
+        "dense_0136_t0034.000.jpg",
+        "dense_0138_t0034.500.jpg",
+        "dense_0141_t0035.250.jpg",
+        "dense_0143_t0035.750.jpg",
+        "dense_0145_t0036.250.jpg",
+        "dense_0147_t0036.750.jpg"
+      ],
+      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
+      "raw_response": "{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"persona\",\n      \"role\": \"ruolo visibile o null\",\n      \"attributes\": [\"attributo osservabile\"],\n      \"start_time\": 33.000,\n      \"end_time\": 36.750,\n      \"evidence_frames\": [\"dense_0132_t0033.000.jpg\", \"dense_0134_t0033.500.jpg\", \"dense_0136_t0034.000.jpg\", \"dense_0138_t0034.500.jpg\", \"dense_0141_t0035.250.jpg\", \"dense_0143_t0035.750.jpg\", \"dense_0145_t0036.250.jpg\", \"dense_0147_t0036.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"actions\": [\n    {\n      \"description\": \"azione osservata\",\n      \"actor\": \"e1 o descrizione\",\n      \"object\": \"e2, descrizione o null\",\n      \"start_time\": 33.000,\n      \"end_time\": 36.750,\n      \"evidence_frames\": [\"dense_0132_t0033.000.jpg\", \"dense_0134_t0033.500.jpg\", \"dense_0136_t0034.000.jpg\", \"dense_0138_t0034.500.jpg\", \"dense_0141_t0035.250.jpg\", \"dense_0143_t0035.750.jpg\", \"dense_0145_t0036.250.jpg\", \"dense_0147_t0036.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"events\": [\n    {\n      \"description\": \"evento temporalmente esteso\",\n      \"participants\": [\"e1 o descrizione\"],\n      \"start_time\": 33.000,\n      \"end_time\": 36.750,\n      \"evidence_frames\": [\"dense_0132_t0033.000.jpg\", \"dense_0134_t0033.500.jpg\", \"dense_0136_t0034.000.jpg\", \"dense_0138_t0034.500.jpg\", \"dense_0141_t0035.250.jpg\", \"dense_0143_t0035.750.jpg\", \"dense_0145_t0036.250.jpg\", \"dense_0147_t0036.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"spatial_relations\": [\n    {\n      \"subject\": \"e1 o descrizione\",\n      \"relation\": \"davanti a|dietro a|sopra|sotto|dentro|fuori|a sinistra di|a destra di|vicino a|lontano da|su|tra\",\n      \"object\": \"e2 o descrizione\",\n      \"start_time\": 33.000,\n      \"end_time\": 36.750,\n      \"evidence_frames\": [\"dense_0132_t0033.000.jpg\", \"dense_0134_t0033.500.jpg\", \"dense_0136_t0034.000.jpg\", \"dense_0138_t0034.500.jpg\", \"dense_0141_t0035.250.jpg\", \"dense_0143_t0035.750.jpg\", \"dense_0145_t0036.250.jpg\", \"dense_0147_t0036.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"state_changes\": [\n    {\n      \"entity\": \"e1 o descrizione\",\n      \"before\": \"stato precedente\",\n      \"after\": \"stato successivo\",\n      \"start_time\": 33.000,\n      \"end_time\": 36.750,\n      \"evidence_frames\": [\"dense_0132_t0033.000.jpg\", \"dense_0134_t0033.500.jpg\", \"dense_0136_t0034.000.jpg\", \"dense_0138_t0034.500.jpg\", \"dense_0141_t0035.250.jpg\", \"dense_0143_t0035.750.jpg\", \"dense_0145_t0036.250.jpg\", \"dense_0147_t0036.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"temporal_relations\": [\n    {\n      \"first_event\": \"evento A\",\n      \"relation\": \"before|after|overlaps|during|starts|finishes|simultaneous\",\n      \"second_event\": \"evento B\",\n      \"evidence_frames\": [\"dense_0132_t0033.000.jpg\", \"dense_0134_t0033.500.jpg\", \"dense_0136_t0034.000.jpg\", \"dense_0138_t0034.500.jpg\", \"dense_0141_t0035.250.jpg\", \"dense_0143_t0035.750.jpg\", \"dense_0"
+    },
+    {
+      "segment_id": "segment_0013",
+      "start_time": 39.0,
+      "end_time": 42.5,
+      "input_frames": [
+        "dense_0156_t0039.000.jpg",
+        "dense_0158_t0039.500.jpg",
+        "dense_0160_t0040.000.jpg",
+        "dense_0162_t0040.500.jpg",
+        "dense_0164_t0041.000.jpg",
+        "dense_0166_t0041.500.jpg",
+        "dense_0168_t0042.000.jpg",
+        "dense_0170_t0042.500.jpg"
+      ],
+      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
+      "raw_response": "{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"persona\",\n      \"role\": \"ruolo visibile o null\",\n      \"attributes\": [\"attributo osservabile\"],\n      \"start_time\": 39.000,\n      \"end_time\": 42.500,\n      \"evidence_frames\": [\"dense_0156_t0039.000.jpg\", \"dense_0158_t0039.500.jpg\", \"dense_0160_t0040.000.jpg\", \"dense_0162_t0040.500.jpg\", \"dense_0164_t0041.000.jpg\", \"dense_0166_t0041.500.jpg\", \"dense_0168_t0042.000.jpg\", \"dense_0170_t0042.500.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"actions\": [\n    {\n      \"description\": \"azione osservata\",\n      \"actor\": \"e1 o descrizione\",\n      \"object\": \"e2, descrizione o null\",\n      \"start_time\": 39.000,\n      \"end_time\": 42.500,\n      \"evidence_frames\": [\"dense_0156_t0039.000.jpg\", \"dense_0158_t0039.500.jpg\", \"dense_0160_t0040.000.jpg\", \"dense_0162_t0040.500.jpg\", \"dense_0164_t0041.000.jpg\", \"dense_0166_t0041.500.jpg\", \"dense_0168_t0042.000.jpg\", \"dense_0170_t0042.500.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"events\": [\n    {\n      \"description\": \"evento temporalmente esteso\",\n      \"participants\": [\"e1 o descrizione\"],\n      \"start_time\": 39.000,\n      \"end_time\": 42.500,\n      \"evidence_frames\": [\"dense_0156_t0039.000.jpg\", \"dense_0158_t0039.500.jpg\", \"dense_0160_t0040.000.jpg\", \"dense_0162_t0040.500.jpg\", \"dense_0164_t0041.000.jpg\", \"dense_0166_t0041.500.jpg\", \"dense_0168_t0042.000.jpg\", \"dense_0170_t0042.500.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"spatial_relations\": [\n    {\n      \"subject\": \"e1 o descrizione\",\n      \"relation\": \"davanti a|dietro a|sopra|sotto|dentro|fuori|a sinistra di|a destra di|vicino a|lontano da|su|tra\",\n      \"object\": \"e2 o descrizione\",\n      \"start_time\": 39.000,\n      \"end_time\": 42.500,\n      \"evidence_frames\": [\"dense_0156_t0039.000.jpg\", \"dense_0158_t0039.500.jpg\", \"dense_0160_t0040.000.jpg\", \"dense_0162_t0040.500.jpg\", \"dense_0164_t0041.000.jpg\", \"dense_0166_t0041.500.jpg\", \"dense_0168_t0042.000.jpg\", \"dense_0170_t0042.500.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"state_changes\": [\n    {\n      \"entity\": \"e1 o descrizione\",\n      \"before\": \"stato precedente\",\n      \"after\": \"stato successivo\",\n      \"start_time\": 39.000,\n      \"end_time\": 42.500,\n      \"evidence_frames\": [\"dense_0156_t0039.000.jpg\", \"dense_0158_t0039.500.jpg\", \"dense_0160_t0040.000.jpg\", \"dense_0162_t0040.500.jpg\", \"dense_0164_t0041.000.jpg\", \"dense_0166_t0041.500.jpg\", \"dense_0168_t0042.000.jpg\", \"dense_0170_t0042.500.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"temporal_relations\": [\n    {\n      \"first_event\": \"evento A\",\n      \"relation\": \"before|after|overlaps|during|starts|finishes|simultaneous\",\n      \"second_event\": \"evento B\",\n      \"evidence_frames\": [\"dense_0156_t0039.000.jpg\", \"dense_0158_t0039.500.jpg\", \"dense_0160_t0040.000.jpg\", \"dense_0162_t0040.500.jpg\", \"dense_0164_t0041.000.jpg\", \"dense_0166_t0041.500.jpg\", \"dense_0"
+    }
+  ]
+}
