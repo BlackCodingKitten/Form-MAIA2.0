@@ -1,0 +1,439 @@
+{
+  "id_video": "video001",
+  "model": "google/gemma-3n-E4B-it",
+  "configuration": {
+    "window_seconds": 4.0,
+    "stride_seconds": 3.0,
+    "max_frames_per_window": 8,
+    "input_type": "ordered_dense_frames"
+  },
+  "numero_segmenti": 5,
+  "numero_errori": 5,
+  "segments": [
+    {
+      "segment_id": "segment_0000",
+      "start_time": 0.0,
+      "end_time": 3.75,
+      "input_frames": [
+        "dense_0000_t0000.000.jpg",
+        "dense_0002_t0000.500.jpg",
+        "dense_0004_t0001.000.jpg",
+        "dense_0006_t0001.500.jpg",
+        "dense_0009_t0002.250.jpg",
+        "dense_0011_t0002.750.jpg",
+        "dense_0013_t0003.250.jpg",
+        "dense_0015_t0003.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "farmacista",
+          "attributes": [],
+          "start_time": 0.0,
+          "end_time": 3.75,
+          "evidence_frames": [
+            "dense_0000_t0000.000.jpg",
+            "dense_0002_t0000.500.jpg",
+            "dense_0004_t0001.000.jpg",
+            "dense_0006_t0001.500.jpg",
+            "dense_0009_t0002.250.jpg",
+            "dense_0011_t0002.750.jpg",
+            "dense_0013_t0003.250.jpg",
+            "dense_0015_t0003.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "persona",
+          "role": "cliente",
+          "attributes": [],
+          "start_time": 0.0,
+          "end_time": 3.75,
+          "evidence_frames": [
+            "dense_0000_t0000.000.jpg",
+            "dense_0002_t0000.500.jpg",
+            "dense_0004_t0001.000.jpg",
+            "dense_0006_t0001.500.jpg",
+            "dense_0009_t0002.250.jpg",
+            "dense_0011_t0002.750.jpg",
+            "dense_0013_t0003.250.jpg",
+            "dense_0015_t0003.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "mostra un prodotto",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 0.0,
+          "end_time": 0.0,
+          "evidence_frames": [
+            "dense_0000_t0000.000.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "porge un prodotto",
+          "actor": "e1",
+          "object": "e2",
+          "start_time": 2.75,
+          "end_time": 2.75,
+          "evidence_frames": [
+            "dense_0011_t0002.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "events": [],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "davanti a",
+          "object": "e2",
+          "start_time": 0.0,
+          "end_time": 3.75,
+          "evidence_frames": [
+            "dense_0000_t0000.000.jpg",
+            "dense_0002_t0000.500.jpg",
+            "dense_0004_t0001.000.jpg",
+            "dense_0006_t0001.500.jpg",
+            "dense_0009_t0002.250.jpg",
+            "dense_0011_t0002.750.jpg",
+            "dense_0013_t0003.250.jpg",
+            "dense_0015_t0003.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0001",
+      "start_time": 3.0,
+      "end_time": 6.75,
+      "input_frames": [
+        "dense_0012_t0003.000.jpg",
+        "dense_0014_t0003.500.jpg",
+        "dense_0016_t0004.000.jpg",
+        "dense_0018_t0004.500.jpg",
+        "dense_0021_t0005.250.jpg",
+        "dense_0023_t0005.750.jpg",
+        "dense_0025_t0006.250.jpg",
+        "dense_0027_t0006.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "oratore",
+          "attributes": [
+            "uomo",
+            "occhiali"
+          ],
+          "start_time": 3.0,
+          "end_time": 6.75,
+          "evidence_frames": [
+            "dense_0012_t0003.000.jpg",
+            "dense_0014_t0003.500.jpg",
+            "dense_0016_t0004.000.jpg",
+            "dense_0018_t0004.500.jpg",
+            "dense_0021_t0005.250.jpg",
+            "dense_0023_t0005.750.jpg",
+            "dense_0025_t0006.250.jpg",
+            "dense_0027_t0006.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [],
+      "events": [],
+      "spatial_relations": [],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0002",
+      "start_time": 6.0,
+      "end_time": 9.75,
+      "input_frames": [
+        "dense_0024_t0006.000.jpg",
+        "dense_0026_t0006.500.jpg",
+        "dense_0028_t0007.000.jpg",
+        "dense_0030_t0007.500.jpg",
+        "dense_0033_t0008.250.jpg",
+        "dense_0035_t0008.750.jpg",
+        "dense_0037_t0009.250.jpg",
+        "dense_0039_t0009.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "cliente",
+          "attributes": [
+            "uomo",
+            "occhiali"
+          ],
+          "start_time": 6.0,
+          "end_time": 9.75,
+          "evidence_frames": [
+            "dense_0024_t0006.000.jpg",
+            "dense_0026_t0006.500.jpg",
+            "dense_0028_t0007.000.jpg",
+            "dense_0030_t0007.500.jpg",
+            "dense_0033_t0008.250.jpg",
+            "dense_0035_t0008.750.jpg",
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "persona",
+          "role": "commesso",
+          "attributes": [
+            "uomo",
+            "camicia bianca",
+            "giacca nera"
+          ],
+          "start_time": 6.0,
+          "end_time": 9.75,
+          "evidence_frames": [
+            "dense_0024_t0006.000.jpg",
+            "dense_0026_t0006.500.jpg",
+            "dense_0028_t0007.000.jpg",
+            "dense_0030_t0007.500.jpg",
+            "dense_0033_t0008.250.jpg",
+            "dense_0035_t0008.750.jpg",
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [],
+      "events": [],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "davanti a",
+          "object": "e2",
+          "start_time": 6.0,
+          "end_time": 9.75,
+          "evidence_frames": [
+            "dense_0024_t0006.000.jpg",
+            "dense_0026_t0006.500.jpg",
+            "dense_0028_t0007.000.jpg",
+            "dense_0030_t0007.500.jpg",
+            "dense_0033_t0008.250.jpg",
+            "dense_0035_t0008.750.jpg",
+            "dense_0037_t0009.250.jpg",
+            "dense_0039_t0009.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0007",
+      "start_time": 21.0,
+      "end_time": 24.75,
+      "input_frames": [
+        "dense_0084_t0021.000.jpg",
+        "dense_0086_t0021.500.jpg",
+        "dense_0088_t0022.000.jpg",
+        "dense_0090_t0022.500.jpg",
+        "dense_0093_t0023.250.jpg",
+        "dense_0095_t0023.750.jpg",
+        "dense_0097_t0024.250.jpg",
+        "dense_0099_t0024.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "speaker",
+          "attributes": [
+            "uomo",
+            "occhiali"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [],
+      "events": [],
+      "spatial_relations": [],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0009",
+      "start_time": 27.0,
+      "end_time": 29.75,
+      "input_frames": [
+        "dense_0108_t0027.000.jpg",
+        "dense_0110_t0027.500.jpg",
+        "dense_0111_t0027.750.jpg",
+        "dense_0113_t0028.250.jpg",
+        "dense_0114_t0028.500.jpg",
+        "dense_0116_t0029.000.jpg",
+        "dense_0117_t0029.250.jpg",
+        "dense_0119_t0029.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "uomo",
+          "attributes": [
+            "occhiali",
+            "capelli scuri",
+            "giacca scura",
+            "camicia chiara"
+          ],
+          "start_time": 27.0,
+          "end_time": 29.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0111_t0027.750.jpg",
+            "dense_0113_t0028.250.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0116_t0029.000.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [],
+      "events": [],
+      "spatial_relations": [],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    }
+  ],
+  "errors": [
+    {
+      "segment_id": "segment_0003",
+      "start_time": 9.0,
+      "end_time": 12.75,
+      "input_frames": [
+        "dense_0036_t0009.000.jpg",
+        "dense_0038_t0009.500.jpg",
+        "dense_0040_t0010.000.jpg",
+        "dense_0042_t0010.500.jpg",
+        "dense_0045_t0011.250.jpg",
+        "dense_0047_t0011.750.jpg",
+        "dense_0049_t0012.250.jpg",
+        "dense_0051_t0012.750.jpg"
+      ],
+      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
+      "raw_response": "```json\n{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"uomo\",\n      \"role\": \"ospite\",\n      \"attributes\": [\"capelli castani\", \"occhiali\", \"giacca nera\"],\n      \"start_time\": 9.000,\n      \"end_time\": 12.750,\n      \"evidence_frames\": [\"dense_0036_t0009.000.jpg\", \"dense_0038_t0009.500.jpg\", \"dense_0042_t0010.500.jpg\", \"dense_0047_t0011.750.jpg\", \"dense_0051_t0012.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e2\",\n      \"label\": \"uomo\",\n      \"role\": \"commesso\",\n      \"attributes\": [\"capelli castani\", \"camicia bianca\", \"giacca bianca\", \"cravatta nera\"],\n      \"start_time\": 9.000,\n      \"end_time\": 12.750,\n      \"evidence_frames\": [\"dense_0036_t0009.000.jpg\", \"dense_0038_t0009.500.jpg\", \"dense_0040_t0010.000.jpg\", \"dense_0042_t0010.500.jpg\", \"dense_0045_t0011.250.jpg\", \"dense_0047_t0011.750.jpg\", \"dense_0051_t0012.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e3\",\n      \"label\": \"scatola\",\n      \"role\": \"prodotto\",\n      \"attributes\": [\"contenente prodotti per neonati\", \"con immagini di bambini\"],\n      \"start_time\": 9.000,\n      \"end_time\": 12.750,\n      \"evidence_frames\": [\"dense_0036_t0009.000.jpg\", \"dense_0038_t0009.500.jpg\", \"dense_0042_t0010.500.jpg\", \"dense_0045_t0011.250.jpg\", \"dense_0047_t0011.750.jpg\", \"dense_0051_t0012.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"actions\": [\n    {\n      \"description\": \"parlare\",\n      \"actor\": \"e1\",\n      \"object\": \"e2\",\n      \"start_time\": 9.000,\n      \"end_time\": 12.750,\n      \"evidence_frames\": [\"dense_0036_t0009.000.jpg\", \"dense_0038_t0009.500.jpg\", \"dense_0040_t0010.000.jpg\", \"dense_0042_t0010.500.jpg\", \"dense_0045_t0011.250.jpg\", \"dense_0047_t0011.750.jpg\", \"dense_0051_t0012.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"events\": [\n    {\n      \"description\": \"conversazione\",\n      \"participants\": [\"e1\", \"e2\"],\n      \"start_time\": 9.000,\n      \"end_time\": 12.750,\n      \"evidence_frames\": [\"dense_0036_t0009.000.jpg\", \"dense_0038_t0009.500.jpg\", \"dense_0040_t0010.000.jpg\", \"dense_0042_t0010.500.jpg\", \"dense_0045_t0011.250.jpg\", \"dense_0047_t0011.750.jpg\", \"dense_0051_t0012.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"spatial_relations\": [\n    {\n      \"subject\": \"e1\",\n      \"relation\": \"davanti a\",\n      \"object\": \"e2\",\n      \"start_time\": 9.000,\n      \"end_time\": 12.750,\n      \"evidence_frames\": [\"dense_0036_t0009.000.jpg\", \"dense_0038_t0009.500.jpg\", \"dense_0040_t0010.000.jpg\", \"dense_0042_t0010.500.jpg\", \"dense_0045_t0011.250.jpg\", \"dense_0047_t0011.750.jpg\", \"dense_0051_t0012.750.jpg\"],\n      \"evidence_type"
+    },
+    {
+      "segment_id": "segment_0004",
+      "start_time": 12.0,
+      "end_time": 15.75,
+      "input_frames": [
+        "dense_0048_t0012.000.jpg",
+        "dense_0050_t0012.500.jpg",
+        "dense_0052_t0013.000.jpg",
+        "dense_0054_t0013.500.jpg",
+        "dense_0057_t0014.250.jpg",
+        "dense_0059_t0014.750.jpg",
+        "dense_0061_t0015.250.jpg",
+        "dense_0063_t0015.750.jpg"
+      ],
+      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
+      "raw_response": "```json\n{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"uomo\",\n      \"role\": \"personaggio\",\n      \"attributes\": [\"capelli scuri\", \"occhiali\", \"giacca nera\"],\n      \"start_time\": 12.000,\n      \"end_time\": 15.750,\n      \"evidence_frames\": [\"dense_0048_t0012.000.jpg\", \"dense_0050_t0012.500.jpg\", \"dense_0052_t0013.000.jpg\", \"dense_0054_t0013.500.jpg\", \"dense_0057_t0014.250.jpg\", \"dense_0059_t0014.750.jpg\", \"dense_0061_t0015.250.jpg\", \"dense_0063_t0015.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e2\",\n      \"label\": \"uomo\",\n      \"role\": \"personaggio\",\n      \"attributes\": [\"capelli scuri\", \"occhiali\", \"camicia bianca\", \"giacca bianca\"],\n      \"start_time\": 12.000,\n      \"end_time\": 15.750,\n      \"evidence_frames\": [\"dense_0048_t0012.000.jpg\", \"dense_0050_t0012.500.jpg\", \"dense_0052_t0013.000.jpg\", \"dense_0054_t0013.500.jpg\", \"dense_0057_t0014.250.jpg\", \"dense_0059_t0014.750.jpg\", \"dense_0061_t0015.250.jpg\", \"dense_0063_t0015.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e3\",\n      \"label\": \"uomo\",\n      \"role\": \"personaggio\",\n      \"attributes\": [\"capelli scuri\", \"occhiali\", \"giacca nera\"],\n      \"start_time\": 12.000,\n      \"end_time\": 15.750,\n      \"evidence_frames\": [\"dense_0048_t0012.000.jpg\", \"dense_0050_t0012.500.jpg\", \"dense_0052_t0013.000.jpg\", \"dense_0054_t0013.500.jpg\", \"dense_0057_t0014.250.jpg\", \"dense_0059_t0014.750.jpg\", \"dense_0061_t0015.250.jpg\", \"dense_0063_t0015.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e4\",\n      \"label\": \"scaffale\",\n      \"role\": \"arredamento\",\n      \"attributes\": [\"pieno di prodotti\", \"legno\"],\n      \"start_time\": 12.000,\n      \"end_time\": 15.750,\n      \"evidence_frames\": [\"dense_0048_t0012.000.jpg\", \"dense_0050_t0012.500.jpg\", \"dense_0052_t0013.000.jpg\", \"dense_0054_t0013.500.jpg\", \"dense_0057_t0014.250.jpg\", \"dense_0059_t0014.750.jpg\", \"dense_0061_t0015.250.jpg\", \"dense_0063_t0015.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e5\",\n      \"label\": \"tavolo\",\n      \"role\": \"arredamento\",\n      \"attributes\": [\"bianco\", \"rettangolare\"],\n      \"start_time\": 12.000,\n      \"end_time\": 15.750,\n      \"evidence_frames\": [\"dense_0048_t0012.000.jpg\", \"dense_0050_t0012.500.jpg\", \"dense_0052_t0013.000.jpg\", \"dense_0054_t0013.500.jpg\", \"dense_0057_t0014.250.jpg\", \"dense_0059_t0014.750.jpg\", \"dense_0061_t0015.250.jpg\", \"dense_0063_t0015.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e6\",\n      \"label\": \"scatola\",\n      \"role\": \"oggetto\",\n      \"attributes"
+    },
+    {
+      "segment_id": "segment_0005",
+      "start_time": 15.0,
+      "end_time": 18.75,
+      "input_frames": [
+        "dense_0060_t0015.000.jpg",
+        "dense_0062_t0015.500.jpg",
+        "dense_0064_t0016.000.jpg",
+        "dense_0066_t0016.500.jpg",
+        "dense_0069_t0017.250.jpg",
+        "dense_0071_t0017.750.jpg",
+        "dense_0073_t0018.250.jpg",
+        "dense_0075_t0018.750.jpg"
+      ],
+      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
+      "raw_response": "```json\n{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"persona\",\n      \"role\": \"uomo\",\n      \"attributes\": [\"occhiali\", \"giacca nera\"],\n      \"start_time\": 15.000,\n      \"end_time\": 18.750,\n      \"evidence_frames\": [\"dense_0060_t0015.000.jpg\", \"dense_0062_t0015.500.jpg\", \"dense_0064_t0016.000.jpg\", \"dense_0066_t0016.500.jpg\", \"dense_0069_t0017.250.jpg\", \"dense_0071_t0017.750.jpg\", \"dense_0073_t0018.250.jpg\", \"dense_0075_t0018.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e2\",\n      \"label\": \"scaffale\",\n      \"role\": \"sfondo\",\n      \"attributes\": [\"libri\", \"scatole\", \"oggetti\"],\n      \"start_time\": 15.000,\n      \"end_time\": 18.750,\n      \"evidence_frames\": [\"dense_0060_t0015.000.jpg\", \"dense_0062_t0015.500.jpg\", \"dense_0064_t0016.000.jpg\", \"dense_0066_t0016.500.jpg\", \"dense_0069_t0017.250.jpg\", \"dense_0071_t0017.750.jpg\", \"dense_0073_t0018.250.jpg\", \"dense_0075_t0018.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e3\",\n      \"label\": \"tavolo\",\n      \"role\": \"superficie\",\n      \"attributes\": [\"bianco\"],\n      \"start_time\": 15.000,\n      \"end_time\": 18.750,\n      \"evidence_frames\": [\"dense_0060_t0015.000.jpg\", \"dense_0062_t0015.500.jpg\", \"dense_0064_t0016.000.jpg\", \"dense_0066_t0016.500.jpg\", \"dense_0069_t0017.250.jpg\", \"dense_0071_t0017.750.jpg\", \"dense_0073_t0018.250.jpg\", \"dense_0075_t0018.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e4\",\n      \"label\": \"scatola\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"blu\", \"con immagini di bambini\"],\n      \"start_time\": 15.000,\n      \"end_time\": 18.750,\n      \"evidence_frames\": [\"dense_0060_t0015.000.jpg\", \"dense_0062_t0015.500.jpg\", \"dense_0064_t0016.000.jpg\", \"dense_0066_t0016.500.jpg\", \"dense_0069_t0017.250.jpg\", \"dense_0071_t0017.750.jpg\", \"dense_0073_t0018.250.jpg\", \"dense_0075_t0018.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e5\",\n      \"label\": \"uomo\",\n      \"role\": \"cliente\",\n      \"attributes\": [\"giacca nera\", \"occhiali\"],\n      \"start_time\": 15.000,\n      \"end_time\": 18.750,\n      \"evidence_frames\": [\"dense_0060_t0015.000.jpg\", \"dense_0062_t0015.500.jpg\", \"dense_0064_t0016.000.jpg\", \"dense_0066_t0016.500.jpg\", \"dense_0069_t0017.250.jpg\", \"dense_0071_t0017.750.jpg\", \"dense_0073_t0018.250.jpg\", \"dense_0075_t0018.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e6\",\n      \"label\": \"bambino\",\n      \"role\": \"immagine sulla scatola\",\n      \"attributes\": [\"bambino\", \"vestito\"],\n      \"start_time\": 15.000,"
+    },
+    {
+      "segment_id": "segment_0006",
+      "start_time": 18.0,
+      "end_time": 21.75,
+      "input_frames": [
+        "dense_0072_t0018.000.jpg",
+        "dense_0074_t0018.500.jpg",
+        "dense_0076_t0019.000.jpg",
+        "dense_0078_t0019.500.jpg",
+        "dense_0081_t0020.250.jpg",
+        "dense_0083_t0020.750.jpg",
+        "dense_0085_t0021.250.jpg",
+        "dense_0087_t0021.750.jpg"
+      ],
+      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
+      "raw_response": "```json\n{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"persona\",\n      \"role\": \"aggressore\",\n      \"attributes\": [\"maschera\", \"vestito bianco\", \"ascia\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e2\",\n      \"label\": \"persona\",\n      \"role\": \"cliente\",\n      \"attributes\": [\"occhiali\", \"vestito scuro\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e3\",\n      \"label\": \"scaffale\",\n      \"role\": \"sfondo\",\n      \"attributes\": [],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e4\",\n      \"label\": \"bancone\",\n      \"role\": \"superficie\",\n      \"attributes\": [],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e5\",\n      \"label\": \"prodotto\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"scatola\", \"immagine di un bambino\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 0.8\n    }\n  ],\n  \"actions\": [\n    {\n      \"description\": \"colpire con l'ascia\",\n      \"actor\": \"e1\",\n      \"object\": \"e4\",\n      \"start_time\": 18.000,\n      \"end_time\": 18.500"
+    },
+    {
+      "segment_id": "segment_0008",
+      "start_time": 24.0,
+      "end_time": 27.75,
+      "input_frames": [
+        "dense_0096_t0024.000.jpg",
+        "dense_0098_t0024.500.jpg",
+        "dense_0100_t0025.000.jpg",
+        "dense_0102_t0025.500.jpg",
+        "dense_0105_t0026.250.jpg",
+        "dense_0107_t0026.750.jpg",
+        "dense_0109_t0027.250.jpg",
+        "dense_0111_t0027.750.jpg"
+      ],
+      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
+      "raw_response": "```json\n{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"uomo\",\n      \"role\": \"parlante\",\n      \"attributes\": [\"capelli scuri\", \"occhiali\", \"giacca nera\", \"camicia bianca\", \"cravatta\"],\n      \"start_time\": 24.000,\n      \"end_time\": 27.750,\n      \"evidence_frames\": [\"dense_0096_t0024.000.jpg\", \"dense_0098_t0024.500.jpg\", \"dense_0100_t0025.000.jpg\", \"dense_0102_t0025.500.jpg\", \"dense_0105_t0026.250.jpg\", \"dense_0107_t0026.750.jpg\", \"dense_0109_t0027.250.jpg\", \"dense_0111_t0027.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e2\",\n      \"label\": \"uomo\",\n      \"role\": \"ascoltatore\",\n      \"attributes\": [\"capelli scuri\", \"occhiali\", \"giacca nera\", \"camicia bianca\"],\n      \"start_time\": 24.000,\n      \"end_time\": 27.750,\n      \"evidence_frames\": [\"dense_0096_t0024.000.jpg\", \"dense_0098_t0024.500.jpg\", \"dense_0100_t0025.000.jpg\", \"dense_0102_t0025.500.jpg\", \"dense_0105_t0026.250.jpg\", \"dense_0107_t0026.750.jpg\", \"dense_0109_t0027.250.jpg\", \"dense_0111_t0027.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e3\",\n      \"label\": \"scrivania\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"superficie chiara\"],\n      \"start_time\": 24.000,\n      \"end_time\": 27.750,\n      \"evidence_frames\": [\"dense_0096_t0024.000.jpg\", \"dense_0098_t0024.500.jpg\", \"dense_0100_t0025.000.jpg\", \"dense_0102_t0025.500.jpg\", \"dense_0105_t0026.250.jpg\", \"dense_0107_t0026.750.jpg\", \"dense_0109_t0027.250.jpg\", \"dense_0111_t0027.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e4\",\n      \"label\": \"farmacia\",\n      \"role\": \"luogo\",\n      \"attributes\": [\"scaffali con prodotti farmaceutici\"],\n      \"start_time\": 24.000,\n      \"end_time\": 27.750,\n      \"evidence_frames\": [\"dense_0096_t0024.000.jpg\", \"dense_0098_t0024.500.jpg\", \"dense_0100_t0025.000.jpg\", \"dense_0102_t0025.500.jpg\", \"dense_0105_t0026.250.jpg\", \"dense_0107_t0026.750.jpg\", \"dense_0109_t0027.250.jpg\", \"dense_0111_t0027.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"actions\": [\n    {\n      \"description\": \"parla\",\n      \"actor\": \"e1\",\n      \"object\": \"e2\",\n      \"start_time\": 24.000,\n      \"end_time\": 27.750,\n      \"evidence_frames\": [\"dense_0096_t0024.000.jpg\", \"dense_0098_t0024.500.jpg\", \"dense_0100_t0025.000.jpg\", \"dense_0102_t0025.500.jpg\", \"dense_0105_t0026.250.jpg\", \"dense_0107_t0026.750.jpg\", \"dense_0109_t0027.250.jpg\", \"dense_0111_t0027.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"events\": [\n    {\n      \"description\": \"conversazione\",\n      \"participants\": [\"e1\", \"e2\"],\n      \"start_time\":"
+    }
+  ]
+}
