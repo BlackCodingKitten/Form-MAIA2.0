@@ -7,8 +7,8 @@
     "max_frames_per_window": 8,
     "input_type": "ordered_dense_frames"
   },
-  "numero_segmenti": 9,
-  "numero_errori": 1,
+  "numero_segmenti": 10,
+  "numero_errori": 0,
   "segments": [
     {
       "segment_id": "segment_0000",
@@ -985,6 +985,429 @@
       "causal_hypotheses": []
     },
     {
+      "segment_id": "segment_0008",
+      "start_time": 24.0,
+      "end_time": 27.75,
+      "input_frames": [
+        "dense_0096_t0024.000.jpg",
+        "dense_0098_t0024.500.jpg",
+        "dense_0100_t0025.000.jpg",
+        "dense_0102_t0025.500.jpg",
+        "dense_0105_t0026.250.jpg",
+        "dense_0107_t0026.750.jpg",
+        "dense_0109_t0027.250.jpg",
+        "dense_0111_t0027.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": " soggetto",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e4",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e5",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e6",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e7",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e8",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e9",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e10",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e11",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e12",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e13",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e14",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e15",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e16",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e17",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e18",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e19",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e20",
+          "label": "pelle",
+          "role": "corpo",
+          "attributes": [],
+          "start_time": 24.0,
+          "end_time": 27.75,
+          "evidence_frames": [
+            "dense_0096_t0024.000.jpg",
+            "dense_0098_t0024.500.jpg",
+            "dense_0100_t0025.000.jpg",
+            "dense_0102_t0025.500.jpg",
+            "dense_0105_t0026.250.jpg",
+            "dense_0107_t0026.750.jpg",
+            "dense_0109_t0027.250.jpg",
+            "dense_0111_t0027.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [],
+      "events": [],
+      "spatial_relations": [],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
       "segment_id": "segment_0009",
       "start_time": 27.0,
       "end_time": 28.25,
@@ -1174,23 +1597,5 @@
       "causal_hypotheses": []
     }
   ],
-  "errors": [
-    {
-      "segment_id": "segment_0008",
-      "start_time": 24.0,
-      "end_time": 27.75,
-      "input_frames": [
-        "dense_0096_t0024.000.jpg",
-        "dense_0098_t0024.500.jpg",
-        "dense_0100_t0025.000.jpg",
-        "dense_0102_t0025.500.jpg",
-        "dense_0105_t0026.250.jpg",
-        "dense_0107_t0026.750.jpg",
-        "dense_0109_t0027.250.jpg",
-        "dense_0111_t0027.750.jpg"
-      ],
-      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
-      "raw_response": "```json\n{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"persona\",\n      \"role\": \" soggetto\",\n      \"attributes\": [],\n      \"start_time\": 24.000,\n      \"end_time\": 27.750,\n      \"evidence_frames\": [\"dense_0096_t0024.000.jpg\", \"dense_0098_t0024.500.jpg\", \"dense_0100_t0025.000.jpg\", \"dense_0102_t0025.500.jpg\", \"dense_0105_t0026.250.jpg\", \"dense_0107_t0026.750.jpg\", \"dense_0109_t0027.250.jpg\", \"dense_0111_t0027.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e2\",\n      \"label\": \"pelle\",\n      \"role\": \"corpo\",\n      \"attributes\": [],\n      \"start_time\": 24.000,\n      \"end_time\": 27.750,\n      \"evidence_frames\": [\"dense_0096_t0024.000.jpg\", \"dense_0098_t0024.500.jpg\", \"dense_0100_t0025.000.jpg\", \"dense_0102_t0025.500.jpg\", \"dense_0105_t0026.250.jpg\", \"dense_0107_t0026.750.jpg\", \"dense_0109_t0027.250.jpg\", \"dense_0111_t0027.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e3\",\n      \"label\": \"pelle\",\n      \"role\": \"corpo\",\n      \"attributes\": [],\n      \"start_time\": 24.000,\n      \"end_time\": 27.750,\n      \"evidence_frames\": [\"dense_0096_t0024.000.jpg\", \"dense_0098_t0024.500.jpg\", \"dense_0100_t0025.000.jpg\", \"dense_0102_t0025.500.jpg\", \"dense_0105_t0026.250.jpg\", \"dense_0107_t0026.750.jpg\", \"dense_0109_t0027.250.jpg\", \"dense_0111_t0027.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e4\",\n      \"label\": \"pelle\",\n      \"role\": \"corpo\",\n      \"attributes\": [],\n      \"start_time\": 24.000,\n      \"end_time\": 27.750,\n      \"evidence_frames\": [\"dense_0096_t0024.000.jpg\", \"dense_0098_t0024.500.jpg\", \"dense_0100_t0025.000.jpg\", \"dense_0102_t0025.500.jpg\", \"dense_0105_t0026.250.jpg\", \"dense_0107_t0026.750.jpg\", \"dense_0109_t0027.250.jpg\", \"dense_0111_t0027.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e5\",\n      \"label\": \"pelle\",\n      \"role\": \"corpo\",\n      \"attributes\": [],\n      \"start_time\": 24.000,\n      \"end_time\": 27.750,\n      \"evidence_frames\": [\"dense_0096_t0024.000.jpg\", \"dense_0098_t0024.500.jpg\", \"dense_0100_t0025.000.jpg\", \"dense_0102_t0025.500.jpg\", \"dense_0105_t0026.250.jpg\", \"dense_0107_t0026.750.jpg\", \"dense_0109_t0027.250.jpg\", \"dense_0111_t0027.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e6\",\n      \"label\": \"pelle\",\n      \"role\": \"corpo\",\n      \"attributes\": [],\n      \"start_time\": 24.000,\n      \"end_time\": 27.750,\n      \"evidence_frames\": [\"dense_0096_t0024.000.jpg\", \"dense_0098_t0024.500.jpg\", \"dense_0100_t0025.000.jpg\", \"dense_0102_t0025.500.jpg\", \"dense_0105_t0026.250.jpg\", \"dense_0107_t0026.750.jpg\", \"dense_0109_t0027.250.jpg\", \"dense_0111_t0027.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e7\",\n      \"label\": \"pelle\",\n      \"role\": \"corpo\",\n      \"attributes\": [],\n      \"start_time\": 24.000,\n      \"end_time\": 27.750,\n      \"evidence_frames\": [\"dense_0096_t0024.000.jpg\", \"dense_0098_t0024.500.jpg\", \"dense_0100_t0025.000.jpg\", \"dense_0102_t0025.500.jpg\", \"dense_0105_t0026.250.jpg\", \"dense_0107_t0026.750.jpg\", \"dense_0109_t0027.250.jpg\", \"dense_0111_t0027.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e8\",\n      \"label\": \"pelle\",\n      \"role\": \"corpo\",\n      \"attributes\": [],\n      \"start_time\": 24.000,\n      \"end_time\": 27.750,\n      \"evidence_frames\": [\"dense_0096_t0024.000.jpg\", \"dense_0098_t0024.500.jpg\", \"dense_0100_t0025.000.jpg\", \"dense_0102_t0025.500.jpg\", \"dense_0105_t0026.250.jpg\", \"dense_0107_t0026.750.jpg\", \"dense_0109_t0027.250.jpg\", \"dense_0111_t0027.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e9\",\n      \"label\": \"pelle\",\n      \"role\": \"corpo\",\n      \"attributes\": [],\n      \"start_time\": 24.000,\n      \"end_time\": 27.750,\n      \"evidence_frames\": [\"dense_0096_t0024.000.jpg\", \"dense_0098_t0024.500.jpg\", \"dense_0100_t0025.000.jpg\", \"dense_0102_t0025.500.jpg\", \"dense_0105_t0026.250.jpg\", \"dense_0107_t0026.750.jpg\", \"dense_0109_t0027.250.jpg\", \"dense_0111_t0027.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e10\",\n      \"label\": \"pelle\",\n      \"role\": \"corpo\",\n      \"attributes\": [],\n      \"start_time\": 24.000,\n      \"end_time\": 27.750,\n      \"evidence_frames\": [\"dense_0096_t0024.000.jpg\", \"dense_0098_t0024.500.jpg\", \"dense_0100_t0025.000.jpg\", \"dense_0102_t0025.500.jpg\", \"dense_0105_t0026.250.jpg\", \"dense_0107_t0026.750.jpg\", \"dense_0109_t0027.250.jpg\", \"dense_0111_t0027.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e11\",\n      \"label\": \"pelle\",\n      \"role\": \"corpo\",\n      \"attributes\": [],\n      \"start_time\": 24.000,\n      \"end_time\": 27.750,\n      \"evidence_frames\": [\"dense_0096_t0024.000.jpg\", \"dense_0098_t0024.500.jpg\", \"dense_0100_t0025.000.jpg\", \"dense_0102_t0025.500.jpg\", \"dense_0105_t0026.250.jpg\", \"dense_0107_t0026.750.jpg\", \"dense_0109_t0027.250.jpg\", \"dense_0111_t0027.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e12\",\n      \"label\": \"pelle\",\n      \"role\": \"corpo\",\n      \"attributes\": [],\n      \"start_time\": 24.000,\n      \"end_time\": 27.750,\n      \"evidence_frames\": [\"dense_0096_t0024.000.jpg\", \"dense_0098_t0024.500.jpg\", \"dense_0100_t0025.000.jpg\", \"dense_0102_t0025.500.jpg\", \"dense_0105"
-    }
-  ]
+  "errors": []
 }

@@ -7,8 +7,8 @@
     "max_frames_per_window": 8,
     "input_type": "ordered_dense_frames"
   },
-  "numero_segmenti": 10,
-  "numero_errori": 3,
+  "numero_segmenti": 13,
+  "numero_errori": 0,
   "segments": [
     {
       "segment_id": "segment_0000",
@@ -634,6 +634,686 @@
       "causal_hypotheses": []
     },
     {
+      "segment_id": "segment_0006",
+      "start_time": 18.0,
+      "end_time": 21.75,
+      "input_frames": [
+        "dense_0072_t0018.000.jpg",
+        "dense_0074_t0018.500.jpg",
+        "dense_0076_t0019.000.jpg",
+        "dense_0078_t0019.500.jpg",
+        "dense_0081_t0020.250.jpg",
+        "dense_0083_t0020.750.jpg",
+        "dense_0085_t0021.250.jpg",
+        "dense_0087_t0021.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "uomo",
+          "attributes": [
+            "giacca gialla",
+            "pantalone nero",
+            "capelli corti",
+            "barba"
+          ],
+          "start_time": 18.0,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0072_t0018.000.jpg",
+            "dense_0074_t0018.500.jpg",
+            "dense_0076_t0019.000.jpg",
+            "dense_0078_t0019.500.jpg",
+            "dense_0081_t0020.250.jpg",
+            "dense_0083_t0020.750.jpg",
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "auto",
+          "role": "auto",
+          "attributes": [
+            "argento",
+            "berlina"
+          ],
+          "start_time": 18.0,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0072_t0018.000.jpg",
+            "dense_0074_t0018.500.jpg",
+            "dense_0076_t0019.000.jpg",
+            "dense_0078_t0019.500.jpg",
+            "dense_0081_t0020.250.jpg",
+            "dense_0083_t0020.750.jpg",
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "persona",
+          "role": "donna",
+          "attributes": [
+            "vestito chiaro",
+            "capelli biondi",
+            "borsa"
+          ],
+          "start_time": 19.0,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0076_t0019.000.jpg",
+            "dense_0078_t0019.500.jpg",
+            "dense_0081_t0020.250.jpg",
+            "dense_0083_t0020.750.jpg",
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e4",
+          "label": "auto",
+          "role": "auto",
+          "attributes": [
+            "nero",
+            "berlina"
+          ],
+          "start_time": 20.25,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0081_t0020.250.jpg",
+            "dense_0083_t0020.750.jpg",
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e5",
+          "label": "autobus",
+          "role": "autobus",
+          "attributes": [
+            "giallo e nero",
+            "numero 4780"
+          ],
+          "start_time": 18.0,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0072_t0018.000.jpg",
+            "dense_0074_t0018.500.jpg",
+            "dense_0076_t0019.000.jpg",
+            "dense_0078_t0019.500.jpg",
+            "dense_0081_t0020.250.jpg",
+            "dense_0083_t0020.750.jpg",
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e6",
+          "label": "persona",
+          "role": "uomo",
+          "attributes": [
+            "maglietta rossa",
+            "jeans",
+            "capelli corti"
+          ],
+          "start_time": 20.75,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0083_t0020.750.jpg",
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e7",
+          "label": "persona",
+          "role": "uomo",
+          "attributes": [
+            "maglietta gialla",
+            "pantalone nero",
+            "capelli corti",
+            "barba"
+          ],
+          "start_time": 21.25,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e8",
+          "label": "persona",
+          "role": "uomo",
+          "attributes": [
+            "maglietta gialla",
+            "pantalone nero",
+            "capelli corti",
+            "barba"
+          ],
+          "start_time": 18.0,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0072_t0018.000.jpg",
+            "dense_0074_t0018.500.jpg",
+            "dense_0076_t0019.000.jpg",
+            "dense_0078_t0019.500.jpg",
+            "dense_0081_t0020.250.jpg",
+            "dense_0083_t0020.750.jpg",
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e9",
+          "label": "persona",
+          "role": "uomo",
+          "attributes": [
+            "maglietta rossa",
+            "jeans",
+            "capelli corti"
+          ],
+          "start_time": 20.75,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0083_t0020.750.jpg",
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e10",
+          "label": "persona",
+          "role": "donna",
+          "attributes": [
+            "vestito chiaro",
+            "capelli biondi",
+            "borsa"
+          ],
+          "start_time": 19.0,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0076_t0019.000.jpg",
+            "dense_0078_t0019.500.jpg",
+            "dense_0081_t0020.250.jpg",
+            "dense_0083_t0020.750.jpg",
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e11",
+          "label": "auto",
+          "role": "auto",
+          "attributes": [
+            "rosso",
+            "berlina"
+          ],
+          "start_time": 21.25,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "l'uomo in giallo sta bevendo da una bottiglia",
+          "actor": "e1",
+          "object": "bottiglia",
+          "start_time": 20.25,
+          "end_time": 20.75,
+          "evidence_frames": [
+            "dense_0081_t0020.250.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "l'uomo in giallo sta bevendo da una bottiglia",
+          "actor": "e1",
+          "object": "bottiglia",
+          "start_time": 21.25,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "l'uomo in rosso sta tenendo un panino",
+          "actor": "e6",
+          "object": "panino",
+          "start_time": 20.75,
+          "end_time": 21.25,
+          "evidence_frames": [
+            "dense_0083_t0020.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "l'uomo in rosso sta tenendo un panino",
+          "actor": "e6",
+          "object": "panino",
+          "start_time": 21.25,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "events": [
+        {
+          "description": "persona che cammina",
+          "participants": [
+            "e3"
+          ],
+          "start_time": 19.0,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0076_t0019.000.jpg",
+            "dense_0078_t0019.500.jpg",
+            "dense_0081_t0020.250.jpg",
+            "dense_0083_t0020.750.jpg",
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "vicino a",
+          "object": "e2",
+          "start_time": 18.0,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0072_t0018.000.jpg",
+            "dense_0074_t0018.500.jpg",
+            "dense_0076_t0019.000.jpg",
+            "dense_0078_t0019.500.jpg",
+            "dense_0081_t0020.250.jpg",
+            "dense_0083_t0020.750.jpg",
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "subject": "e3",
+          "relation": "vicino a",
+          "object": "e2",
+          "start_time": 19.0,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0076_t0019.000.jpg",
+            "dense_0078_t0019.500.jpg",
+            "dense_0081_t0020.250.jpg",
+            "dense_0083_t0020.750.jpg",
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "subject": "e6",
+          "relation": "vicino a",
+          "object": "e5",
+          "start_time": 20.75,
+          "end_time": 21.75,
+          "evidence_frames": [
+            "dense_0083_t0020.750.jpg",
+            "dense_0085_t0021.250.jpg",
+            "dense_0087_t0021.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0007",
+      "start_time": 21.0,
+      "end_time": 24.75,
+      "input_frames": [
+        "dense_0084_t0021.000.jpg",
+        "dense_0086_t0021.500.jpg",
+        "dense_0088_t0022.000.jpg",
+        "dense_0090_t0022.500.jpg",
+        "dense_0093_t0023.250.jpg",
+        "dense_0095_t0023.750.jpg",
+        "dense_0097_t0024.250.jpg",
+        "dense_0099_t0024.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "attore",
+          "attributes": [
+            "uomo",
+            "basso",
+            "folto"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "uomo",
+          "role": "attore",
+          "attributes": [
+            "uomo",
+            "medio",
+            "folto"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "uomo",
+          "role": "attore",
+          "attributes": [
+            "uomo",
+            "basso",
+            "folto",
+            "con cappello"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e4",
+          "label": "uomo",
+          "role": "attore",
+          "attributes": [
+            "uomo",
+            "medio",
+            "folto",
+            "con cappello"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e5",
+          "label": "persona",
+          "role": "spettatore",
+          "attributes": [
+            "donna",
+            "capelli biondi",
+            "con cappello"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e6",
+          "label": "persona",
+          "role": "spettatore",
+          "attributes": [
+            "donna",
+            "capelli scuri"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e7",
+          "label": "auto",
+          "role": "oggetto",
+          "attributes": [
+            "rossa"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e8",
+          "label": "autobus",
+          "role": "oggetto",
+          "attributes": [
+            "giallo e nero"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "beve da una bottiglia",
+          "actor": "e1",
+          "object": "bottiglia",
+          "start_time": 21.0,
+          "end_time": 21.5,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "mangia",
+          "actor": "e2",
+          "object": "cibo",
+          "start_time": 21.5,
+          "end_time": 22.0,
+          "evidence_frames": [
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "mangia",
+          "actor": "e3",
+          "object": "cibo",
+          "start_time": 22.0,
+          "end_time": 22.5,
+          "evidence_frames": [
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "mangia",
+          "actor": "e4",
+          "object": "cibo",
+          "start_time": 22.5,
+          "end_time": 23.25,
+          "evidence_frames": [
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "mangia",
+          "actor": "e3",
+          "object": "cibo",
+          "start_time": 23.25,
+          "end_time": 23.75,
+          "evidence_frames": [
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "mangia",
+          "actor": "e4",
+          "object": "cibo",
+          "start_time": 23.75,
+          "end_time": 24.25,
+          "evidence_frames": [
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "mangia",
+          "actor": "e3",
+          "object": "cibo",
+          "start_time": 24.25,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "events": [],
+      "spatial_relations": [],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
       "segment_id": "segment_0008",
       "start_time": 24.0,
       "end_time": 27.75,
@@ -871,6 +1551,283 @@
       ],
       "events": [],
       "spatial_relations": [],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
+      "segment_id": "segment_0009",
+      "start_time": 27.0,
+      "end_time": 30.75,
+      "input_frames": [
+        "dense_0108_t0027.000.jpg",
+        "dense_0110_t0027.500.jpg",
+        "dense_0112_t0028.000.jpg",
+        "dense_0114_t0028.500.jpg",
+        "dense_0117_t0029.250.jpg",
+        "dense_0119_t0029.750.jpg",
+        "dense_0121_t0030.250.jpg",
+        "dense_0123_t0030.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "persona",
+          "role": "uomo",
+          "attributes": [
+            "maglietta arancione",
+            "pantaloncini neri"
+          ],
+          "start_time": 27.0,
+          "end_time": 30.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg",
+            "dense_0123_t0030.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "persona",
+          "role": "uomo",
+          "attributes": [
+            "maglietta rossa",
+            "pantaloncini blu",
+            "capelli radi"
+          ],
+          "start_time": 27.0,
+          "end_time": 30.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg",
+            "dense_0123_t0030.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "auto",
+          "role": "veicolo",
+          "attributes": [
+            "colore arancione"
+          ],
+          "start_time": 27.0,
+          "end_time": 30.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg",
+            "dense_0123_t0030.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e4",
+          "label": "bottiglia",
+          "role": "oggetto",
+          "attributes": [
+            "bottiglia di plastica trasparente"
+          ],
+          "start_time": 27.0,
+          "end_time": 30.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg",
+            "dense_0123_t0030.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e5",
+          "label": "tazza",
+          "role": "oggetto",
+          "attributes": [
+            "tazza bianca"
+          ],
+          "start_time": 27.0,
+          "end_time": 30.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg",
+            "dense_0123_t0030.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e6",
+          "label": "tazza",
+          "role": "oggetto",
+          "attributes": [
+            "tazza bianca"
+          ],
+          "start_time": 27.0,
+          "end_time": 30.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg",
+            "dense_0123_t0030.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [
+        {
+          "description": "l'uomo con la maglietta arancione tiene in mano una bottiglia",
+          "actor": "e1",
+          "object": "e4",
+          "start_time": 27.0,
+          "end_time": 30.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg",
+            "dense_0123_t0030.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "l'uomo con la maglietta rossa tiene in mano una tazza",
+          "actor": "e2",
+          "object": "e5",
+          "start_time": 27.0,
+          "end_time": 30.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg",
+            "dense_0123_t0030.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "description": "l'uomo con la maglietta rossa tiene in mano una tazza",
+          "actor": "e2",
+          "object": "e6",
+          "start_time": 27.0,
+          "end_time": 30.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg",
+            "dense_0123_t0030.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "events": [
+        {
+          "description": "due uomini camminano",
+          "participants": [
+            "e1",
+            "e2"
+          ],
+          "start_time": 27.0,
+          "end_time": 30.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg",
+            "dense_0123_t0030.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "e1",
+          "relation": "vicino a",
+          "object": "e3",
+          "start_time": 27.0,
+          "end_time": 30.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg",
+            "dense_0123_t0030.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "subject": "e2",
+          "relation": "vicino a",
+          "object": "e3",
+          "start_time": 27.0,
+          "end_time": 30.75,
+          "evidence_frames": [
+            "dense_0108_t0027.000.jpg",
+            "dense_0110_t0027.500.jpg",
+            "dense_0112_t0028.000.jpg",
+            "dense_0114_t0028.500.jpg",
+            "dense_0117_t0029.250.jpg",
+            "dense_0119_t0029.750.jpg",
+            "dense_0121_t0030.250.jpg",
+            "dense_0123_t0030.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
       "state_changes": [],
       "temporal_relations": [],
       "causal_hypotheses": []
@@ -1388,57 +2345,5 @@
       "causal_hypotheses": []
     }
   ],
-  "errors": [
-    {
-      "segment_id": "segment_0006",
-      "start_time": 18.0,
-      "end_time": 21.75,
-      "input_frames": [
-        "dense_0072_t0018.000.jpg",
-        "dense_0074_t0018.500.jpg",
-        "dense_0076_t0019.000.jpg",
-        "dense_0078_t0019.500.jpg",
-        "dense_0081_t0020.250.jpg",
-        "dense_0083_t0020.750.jpg",
-        "dense_0085_t0021.250.jpg",
-        "dense_0087_t0021.750.jpg"
-      ],
-      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
-      "raw_response": "```json\n{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"persona\",\n      \"role\": \"uomo\",\n      \"attributes\": [\"giacca gialla\", \"pantalone nero\", \"capelli corti\", \"barba\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e2\",\n      \"label\": \"auto\",\n      \"role\": \"auto\",\n      \"attributes\": [\"argento\", \"berlina\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e3\",\n      \"label\": \"persona\",\n      \"role\": \"donna\",\n      \"attributes\": [\"vestito chiaro\", \"capelli biondi\", \"borsa\"],\n      \"start_time\": 19.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e4\",\n      \"label\": \"auto\",\n      \"role\": \"auto\",\n      \"attributes\": [\"nero\", \"berlina\"],\n      \"start_time\": 20.250,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e5\",\n      \"label\": \"autobus\",\n      \"role\": \"autobus\",\n      \"attributes\": [\"giallo e nero\", \"numero 4780\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e6\",\n      \"label\": \"persona\",\n      \"role\": \"uomo\",\n      \"attributes\": [\"maglietta rossa\", \"jeans\", \"capelli corti\"],\n      \"start_time\": 20.750,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e7\",\n      \"label\": \"persona\",\n      \"role\": \"uomo\",\n      \"attributes\": [\"maglietta gialla\", \"pantalone nero\", \"capelli corti\", \"barba\"],\n      \"start_time\": 21.250,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e8\",\n      \"label\": \"persona\",\n      \"role\": \"uomo\",\n      \"attributes\": [\"maglietta gialla\", \"pantalone nero\", \"capelli corti\", \"barba\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e9\",\n      \"label\": \"persona\",\n      \"role\": \"uomo\",\n      \"attributes\": [\"maglietta rossa\", \"jeans\", \"capelli corti\"],\n      \"start_time\": 20.750,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e10\",\n      \"label\": \"persona\",\n      \"role\": \"donna\",\n      \"attributes\": [\"vestito chiaro\", \"capelli biondi\", \"borsa\"],\n      \"start_time\": 19.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e11\",\n      \"label\": \"auto\",\n      \"role\": \"auto\",\n      \"attributes\": [\"rosso\", \"berlina\"],\n      \"start_time\": 21.250,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"actions\": [\n    {\n      \"description\": \"l'uomo in giallo sta bevendo da una bottiglia\",\n      \"actor\": \"e1\",\n      \"object\": \"bottiglia\",\n      \"start_time\": 20.250,\n      \"end_time\": 20.750,\n      \"evidence_frames\": [\"dense_0081_t0020.250.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"description\": \"l'uomo in giallo sta bevendo da una bottiglia\",\n      \"actor\": \"e1\",\n      \"object\": \"bottiglia\",\n      \"start_time\": 21.250,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"description\": \"l'uomo in rosso sta tenendo un panino\",\n      \"actor\": \"e6\",\n      \"object\": \"panino\",\n      \"start_time\": 20.750,\n      \"end_time\": 21.250,\n      \"evidence_frames\": [\"dense_0083_t0020.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"description\": \"l'uomo in rosso sta tenendo un panino\",\n      \"actor\": \"e6\",\n      \"object\": \"panino\",\n      \"start_time\": 21.250,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"events\": [\n    {\n      \"description\": \"persona che cammina\",\n      \"participants\": [\"e3\"],\n      \"start_time\": 19.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020"
-    },
-    {
-      "segment_id": "segment_0007",
-      "start_time": 21.0,
-      "end_time": 24.75,
-      "input_frames": [
-        "dense_0084_t0021.000.jpg",
-        "dense_0086_t0021.500.jpg",
-        "dense_0088_t0022.000.jpg",
-        "dense_0090_t0022.500.jpg",
-        "dense_0093_t0023.250.jpg",
-        "dense_0095_t0023.750.jpg",
-        "dense_0097_t0024.250.jpg",
-        "dense_0099_t0024.750.jpg"
-      ],
-      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
-      "raw_response": "```json\n{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"persona\",\n      \"role\": \"attore\",\n      \"attributes\": [\"uomo\", \"basso\", \"folto\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e2\",\n      \"label\": \"uomo\",\n      \"role\": \"attore\",\n      \"attributes\": [\"uomo\", \"medio\", \"folto\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e3\",\n      \"label\": \"uomo\",\n      \"role\": \"attore\",\n      \"attributes\": [\"uomo\", \"basso\", \"folto\", \"con cappello\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e4\",\n      \"label\": \"uomo\",\n      \"role\": \"attore\",\n      \"attributes\": [\"uomo\", \"medio\", \"folto\", \"con cappello\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e5\",\n      \"label\": \"persona\",\n      \"role\": \"spettatore\",\n      \"attributes\": [\"donna\", \"capelli biondi\", \"con cappello\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e6\",\n      \"label\": \"persona\",\n      \"role\": \"spettatore\",\n      \"attributes\": [\"donna\", \"capelli scuri\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e7\",\n      \"label\": \"auto\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"rossa\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e8\",\n      \"label\": \"autobus\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"giallo e nero\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"actions\": [\n    {\n      \"description\": \"beve da una bottiglia\",\n      \"actor\": \"e1\",\n      \"object\": \"bottiglia\",\n      \"start_time\": 21.000,\n      \"end_time\": 21.500,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"description\": \"mangia\",\n      \"actor\": \"e2\",\n      \"object\": \"cibo\",\n      \"start_time\": 21.500,\n      \"end_time\": 22.000,\n      \"evidence_frames\": [\"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"description\": \"mangia\",\n      \"actor\": \"e3\",\n      \"object\": \"cibo\",\n      \"start_time\": 22.000,\n      \"end_time\": 22.500,\n      \"evidence_frames\": [\"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"description\": \"mangia\",\n      \"actor\": \"e4\",\n      \"object\": \"cibo\",\n      \"start_time\": 22.500,\n      \"end_time\": 23.250,\n      \"evidence_frames\": [\"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"description\": \"mangia\",\n      \"actor\": \"e3\",\n      \"object\": \"cibo\",\n      \"start_time\": 23.250,\n      \"end_time\": 23.750,\n      \"evidence_frames\": [\"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"description\": \"mangia\",\n      \"actor\": \"e4\",\n      \"object\": \"cibo\",\n      \"start_time\": 23.750,\n      \"end_time\": 24.250,\n      \"evidence_frames\": [\"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"description\": \"mangia\",\n      \"actor\": \"e3\",\n      \"object\": \"cibo\",\n      \"start_time\": 24.250,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_009"
-    },
-    {
-      "segment_id": "segment_0009",
-      "start_time": 27.0,
-      "end_time": 30.75,
-      "input_frames": [
-        "dense_0108_t0027.000.jpg",
-        "dense_0110_t0027.500.jpg",
-        "dense_0112_t0028.000.jpg",
-        "dense_0114_t0028.500.jpg",
-        "dense_0117_t0029.250.jpg",
-        "dense_0119_t0029.750.jpg",
-        "dense_0121_t0030.250.jpg",
-        "dense_0123_t0030.750.jpg"
-      ],
-      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
-      "raw_response": "```json\n{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"persona\",\n      \"role\": \"uomo\",\n      \"attributes\": [\"maglietta arancione\", \"pantaloncini neri\"],\n      \"start_time\": 27.000,\n      \"end_time\": 30.750,\n      \"evidence_frames\": [\"dense_0108_t0027.000.jpg\", \"dense_0110_t0027.500.jpg\", \"dense_0112_t0028.000.jpg\", \"dense_0114_t0028.500.jpg\", \"dense_0117_t0029.250.jpg\", \"dense_0119_t0029.750.jpg\", \"dense_0121_t0030.250.jpg\", \"dense_0123_t0030.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e2\",\n      \"label\": \"persona\",\n      \"role\": \"uomo\",\n      \"attributes\": [\"maglietta rossa\", \"pantaloncini blu\", \"capelli radi\"],\n      \"start_time\": 27.000,\n      \"end_time\": 30.750,\n      \"evidence_frames\": [\"dense_0108_t0027.000.jpg\", \"dense_0110_t0027.500.jpg\", \"dense_0112_t0028.000.jpg\", \"dense_0114_t0028.500.jpg\", \"dense_0117_t0029.250.jpg\", \"dense_0119_t0029.750.jpg\", \"dense_0121_t0030.250.jpg\", \"dense_0123_t0030.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e3\",\n      \"label\": \"auto\",\n      \"role\": \"veicolo\",\n      \"attributes\": [\"colore arancione\"],\n      \"start_time\": 27.000,\n      \"end_time\": 30.750,\n      \"evidence_frames\": [\"dense_0108_t0027.000.jpg\", \"dense_0110_t0027.500.jpg\", \"dense_0112_t0028.000.jpg\", \"dense_0114_t0028.500.jpg\", \"dense_0117_t0029.250.jpg\", \"dense_0119_t0029.750.jpg\", \"dense_0121_t0030.250.jpg\", \"dense_0123_t0030.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e4\",\n      \"label\": \"bottiglia\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"bottiglia di plastica trasparente\"],\n      \"start_time\": 27.000,\n      \"end_time\": 30.750,\n      \"evidence_frames\": [\"dense_0108_t0027.000.jpg\", \"dense_0110_t0027.500.jpg\", \"dense_0112_t0028.000.jpg\", \"dense_0114_t0028.500.jpg\", \"dense_0117_t0029.250.jpg\", \"dense_0119_t0029.750.jpg\", \"dense_0121_t0030.250.jpg\", \"dense_0123_t0030.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e5\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"tazza bianca\"],\n      \"start_time\": 27.000,\n      \"end_time\": 30.750,\n      \"evidence_frames\": [\"dense_0108_t0027.000.jpg\", \"dense_0110_t0027.500.jpg\", \"dense_0112_t0028.000.jpg\", \"dense_0114_t0028.500.jpg\", \"dense_0117_t0029.250.jpg\", \"dense_0119_t0029.750.jpg\", \"dense_0121_t0030.250.jpg\", \"dense_0123_t0030.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e6\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"tazza bianca\"],\n      \"start_time\": 27.000,\n      \"end_time\": 30.750,\n      \"evidence_frames\": [\"dense_0108_t0027.000.jpg\", \"dense_0110_t0027.500.jpg\", \"dense_0112_t0028.000.jpg\", \"dense_0114_t0028.500.jpg\", \"dense_0117_t0029.250.jpg\", \"dense_0119_t0029.750.jpg\", \"dense_0121_t0030.250.jpg\", \"dense_0123_t0030.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"actions\": [\n    {\n      \"description\": \"l'uomo con la maglietta arancione tiene in mano una bottiglia\",\n      \"actor\": \"e1\",\n      \"object\": \"e4\",\n      \"start_time\": 27.000,\n      \"end_time\": 30.750,\n      \"evidence_frames\": [\"dense_0108_t0027.000.jpg\", \"dense_0110_t0027.500.jpg\", \"dense_0112_t0028.000.jpg\", \"dense_0114_t0028.500.jpg\", \"dense_0117_t0029.250.jpg\", \"dense_0119_t0029.750.jpg\", \"dense_0121_t0030.250.jpg\", \"dense_0123_t0030.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"description\": \"l'uomo con la maglietta rossa tiene in mano una tazza\",\n      \"actor\": \"e2\",\n      \"object\": \"e5\",\n      \"start_time\": 27.000,\n      \"end_time\": 30.750,\n      \"evidence_frames\": [\"dense_0108_t0027.000.jpg\", \"dense_0110_t0027.500.jpg\", \"dense_0112_t0028.000.jpg\", \"dense_0114_t0028.500.jpg\", \"dense_0117_t0029.250.jpg\", \"dense_0119_t0029.750.jpg\", \"dense_0121_t0030.250.jpg\", \"dense_0123_t0030.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"description\": \"l'uomo con la maglietta rossa tiene in mano una tazza\",\n      \"actor\": \"e2\",\n      \"object\": \"e6\",\n      \"start_time\": 27.000,\n      \"end_time\": 30.750,\n      \"evidence_frames\": [\"dense_0108_t0027.000.jpg\", \"dense_0110_t0027.500.jpg\", \"dense_0112_t0028.000.jpg\", \"dense_0114_t0028.500.jpg\", \"dense_0117_t0029.250.jpg\", \"dense_0119_t0029.750.jpg\", \"dense_0121_t0030.250.jpg\", \"dense_0123_t0030.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"events\": [\n    {\n      \"description\": \"due uomini camminano\",\n      \"participants\": [\"e1\", \"e2\"],\n      \"start_time\": 27.000,\n      \"end_time\": 30.750,\n      \"evidence_frames\": [\"dense_0108_t0027.000.jpg\", \"dense_0110_t0027.500.jpg\", \"dense_0112_t0028.000.jpg\", \"dense_0114_t0028.500.jpg\", \"dense_0117_t0029.250.jpg\", \"dense_0119_t0029.750.jpg\", \"dense_0121_t0030.250.jpg\", \"dense_0123_t0030.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    }\n  ],\n  \"spatial_relations\": [\n    {\n      \"subject\": \"e1\",\n      \"relation\": \"vicino a\",\n      \"object\": \"e3\",\n      \"start_time\": 27.000,\n      \"end_time\": 30.750,\n      \"evidence_frames\": [\"dense_0108_t0027.000.jpg\", \"dense_0110_t0027.500.jpg\", \"dense_0112_t0028.000.jpg\", \"dense_0114_t0028.500.jpg\", \"dense_0117_t0029.250.jpg\", \"dense_0119_t0029.750.jpg\", \"dense_0121_t0030.250.jpg\", \"dense_0123_t0030.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"subject\": \"e2\",\n      \"relation\": \"vicino a\",\n      \"object\": \"e3\",\n      \"start_time\": 27.000,\n      \"end_time\": 30.750,\n      \"evidence_frames\": [\"dense_0108_t0027.000.jpg\", \"dense_"
-    }
-  ]
+  "errors": []
 }

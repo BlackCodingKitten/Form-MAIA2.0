@@ -7,8 +7,8 @@
     "max_frames_per_window": 8,
     "input_type": "ordered_dense_frames"
   },
-  "numero_segmenti": 8,
-  "numero_errori": 2,
+  "numero_segmenti": 9,
+  "numero_errori": 1,
   "segments": [
     {
       "segment_id": "segment_0000",
@@ -812,6 +812,1107 @@
       "causal_hypotheses": []
     },
     {
+      "segment_id": "segment_0007",
+      "start_time": 21.0,
+      "end_time": 24.75,
+      "input_frames": [
+        "dense_0084_t0021.000.jpg",
+        "dense_0086_t0021.500.jpg",
+        "dense_0088_t0022.000.jpg",
+        "dense_0090_t0022.500.jpg",
+        "dense_0093_t0023.250.jpg",
+        "dense_0095_t0023.750.jpg",
+        "dense_0097_t0024.250.jpg",
+        "dense_0099_t0024.750.jpg"
+      ],
+      "entities": [
+        {
+          "entity_id": "e1",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e2",
+          "label": "tovaglia",
+          "role": "oggetto",
+          "attributes": [
+            "bianca"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e3",
+          "label": "cartone",
+          "role": "oggetto",
+          "attributes": [],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e4",
+          "label": "cartone rotto",
+          "role": "oggetto",
+          "attributes": [],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e5",
+          "label": "cartone",
+          "role": "oggetto",
+          "attributes": [],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e6",
+          "label": "cartone",
+          "role": "oggetto",
+          "attributes": [],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e7",
+          "label": "cartone",
+          "role": "oggetto",
+          "attributes": [],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e8",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e9",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e10",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e11",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e12",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e13",
+          "label": "cartone",
+          "role": "oggetto",
+          "attributes": [],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e14",
+          "label": "cartone",
+          "role": "oggetto",
+          "attributes": [],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e15",
+          "label": "cartone",
+          "role": "oggetto",
+          "attributes": [],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e16",
+          "label": "cartone",
+          "role": "oggetto",
+          "attributes": [],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e17",
+          "label": "cartone",
+          "role": "oggetto",
+          "attributes": [],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e18",
+          "label": "cartone",
+          "role": "oggetto",
+          "attributes": [],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e19",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e20",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e21",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e22",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e23",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e24",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e25",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e26",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e27",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e28",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e29",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e30",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e31",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e32",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e33",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e34",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e35",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e36",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e37",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e38",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e39",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e40",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e41",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e42",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e43",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e44",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e45",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e46",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e47",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e48",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e49",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        },
+        {
+          "entity_id": "e50",
+          "label": "vaso",
+          "role": "oggetto",
+          "attributes": [
+            "giallo"
+          ],
+          "start_time": 21.0,
+          "end_time": 24.75,
+          "evidence_frames": [
+            "dense_0084_t0021.000.jpg",
+            "dense_0086_t0021.500.jpg",
+            "dense_0088_t0022.000.jpg",
+            "dense_0090_t0022.500.jpg",
+            "dense_0093_t0023.250.jpg",
+            "dense_0095_t0023.750.jpg",
+            "dense_0097_t0024.250.jpg",
+            "dense_0099_t0024.750.jpg"
+          ],
+          "evidence_type": "observed",
+          "confidence": 1.0
+        }
+      ],
+      "actions": [],
+      "events": [],
+      "spatial_relations": [],
+      "state_changes": [],
+      "temporal_relations": [],
+      "causal_hypotheses": []
+    },
+    {
       "segment_id": "segment_0008",
       "start_time": 24.0,
       "end_time": 27.75,
@@ -1046,24 +2147,7 @@
         "dense_0087_t0021.750.jpg"
       ],
       "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
-      "raw_response": "```json\n{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e2\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e3\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e4\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e5\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e6\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e7\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e8\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e9\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e10\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e11\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e12\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t"
-    },
-    {
-      "segment_id": "segment_0007",
-      "start_time": 21.0,
-      "end_time": 24.75,
-      "input_frames": [
-        "dense_0084_t0021.000.jpg",
-        "dense_0086_t0021.500.jpg",
-        "dense_0088_t0022.000.jpg",
-        "dense_0090_t0022.500.jpg",
-        "dense_0093_t0023.250.jpg",
-        "dense_0095_t0023.750.jpg",
-        "dense_0097_t0024.250.jpg",
-        "dense_0099_t0024.750.jpg"
-      ],
-      "error": "SemanticOutputError: Oggetto JSON incompleto nella risposta del modello.",
-      "raw_response": "```json\n{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"vaso\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"giallo\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e2\",\n      \"label\": \"tovaglia\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"bianca\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e3\",\n      \"label\": \"cartone\",\n      \"role\": \"oggetto\",\n      \"attributes\": [],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e4\",\n      \"label\": \"cartone rotto\",\n      \"role\": \"oggetto\",\n      \"attributes\": [],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e5\",\n      \"label\": \"cartone\",\n      \"role\": \"oggetto\",\n      \"attributes\": [],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e6\",\n      \"label\": \"cartone\",\n      \"role\": \"oggetto\",\n      \"attributes\": [],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e7\",\n      \"label\": \"cartone\",\n      \"role\": \"oggetto\",\n      \"attributes\": [],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e8\",\n      \"label\": \"vaso\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"giallo\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e9\",\n      \"label\": \"vaso\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"giallo\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e10\",\n      \"label\": \"vaso\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"giallo\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e11\",\n      \"label\": \"vaso\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"giallo\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090_t0022.500.jpg\", \"dense_0093_t0023.250.jpg\", \"dense_0095_t0023.750.jpg\", \"dense_0097_t0024.250.jpg\", \"dense_0099_t0024.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e12\",\n      \"label\": \"vaso\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"giallo\"],\n      \"start_time\": 21.000,\n      \"end_time\": 24.750,\n      \"evidence_frames\": [\"dense_0084_t0021.000.jpg\", \"dense_0086_t0021.500.jpg\", \"dense_0088_t0022.000.jpg\", \"dense_0090"
+      "raw_response": "```json\n{\n  \"entities\": [\n    {\n      \"entity_id\": \"e1\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e2\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e3\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e4\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e5\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e6\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e7\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e8\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e9\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e10\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e11\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e12\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e13\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e14\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e15\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e16\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e17\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e18\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e19\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e20\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e21\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e22\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e23\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e24\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e25\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e26\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e27\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e28\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e29\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e30\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e31\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e32\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e33\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e34\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e35\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e36\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e37\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e38\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e39\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e40\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e41\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e42\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e43\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e44\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e45\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e46\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e47\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e48\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e49\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e50\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e51\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e52\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e53\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e54\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e55\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e56\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e57\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e58\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e59\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e60\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e61\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e62\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense_0085_t0021.250.jpg\", \"dense_0087_t0021.750.jpg\"],\n      \"evidence_type\": \"observed\",\n      \"confidence\": 1.0\n    },\n    {\n      \"entity_id\": \"e63\",\n      \"label\": \"tazza\",\n      \"role\": \"oggetto\",\n      \"attributes\": [\"gialla\"],\n      \"start_time\": 18.000,\n      \"end_time\": 21.750,\n      \"evidence_frames\": [\"dense_0072_t0018.000.jpg\", \"dense_0074_t0018.500.jpg\", \"dense_0076_t0019.000.jpg\", \"dense_0078_t0019.500.jpg\", \"dense_0081_t0020.250.jpg\", \"dense_0083_t0020.750.jpg\", \"dense"
     }
   ]
 }
